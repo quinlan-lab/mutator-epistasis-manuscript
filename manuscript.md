@@ -23,8 +23,8 @@ header-includes: |
   <meta name="dc.date" content="2023-02-09" />
   <meta name="citation_publication_date" content="2023-02-09" />
   <meta property="article:published_time" content="2023-02-09" />
-  <meta name="dc.modified" content="2023-02-09T15:59:48+00:00" />
-  <meta property="article:modified_time" content="2023-02-09T15:59:48+00:00" />
+  <meta name="dc.modified" content="2023-02-09T16:14:26+00:00" />
+  <meta property="article:modified_time" content="2023-02-09T16:14:26+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/53844bf212b5c8244cbebbe46e2a230a0ffa08d8/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/53844bf212b5c8244cbebbe46e2a230a0ffa08d8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/53844bf212b5c8244cbebbe46e2a230a0ffa08d8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/b10d227f2d473b4ccad920b24e99a9cfd3beb595/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/b10d227f2d473b4ccad920b24e99a9cfd3beb595/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/b10d227f2d473b4ccad920b24e99a9cfd3beb595/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/53844bf212b5c8244cbebbe46e2a230a0ffa08d8/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/b10d227f2d473b4ccad920b24e99a9cfd3beb595/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@53844bf](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/53844bf212b5c8244cbebbe46e2a230a0ffa08d8)
+from [quinlan-lab/mutator-epistasis-manuscript@b10d227](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/b10d227f2d473b4ccad920b24e99a9cfd3beb595)
 on February 9, 2023.
 </em></small>
 
@@ -120,7 +120,7 @@ Jane Roe \<jane.roe@whatever.edu\>.
 
 ## Abstract {.page_break_before}
 
-
+Lorem ipsum.
 
 
 ## References {.page_break_before}
