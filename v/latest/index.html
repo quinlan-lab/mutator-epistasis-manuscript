@@ -54,8 +54,8 @@
   <meta name="dc.date" content="2023-02-09" />
   <meta name="citation_publication_date" content="2023-02-09" />
   <meta property="article:published_time" content="2023-02-09" />
-  <meta name="dc.modified" content="2023-02-09T16:14:26+00:00" />
-  <meta property="article:modified_time" content="2023-02-09T16:14:26+00:00" />
+  <meta name="dc.modified" content="2023-02-09T17:01:59+00:00" />
+  <meta property="article:modified_time" content="2023-02-09T17:01:59+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -76,9 +76,9 @@
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/b10d227f2d473b4ccad920b24e99a9cfd3beb595/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/b10d227f2d473b4ccad920b24e99a9cfd3beb595/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/b10d227f2d473b4ccad920b24e99a9cfd3beb595/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/d288ee8483638987711ee086970a140e9803626c/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/d288ee8483638987711ee086970a140e9803626c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/d288ee8483638987711ee086970a140e9803626c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,9 +95,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/b10d227f2d473b4ccad920b24e99a9cfd3beb595/">permalink</a>)
+(<a href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/d288ee8483638987711ee086970a140e9803626c/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/b10d227f2d473b4ccad920b24e99a9cfd3beb595">quinlan-lab/mutator-epistasis-manuscript@b10d227</a>
+from <a href="https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/d288ee8483638987711ee086970a140e9803626c">quinlan-lab/mutator-epistasis-manuscript@d288ee8</a>
 on February 9, 2023.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -135,10 +135,42 @@ Jane Roe &lt;jane.roe@whatever.edu&gt;.</p>
 </div>
 <h2 class="page_break_before" id="abstract">Abstract</h2>
 <p>Lorem ipsum.</p>
+<h2 id="introduction">Introduction</h2>
+<p>Maintaining genome integrity in the mammalian germline is enormously complex. Hundreds of protein-coding genes contribute to pathways involved in DNA replication, and hundreds more are mobilized in response to damage by exogenous and endogenous mutagens <span class="citation" data-cites="urdMBmf7">[<a href="#ref-urdMBmf7" role="doc-biblioref">1</a>]</span>. Despite this abundance of potential targets, <em>mutator alleles</em> that augment the germline mutation rate have largely eluded detection in mammals.</p>
+<p>Germline mutator alleles are difficult to detect for a number of reasons, including the fidelity of germline genome replication and the effects of selection on mutators. On average, humans are born with about 70 to 100 <em>de novo</em> germline mutations per diploid genome <span class="citation" data-cites="8Sr3Vmp 1FT3ArN48">[<a href="#ref-8Sr3Vmp" role="doc-biblioref">2</a>,<a href="#ref-1FT3ArN48" role="doc-biblioref">3</a>]</span>; in mice, the number is closer to 20 or 30 <span class="citation" data-cites="LVgapQDJ">[<a href="#ref-LVgapQDJ" role="doc-biblioref">4</a>]</span>. Moreover, in a population of sufficiently large <span class="math inline">\(N_e\)</span>, we would also expect even low-effect mutator alleles to be efficiently selected against. The selection coefficient on a mutator allele is approximately <span class="math inline">\(2s \Delta U\)</span> <span class="citation" data-cites="tU5w6mSk">[<a href="#ref-tU5w6mSk" role="doc-biblioref">5</a>]</span>, where <em>s</em> is the mean selective coefficient on a new deleterious mutation and <span class="math inline">\(\Delta U\)</span> is the excess number of new deleterious mutations caused by the mutator allele; the product of <span class="math inline">\(s\)</span> and <span class="math inline">\(\Delta U\)</span> is multiplied by 2 to account for the expected number of generations for which mutator will be linked to the excess mutations it causes. Given the low germline <em>de novo</em> mutation rate in mamalian genomes and the strength of selection on a potential mutator allele, we would likely require a very large number of offspring, as well as an environment that attenuates the effects of selection, in order to detect the effects of a germline mutator allele.</p>
+<p>In general, we would expect haplotypes that carry mutator alleles at a particular locus to carry an excess of total germline mutations, compared to those that harbor wild-type alleles. However, protein-coding genes involved in DNA replication and repair often recognize particular sequence motifs or excise lesions at specific nucleotides <span class="citation" data-cites="urdMBmf7">[<a href="#ref-urdMBmf7" role="doc-biblioref">1</a>]</span>. Thus, we might also expect that the spectrum of de novo mutations – i.e, the frequency of each individual mutation type (C&gt;T, A&gt;G, etc.) – will differ between genomes that harbor either a mutator or wild-type allele at a given locus.</p>
+<p>Previously, we discovered a germline mutator allele in mice by analyzing whole-genome sequencing data from 152 recombinant inbred lines (RILs). These RILs, known as the <strong>B</strong>X<strong>D</strong>s <span class="citation" data-cites="VnS3Uzxm">[<a href="#ref-VnS3Uzxm" role="doc-biblioref">6</a>]</span>, were derived from C57<strong>B</strong>L/6J and <strong>D</strong>BA/2J, two laboratory strains that exhibit significant differences in their germline mutation spectra <span class="citation" data-cites="CBXBwZox">[<a href="#ref-CBXBwZox" role="doc-biblioref">7</a>]</span>. Following either F2 or advanced intercrosses of the parental strains, the BXDs were inbred by brother-sister mating for up to 180 generations, attenuating the effects of natural selection on both standing and new variation. Over the course of inbreeding, each BXD therefore accumulated hundreds or thousands of germline <em>de novo</em> mutations on a linear mosaic of the parental haplotypes that was almostly completely homozygous. Previously, we identified up to 2,000 germline de novo mutations in each line and used quantitative trait locus (QTL) mapping to identify a locus on chromosome 4 that was strongly associated with the C&gt;A germline mutation rate <span class="citation" data-cites="5Vo3ETjb">[<a href="#ref-5Vo3ETjb" role="doc-biblioref">8</a>]</span>. The QTL overlapped <em>Mutyh</em>, which encodes a protein that normally prevents C&gt;A mutations by repairing oxidative DNA damage <span class="citation" data-cites="zat6CTAa">[<a href="#ref-zat6CTAa" role="doc-biblioref">9</a>]</span>, and we hypothesized that missense mutations in <em>Mutyh</em> were responsible for a 50% increase in the C&gt;A mutation rate between BXDs with either parental haplotype at the QTL.</p>
+<p>In this study, we developed a new method to detect alleles that affect the mutation spectrum in two-parent RILs, and applied it to previously generated mutation data from the BXDs. We assessed its power to detect candidate mutator alleles, and discovered compelling evidence of epistasis between two germline mutator alleles that augment the C&gt;A germline mutation rate.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
-<div id="refs" role="doc-bibliography">
-
+<div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-urdMBmf7" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Mechanisms of DNA damage, repair, and mutagenesis.</strong> <div class="csl-block">Nimrat Chatterjee, Graham C Walker</div> <em>Environmental and molecular mutagenesis</em> (2017-05-09) <a href="https://www.ncbi.nlm.nih.gov/pubmed/28485537">https://www.ncbi.nlm.nih.gov/pubmed/28485537</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1002/em.22087">10.1002/em.22087</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28485537">28485537</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5474181">PMC5474181</a></div></div>
+</div>
+<div id="ref-8Sr3Vmp" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>Parental influence on human germline de novo mutations in 1,548 trios from Iceland.</strong> <div class="csl-block">Hákon Jónsson, Patrick Sulem, Birte Kehr, Snaedis Kristmundsdottir, Florian Zink, Eirikur Hjartarson, Marteinn T Hardarson, Kristjan E Hjorleifsson, Hannes P Eggertsson, Sigurjon Axel Gudjonsson, … Kari Stefansson</div> <em>Nature</em> (2017-09-20) <a href="https://www.ncbi.nlm.nih.gov/pubmed/28959963">https://www.ncbi.nlm.nih.gov/pubmed/28959963</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nature24018">10.1038/nature24018</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28959963">28959963</a></div></div>
+</div>
+<div id="ref-1FT3ArN48" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>Large, three-generation human families reveal post-zygotic mosaicism and variability in germline mutation accumulation.</strong> <div class="csl-block">Thomas A Sasani, Brent S Pedersen, Ziyue Gao, Lisa Baird, Molly Przeworski, Lynn B Jorde, Aaron R Quinlan</div> <em>eLife</em> (2019-09-24) <a href="https://www.ncbi.nlm.nih.gov/pubmed/31549960">https://www.ncbi.nlm.nih.gov/pubmed/31549960</a> <div class="csl-block">DOI: <a href="https://doi.org/10.7554/elife.46922">10.7554/elife.46922</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31549960">31549960</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6759356">PMC6759356</a></div></div>
+</div>
+<div id="ref-LVgapQDJ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>Similarities and differences in patterns of germline mutation between mice and humans.</strong> <div class="csl-block">Sarah J Lindsay, Raheleh Rahbari, Joanna Kaplanis, Thomas Keane, Matthew E Hurles</div> <em>Nature communications</em> (2019-09-06) <a href="https://www.ncbi.nlm.nih.gov/pubmed/31492841">https://www.ncbi.nlm.nih.gov/pubmed/31492841</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41467-019-12023-w">10.1038/s41467-019-12023-w</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31492841">31492841</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6731245">PMC6731245</a></div></div>
+</div>
+<div id="ref-tU5w6mSk" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>Genetic drift, selection and the evolution of the mutation rate.</strong> <div class="csl-block">Michael Lynch, Matthew S Ackerman, Jean-Francois Gout, Hongan Long, Way Sung, WKelley Thomas, Patricia L Foster</div> <em>Nature reviews. Genetics</em> (2016-10-14) <a href="https://www.ncbi.nlm.nih.gov/pubmed/27739533">https://www.ncbi.nlm.nih.gov/pubmed/27739533</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nrg.2016.104">10.1038/nrg.2016.104</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27739533">27739533</a></div></div>
+</div>
+<div id="ref-VnS3Uzxm" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>A platform for experimental precision medicine: The extended BXD mouse family.</strong> <div class="csl-block">David G Ashbrook, Danny Arends, Pjotr Prins, Megan K Mulligan, Suheeta Roy, Evan G Williams, Cathleen M Lutz, Alicia Valenzuela, Casey J Bohl, Jesse F Ingels, … Robert W Williams</div> <em>Cell systems</em> (2021-01-19) <a href="https://www.ncbi.nlm.nih.gov/pubmed/33472028">https://www.ncbi.nlm.nih.gov/pubmed/33472028</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.cels.2020.12.002">10.1016/j.cels.2020.12.002</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33472028">33472028</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7979527">PMC7979527</a></div></div>
+</div>
+<div id="ref-CBXBwZox" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>Significant Strain Variation in the Mutation Spectra of Inbred Laboratory Mice.</strong> <div class="csl-block">Beth L Dumont</div> <em>Molecular biology and evolution</em> (2019-05-01) <a href="https://www.ncbi.nlm.nih.gov/pubmed/30753674">https://www.ncbi.nlm.nih.gov/pubmed/30753674</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/molbev/msz026">10.1093/molbev/msz026</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30753674">30753674</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6501876">PMC6501876</a></div></div>
+</div>
+<div id="ref-5Vo3ETjb" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>A natural mutator allele shapes mutation spectrum variation in mice.</strong> <div class="csl-block">Thomas A Sasani, David G Ashbrook, Annabel C Beichman, Lu Lu, Abraham A Palmer, Robert W Williams, Jonathan K Pritchard, Kelley Harris</div> <em>Nature</em> (2022-05-11) <a href="https://www.ncbi.nlm.nih.gov/pubmed/35545679">https://www.ncbi.nlm.nih.gov/pubmed/35545679</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41586-022-04701-5">10.1038/s41586-022-04701-5</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/35545679">35545679</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9272728">PMC9272728</a></div></div>
+</div>
+<div id="ref-zat6CTAa" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>Base-excision repair of oxidative DNA damage.</strong> <div class="csl-block">Sheila S David, Valerie L O'Shea, Sucharita Kundu</div> <em>Nature</em> (2007-06-21) <a href="https://www.ncbi.nlm.nih.gov/pubmed/17581577">https://www.ncbi.nlm.nih.gov/pubmed/17581577</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nature05978">10.1038/nature05978</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/17581577">17581577</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2896554">PMC2896554</a></div></div>
+</div>
 </div>
 <!-- default theme -->
 
