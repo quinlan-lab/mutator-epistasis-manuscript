@@ -23,8 +23,8 @@ header-includes: |
   <meta name="dc.date" content="2023-02-09" />
   <meta name="citation_publication_date" content="2023-02-09" />
   <meta property="article:published_time" content="2023-02-09" />
-  <meta name="dc.modified" content="2023-02-09T17:01:59+00:00" />
-  <meta property="article:modified_time" content="2023-02-09T17:01:59+00:00" />
+  <meta name="dc.modified" content="2023-02-09T23:41:11+00:00" />
+  <meta property="article:modified_time" content="2023-02-09T23:41:11+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/d288ee8483638987711ee086970a140e9803626c/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/d288ee8483638987711ee086970a140e9803626c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/d288ee8483638987711ee086970a140e9803626c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/500f931ef1b7734b901123c38a95d1927f5e5425/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/500f931ef1b7734b901123c38a95d1927f5e5425/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/500f931ef1b7734b901123c38a95d1927f5e5425/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/d288ee8483638987711ee086970a140e9803626c/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/500f931ef1b7734b901123c38a95d1927f5e5425/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@d288ee8](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/d288ee8483638987711ee086970a140e9803626c)
+from [quinlan-lab/mutator-epistasis-manuscript@500f931](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/500f931ef1b7734b901123c38a95d1927f5e5425)
 on February 9, 2023.
 </em></small>
 
@@ -134,6 +134,41 @@ In general, we would expect haplotypes that carry mutator alleles at a particula
 Previously, we discovered a germline mutator allele in mice by analyzing whole-genome sequencing data from 152 recombinant inbred lines (RILs). These RILs, known as the **B**X**D**s [@PMID:33472028], were derived from C57**B**L/6J and **D**BA/2J, two laboratory strains that exhibit significant differences in their germline mutation spectra [@PMID:30753674]. Following either F2 or advanced intercrosses of the parental strains, the BXDs were inbred by brother-sister mating for up to 180 generations, attenuating the effects of natural selection on both standing and new variation. Over the course of inbreeding, each BXD therefore accumulated hundreds or thousands of germline *de novo* mutations on a linear mosaic of the parental haplotypes that was almostly completely homozygous. Previously, we identified up to 2,000 germline de novo mutations in each line and used quantitative trait locus (QTL) mapping to identify a locus on chromosome 4 that was strongly associated with the C>A germline mutation rate [@PMID:35545679]. The QTL overlapped *Mutyh*, which encodes a protein that normally prevents C>A mutations by repairing oxidative DNA damage [@PMID:17581577], and we hypothesized that missense mutations in *Mutyh* were responsible for a 50% increase in the C>A mutation rate between BXDs with either parental haplotype at the QTL.
 
 In this study, we developed a new method to detect alleles that affect the mutation spectrum in two-parent RILs, and applied it to previously generated mutation data from the BXDs. We assessed its power to detect candidate mutator alleles, and discovered compelling evidence of epistasis between two germline mutator alleles that augment the C>A germline mutation rate.
+
+
+## Results
+
+### Summary of *de novo* germline mutation data in the BXD RILs
+
+The BXD resource currently comprises a total of 152 recombinant inbred lines (RILs). RILs were derived from either F2 or advanced intercross lines (AILs), and subsequently inbred by brother-sister mating for up to 180 generations. Previously, we analyzed whole-genome sequencing data from the BXDs and identified *de novo* germline mutations in each line. A detailed description of the methods used for variant processing and filtering, as well as the characteristics of the high-quality *de novo* mutations, are available in a previous manuscript [@PMID:35545679].
+
+Briefly, we identified variants in each BXD that were absent from all other RILs, as well as from the C57BL/6J and DBA/2J parents [Methods]. We required each private variant to be homozygous for the alternate allele, but included heterozygous variants for which at least 90% of sequencing reads supported the alternate allele. Counts of homozygous private mutations were positively correlated with duration of inbreeding, and as expected for *de novo* germline mutations, were enriched in conserved regions of the genome [@PMID:35545679].
+
+### A new approach to discover germline mutator alleles
+
+Using this existing catalog of *de novo* germline mutations in the BXDs, we developed a new approach to discover loci that affect the germline *de novo* mutation spectrum in biparental RILs [Figure 1]. We assume that a collection of haplotypes have been genotyped at informative markers, and that each haplotype carries its own private *de novo* germline mutations. 
+
+To detect loci that influence the germline mutation spectrum, we iterate over each informative marker and divide the haplotypes into two groups based on the parental allele that they inherited. We then compute a $k$-mer mutation spectrum using the aggregate mutation counts in each haplotype group. The $k$-mer mutation spectrum contains the frequency of every possible $k$-mer mutation type in a collection of mutations, and can be represented as a vector of size $2 \times 3 \times 4^{k - 1}$ after collapsing by strand complement. For example, the $1$-mer mutation spectrum is 6-element vector that contains the frequencies of C>T, C>G, C>A, A>G, A>T, and A>C mutations.
+
+At each locus, we then compute the cosine distance between the aggregate mutation spectra of haplotypes with either parental allele. The cosine distance between two vectors $\mathbf{A}$ and $\mathbf{B}$ is defined as $$D_C = 1 - \frac{\mathbf{A} \cdot \mathbf{B}}{||\mathbf{A}|| \ ||\mathbf{B}||}$$ where $||\mathbf{A}||$ and $||\mathbf{B}||$ are the $L_2$ norms of $\mathbf{A}$ and $\mathbf{B}$, respectively. The cosine distance metric has a number of favorable properties for comparing mutation spectra. Since cosine distance does not take the magnitude of vectors into account, it can be used to compare two spectra with unequal total mutation counts. Additionally, by calculating the cosine distance between mutation *spectra*, we avoid the need to perform separate comparisons of mutation counts at each individual $k$-mer mutation type.
+
+To assess the significance of cosine distances at particular loci, we use a permutation test to establish genome-wide distance thresholds. In each of $N$ permutation trials, we randomly shuffle the individual haplotype mutation data such that haplotype labels no longer correspond to the correct mutation counts. Using the shuffled mutation data, we perform a genome-wide distance scan as described above, and record the maximum distance observed at any locus. After $N$ permutations (usually 1,000 or 10,000), we then compute the $1 - p$ percentile of the maximum distance distribution, and use that percentile value as a genome-wide significance threshold.
+
+### Simulations to assess the power of the inter-haplotype distance approach
+
+### Re-identifying the mutator allele on chromosome 4 in the BXDs
+
+We first applied our inter-haplotype distance method to 94 BXD RILs [Methods] using the previously described *de novo* germline mutation data and approximately 7,500 genotype markers. Reassuringly, we observed a large peak in cosine distance at a locus on chromosome 4 (maximum distance of X at marker ID rsYYYYY; position 116.8 Mbp in mm10 coordinates). In a previous analysis, we used quantitative trait locus (QTL) mapping to identify a nearly identical locus on chromosome 4 that was significantly associated with the C>A germline mutation rate in the BXDs. This locus overlaps 21 protein-coding genes that are annotated by the Gene Ontology as being involved in "DNA repair," but only one of these genes contains non-synonymous differences between the two parental strains: *Mutyh*. *Mutyh* encodes a protein involved in the base-excision repair of 8-oxoguanine (8-oxoG), a DNA lesion caused by oxidative damage, and prevents the accumulation of C>A mutations following DNA replication. As expected, C>A germline mutation rates are nearly 50% higher in BXDs that inherited *D* haplotypes at marker ID rsYYYY than in those that inherited *B* haplotypes.
+
+### An additional germline mutator allele on chromosome 6
+
+After confirming that our method recovered the previously-discovered mutator locus overlapping *Mutyh*, we then asked if the inter-haplotype distance approach could identify additional mutator loci in the BXD. To account for the effects of the C>A germline mutator locus near *Mutyh*, we further divided the BXD RILs into those with either *D* (n = X) or *B* (n = Y) genotypes at rsYYYYY (the peak marker on chromosome 4), and re-ran a genome-wide distance scan using each group separately.
+
+Using only the BXDs with *B* haplotypes at the *Mutyh* mutator locus, we did not observe any additional genome-wide significant distance peaks. However, using the BXDs with *D* haplotypes at the same locus, we identified an additional peak in cosine distance on chromosome 6 (maximum distance of X at marker rsYYYYY; position 133.2 Mbp in mm10 coordinates). 
+
+### Evidence of epistasis between germline mutator alleles
+
+Strikingly, BXDs with *D* alleles at both mutator loci exhibit even higher C>A germline mutation rates than those with *D* alleles at only one of the two loci. However, BXDs with *D* alleles at the mutator locus on chromosome 6 alone do not exhibit elevate elevated C>A mutation rates, suggesting that the effects of the chromosome 6 mutator locus depend on the presence of a *D* allele at the chromosome 4 locus. 
 
 
 ## References {.page_break_before}
