@@ -5,6 +5,7 @@ BXD
 BXDs
 chr
 DBA
+Dumont
 duplications
 ef
 epistasis
@@ -32,7 +33,7 @@ mer
 methyltransferase
 MGP
 missense
-Mlh
+Mth
 mutator
 mutators
 Mutyh
