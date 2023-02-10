@@ -1,9 +1,10 @@
 aaronquinlan
-almostly
+Benchmarking
 biparental
 BXD
 BXDs
 chr
+dataset
 DBA
 Dumont
 duplications
@@ -14,7 +15,7 @@ GATK
 genotype
 genotyped
 genotypes
-germline
+Germline
 gf
 GRCm
 haplotype
@@ -24,10 +25,8 @@ heterozygous
 histone
 homozygous
 Illumina
-intercross
 intercrosses
 LongRanger
-mamalian
 Mbp
 mer
 methyltransferase
@@ -45,12 +44,12 @@ nucleotides
 Ogg
 oxoG
 oxoguanine
-permuation
 Phred
 QTL
 Quinlan
 recombinant
 RILs
+rsXXXX
 rsYYYY
 rsYYYYY
 Sasani
