@@ -18,13 +18,10 @@ haplotype
 haplotypes
 heterozygous
 homozygous
-identift
 Illumina
 intercross
 intercrosses
-ipsum
 LongRanger
-Lorem
 mamalian
 Mbp
 mer
@@ -36,6 +33,7 @@ NCN
 novo
 NTN
 nucleotides
+Ogg
 oxoG
 oxoguanine
 Phred
@@ -48,5 +46,6 @@ rsYYYYY
 Sasani
 segmental
 succesfully
+takingm
 tomsasani
 XXXXXXXX
