@@ -1,5 +1,5 @@
 ---
-title: Manuscript Title
+title: Discovering epistasis between germline mutator alleles in mice
 keywords:
 - markdown
 - publishing
@@ -7,8 +7,9 @@ keywords:
 lang: en-US
 date-meta: '2023-02-10'
 author-meta:
-- John Doe
-- Jane Roe
+- Thomas A. Sasani
+- Kelley Harris
+- Aaron R. Quinlan
 header-includes: |
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -16,38 +17,43 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="Manuscript Title" />
-  <meta name="citation_title" content="Manuscript Title" />
-  <meta property="og:title" content="Manuscript Title" />
-  <meta property="twitter:title" content="Manuscript Title" />
+  <meta name="dc.title" content="Discovering epistasis between germline mutator alleles in mice" />
+  <meta name="citation_title" content="Discovering epistasis between germline mutator alleles in mice" />
+  <meta property="og:title" content="Discovering epistasis between germline mutator alleles in mice" />
+  <meta property="twitter:title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta name="dc.date" content="2023-02-10" />
   <meta name="citation_publication_date" content="2023-02-10" />
   <meta property="article:published_time" content="2023-02-10" />
-  <meta name="dc.modified" content="2023-02-10T15:41:23+00:00" />
-  <meta property="article:modified_time" content="2023-02-10T15:41:23+00:00" />
+  <meta name="dc.modified" content="2023-02-10T15:46:46+00:00" />
+  <meta property="article:modified_time" content="2023-02-10T15:46:46+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="John Doe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@johndoe" />
-  <meta name="citation_author" content="Jane Roe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Thomas A. Sasani" />
+  <meta name="citation_author_institution" content="Department of Human Genetics, University of Utah" />
+  <meta name="citation_author_orcid" content="0000-0003-2317-1374" />
+  <meta name="twitter:creator" content="@tomsasani" />
+  <meta name="citation_author" content="Kelley Harris" />
+  <meta name="citation_author_institution" content="Department of Genome Sciences, University of Washington" />
+  <meta name="citation_author_orcid" content="0000-0003-0302-2523" />
+  <meta name="twitter:creator" content="@Kelley__Harris" />
+  <meta name="citation_author" content="Aaron R. Quinlan" />
+  <meta name="citation_author_institution" content="Department of Human Genetics, University of Utah" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Utah" />
+  <meta name="citation_author_orcid" content="0000-0003-1756-0859" />
+  <meta name="twitter:creator" content="@aaronquinlan" />
   <link rel="canonical" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta property="og:url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta property="twitter:url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/01ca4f315318edcff4cad71f9b8684d4e86cbda7/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/01ca4f315318edcff4cad71f9b8684d4e86cbda7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/01ca4f315318edcff4cad71f9b8684d4e86cbda7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/424b7359dd3883dae4a041fe524374b200e688f6/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/424b7359dd3883dae4a041fe524374b200e688f6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/424b7359dd3883dae4a041fe524374b200e688f6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/01ca4f315318edcff4cad71f9b8684d4e86cbda7/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/424b7359dd3883dae4a041fe524374b200e688f6/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@01ca4f3](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/01ca4f315318edcff4cad71f9b8684d4e86cbda7)
+from [quinlan-lab/mutator-epistasis-manuscript@424b735](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/424b7359dd3883dae4a041fe524374b200e688f6)
 on February 10, 2023.
 </em></small>
 
@@ -81,38 +87,47 @@ on February 10, 2023.
 
 
 
-+ **John Doe**
++ **Thomas A. Sasani**
   <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [0000-0003-2317-1374](https://orcid.org/0000-0003-2317-1374)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [johndoe](https://github.com/johndoe)
+    [tomsasani](https://github.com/tomsasani)
     · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [johndoe](https://twitter.com/johndoe)
-    · ![Mastodon icon](images/mastodon.svg){.inline_icon}
-    [\@johndoe@mastodon.social](https://mastodon.social/@johndoe)
+    [tomsasani](https://twitter.com/tomsasani)
     <br>
   <small>
-     Department of Something, University of Whatever
+     Department of Human Genetics, University of Utah
      · Funded by Grant XXXXXXXX
   </small>
 
-+ **Jane Roe**
-  ^[✉](#correspondence)^<br>
++ **Kelley Harris**
+  <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [janeroe](https://github.com/janeroe)
+    [0000-0003-0302-2523](https://orcid.org/0000-0003-0302-2523)
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
+    [Kelley__Harris](https://twitter.com/Kelley__Harris)
     <br>
   <small>
-     Department of Something, University of Whatever; Department of Whatever, University of Something
+     Department of Genome Sciences, University of Washington
+  </small>
+
++ **Aaron R. Quinlan**
+  ^[✉](#correspondence)^<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0003-1756-0859](https://orcid.org/0000-0003-1756-0859)
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
+    [aaronquinlan](https://twitter.com/aaronquinlan)
+    <br>
+  <small>
+     Department of Human Genetics, University of Utah; Department of Biomedical Informatics, University of Utah
   </small>
 
 
 ::: {#correspondence}
 ✉ — Correspondence possible via [GitHub Issues](https://github.com/quinlan-lab/mutator-epistasis-manuscript/issues)
 or email to
-Jane Roe \<jane.roe@whatever.edu\>.
+Aaron R. Quinlan \<aquinlan@genetics.utah.edu\>.
 
 
 :::

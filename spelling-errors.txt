@@ -1,3 +1,4 @@
+aaronquinlan
 almostly
 biparental
 BXD
@@ -10,7 +11,7 @@ GATK
 genotype
 genotyped
 genotypes
-germline
+Germline
 gf
 GRCm
 haplotype
@@ -22,8 +23,6 @@ Illumina
 intercross
 intercrosses
 ipsum
-janeroe
-johndoe
 LongRanger
 Lorem
 mamalian
@@ -41,11 +40,13 @@ oxoG
 oxoguanine
 Phred
 QTL
+Quinlan
 recombinant
 RILs
 rsYYYY
 rsYYYYY
+Sasani
 segmental
 succesfully
-XXXX
+tomsasani
 XXXXXXXX
