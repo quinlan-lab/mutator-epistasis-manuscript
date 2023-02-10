@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-02-10" />
   <meta name="citation_publication_date" content="2023-02-10" />
   <meta property="article:published_time" content="2023-02-10" />
-  <meta name="dc.modified" content="2023-02-10T17:29:27+00:00" />
-  <meta property="article:modified_time" content="2023-02-10T17:29:27+00:00" />
+  <meta name="dc.modified" content="2023-02-10T17:36:48+00:00" />
+  <meta property="article:modified_time" content="2023-02-10T17:36:48+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/99cc75c5d23be7d7e159bee2e58c478a2bf1ee0a/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/99cc75c5d23be7d7e159bee2e58c478a2bf1ee0a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/99cc75c5d23be7d7e159bee2e58c478a2bf1ee0a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/12f547830abd4dee5db8b0c5a7c73b503c880c1a/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/12f547830abd4dee5db8b0c5a7c73b503c880c1a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/12f547830abd4dee5db8b0c5a7c73b503c880c1a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/99cc75c5d23be7d7e159bee2e58c478a2bf1ee0a/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/12f547830abd4dee5db8b0c5a7c73b503c880c1a/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@99cc75c](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/99cc75c5d23be7d7e159bee2e58c478a2bf1ee0a)
+from [quinlan-lab/mutator-epistasis-manuscript@12f5478](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/12f547830abd4dee5db8b0c5a7c73b503c880c1a)
 on February 10, 2023.
 </em></small>
 
@@ -180,11 +180,11 @@ Briefly, we aligned paired-end Illumina sequencing data to the GRCm38/mm10 refer
 
 ### A new approach to discover germline mutator alleles
 
-Using the existing catalog of *de novo* germline mutations in the BXDs, we developed a new approach to discover loci that affect the germline *de novo* mutation spectrum in biparental RILs (Figure @fig:figure-1).
+Using the existing catalog of *de novo* germline mutations in the BXDs, we developed a new approach to discover loci that affect the germline *de novo* mutation spectrum in biparental RILs (Figure @fig:figure-one).
 
 ![
 **Overview of inter-haplotype distance method for discovering mutator alleles.** a) A population of four haplotypes have each been genotyped at three informative markers, and each harbors a set of private *de novo* germline mutations. At each informative marker, we compute an aggregate *de novo* germline mutation spectrum in the haplotypes that carry either parental allele, and calculate the cosine distance between the two aggregate spectra. b) We repeat the process outlined in a) for every informative marker along the genome. c) To assess the significance of any cosine distance peaks in b), we perform a permuation test by shuffling the labels associated with each haplotype's mutation data and running a genome-wide distance scan. In each of $N$ permutations, we record the maximum distance encountered at any locus in the distance scan. Finally, we calculate the $1 - p$ percentile of that maximum distance distribution to obtain a genome-wide cosine distance threshold at the specified value of $p$.
-](images/Figure%201.svg){#fig:figure-1 width=6in .white}. 
+](images/Figure%201.svg){#fig:figure-one width=7in .white}. 
 
 We assume that a collection of haplotypes have been genotyped at informative markers, and that *de novo* germline mutations have been identified on each haplotype.
 
@@ -229,8 +229,8 @@ After generating “mutator” and “wild-type” haplotypes, we randomly shuff
 We first applied our inter-haplotype distance method to 94 BXD RILs [Methods] using the previously described *de novo* germline mutation data [@PMID:35545679]. Reassuringly, we observed a large peak in cosine distance at a locus on chromosome 4 (maximum distance of X at marker ID rsYYYYY; position 116.8 Mbp in mm10 coordinates) 
 
 ![
-    **Results of inter-haplotype distance scans in the BXD RILs.** a) Cosine distances between aggregate *de novo* mutation spectra on BXD haplotypes with either *D* (n = X) or *B* (n = Y) alleles at approximately 7,500 informative markers. Distance thresholds at $p = 0.2$ and $p = 0.05$ were calculated by performing 10,000 permutations of the BXD haplotype mutation data. b) Cosine distances between aggregate *de novo* mutation spectra on BXD haplotypes with either *D* or *B* alleles at approximately 7,500 informative markers. Only BXDs with *D* haplotypes at marker rsYYYY on chromosome 4 were included in the scan. Distance thresholds at $p = 0.2$ and $p = 0.05$ were calculated by performing 10,000 permutations of the BXD haplotype mutation data. c) Fractions of *de novo* germline mutations in BXDs with either *D* or *B* haplotypes at markers rsXXXX and rsYYYY. Total counts of each mutation type were aggregated in groups of BXDs with either of the four possible haplotype combinations, and fractions of each mutation type were calculated in each group separately. Chi-square tests of independence were used to compare counts of individual mutation types between the D-D and D-B groups of BXDs, as well as between the B-D and B-B groups. d) Fractions of *de novo* germline mutations in Sanger Mouse Genome Project (MGP) strains with either *D* or *B* haplotypes at markers rsXXXX and rsYYYY. Total counts of each mutation type were aggregated in groups of MGP strains with either of the four possible haplotype combinations, and fractions of each mutation type were calculated in each group separately. Chi-square tests of independence were used to compare counts of individual mutation types between the D-D and D-B groups of BXDs, as well as between the B-D and B-B groups.
-](images/Figure%202.svg "Figure 2"){#fig:figure-2 width=6in .white}. 
+**Results of inter-haplotype distance scans in the BXD RILs.** a) Cosine distances between aggregate *de novo* mutation spectra on BXD haplotypes with either *D* (n = X) or *B* (n = Y) alleles at approximately 7,500 informative markers. Distance thresholds at $p = 0.2$ and $p = 0.05$ were calculated by performing 10,000 permutations of the BXD haplotype mutation data. b) Cosine distances between aggregate *de novo* mutation spectra on BXD haplotypes with either *D* or *B* alleles at approximately 7,500 informative markers. Only BXDs with *D* haplotypes at marker rsYYYY on chromosome 4 were included in the scan. Distance thresholds at $p = 0.2$ and $p = 0.05$ were calculated by performing 10,000 permutations of the BXD haplotype mutation data. c) Fractions of *de novo* germline mutations in BXDs with either *D* or *B* haplotypes at markers rsXXXX and rsYYYY. Total counts of each mutation type were aggregated in groups of BXDs with either of the four possible haplotype combinations, and fractions of each mutation type were calculated in each group separately. Chi-square tests of independence were used to compare counts of individual mutation types between the D-D and D-B groups of BXDs, as well as between the B-D and B-B groups. d) Fractions of *de novo* germline mutations in Sanger Mouse Genome Project (MGP) strains with either *D* or *B* haplotypes at markers rsXXXX and rsYYYY. Total counts of each mutation type were aggregated in groups of MGP strains with either of the four possible haplotype combinations, and fractions of each mutation type were calculated in each group separately. Chi-square tests of independence were used to compare counts of individual mutation types between the D-D and D-B groups of BXDs, as well as between the B-D and B-B groups.
+](images/Figure%202.svg "Figure 2"){#fig:figure-2 width=7in .white}. 
 
 In a previous analysis, we used quantitative trait locus (QTL) mapping to identify a nearly identical locus on chromosome 4 that was significantly associated with the C>A germline mutation rate in the BXDs [@PMID:35545679]. This locus overlaps 21 protein-coding genes that are annotated by the Gene Ontology as being involved in "DNA repair," but only one of these genes contains non-synonymous differences between the two parental strains: *Mutyh*. *Mutyh* encodes a protein involved in the base-excision repair of 8-oxoguanine (8-oxoG), a DNA lesion caused by oxidative damage, and prevents the accumulation of C>A mutations following DNA replication. As expected, C>A germline mutation rates are nearly 50% higher in BXDs that inherited *D* haplotypes at marker ID rsYYYY than in those that inherited *B* haplotypes.
 
