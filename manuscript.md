@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-02-10" />
   <meta name="citation_publication_date" content="2023-02-10" />
   <meta property="article:published_time" content="2023-02-10" />
-  <meta name="dc.modified" content="2023-02-10T19:16:28+00:00" />
-  <meta property="article:modified_time" content="2023-02-10T19:16:28+00:00" />
+  <meta name="dc.modified" content="2023-02-10T19:26:43+00:00" />
+  <meta property="article:modified_time" content="2023-02-10T19:26:43+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/e2cf5b2972b4efe9216b68c9f29fdfe55e7469ae/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/e2cf5b2972b4efe9216b68c9f29fdfe55e7469ae/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/e2cf5b2972b4efe9216b68c9f29fdfe55e7469ae/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5a86a7b88e0c38c6191c4d57f89caf1064d497a9/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5a86a7b88e0c38c6191c4d57f89caf1064d497a9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5a86a7b88e0c38c6191c4d57f89caf1064d497a9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/e2cf5b2972b4efe9216b68c9f29fdfe55e7469ae/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5a86a7b88e0c38c6191c4d57f89caf1064d497a9/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@e2cf5b2](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/e2cf5b2972b4efe9216b68c9f29fdfe55e7469ae)
+from [quinlan-lab/mutator-epistasis-manuscript@5a86a7b](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/5a86a7b88e0c38c6191c4d57f89caf1064d497a9)
 on February 10, 2023.
 </em></small>
 
@@ -139,9 +139,7 @@ Maintaining genome integrity in the mammalian germline is essential and enormous
 
 DNA replication and repair proteins often recognize particular sequence motifs or excise lesions at specific nucleotides. Thus, we might expect that the spectrum of de novo mutations -- i.e, the frequency of each individual mutation type (C>T, A>G, etc.) -- will differ between genomes that harbor either a mutator or wild-type allele at a given locus. Previously, we used quantitative trait locus (QTL) mapping to discover a mutator allele near the DNA repair gene *Mutyh* that increases the rate of *de novo* C>A germline mutation in a collection of recombinant inbred lines (RILs) known as the BXDs.
 
-In this study, we developed a new method to detect alleles that affect the mutation spectrum in two-parent RILs. By applying this method to mutation data from the BXDs, we confirmed the activity of the germline mutator allele near *Mutyh*, and discovered an additional C>A germline mutator locus on chromosome 6 that overlaps *Ogg1*, a key partner of *Mutyh* in base-excision repair of oxidative DNA damage. 
-
-Strikingly, BXDs with the mutator allele near *Ogg1* do not exhibit elevated rates of C>A germline mutation unless they also possess the mutator allele near *Mutyh*. However, BXDs with both alleles exhibit even higher C>A mutation rates than those with either one alone. 
+In this study, we developed a new method to detect alleles that affect the mutation spectrum in two-parent RILs. By applying this method to mutation data from the BXDs, we confirmed the activity of the germline mutator allele near *Mutyh*, and discovered an additional C>A germline mutator locus on chromosome 6 that overlaps *Ogg1*, a key partner of *Mutyh* in base-excision repair of oxidative DNA damage. Strikingly, BXDs with the mutator allele near *Ogg1* do not exhibit elevated rates of C>A germline mutation unless they also possess the mutator allele near *Mutyh*. However, BXDs with both alleles exhibit even higher C>A mutation rates than those with either one alone. 
 
 To our knowledge, these new methods for analyzing mutation spectra reveal the first evidence of epistasis between mammalian germline mutator alleles, and may be applicable to mutation data from humans and other model organisms. 
 
@@ -182,7 +180,7 @@ Briefly, we aligned paired-end Illumina sequencing data to the GRCm38/mm10 refer
 
 Using the existing catalog of *de novo* germline mutations in the BXDs, we developed a new approach to discover loci that affect the germline *de novo* mutation spectrum in biparental RILs (Figure @fig:figure-one).
 
-![**Overview of inter-haplotype distance method for discovering mutator alleles.** **a)** A population of four haplotypes have been genotyped at three informative markers, and each harbors a set of private *de novo* germline mutations. At each informative marker, we compute an aggregate *de novo* germline mutation spectrum in the haplotypes that carry either parental allele, and calculate the cosine distance between the two aggregate spectra. **b)** We repeat the process outlined in a) for every informative marker along the genome.**c)** To assess the significance of any cosine distance peaks in b), we perform a permutation test by shuffling the labels associated with each haplotype's mutation data and running a genome-wide distance scan. In each of $N$ permutations, we record the maximum distance encountered at any locus in the distance scan. Finally, we calculate the $1 - p$ percentile of that maximum distance distribution to obtain a genome-wide cosine distance threshold at the specified value of $p$.](images/Figure%201.png){#fig:figure-one width=7in} 
+![**Overview of inter-haplotype distance method for discovering mutator alleles.** **a)** A population of four haplotypes have been genotyped at three informative markers, and each harbors a set of private *de novo* germline mutations. At each informative marker, we compute an aggregate *de novo* germline mutation spectrum in the haplotypes that carry either parental allele, and calculate the cosine distance between the two aggregate spectra. **b)** We repeat the process outlined in a) for every informative marker along the genome. **c)** To assess the significance of any cosine distance peaks in b), we perform a permutation test by shuffling the labels associated with each haplotype's mutation data and running a genome-wide distance scan. In each of $N$ permutations, we record the maximum distance encountered at any locus in the distance scan. Finally, we calculate the $1 - p$ percentile of that maximum distance distribution to obtain a genome-wide cosine distance threshold at the specified value of $p$.](images/Figure%201.png){#fig:figure-one width=7in} 
 
 We assume that a collection of haplotypes have been genotyped at informative markers, and that *de novo* germline mutations have been identified on each haplotype.
 
@@ -242,13 +240,13 @@ After confirming that the inter-haplotype distance method could recover the muta
 
 Using only the BXDs with *B* haplotypes at the *Mutyh* mutator locus, we did not observe any genome-wide significant peaks. But using the BXDs with *D* haplotypes at the same locus, we identified a cosine distance peak on chromosome 6 (Figure {@fig:figure-three}B; maximum distance of X at marker rsYYYYY; position 133.2 Mbp in mm10 coordinates). We queried the region underneath this peak and discovered two genes annotated with the Gene Ontology term "DNA repair": *Setmar*, a protein with histone methyltransferase and transposase activity, and remarkably, *Ogg1*. The latter encodes a key member of the base-exision repair response to oxidative DNA damage, a pathway that also includes *Mutyh* and a related gene, *Mth1*. Both *Setmar* and *Ogg1* harbor nonsynonymous differences between *D* and *B* haplotypes (Table {@tbl:table-one}). 
 
-Table: Summary of nonsynonymous differences between *D* and *B* haplotypes in DNA repair genes at the mutator locus on chromosome 6.{#tbl:table-one}
-
 | Gene name | Amino acid change | Position in GRCm38/mm10 coordinates |
 |----------|----------|----------|
 | *Ogg1* | p.Ala95Thr | chr6: |
 | *Setmar* | p.XY | chr6: |
 | *Setmar* | p.XY | chr6: |
+
+Table: Summary of nonsynonymous differences between *D* and *B* haplotypes in DNA repair genes at the mutator locus on chromosome 6. {#tbl:table-one}
 
 ### Evidence of epistasis between germline mutator alleles
 
