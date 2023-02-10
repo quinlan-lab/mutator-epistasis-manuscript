@@ -1,4 +1,5 @@
 aaronquinlan
+Arg
 Benchmarking
 biparental
 BXD
@@ -15,7 +16,7 @@ GATK
 genotype
 genotyped
 genotypes
-Germline
+germline
 gf
 GRCm
 haplotype
@@ -26,6 +27,7 @@ histone
 homozygous
 Illumina
 intercrosses
+Leu
 LongRanger
 Mbp
 mer
@@ -44,6 +46,7 @@ nucleotides
 Ogg
 oxoG
 oxoguanine
+Phe
 Phred
 QTL
 Quinlan
@@ -54,10 +57,10 @@ rsYYYY
 rsYYYYY
 Sasani
 segmental
+Ser
 Setmar
 succesfully
 Thr
 tomsasani
 transposase
 XXXXXXXX
-XY

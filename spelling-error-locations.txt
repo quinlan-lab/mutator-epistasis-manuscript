@@ -301,9 +301,7 @@ content/04.results.md:21:Setmar
 content/04.results.md:21:Setmar
 content/04.results.md:21:transposase
 content/04.results.md:26:Setmar
-content/04.results.md:26:XY
 content/04.results.md:27:Setmar
-content/04.results.md:27:XY
 content/04.results.md:29:haplotypes
 content/04.results.md:29:mutator
 content/04.results.md:29:nonsynonymous
