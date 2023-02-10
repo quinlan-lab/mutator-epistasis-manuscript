@@ -51,7 +51,6 @@ QTL
 Quinlan
 recombinant
 RILs
-rsXXXX
 rsYYYY
 rsYYYYY
 Sasani
