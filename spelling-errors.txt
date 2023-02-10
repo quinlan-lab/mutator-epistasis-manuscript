@@ -11,7 +11,7 @@ GATK
 genotype
 genotyped
 genotypes
-germline
+Germline
 gf
 GRCm
 haplotype
