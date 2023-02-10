@@ -1,5 +1,5 @@
 ---
-title: "Manuscript Title"
+title: "Discovering epistasis between germline mutator alleles in mice"
 date: null  # Defaults to date generated, but can specify like '2022-10-31'.
 keywords:
   - markdown
@@ -7,24 +7,29 @@ keywords:
   - manubot
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    mastodon: johndoe
-    mastodon-server: mastodon.social
-    email: john.doe@something.com
+  - name: Thomas A. Sasani
+    github: tomsasani
+    initials: TAS
+    orcid: 0000-0003-2317-1374
+    twitter: tomsasani
+    email: thomas.a.sasani@gmail.com
     affiliations:
-      - Department of Something, University of Whatever
+      - Department of Human Genetics, University of Utah
     funders:
       - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+  - name: Kelley Harris
+    initials: KH
+    orcid: 0000-0003-0302-2523
+    twitter: Kelley__Harris
+    email: harriske@uw.edu
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Department of Genome Sciences, University of Washington
+  - name: Aaron R. Quinlan
+    initials: ARQ
+    orcid: 0000-0003-1756-0859
+    twitter: aaronquinlan
+    email: aquinlan@genetics.utah.edu
+    affiliations:
+      - Department of Human Genetics, University of Utah
+      - Department of Biomedical Informatics, University of Utah
     corresponding: true
