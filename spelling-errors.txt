@@ -12,7 +12,7 @@ domesticus
 Dumont
 duplications
 ef
-epistasis
+Epistasis
 exision
 GATK
 genotype
