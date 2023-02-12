@@ -13,7 +13,7 @@ domesticus
 Dumont
 duplications
 ef
-Epistasis
+epistasis
 exision
 GATK
 GeneNetwork
@@ -57,7 +57,6 @@ PRJEB
 QTL
 Quinlan
 recombinant
-resouces
 RIL
 RILs
 rsXXXX

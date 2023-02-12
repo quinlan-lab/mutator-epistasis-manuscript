@@ -203,7 +203,6 @@ content/03.methods.md:65:GeneNetwork
 content/03.methods.md:65:genotypes
 content/03.methods.md:65:germline
 content/03.methods.md:65:novo
-content/03.methods.md:65:resouces
 content/03.methods.md:65:RIL
 content/03.methods.md:65:tomsasani
 content/03.methods.md:65:zenodo

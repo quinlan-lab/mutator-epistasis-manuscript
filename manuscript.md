@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-02-12" />
   <meta name="citation_publication_date" content="2023-02-12" />
   <meta property="article:published_time" content="2023-02-12" />
-  <meta name="dc.modified" content="2023-02-12T16:46:10+00:00" />
-  <meta property="article:modified_time" content="2023-02-12T16:46:10+00:00" />
+  <meta name="dc.modified" content="2023-02-12T21:25:35+00:00" />
+  <meta property="article:modified_time" content="2023-02-12T21:25:35+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/970eef41f148175e6a56d2af864ab1a30825431e/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/970eef41f148175e6a56d2af864ab1a30825431e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/970eef41f148175e6a56d2af864ab1a30825431e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/0ae48f1634404c00a9782f572b21eb8614c74fc4/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/0ae48f1634404c00a9782f572b21eb8614c74fc4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/0ae48f1634404c00a9782f572b21eb8614c74fc4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/970eef41f148175e6a56d2af864ab1a30825431e/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/0ae48f1634404c00a9782f572b21eb8614c74fc4/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@970eef4](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/970eef41f148175e6a56d2af864ab1a30825431e)
+from [quinlan-lab/mutator-epistasis-manuscript@0ae48f1](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/0ae48f1634404c00a9782f572b21eb8614c74fc4)
 on February 12, 2023.
 </em></small>
 
@@ -137,9 +137,9 @@ Aaron R. Quinlan \<aquinlan@genetics.utah.edu\>.
 
 Maintaining genome integrity in the mammalian germline is essential and enormously complex. Hundreds of proteins comprise pathways involved in DNA replication, and hundreds more are mobilized to repair DNA damage [@PMID:28485537]. While loss-of-function mutations in any of the genes encoding these proteins might lead to elevated mutation rates, *mutator alleles* have largely eluded detection in mammals. 
 
-DNA replication and repair proteins often recognize particular sequence motifs or excise lesions at specific nucleotides. Thus, we might expect that the spectrum of de novo mutations -- i.e, the frequency of each individual mutation type (C>T, A>G, etc.) -- will differ between genomes that harbor either a mutator or wild-type allele at a given locus. Previously, we used quantitative trait locus (QTL) mapping to discover a mutator allele near the DNA repair gene *Mutyh* that increases the rate of *de novo* C>A germline mutation in a collection of recombinant inbred lines (RILs) known as the BXDs.
+DNA replication and repair proteins often recognize particular sequence motifs or excise lesions at specific nucleotides. Thus, we might expect that the spectrum of de novo mutations -- i.e, the frequency of each individual mutation type (C>T, A>G, etc.) -- will differ between genomes that harbor either a mutator or wild-type allele at a given locus. Previously, we used quantitative trait locus (QTL) mapping to discover a mutator allele near the DNA repair gene *Mutyh* that increases the rate of *de novo* C>A germline mutation in a collection of recombinant inbred lines (RILs) known as the BXDs [@PMID:35545679;@PMID:33472028].
 
-In this study, we developed a new method to detect alleles that affect the mutation spectrum in two-parent RILs. By applying this method to mutation data from the BXDs, we confirmed the activity of the germline mutator allele near *Mutyh*, and discovered an additional C>A germline mutator locus on chromosome 6 that overlaps *Ogg1*, a key partner of *Mutyh* in base-excision repair of oxidative DNA damage. Strikingly, BXDs with the mutator allele near *Ogg1* do not exhibit elevated rates of C>A germline mutation unless they also possess the mutator allele near *Mutyh*. However, BXDs with both alleles exhibit even higher C>A mutation rates than those with either one alone. 
+In this study, we developed a new method to detect alleles that affect the mutation spectrum in two-parent RILs. By applying this method to mutation data from the BXDs, we confirmed the activity of the germline mutator allele near *Mutyh*, and discovered an additional C>A germline mutator locus on chromosome 6 that overlaps *Ogg1*, a key partner of *Mutyh* in base-excision repair of oxidative DNA damage [@PMID:17581577]. Strikingly, BXDs with the mutator allele near *Ogg1* do not exhibit elevated rates of C>A germline mutation unless they also possess the mutator allele near *Mutyh*, but BXDs with both alleles exhibit even higher C>A mutation rates than those with either one alone. 
 
 To our knowledge, these new methods for analyzing mutation spectra reveal the first evidence of epistasis between mammalian germline mutator alleles, and may be applicable to mutation data from humans and other model organisms. 
 
@@ -224,13 +224,13 @@ After generating “mutator” and “wild-type” haplotypes, we randomly shuff
 
 ### Applying the inter-haplotype distance method to the BXDs
 
-We downloaded previously-generated BXD *de novo* germline mutation data from the GitHub repository associated with the previous manuscript, which was also archived at Zenodo [@url:https://github.com/tomsasani/bxd_mutator_manuscript;@doi:10.5281/zenodo.5941048;@PMID:35545679], and downloaded a CSV file of BXD genotypes at each of 7,320 informative markers from GeneNetwork [@url:http://gn1.genenetwork.org/dbdoc/BXDGeno.html;@PMID:27933521]. We also downloaded relevant metadata about each BXD RIL from the manuscript describing the updated BXD resouces [@PMID:33472028]. 
+We downloaded previously-generated BXD *de novo* germline mutation data from the GitHub repository associated with the previous manuscript, which was also archived at Zenodo [@url:https://github.com/tomsasani/bxd_mutator_manuscript;@doi:10.5281/zenodo.5941048;@PMID:35545679], and downloaded a CSV file of BXD genotypes at each of 7,320 informative markers from GeneNetwork [@url:http://gn1.genenetwork.org/dbdoc/BXDGeno.html;@PMID:27933521]. We also downloaded relevant metadata about each BXD RIL from the manuscript describing the updated BXD resource [@PMID:33472028]. 
 
 We used Snakemake [@PMID:34035898] to write a reproducible workflow for running the inter-haplotype distance method on the BXD dataset, which has been deposited in the GitHub repository associated with this manuscript [@url:https://github.com/quinlan-lab/proj-mutator-mapping].
 
 ### Identifying candidate mutator alleles overlapping the chromosome 6 peak
 
-We investigated the region implicated by our inter-haplotype distance approach on chromosome 6 by querying the joint-genotyped BXD VCF file (European Nucleotide Archive accession PRJEB45429 [@url:https://www.ebi.ac.uk/ena/browser/view/PRJEB45429]). We annotated the BXD VCF using the following `snpEff` [@PMID:22728672] command: 
+We investigated the region implicated by our inter-haplotype distance approach on chromosome 6 by querying the joint-genotyped BXD VCF file (European Nucleotide Archive accession **PRJEB45429** [@url:https://www.ebi.ac.uk/ena/browser/view/PRJEB45429]). We annotated the BXD VCF using the following `snpEff` [@PMID:22728672] command: 
 
 ```
  java -Xmx16g -jar /path/to/snpeff/jarfile GRCm38.75 /path/to/bxd/vcf > /path/to/uncompressed/output/vcf
