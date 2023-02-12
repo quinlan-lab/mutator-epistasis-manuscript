@@ -7,16 +7,17 @@ BXDs
 chr
 dataset
 DBA
+domesticus
 Dumont
 duplications
 ef
-epistasis
+Epistasis
 exision
 GATK
 genotype
 genotyped
 genotypes
-germline
+Germline
 gf
 GRCm
 haplotype
@@ -63,4 +64,5 @@ succesfully
 Thr
 tomsasani
 transposase
+unlinked
 XXXXXXXX
