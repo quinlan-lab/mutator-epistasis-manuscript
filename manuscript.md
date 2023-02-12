@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-02-12" />
   <meta name="citation_publication_date" content="2023-02-12" />
   <meta property="article:published_time" content="2023-02-12" />
-  <meta name="dc.modified" content="2023-02-12T16:08:06+00:00" />
-  <meta property="article:modified_time" content="2023-02-12T16:08:06+00:00" />
+  <meta name="dc.modified" content="2023-02-12T16:46:10+00:00" />
+  <meta property="article:modified_time" content="2023-02-12T16:46:10+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/0edb64ab19259610f1852e44e1a5c83c768a7783/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/0edb64ab19259610f1852e44e1a5c83c768a7783/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/0edb64ab19259610f1852e44e1a5c83c768a7783/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/970eef41f148175e6a56d2af864ab1a30825431e/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/970eef41f148175e6a56d2af864ab1a30825431e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/970eef41f148175e6a56d2af864ab1a30825431e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/0edb64ab19259610f1852e44e1a5c83c768a7783/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/970eef41f148175e6a56d2af864ab1a30825431e/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@0edb64a](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/0edb64ab19259610f1852e44e1a5c83c768a7783)
+from [quinlan-lab/mutator-epistasis-manuscript@970eef4](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/970eef41f148175e6a56d2af864ab1a30825431e)
 on February 12, 2023.
 </em></small>
 
@@ -196,11 +196,13 @@ where $||\mathbf{A}||$ and $||\mathbf{B}||$ are the $L_2$ norms of $\mathbf{A}$ 
 
 We use permutation tests to establish genome-wide cosine distance thresholds. In each of $N$ permutation trials, we randomly shuffle the per-haplotype mutation data such that haplotype labels no longer correspond to the correct mutation counts. Using the shuffled mutation data, we perform a genome-wide distance scan as described above, and record the maximum distance observed at any locus. After $N$ permutations (usually 1,000 or 10,000), we compute the $1 - p$ percentile of the maximum distance distribution, and use that percentile value as a genome-wide significance threshold (for example, at $p = 0.05$).
 
+Additional documentation describing the distance method is available on GitHub [@url:https://github.com/quinlan-lab/proj-mutator-mapping], along with code for running the method on the BXDs or other similar datasets.
+
 ### Simulations to assess the power of the inter-haplotype distance approach
 
 We performed a series of simple simulations to estimate our power to detect alleles that affect the germline mutation spectrum in biparental RILs.
 
-First, we simulate the $k$-mer mutation spectrum in a population of $H$ haplotypes. We assume that 50% of the haplotypes are under the effects of a mutator allele that increases the mutation rate of a particular mutation type(s) by an effect size $E$. We simulate $M$ mutations on each haplotype by taking draws from a Poisson distribution as follows:
+First, we simulate the $k$-mer mutation spectrum in a population of $h$ haplotypes. We assume that 50% of the haplotypes are under the effects of a mutator allele that increases the mutation rate of a particular mutation type(s) by an effect size $e$. We simulate $m$ mutations on each haplotype by taking draws from a Poisson distribution as follows:
 
 We first define a vector of mutation probabilities:
 
@@ -208,17 +210,37 @@ $$\mathbf{P} = \left( 0.4, \ 0.1, \ 0.075, \ 0.075, \ 0.075, \ 0.275 \right)$$
 
 These probabilities sum to 1 and correspond to the expected frequencies of C>T, C>A, C>G, A>T, A>C, and A>G *de novo* germline mutations in mice, respectively [@PMID:31492841].
 
-If we are simulating the 3-mer mutation spectrum, we define a vector of mutation probabilities of length 96, and assign every 3-mer mutation type a value of $\frac{\mathbf{P}_b}{16}$, where $\mathbf{P}_b$ is the probability of the “base” mutation type associated with the 3-mer mutation type. In other words, each of the NCN>NTN 3-mer mutation types would be assigned a mutation probability of $\frac{0.4}{16} = 0.025$.
+If we are simulating the 3-mer mutation spectrum, we define a vector of mutation probabilities of length 96, and assign every 3-mer mutation type a value of $\frac{\mathbf{P}_b}{16}$, where $\mathbf{P}_b$ is the probability of the “base” mutation type associated with the 3-mer mutation type. In other words, each of the 16 possible NCN>NTN 3-mer mutation types would be assigned a mutation probability of $\frac{0.4}{16} = 0.025$.
 
 To simulate the mutation spectrum on each wild-type haplotype, we define a vector of lambda values by scaling the mutation probabilities by the number of mutations we wish to simulate: 
 
-$$\lambda = \mathbf{P}M$$
+$$\lambda = \mathbf{P}m$$
 
 and take a Poisson draw from this vector of lambda values. 
 
-To simulate the mutation spectrum on each mutator haplotype, we multiply the mutation probability of a particular mutation type (or multiple mutation types) $\mathbf{P}_n$ by the mutator effect size $E$. When $k = 1$, we only augment the effect size of one mutation type at a time, but when $k = 3$, we augment a fraction (25%, 50%, or 100%) of the 3-mer mutation types associated with a single “base” mutation type. Then, we define the vector of lambda values by scaling the mutation probabilities by $M$ and take a Poisson draw from that vector on each haplotype.
+To simulate the mutation spectrum on each mutator haplotype, we multiply the mutation probability of a particular mutation type (or multiple mutation types) $\mathbf{P}_n$ by the mutator effect size $e$. When $k = 1$, we only augment the effect size of one mutation type at a time, but when $k = 3$, we augment a fraction (25%, 50%, or 100%) of the 3-mer mutation types associated with a single “base” mutation type. Then, we define the vector of lambda values by scaling the mutation probabilities by $m$ and take a Poisson draw from that vector on each haplotype.
 
-After generating “mutator” and “wild-type” haplotypes, we randomly shuffle the simulated haplotypes $N = 10,000$ times and compute the cosine distance between wild-type and mutator haplotypes each time. If fewer than 5% of the $N$ permutations produces a cosine distance greater than or equal to the cosine distance between the "true" wild-type and mutator haplotypes, we say that the approach succesfully identified the mutator allele. For every combination of simulation parameters ($H$, $M$, $E$, and so on) we perform 100 trials and record the number of trials in which we successfully identify the mutator allele. 
+After generating “mutator” and “wild-type” haplotypes, we randomly shuffle the simulated haplotypes $N = 10,000$ times and compute the cosine distance between wild-type and mutator haplotypes each time. If fewer than 5% of the $N$ permutations produces a cosine distance greater than or equal to the cosine distance between the "true" wild-type and mutator haplotypes, we say that the approach succesfully identified the mutator allele. For every combination of simulation parameters ($h$, $m$, $e$, and so on) we perform 100 trials and record the number of trials in which we successfully identify the mutator allele. 
+
+### Applying the inter-haplotype distance method to the BXDs
+
+We downloaded previously-generated BXD *de novo* germline mutation data from the GitHub repository associated with the previous manuscript, which was also archived at Zenodo [@url:https://github.com/tomsasani/bxd_mutator_manuscript;@doi:10.5281/zenodo.5941048;@PMID:35545679], and downloaded a CSV file of BXD genotypes at each of 7,320 informative markers from GeneNetwork [@url:http://gn1.genenetwork.org/dbdoc/BXDGeno.html;@PMID:27933521]. We also downloaded relevant metadata about each BXD RIL from the manuscript describing the updated BXD resouces [@PMID:33472028]. 
+
+We used Snakemake [@PMID:34035898] to write a reproducible workflow for running the inter-haplotype distance method on the BXD dataset, which has been deposited in the GitHub repository associated with this manuscript [@url:https://github.com/quinlan-lab/proj-mutator-mapping].
+
+### Identifying candidate mutator alleles overlapping the chromosome 6 peak
+
+We investigated the region implicated by our inter-haplotype distance approach on chromosome 6 by querying the joint-genotyped BXD VCF file (European Nucleotide Archive accession PRJEB45429 [@url:https://www.ebi.ac.uk/ena/browser/view/PRJEB45429]). We annotated the BXD VCF using the following `snpEff` [@PMID:22728672] command: 
+
+```
+ java -Xmx16g -jar /path/to/snpeff/jarfile GRCm38.75 /path/to/bxd/vcf > /path/to/uncompressed/output/vcf
+```
+
+and used `cyvcf2` [@PMID:28165109] to iterate over the annotated VCF file. 
+
+### Comparing mutation spectra between Mouse Genomes Projects strains
+
+We downloaded mutation data from a previous paper [@PMID:30753674] (Supplementary File 1, Excel Table S3) that identified strain-private mutations in each of 29 strains sequenced as part of the Sanger Mouse Genomes (MGP) project [@PMID:21921910]. When comparing counts of each mutation type between MGP strains that harbor either *D* or *B* alleles at the chromosome 4 or chromosome 6 mutator loci, we adjusted mutation counts by the number of callable A, T, C, or G nucleotides in each strain as described previously [@PMID:35545679].
 
 ## Results
 
@@ -234,7 +256,7 @@ We applied our inter-haplotype distance method to 94 BXD RILs [Methods] using th
 
 ![**Results of inter-haplotype distance scans in the BXD RILs.** **a)** Cosine distances between aggregate *de novo* mutation spectra on BXD haplotypes with either *D* (n = X) or *B* (n = Y) alleles at approximately 7,500 informative markers. Distance thresholds at $p = 0.2$ and $p = 0.05$ were calculated by performing 10,000 permutations of the BXD haplotype mutation data. **b)** Cosine distances between aggregate *de novo* mutation spectra on BXD haplotypes with either *D* or *B* alleles at approximately 7,500 informative markers. Only BXDs with *D* haplotypes at marker rsYYYY on chromosome 4 were included in the scan. Distance thresholds at $p = 0.2$ and $p = 0.05$ were calculated by performing 10,000 permutations of the BXD haplotype mutation data. **c)** Fractions of *de novo* germline mutations in BXDs with either *D* or *B* haplotypes at markers rsXXXX and rsYYYY. Total counts of each mutation type were aggregated in groups of BXDs with either of the four possible haplotype combinations, and fractions of each mutation type were calculated in each group separately. Chi-square tests of independence were used to compare counts of individual mutation types between the D-D and D-B groups of BXDs, as well as between the B-D and B-B groups. **d)** Fractions of *de novo* germline mutations in Sanger Mouse Genome Project (MGP) strains with either *D* or *B* haplotypes at markers rsXXXX and rsYYYY. Total counts of each mutation type were aggregated in groups of MGP strains with either of the four possible haplotype combinations, and fractions of each mutation type were calculated in each group separately. Chi-square tests of independence were used to compare counts of individual mutation types between the D-D and D-B groups of BXDs, as well as between the B-D and B-B groups.](images/Figure%202.png){#fig:distance-results width=7in} 
 
-In a previous analysis, we used quantitative trait locus (QTL) mapping to identify a nearly identical locus on chromosome 4 that was significantly associated with the C>A germline mutation rate in the BXDs [@PMID:35545679]. This locus overlaps 21 protein-coding genes that are annotated by the Gene Ontology as being involved in "DNA repair," but only one of these genes contains non-synonymous differences between the two parental strains: *Mutyh*. *Mutyh* encodes a protein involved in the base-excision repair of 8-oxoguanine (8-oxoG), a DNA lesion caused by oxidative damage, and prevents the accumulation of C>A mutations following DNA replication. As expected, C>A germline mutation rates are nearly 50% higher in BXDs that inherited *D* haplotypes at marker ID rsYYYY than in those that inherited *B* haplotypes.
+In a previous analysis, we used quantitative trait locus (QTL) mapping to identify a nearly identical locus on chromosome 4 that was significantly associated with the C>A germline mutation rate in the BXDs [@PMID:35545679]. This locus overlaps 21 protein-coding genes that are annotated by the Gene Ontology as being involved in "DNA repair," but only one of these genes contains non-synonymous differences between the two parental strains: *Mutyh*. *Mutyh* encodes a protein involved in the base-excision repair of 8-oxoguanine (8-oxoG), a DNA lesion caused by oxidative damage, and prevents the accumulation of C>A mutations following DNA replication [@PMID:28551381;@PMID:28127763;@PMID:17581577]. As expected, C>A germline mutation rates are nearly 50% higher in BXDs that inherited *D* haplotypes at marker ID rsYYYY than in those that inherited *B* haplotypes.
 
 ### An additional germline mutator allele on chromosome 6
 

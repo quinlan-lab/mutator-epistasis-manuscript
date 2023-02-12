@@ -5,6 +5,7 @@ biparental
 BXD
 BXDs
 chr
+CSV
 dataset
 datasets
 DBA
@@ -15,6 +16,7 @@ ef
 Epistasis
 exision
 GATK
+GeneNetwork
 genotype
 genotyped
 genotypes
@@ -37,7 +39,7 @@ methyltransferase
 MGP
 missense
 Mth
-mutator
+Mutator
 mutators
 Mutyh
 NCN
@@ -51,9 +53,12 @@ oxoguanine
 Phe
 Phred
 Pritchard
+PRJEB
 QTL
 Quinlan
 recombinant
+resouces
+RIL
 RILs
 rsXXXX
 rsYYYY
@@ -62,10 +67,13 @@ Sasani
 segmental
 Ser
 Setmar
+Snakemake
 succesfully
 TCC
 Thr
 tomsasani
 transposase
 TTC
+VCF
 XXXXXXXX
+Zenodo
