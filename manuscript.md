@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-02-13" />
   <meta name="citation_publication_date" content="2023-02-13" />
   <meta property="article:published_time" content="2023-02-13" />
-  <meta name="dc.modified" content="2023-02-13T15:14:28+00:00" />
-  <meta property="article:modified_time" content="2023-02-13T15:14:28+00:00" />
+  <meta name="dc.modified" content="2023-02-13T15:53:32+00:00" />
+  <meta property="article:modified_time" content="2023-02-13T15:53:32+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/00fce7dd13c2305fa9d3ca0fee49c1381db7d6d4/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/00fce7dd13c2305fa9d3ca0fee49c1381db7d6d4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/00fce7dd13c2305fa9d3ca0fee49c1381db7d6d4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/955d55e2f0b5383ba3c47bfa1f9d28af95e50281/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/955d55e2f0b5383ba3c47bfa1f9d28af95e50281/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/955d55e2f0b5383ba3c47bfa1f9d28af95e50281/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/00fce7dd13c2305fa9d3ca0fee49c1381db7d6d4/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/955d55e2f0b5383ba3c47bfa1f9d28af95e50281/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@00fce7d](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/00fce7dd13c2305fa9d3ca0fee49c1381db7d6d4)
+from [quinlan-lab/mutator-epistasis-manuscript@955d55e](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/955d55e2f0b5383ba3c47bfa1f9d28af95e50281)
 on February 13, 2023.
 </em></small>
 
@@ -317,10 +317,11 @@ Our results also reveal evidence of epistasis between mammalian germline mutator
 
 Importantly, though we observed epistasis between germline mutator alleles in an unnatural population; the BXDs were inbred by brother-sister mating in a highly controlled laboratory environment that attenuated the effects of natural selection on all but the most deleterious alleles [@doi:10.1146/annurev.ecolsys.39.110707.173437]. When we queried wild mouse genomes for for the three nonsynonymous DNA repair mutations overlapping the chromosome 6 mutator locus, we found all three at high frequency in *Mus mus domesticus*, the strain from which C57BL/6J and DBA/2J derive most of their genomes. Since the *D* mutator haplotype on chromosome 6 does not appear to increase the C>A germline mutation rate on its own (even in a homozygous state), we hypothesize that similar alleles may be at intermediate or high frequency in other natural populations. However, it remains unclear if our observations of epistasis in the BXD RILs reflect similar genomic processes that are active outside of the laboratory.
 
-### Applications of inter-haplotype distance to other systems
+### Discovering mutator alleles to other systems
 
-What conditions must be met in order to detect a germline mutator allele in a particular dataset? Presumably, one must have access to many haplotypes, each with a reasonably large number of *de novo* germline mutations that remain linked to the mutator allele that caused them. Given the rapidly decreasing cost of whole-genome sequencing, these kinds of datasets are becoming much more common. For example, thousands of two- and three-generation human pedigrees have been sequenced in order to identify *de novo* germline mutations. If a mutator allele were active in one or both parental genome, the mutator and many of its constituent mutations would be transmitted to the next generation. Perhaps the biggest challenge to mutator allele discovery in natural populations, however, is the effect of selection on a mutator. 
+Numerous lines of evidence suggest that mutator alleles contribute to variation in mutation rates and spectra in various organisms. In two natural isolates of *Saccharomyces cerevisiae*, nonsynonymous variation in *OGG1* causes a substantial increase in the C>A *de novo* mutation rate [@PMID:34523420]. A recent analysis also suggests that mutator alleles and/or environmental mutagens have shaped mutation rate evolution in human genomes [@doi:0.1101/2022.06.17.496622v2]. However, mutator discovery remains challenging in mammalian genomes.
 
+What conditions must be met in order to detect a germline mutator allele in a particular dataset? Presumably, one must have access to many haplotypes, each with a reasonably large number of *de novo* germline mutations that remain linked to the mutator allele(s) that caused them. Recently, thousands of human pedigrees have been sequenced in an effort to precisely estimate the rate of human *de novo* germline mutation. Selection on germline mutator alleles will likely prevent large-effect mutators from reaching high allele frequencies; however, if multiple mutators are active in a particular population, it becomes much more likely that a subset will be detectable by identifying trios that harbor excess counts of *de novo* mutations [@PMID:35666194]. Current estimates of power to detect germline mutators in human pedigrees generally assume that mutators affect all mutation types equally, and that methods for mutator discovery will rely on identifying haplotypes with excess total counts of mutations [@PMID:35666194]. However, our results in the BXD suggest that germline mutators often exert their effects on a small number of $k$-mer mutation types, and may only be detectable by analyzing mutation spectra.
 
 
 
