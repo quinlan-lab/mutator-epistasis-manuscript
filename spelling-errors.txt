@@ -1,5 +1,4 @@
 aaronquinlan
-Affy
 Arg
 Benchmarking
 biparental
@@ -18,12 +17,12 @@ Dumont
 duplications
 ef
 epistasis
-eQTL
+eqtl
 eQTLs
 exision
 GATK
 GEMMA
-GeneNetwork
+genenetwork
 genomic
 genotype
 genotyped
@@ -38,9 +37,7 @@ hematopoetic
 heterozygous
 histone
 homozygous
-HZI
 Illumina
-ILM
 intercrosses
 Leu
 LongRanger
@@ -49,13 +46,11 @@ mer
 methyltransferase
 MGP
 missense
-MoGene
 Mth
 mutator
 mutators
 Mutyh
 NCN
-NHLBI
 nonsynonymous
 novo
 NTN
@@ -72,7 +67,6 @@ Quinlan
 recombinant
 RIL
 RILs
-RMA
 rsXXXX
 rsYYYY
 rsYYYYY
@@ -85,13 +79,9 @@ Snakemake
 succesfully
 TCC
 Thr
-TMP
 tomsasani
-TPM
 transposase
 TTC
-UMCG
-UTHSC
 VCF
 WGS
 XXXXXXXX

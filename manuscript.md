@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-02-13" />
   <meta name="citation_publication_date" content="2023-02-13" />
   <meta property="article:published_time" content="2023-02-13" />
-  <meta name="dc.modified" content="2023-02-13T15:53:32+00:00" />
-  <meta property="article:modified_time" content="2023-02-13T15:53:32+00:00" />
+  <meta name="dc.modified" content="2023-02-13T16:06:06+00:00" />
+  <meta property="article:modified_time" content="2023-02-13T16:06:06+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/955d55e2f0b5383ba3c47bfa1f9d28af95e50281/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/955d55e2f0b5383ba3c47bfa1f9d28af95e50281/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/955d55e2f0b5383ba3c47bfa1f9d28af95e50281/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/6cb871a9373d7ffeccb305ea7be5aea24ddb1cba/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/6cb871a9373d7ffeccb305ea7be5aea24ddb1cba/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/6cb871a9373d7ffeccb305ea7be5aea24ddb1cba/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/955d55e2f0b5383ba3c47bfa1f9d28af95e50281/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/6cb871a9373d7ffeccb305ea7be5aea24ddb1cba/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@955d55e](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/955d55e2f0b5383ba3c47bfa1f9d28af95e50281)
+from [quinlan-lab/mutator-epistasis-manuscript@6cb871a](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/6cb871a9373d7ffeccb305ea7be5aea24ddb1cba)
 on February 13, 2023.
 </em></small>
 
@@ -282,15 +282,15 @@ We also considered the possibility that expression quantitative trait loci (eQTL
 
 | Tissue name | Expression data provenance | # BXDs with expression data | cis-eQTL near peak? | -log10(p) of top marker | Additive effect of D allele on expression |
 | - | - | - | - | - | - |
-| Kidney | Mouse kidney M430v2 Sex Balanced (Aug06) RMA | 53 | Yes | 12.89 | -0.18 |
-| Gastrointestinal | UTHSC Mouse BXD Gastrointestinal Affy MoGene 1.0 ST Gene Level (Apr14) RMA | 46 | Yes | 5.15 | -0.076 |
-| Stem cells | UMCG Stem Cells ILM6v1.1 (Apr09) transformed | 22 | No | - | - | 
-| Stem cells | UMCG Progenitor Cells ILM6v1.1 (Apr09) transformed | 23 | No | - | - | 
-| Spleen | UTHSC Affy MoGene 1.0 ST Spleen (Dec10) RMA | 79 | Yes | 4.73 | -0.056 | 
-| Liver | UTHSC BXD Liver RNA-Seq Avg (Oct19) TPM Log2 | 50 | Yes | 13.57 | -0.155 | 
-| Heart | NHLBI BXD All Ages Heart RNA-Seq (Nov20) TMP Log2 ** | 73 | No | - | - |
-| Eye | UTHSC BXD All Ages Eye RNA-Seq (Nov20) TPM Log2 ** | 87 | Yes | 5.58 | 0.085 
-| Lung | HZI Lung M430v2 (Apr08) RMA | 47 | Yes | 14.52 | -0.335 | 
+| Kidney | `Mouse kidney M430v2 Sex Balanced (Aug06) RMA` | 53 | Yes | 12.89 | -0.18 |
+| Gastrointestinal | `UTHSC Mouse BXD Gastrointestinal Affy MoGene 1.0 ST Gene Level (Apr14) RMA` | 46 | Yes | 5.15 | -0.076 |
+| Stem cells | `UMCG Stem Cells ILM6v1.1 (Apr09) transformed` | 22 | No | - | - | 
+| Stem cells | `UMCG Progenitor Cells ILM6v1.1 (Apr09) transformed` | 23 | No | - | - | 
+| Spleen | `UTHSC Affy MoGene 1.0 ST Spleen (Dec10) RMA` | 79 | Yes | 4.73 | -0.056 | 
+| Liver | `UTHSC BXD Liver RNA-Seq Avg (Oct19) TPM Log2` | 50 | Yes | 13.57 | -0.155 | 
+| Heart | `NHLBI BXD All Ages Heart RNA-Seq (Nov20) TMP Log2 **` | 73 | No | - | - |
+| Eye | `UTHSC BXD All Ages Eye RNA-Seq (Nov20) TPM Log2 **` | 87 | Yes | 5.58 | 0.085 
+| Lung | `HZI Lung M430v2 (Apr08) RMA` | 47 | Yes | 14.52 | -0.335 | 
 
 Table: Presence of absence of eQTLs for *Ogg1* in various tissues identified using GeneNetwork. {#tbl:eqtl-results}
 
@@ -315,13 +315,13 @@ Although we would expect a germline mutator allele to increase the absolute coun
 
 Our results also reveal evidence of epistasis between mammalian germline mutator alleles for the first time. BXDs with *D* alleles at the mutator locus on chromosome 6 only exhibit elevated C>A mutation rates if they also carry *D* alleles at the previously-identified [@PMID:35545679] mutator locus on chromosome 4. And BXDs with *D* alleles at both loci have significantly higher C>A germline mutation rates than lines with *D* alleles at only one mutator locus alone (Figure {@fig:distance-results}C). This raises the exciting possibility that epistasis between mutator alleles has contributed to the evolution of germline mutation rates and spectra in mammalian genomes.
 
-Importantly, though we observed epistasis between germline mutator alleles in an unnatural population; the BXDs were inbred by brother-sister mating in a highly controlled laboratory environment that attenuated the effects of natural selection on all but the most deleterious alleles [@doi:10.1146/annurev.ecolsys.39.110707.173437]. When we queried wild mouse genomes for for the three nonsynonymous DNA repair mutations overlapping the chromosome 6 mutator locus, we found all three at high frequency in *Mus mus domesticus*, the strain from which C57BL/6J and DBA/2J derive most of their genomes. Since the *D* mutator haplotype on chromosome 6 does not appear to increase the C>A germline mutation rate on its own (even in a homozygous state), we hypothesize that similar alleles may be at intermediate or high frequency in other natural populations. However, it remains unclear if our observations of epistasis in the BXD RILs reflect similar genomic processes that are active outside of the laboratory.
+Importantly, though, we observed epistasis between germline mutator alleles in an unnatural population; the BXDs were inbred by brother-sister mating in a highly controlled laboratory environment that attenuated the effects of natural selection on all but the most deleterious alleles [@doi:10.1146/annurev.ecolsys.39.110707.173437]. When we queried wild mouse genomes for for the three nonsynonymous DNA repair mutations overlapping the chromosome 6 mutator locus, we found all three at high frequency in *Mus mus domesticus*, the strain from which C57BL/6J and DBA/2J derive most of their genomes. Since the *D* mutator haplotype on chromosome 6 does not appear to increase the C>A germline mutation rate on its own (even in a homozygous state), we hypothesize that similar alleles may be at intermediate or high frequency in other natural populations. However, it remains unclear if our observations of epistasis in the BXD RILs reflect similar genomic processes that are active outside of the laboratory.
 
-### Discovering mutator alleles to other systems
+### Discovering mutator alleles in other systems
 
 Numerous lines of evidence suggest that mutator alleles contribute to variation in mutation rates and spectra in various organisms. In two natural isolates of *Saccharomyces cerevisiae*, nonsynonymous variation in *OGG1* causes a substantial increase in the C>A *de novo* mutation rate [@PMID:34523420]. A recent analysis also suggests that mutator alleles and/or environmental mutagens have shaped mutation rate evolution in human genomes [@doi:0.1101/2022.06.17.496622v2]. However, mutator discovery remains challenging in mammalian genomes.
 
-What conditions must be met in order to detect a germline mutator allele in a particular dataset? Presumably, one must have access to many haplotypes, each with a reasonably large number of *de novo* germline mutations that remain linked to the mutator allele(s) that caused them. Recently, thousands of human pedigrees have been sequenced in an effort to precisely estimate the rate of human *de novo* germline mutation. Selection on germline mutator alleles will likely prevent large-effect mutators from reaching high allele frequencies; however, if multiple mutators are active in a particular population, it becomes much more likely that a subset will be detectable by identifying trios that harbor excess counts of *de novo* mutations [@PMID:35666194]. Current estimates of power to detect germline mutators in human pedigrees generally assume that mutators affect all mutation types equally, and that methods for mutator discovery will rely on identifying haplotypes with excess total counts of mutations [@PMID:35666194]. However, our results in the BXD suggest that germline mutators often exert their effects on a small number of $k$-mer mutation types, and may only be detectable by analyzing mutation spectra.
+What conditions must be met in order to detect a germline mutator allele? Presumably, one must have access to many haplotypes, each with a reasonably large number of *de novo* germline mutations that remain linked to the mutator allele(s) that caused them. Recently, thousands of human pedigrees have been sequenced in an effort to precisely estimate the rate of human *de novo* germline mutation [@PMID:31549960;@PMID:28959963]. Selection on germline mutator alleles will likely prevent large-effect mutators from reaching high allele frequencies; however, if multiple mutators are active in a particular population, it becomes much more likely that a subset will be detectable by sequencing human trios [@PMID:35666194]. Current estimates of power to detect germline mutators in human pedigrees generally assume that mutators affect all mutation types equally, and that methods for mutator discovery will rely on identifying haplotypes with excess total mutation counts [@PMID:35666194]. However, our results in the BXD suggest that germline mutators often exert their effects on a small number of $k$-mer mutation types, and may only be detectable by analyzing mutation spectra.
 
 
 
