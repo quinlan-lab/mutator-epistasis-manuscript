@@ -16,13 +16,13 @@ dropdown
 Dumont
 duplications
 ef
-epistasis
-eQTL
+Epistasis
+eqtl
 eQTLs
 exision
 GATK
 GEMMA
-GeneNetwork
+genenetwork
 genomic
 genotype
 genotyped
@@ -56,7 +56,7 @@ nonsynonymous
 novo
 NTN
 nucleotides
-OGG
+Ogg
 oxoG
 oxoguanine
 Phe

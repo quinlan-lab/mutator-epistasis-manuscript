@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-02-13" />
   <meta name="citation_publication_date" content="2023-02-13" />
   <meta property="article:published_time" content="2023-02-13" />
-  <meta name="dc.modified" content="2023-02-13T16:48:39+00:00" />
-  <meta property="article:modified_time" content="2023-02-13T16:48:39+00:00" />
+  <meta name="dc.modified" content="2023-02-13T19:46:37+00:00" />
+  <meta property="article:modified_time" content="2023-02-13T19:46:37+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/68c76d4a0700b756ac7c3709ade0ff1151013f7c/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/68c76d4a0700b756ac7c3709ade0ff1151013f7c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/68c76d4a0700b756ac7c3709ade0ff1151013f7c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7db350f704f8528c508fa3f6e4475c4868759f6e/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7db350f704f8528c508fa3f6e4475c4868759f6e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7db350f704f8528c508fa3f6e4475c4868759f6e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/68c76d4a0700b756ac7c3709ade0ff1151013f7c/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7db350f704f8528c508fa3f6e4475c4868759f6e/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@68c76d4](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/68c76d4a0700b756ac7c3709ade0ff1151013f7c)
+from [quinlan-lab/mutator-epistasis-manuscript@7db350f](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/7db350f704f8528c508fa3f6e4475c4868759f6e)
 on February 13, 2023.
 </em></small>
 
@@ -319,7 +319,7 @@ Importantly, though, we observed epistasis between germline mutator alleles in a
 
 ### Discovering mutator alleles in other systems
 
-Numerous lines of evidence suggest that mutator alleles contribute to variation in mutation rates and spectra in various organisms. In two natural isolates of *Saccharomyces cerevisiae*, nonsynonymous variation in *OGG1* causes a substantial increase in the C>A *de novo* mutation rate [@PMID:34523420]. A recent analysis also suggests that mutator alleles and/or environmental mutagens have shaped mutation rate evolution in human genomes [@doi:10.1101/2022.06.17.496622v2], and the heritability of paternal *de novo* mutation counts in the human germline has been estimated to be between 10 and 20%, indicating a contribution of genetic factors to germline mutation rates [@doi:10.1101/2022.12.17.520885v1]). However, mutator discovery remains challenging in mammalian genomes.
+Numerous lines of evidence suggest that mutator alleles contribute to variation in mutation rates and spectra in various organisms. In two natural isolates of *Saccharomyces cerevisiae*, nonsynonymous variation in *OGG1* causes a substantial increase in the C>A *de novo* mutation rate [@PMID:34523420]. A recent analysis also suggests that mutator alleles and/or environmental mutagens have shaped mutation rate evolution in human genomes [@doi:https://doi.org/10.1101/2022.06.17.496622], and the heritability of paternal *de novo* mutation counts in the human germline has been estimated to be between 10 and 20%, indicating a contribution of genetic factors to germline mutation rates [@doi:https://doi.org/10.1101/2022.12.17.520885]). However, mutator discovery remains challenging in mammalian genomes.
 
 What conditions must be met in order to detect a germline mutator allele? Presumably, one must have access to many haplotypes, each with a reasonably large number of *de novo* germline mutations that remain linked to the mutator allele(s) that caused them. Recently, thousands of human pedigrees have been sequenced in an effort to precisely estimate the rate of human *de novo* germline mutation [@PMID:31549960;@PMID:28959963]. Selection on germline mutator alleles will likely prevent large-effect mutators from reaching high allele frequencies; however, if multiple mutators are active in a particular population, it becomes much more likely that a subset will be detectable by sequencing human trios [@PMID:35666194]. Current estimates of power to detect germline mutators in human pedigrees generally assume that mutators affect all mutation types equally, and that methods for mutator discovery will rely on identifying haplotypes with excess total mutation counts [@PMID:35666194]. However, our results in the BXD suggest that germline mutators often exert their effects on a small number of $k$-mer mutation types, and may only be detectable by analyzing mutation spectra.
 
