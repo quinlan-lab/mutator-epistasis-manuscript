@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-02-13" />
   <meta name="citation_publication_date" content="2023-02-13" />
   <meta property="article:published_time" content="2023-02-13" />
-  <meta name="dc.modified" content="2023-02-13T19:46:37+00:00" />
-  <meta property="article:modified_time" content="2023-02-13T19:46:37+00:00" />
+  <meta name="dc.modified" content="2023-02-13T21:26:38+00:00" />
+  <meta property="article:modified_time" content="2023-02-13T21:26:38+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7db350f704f8528c508fa3f6e4475c4868759f6e/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7db350f704f8528c508fa3f6e4475c4868759f6e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7db350f704f8528c508fa3f6e4475c4868759f6e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ef4231cf8bf51da25f770b9aba281d0a7c1b1dcb/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ef4231cf8bf51da25f770b9aba281d0a7c1b1dcb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ef4231cf8bf51da25f770b9aba281d0a7c1b1dcb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7db350f704f8528c508fa3f6e4475c4868759f6e/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ef4231cf8bf51da25f770b9aba281d0a7c1b1dcb/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@7db350f](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/7db350f704f8528c508fa3f6e4475c4868759f6e)
+from [quinlan-lab/mutator-epistasis-manuscript@ef4231c](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/ef4231cf8bf51da25f770b9aba281d0a7c1b1dcb)
 on February 13, 2023.
 </em></small>
 
@@ -147,17 +147,17 @@ To our knowledge, these new methods for analyzing mutation spectra reveal the fi
 
 ## Introduction
 
-The germline mutation rate is a fundamental parameter in population genetics, and reflects the contributions of complex DNA replication and repair pathways, exogenous sources of DNA damage, and life-history traits. *Mutator alleles* that augment the mutation rate and/or spectrum may explain both within- and between-species variation in germline mutation rates [@PMID:32619789], but have proven challenging to detect in mammalian genomes. 
+The germline mutation rate is a fundamental parameter in population genetics, and reflects the interplay between complex DNA replication and repair pathways, exogenous sources of DNA damage, and life-history traits. *Mutator alleles* may explain both within- and between-species variation in germline mutation rates [@PMID:32619789], but have proven challenging to identify in mammalian genomes. 
 
 <!--In microorganisms like *Escherichia coli*, mutator alleles have emerged during experimental evolution [@PMID:], and human cancer genomes often harbor deleterious mutator alleles as well [@PMID:27197248].-->
 
-Germline mutator alleles are difficult to detect for a number of reasons, including the fidelity of germline genome replication and the effects of selection on mutators. On average, humans are born with about 70 to 100 single-nucleotide *de novo* germline mutations per diploid genome [@PMID:28959963;@PMID:31549960]; in mice, the number is closer to 20 or 30 [@PMID:31492841]. Moreover, in a population of sufficiently large effective size $N_e$, we would also expect many mutator alleles to be efficiently selected against. The selection coefficient on a mutator allele is estimated to be approximately $2s \Delta U$ [@PMID:27739533], where $s$ is the mean selective coefficient on a new deleterious mutation and $\Delta U$ is the excess number of new deleterious mutations caused by the mutator allele; the product of $s$ and $\Delta U$ is multiplied by $2$ to account for the average number of generations for which mutator is linked to the excess mutations it causes. 
+Germline mutator alleles are difficult to detect for a number of reasons, including the fidelity of germline genome replication and the effects of selection on mutators. On average, humans are born with 70 to 100 single-nucleotide *de novo* germline mutations per diploid genome [@PMID:28959963;@PMID:31549960]; in mice, that number is closer to 20 or 30 [@PMID:31492841]. Moreover, in a population of sufficiently large effective size $N_e$, we would also expect many mutator alleles to be efficiently selected against. The selection coefficient on a mutator allele is estimated to be approximately $2s \Delta U$ [@PMID:27739533], where $s$ is the mean selective coefficient on a new deleterious mutation and $\Delta U$ is the excess number of new deleterious mutations caused by the mutator allele; the product of $s$ and $\Delta U$ is multiplied by $2$ to account for the average number of generations for which mutator is linked to the excess mutations it causes. 
 
 <!--Given the low germline *de novo* mutation rate in mammalian genomes and the potential strength of selection on a mutator, we would likely require a very large number of offspring, as well as an environment that attenuates the effects of selection, in order to detect the effects of a germline mutator allele.-->
 
-We expect haplotypes that harbor mutator alleles at a particular locus to carry an excess of total germline mutations, compared to those that harbor wild-type alleles. Indeed, candidate germline mutator loci have been discovered in human genomes by identifying haplotypes with excess derived allele counts [@PMID:28095480]. However, protein-coding genes involved in DNA replication and repair often recognize particular sequence motifs or excise lesions at specific nucleotides [@PMID:28485537]. Thus, we might also expect the spectrum of de novo mutations -- i.e, the frequency of each individual mutation type (C>T, A>G, etc.) -- to differ between genomes that harbor either a mutator or wild-type allele at a given locus.
+Compared to those that harbor wild-type alleles, we expect haplotypes harboring mutator alleles at a particular locus to carry an excess of total germline mutations. Indeed, candidate germline mutator loci have been discovered in human genomes by identifying haplotypes with excess derived allele counts [@PMID:28095480]. However, protein-coding genes involved in DNA replication and repair often recognize particular sequence motifs or excise lesions at specific nucleotides [@PMID:28485537]. Thus, we might also expect the spectrum of de novo mutations -- i.e, the frequency of each individual mutation type (C>T, A>G, etc.) -- to differ between genomes that carry either a mutator or wild-type allele at a given locus.
 
-In 2022, we discovered a germline mutator allele in mice by analyzing whole-genome sequencing data from 152 recombinant inbred lines (RILs). These RILs, known as the <ins>B</ins>X<ins>D</ins>s [@PMID:33472028], were derived from either F2 or advanced intercrosses of C57<ins>B</ins>L/6J and <ins>D</ins>BA/2J, two laboratory strains that exhibit significant differences in their germline mutation spectra [@PMID:30753674]. Since the BXD RILs were maintained via brother-sister mating for up to 180 generations and housed in a controlled laboratory environment, they presented an ideal population for mutator allele discovery. Namely, each line accumulated hundreds or thousands of germline *de novo* mutations on a nearly-homozygous linear mosaic of the parental haplotypes, while the effects of negative selection on new and standing variation were attenuated [@doi:10.1146/annurev.ecolsys.39.110707.173437]. We previously used quantitative trait locus (QTL) mapping to identify a locus on chromosome 4 that was strongly associated with the C>A germline mutation rate [@PMID:35545679] in the BXDs. The QTL overlapped *Mutyh*, which encodes a protein that normally prevents C>A mutations by repairing oxidative DNA damage [@PMID:17581577], and we hypothesized that missense mutations in *Mutyh* were responsible for a 50% increase in the C>A mutation rate between BXDs with either parental haplotype at the QTL.
+In 2022, we discovered a germline mutator allele in mice by analyzing whole-genome sequencing data from 152 recombinant inbred lines (RILs). Commonly known as the <ins>B</ins>X<ins>D</ins>s [@PMID:33472028], these RILs were derived from either F2 or advanced intercrosses of C57<ins>B</ins>L/6J and <ins>D</ins>BA/2J, two laboratory strains that exhibit significant differences in their germline mutation spectra [@PMID:30753674]. Since the BXD RILs were maintained via brother-sister mating for up to 180 generations and housed in a controlled laboratory environment, they presented an ideal population for mutator allele discovery. Namely, each line accumulated hundreds or thousands of germline *de novo* mutations on a nearly-homozygous linear mosaic of the parental haplotypes, while the effects of negative selection on new and standing variation were attenuated [@doi:10.1146/annurev.ecolsys.39.110707.173437]. We used quantitative trait locus (QTL) mapping to identify a locus on chromosome 4 that was strongly associated with the C>A germline mutation rate in the BXDs [@PMID:35545679]. The QTL overlapped *Mutyh*, which encodes a protein that normally prevents C>A mutations by repairing oxidative DNA damage [@PMID:17581577], and we hypothesized that missense mutations in *Mutyh* were responsible for a 50% increase in the C>A mutation rate between BXDs with either parental haplotype at the QTL.
 
 In this study, we developed a new method to detect alleles that affect the mutation spectrum in two-parent RILs, and applied it to the *de novo* germline mutation data from the BXDs. We assessed its power to detect candidate mutator alleles, re-discovered the mutator near *Mutyh*, and identified compelling evidence of epistasis between two germline mutator alleles that augment the C>A germline mutation rate.
 
@@ -188,17 +188,27 @@ Using the existing catalog of *de novo* germline mutations in the BXDs, we devel
 
 We assume that a collection of haplotypes has been genotyped at informative markers, and that *de novo* germline mutations have been identified on each haplotype.
 
-We iterate over each informative marker and divide the haplotypes into two groups based on the parental allele that they inherited. We then compute a $k$-mer mutation spectrum using the aggregate mutation counts in each haplotype group. The $k$-mer mutation spectrum contains the frequency of every possible $k$-mer mutation type in a collection of mutations, and can be represented as a vector of size $6 \times 4^{k - 1}$ after collapsing by strand complement. For example, the $1$-mer mutation spectrum is 6-element vector that contains the frequencies of C>T, C>G, C>A, A>G, A>T, and A>C mutations.
+At each informative marker, we divide haplotypes into two groups based on the parental allele that they inherited. We then compute a $k$-mer mutation spectrum using the aggregate mutation counts in each haplotype group. The $k$-mer mutation spectrum contains the frequency of every possible $k$-mer mutation type in a collection of mutations, and can be represented as a vector of size $6 \times 4^{k - 1}$ after collapsing by strand complement. For example, the $1$-mer mutation spectrum is 6-element vector that contains the frequencies of C>T, C>G, C>A, A>G, A>T, and A>C mutations.
 
-At each locus, we then calculate the cosine distance between the aggregate mutation spectra of haplotypes with either parental allele. The cosine distance between two vectors $\mathbf{A}$ and $\mathbf{B}$ is defined as 
+At each marker, we then calculate the cosine distance between the aggregate mutation spectra of haplotypes with either parental allele. The cosine distance between two vectors $\mathbf{A}$ and $\mathbf{B}$ is defined as 
 
 $$D_C = 1 - \frac{\mathbf{A} \cdot \mathbf{B}}{||\mathbf{A}|| \ ||\mathbf{B}||}$$
 
 where $||\mathbf{A}||$ and $||\mathbf{B}||$ are the $L_2$ norms of $\mathbf{A}$ and $\mathbf{B}$, respectively. The cosine distance metric has a number of favorable properties for comparing mutation spectra. Since cosine distance does not take the magnitude of vectors into account, it can be used to compare two spectra with unequal total mutation counts. Additionally, by calculating the cosine distance between mutation *spectra*, we avoid the need to perform separate comparisons of mutation counts at each individual $k$-mer mutation type.
 
-We use permutation tests to establish genome-wide cosine distance thresholds. In each of $N$ permutation trials, we randomly shuffle the per-haplotype mutation data such that haplotype labels no longer correspond to the correct mutation counts. Using the shuffled mutation data, we perform a genome-wide distance scan as described above, and record the maximum distance observed at any locus. After $N$ permutations (usually 1,000 or 10,000), we compute the $1 - p$ percentile of the maximum distance distribution, and use that percentile value as a genome-wide significance threshold (for example, at $p = 0.05$).
+We use permutation tests to establish genome-wide cosine distance thresholds. In each of $N$ permutation trials, we randomly shuffle the per-haplotype mutation data such that haplotype labels no longer correspond to the correct mutation counts. Using the shuffled mutation data, we perform a genome-wide distance scan as described above, and record the maximum distance observed at any locus. After $N$ permutations (usually 10,000), we compute the $1 - p$ percentile of the maximum distance distribution, and use that percentile value as a genome-wide significance threshold (for example, at $p = 0.05$).
 
-Additional documentation describing the distance method is available on GitHub [@url:https://github.com/quinlan-lab/proj-mutator-mapping], along with code for running the method on the BXDs or other similar datasets.
+The inter-haplotype distance method was implemented in Python, and relies heavily on the following Python libraries:
+
+* `numpy` [@doi:https://doi.org/10.1038/s41586-020-2649-2]
+* `pandas` [@doi:https://doi.org/10.5281/zenodo.3509134]
+* `matplotlib` [@doi:10.1109/MCSE.2007.55]
+* `scikit-learn` [@url:https://jmlr.csail.mit.edu/papers/v12/pedregosa11a.html]
+* `pandera` [@doi:10.25080/Majora-342d178e-010]
+* `seaborn` [@doi:https://doi.org/10.21105/joss.03021]
+* `numba` [@doi:https://doi.org/10.1145/2833157.2833162]
+
+Additional documentation is available on GitHub [@url:https://github.com/quinlan-lab/proj-mutator-mapping], along with a reproducible Snakemake [@doi:https://doi.org/10.12688/f1000research.29032.1] workflow for running the method on the BXDs or other similar datasets.
 
 ### Simulations to assess the power of the inter-haplotype distance approach
 
@@ -212,17 +222,17 @@ $$\mathbf{P} = \left( 0.4, \ 0.1, \ 0.075, \ 0.075, \ 0.075, \ 0.275 \right)$$
 
 These probabilities sum to 1 and correspond to the expected frequencies of C>T, C>A, C>G, A>T, A>C, and A>G *de novo* germline mutations in mice, respectively [@PMID:31492841].
 
-If we are simulating the 3-mer mutation spectrum, we define a vector of mutation probabilities of length 96, and assign every 3-mer mutation type a value of $\frac{\mathbf{P}_b}{16}$, where $\mathbf{P}_b$ is the probability of the “base” mutation type associated with the 3-mer mutation type. In other words, each of the 16 possible NCN>NTN 3-mer mutation types would be assigned a mutation probability of $\frac{0.4}{16} = 0.025$.
+If we are simulating the 3-mer mutation spectrum, we instead define a vector of mutation probabilities $\mathbf{P}$ of length 96, and assign every 3-mer mutation type a value of $\frac{\mathbf{P}_b}{16}$, where $\mathbf{P}_b$ is the probability of the “base” mutation type associated with the 3-mer mutation type. In other words, each of the 16 possible NCN>NTN 3-mer mutation types would be assigned a mutation probability of $\frac{0.4}{16} = 0.025$.
 
-To simulate the mutation spectrum on each wild-type haplotype, we define a vector of lambda values by scaling the mutation probabilities by the number of mutations we wish to simulate: 
+To simulate the mutation spectrum on each *wild-type* haplotype, we define a vector of lambda values by scaling the mutation probabilities by the number of mutations we wish to simulate: 
 
 $$\lambda = \mathbf{P}m$$
 
 and take a Poisson draw from this vector of lambda values. 
 
-To simulate the mutation spectrum on each mutator haplotype, we multiply the mutation probability of a particular mutation type (or multiple mutation types) $\mathbf{P}_n$ by the mutator effect size $e$. When $k = 1$, we only augment the effect size of one mutation type at a time, but when $k = 3$, we augment a fraction (25%, 50%, or 100%) of the 3-mer mutation types associated with a single “base” mutation type. Then, we define the vector of lambda values by scaling the mutation probabilities by $m$ and take a Poisson draw from that vector on each haplotype.
+To simulate the mutation spectrum on each *mutator* haplotype, we multiply the mutation probability of a particular mutation type (or multiple mutation types) by the mutator effect size $e$. When $k = 1$, we only augment the effect size of one mutation type at a time, but when $k = 3$, we augment a fraction (25%, 50%, or 100%) of the 3-mer mutation types associated with a single “base” mutation type. Then, we define the vector of lambda values by scaling the mutation probabilities by $m$ and take a Poisson draw from that vector.
 
-After generating “mutator” and “wild-type” haplotypes, we randomly shuffle the simulated haplotypes $N = 10,000$ times and compute the cosine distance between wild-type and mutator haplotypes each time. If fewer than 5% of the $N$ permutations produces a cosine distance greater than or equal to the cosine distance between the "true" wild-type and mutator haplotypes, we say that the approach succesfully identified the mutator allele. For every combination of simulation parameters ($h$, $m$, $e$, and so on) we perform 100 trials and record the number of trials in which we successfully identify the mutator allele. 
+After generating mutator and wild-type haplotypes, we compute the aggregate mutation spectrum in either group and calculate the cosine distance between the two, which we call the "focal" distance $D_f$. To determine whether $D_f$ is greater than what we'd expect by chance, we concatenate the mutator and wild-type haplotypes, randomly shuffle the haplotypes $N = 10,000$ times, and compute the cosine distance between wild-type and mutator haplotypes each time. If fewer than 5% of the $N$ permutations produces a cosine distance greater than or equal to the $D_f$, we say that the approach succesfully identified the mutator allele. For every combination of simulation parameters ($h$, $m$, $e$, and so on) we perform 100 trials and record the number of trials in which we successfully identify the mutator allele. 
 
 ### Applying the inter-haplotype distance method to the BXDs
 
@@ -240,19 +250,19 @@ We investigated the region implicated by our inter-haplotype distance approach o
 
 and used `cyvcf2` [@PMID:28165109] to iterate over the annotated VCF file in order to identify nonsynonymous differences between the parental C57BL/6J and DBA/2J strains.
 
-### Comparing mutation spectra between Mouse Genomes Projects strains
+### Comparing mutation spectra between Mouse Genomes Project strains
 
-We downloaded mutation data from a previous analysis [@PMID:30753674] (Supplementary File 1, Excel Table S3) that identified strain-private mutations in each of 29 strains sequenced as part of the Sanger Mouse Genomes (MGP) project [@PMID:21921910]. When comparing counts of each mutation type between MGP strains that harbored either *D* or *B* alleles at the chromosome 4 or chromosome 6 mutator loci, we adjusted mutation counts by the number of callable A, T, C, or G nucleotides in each strain as described previously [@PMID:35545679].
+We downloaded mutation data from a previous analysis [@PMID:30753674] (Supplementary File 1, Excel Table S3) that identified strain-private mutations in 29 strains that were originally whole-genome sequenced as part of the Sanger Mouse Genomes (MGP) project [@PMID:21921910]. When comparing counts of each mutation type between MGP strains that harbored either *D* or *B* alleles at the chromosome 4 or chromosome 6 mutator loci, we adjusted mutation counts by the number of callable A, T, C, or G nucleotides in each strain as described previously [@PMID:35545679].
 
 ### Querying GeneNetwork for evidence of eQTLs at the mutator locus 
 
-We used the online GeneNetwork resource [@PMID:27933521], which contains array- and RNA-seq-derived expression measurements in a wide variety of tissues from numerous datasets, to find *cis*-eQTLs for the DNA repair genes we implicated under the cosine distance peak on chromosome 6. On the GeneNetwork homepage (genenetwork.org), we selected the "BXD Family" **Group** and used the **Type** dropdown menu to select each of the specific expression datasets described in Table @tbl:eqtl-results. In the **Get Any:** text box, we then entered the specified gene name and clicked **Search**. After selecting the appropriate data record on the next page, we used the **Mapping Tools** dropdown to run genome-wide efficient mixed model association (GEMMA) [@PMID:2453419] with the WGS-based marker genotypes and the leave-one-chromosome-out (LOCO) method to account for kinship between RILs. 
+We used the online GeneNetwork resource [@PMID:27933521], which contains array- and RNA-seq-derived expression measurements in a wide variety of tissues from numerous datasets, to find *cis*-eQTLs for the DNA repair genes we implicated under the cosine distance peak on chromosome 6. On the GeneNetwork homepage (genenetwork.org), we selected the "BXD Family" **Group** and used the **Type** dropdown menu to select each of the specific expression datasets described in Table @tbl:eqtl-results. In the **Get Any** text box, we then entered the specified gene name and clicked **Search**. After selecting the appropriate data record on the next page, we used the **Mapping Tools** dropdown to run genome-wide efficient mixed model association (GEMMA) [@PMID:2453419] with the WGS-based marker genotypes and the leave-one-chromosome-out (LOCO) method to account for kinship between RILs. 
 
 ## Results
 
 ### Benchmarking the inter-haplotype distance method using simulations
 
-We first tested the inter-haplotype cosine distance approach using simulated data (Materials and Methods). Perhaps unsurprisingly, we find that the method's power is mostly limited by the initial mutation rate of the $k$-mer mutation type affected by the mutator allele and the total number of *de novo* germline mutations in the dataset (that is, the product of the number of haplotypes and the number of mutations per haplotype) (Figure {@fig:simulations}). For example, given 50 haplotypes with an average of 500 *de novo* germline mutations each, our method has nearly 90% power detect a mutator allele that increases the C>T *de novo* mutation rate by 10%. However, the method only has about 10% power to detect a mutator of identical effect size that affects the C>G mutation rate, since C>G mutations are expected to make up a much smaller fraction of all *de novo* germline mutations to begin with. These simulations also demonstrate that our method is well-powered to detect large-effect mutator alleles (e.g., those that increase the mutation rate of a specific $k$-mer by 50%), even with a relatively small number of mutations per haplotype.
+We first tested the inter-haplotype cosine distance approach using simulated data ([Materials and Methods](03.methods.md)). We find that the method's power is mostly limited by the initial mutation rate of the $k$-mer mutation type affected by the mutator allele and the total number of *de novo* germline mutations in the dataset (that is, the product of the number of haplotypes and the mean number of mutations per haplotype) (Figure {@fig:simulations}). For example, given 50 haplotypes with an average of 500 *de novo* germline mutations each, our method has nearly 90% power detect a mutator allele that increases the C>T *de novo* mutation rate by 10%. However, the method only has about 10% power to detect a mutator of identical effect size that affects the C>G mutation rate, since C>G mutations are expected to make up a much smaller fraction of all *de novo* germline mutations to begin with. These simulations also demonstrate that our method is well-powered to detect large-effect mutator alleles (e.g., those that increase the mutation rate of a specific $k$-mer by 50%), even with a relatively small number of mutations per haplotype.
 
 ![**Simulations to assess the power of the inter-haplotype distance method.** We simulated *de novo* germline mutations on the specified number of haplotypes, such that 50% of haplotypes were affected by a mutator allele that increased the mutation rate of the specified $k$-mer by the specified effect size (an effect size of 1.5 indicates a 50% increase in the mutation rate). The colors of the lines indicate the number of simulated mutations on each haplotype (before augmenting the mutation rate with a mutator allele). Given a specific combination of parameters, the y-axis denotes the fraction of 100 simulations in which the simulated mutator allele could be detected at a p-value of 0.05. Shaded areas indicate the standard deviation of that fraction.](images/sims.png){#fig:simulations width=7in} 
 
