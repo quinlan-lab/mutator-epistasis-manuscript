@@ -88,6 +88,8 @@ content/02.introduction.md:15:germline
 content/02.introduction.md:15:germline
 content/02.introduction.md:15:mutator
 content/02.introduction.md:15:mutator
+content/02.introduction.md:15:mutator
+content/02.introduction.md:15:Mutyh
 content/02.introduction.md:15:novo
 content/02.introduction.md:15:RILs
 content/03.methods.md:3:BXD
@@ -316,6 +318,7 @@ content/04.results.md:13:novo
 content/04.results.md:13:novo
 content/04.results.md:13:novo
 content/04.results.md:13:novo
+content/04.results.md:13:RIL
 content/04.results.md:13:RILs
 content/04.results.md:13:rsXXXX
 content/04.results.md:13:rsXXXX
@@ -472,10 +475,14 @@ content/05.discussion.md:15:nonsynonymous
 content/05.discussion.md:15:RILs
 content/05.discussion.md:17:mutator
 content/05.discussion.md:19:cerevisiae
+content/05.discussion.md:19:germline
+content/05.discussion.md:19:germline
+content/05.discussion.md:19:heritability
 content/05.discussion.md:19:mutator
 content/05.discussion.md:19:mutator
 content/05.discussion.md:19:mutator
 content/05.discussion.md:19:nonsynonymous
+content/05.discussion.md:19:novo
 content/05.discussion.md:19:novo
 content/05.discussion.md:19:Saccharomyces
 content/05.discussion.md:21:BXD
