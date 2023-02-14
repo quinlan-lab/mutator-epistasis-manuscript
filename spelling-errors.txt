@@ -17,7 +17,7 @@ Dumont
 duplications
 ef
 Epistasis
-eQTL
+eqtl
 eQTLs
 exision
 GATK
@@ -48,7 +48,7 @@ methyltransferase
 MGP
 missense
 Mth
-mutator
+Mutator
 mutators
 Mutyh
 NCN
@@ -56,7 +56,7 @@ nonsynonymous
 novo
 NTN
 nucleotides
-OGG
+Ogg
 oxoG
 oxoguanine
 Phe

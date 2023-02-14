@@ -8,8 +8,8 @@ lang: en-US
 date-meta: '2023-02-14'
 author-meta:
 - Thomas A. Sasani
-- Kelley Harris
 - Aaron R. Quinlan
+- Kelley Harris
 header-includes: |
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-02-14" />
   <meta name="citation_publication_date" content="2023-02-14" />
   <meta property="article:published_time" content="2023-02-14" />
-  <meta name="dc.modified" content="2023-02-14T15:12:40+00:00" />
-  <meta property="article:modified_time" content="2023-02-14T15:12:40+00:00" />
+  <meta name="dc.modified" content="2023-02-14T21:32:48+00:00" />
+  <meta property="article:modified_time" content="2023-02-14T21:32:48+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -36,24 +36,24 @@ header-includes: |
   <meta name="citation_author_institution" content="Department of Human Genetics, University of Utah" />
   <meta name="citation_author_orcid" content="0000-0003-2317-1374" />
   <meta name="twitter:creator" content="@tomsasani" />
-  <meta name="citation_author" content="Kelley Harris" />
-  <meta name="citation_author_institution" content="Department of Genome Sciences, University of Washington" />
-  <meta name="citation_author_orcid" content="0000-0003-0302-2523" />
-  <meta name="twitter:creator" content="@Kelley__Harris" />
   <meta name="citation_author" content="Aaron R. Quinlan" />
   <meta name="citation_author_institution" content="Department of Human Genetics, University of Utah" />
   <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Utah" />
   <meta name="citation_author_orcid" content="0000-0003-1756-0859" />
   <meta name="twitter:creator" content="@aaronquinlan" />
+  <meta name="citation_author" content="Kelley Harris" />
+  <meta name="citation_author_institution" content="Department of Genome Sciences, University of Washington" />
+  <meta name="citation_author_orcid" content="0000-0003-0302-2523" />
+  <meta name="twitter:creator" content="@Kelley__Harris" />
   <link rel="canonical" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta property="og:url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta property="twitter:url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a706e69c7c3da35ab97e528b7767a5a23ce60a84/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a706e69c7c3da35ab97e528b7767a5a23ce60a84/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a706e69c7c3da35ab97e528b7767a5a23ce60a84/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/65cff5417d8d31cac71c59ef7fca8af45ebec9a7/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/65cff5417d8d31cac71c59ef7fca8af45ebec9a7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/65cff5417d8d31cac71c59ef7fca8af45ebec9a7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a706e69c7c3da35ab97e528b7767a5a23ce60a84/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/65cff5417d8d31cac71c59ef7fca8af45ebec9a7/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@a706e69](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/a706e69c7c3da35ab97e528b7767a5a23ce60a84)
+from [quinlan-lab/mutator-epistasis-manuscript@65cff54](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/65cff5417d8d31cac71c59ef7fca8af45ebec9a7)
 on February 14, 2023.
 </em></small>
 
@@ -101,17 +101,6 @@ on February 14, 2023.
      · Funded by Grant XXXXXXXX
   </small>
 
-+ **Kelley Harris**
-  <br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0000-0003-0302-2523](https://orcid.org/0000-0003-0302-2523)
-    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [Kelley__Harris](https://twitter.com/Kelley__Harris)
-    <br>
-  <small>
-     Department of Genome Sciences, University of Washington
-  </small>
-
 + **Aaron R. Quinlan**
   ^[✉](#correspondence)^<br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
@@ -123,11 +112,23 @@ on February 14, 2023.
      Department of Human Genetics, University of Utah; Department of Biomedical Informatics, University of Utah
   </small>
 
++ **Kelley Harris**
+  ^[✉](#correspondence)^<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0003-0302-2523](https://orcid.org/0000-0003-0302-2523)
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
+    [Kelley__Harris](https://twitter.com/Kelley__Harris)
+    <br>
+  <small>
+     Department of Genome Sciences, University of Washington
+  </small>
+
 
 ::: {#correspondence}
 ✉ — Correspondence possible via [GitHub Issues](https://github.com/quinlan-lab/mutator-epistasis-manuscript/issues)
 or email to
-Aaron R. Quinlan \<aquinlan@genetics.utah.edu\>.
+Aaron R. Quinlan \<aquinlan@genetics.utah.edu\>, 
+Kelley Harris \<harriske@uw.edu\>.
 
 
 :::
@@ -246,7 +247,7 @@ and used `cyvcf2` [@PMID:28165109] to iterate over the annotated VCF file in ord
 
 We downloaded mutation data from a previous analysis [@PMID:30753674] (Supplementary File 1, Excel Table S3) that identified strain-private mutations in 29 strains that were originally whole-genome sequenced as part of the Sanger Mouse Genomes (MGP) project [@PMID:21921910]. When comparing counts of each mutation type between MGP strains that harbored either *D* or *B* alleles at the chromosome 4 or chromosome 6 mutator loci, we adjusted mutation counts by the number of callable A, T, C, or G nucleotides in each strain as described previously [@PMID:35545679].
 
-### Querying GeneNetwork for evidence of eQTLs at the mutator locus 
+### Querying GeneNetwork for evidence of eQTLs at the mutator locus
 
 We used the online GeneNetwork resource [@PMID:27933521], which contains array- and RNA-seq-derived expression measurements in a wide variety of tissues from numerous datasets, to find *cis*-eQTLs for the DNA repair genes we implicated under the cosine distance peak on chromosome 6. On the GeneNetwork homepage (genenetwork.org), we selected the "BXD Family" **Group** and used the **Type** dropdown menu to select each of the specific expression datasets described in Table @tbl:eqtl-results. In the **Get Any** text box, we then entered the specified gene name and clicked **Search**. After selecting the appropriate data record on the next page, we used the **Mapping Tools** dropdown to run genome-wide efficient mixed model association (GEMMA) [@PMID:2453419] with the WGS-based marker genotypes and the leave-one-chromosome-out (LOCO) method to account for kinship between RILs. 
 
