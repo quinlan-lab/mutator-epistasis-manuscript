@@ -7,7 +7,7 @@
   <meta name="author" content="Thomas A. Sasani" />
   <meta name="author" content="Kelley Harris" />
   <meta name="author" content="Aaron R. Quinlan" />
-  <meta name="dcterms.date" content="2023-02-13" />
+  <meta name="dcterms.date" content="2023-02-14" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Discovering epistasis between germline mutator alleles in mice</title>
   <style>
@@ -52,11 +52,11 @@
   <meta name="citation_title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="og:title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="twitter:title" content="Discovering epistasis between germline mutator alleles in mice" />
-  <meta name="dc.date" content="2023-02-13" />
-  <meta name="citation_publication_date" content="2023-02-13" />
-  <meta property="article:published_time" content="2023-02-13" />
-  <meta name="dc.modified" content="2023-02-13T21:26:38+00:00" />
-  <meta property="article:modified_time" content="2023-02-13T21:26:38+00:00" />
+  <meta name="dc.date" content="2023-02-14" />
+  <meta name="citation_publication_date" content="2023-02-14" />
+  <meta property="article:published_time" content="2023-02-14" />
+  <meta name="dc.modified" content="2023-02-14T15:12:40+00:00" />
+  <meta property="article:modified_time" content="2023-02-14T15:12:40+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -82,9 +82,9 @@
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ef4231cf8bf51da25f770b9aba281d0a7c1b1dcb/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ef4231cf8bf51da25f770b9aba281d0a7c1b1dcb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ef4231cf8bf51da25f770b9aba281d0a7c1b1dcb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a706e69c7c3da35ab97e528b7767a5a23ce60a84/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a706e69c7c3da35ab97e528b7767a5a23ce60a84/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a706e69c7c3da35ab97e528b7767a5a23ce60a84/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,10 +101,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ef4231cf8bf51da25f770b9aba281d0a7c1b1dcb/">permalink</a>)
+(<a href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a706e69c7c3da35ab97e528b7767a5a23ce60a84/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/ef4231cf8bf51da25f770b9aba281d0a7c1b1dcb">quinlan-lab/mutator-epistasis-manuscript@ef4231c</a>
-on February 13, 2023.
+from <a href="https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/a706e69c7c3da35ab97e528b7767a5a23ce60a84">quinlan-lab/mutator-epistasis-manuscript@a706e69</a>
+on February 14, 2023.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -185,16 +185,7 @@ Aaron R. Quinlan &lt;aquinlan@genetics.utah.edu&gt;.</p>
 <p><span class="math display">\[D_C = 1 - \frac{\mathbf{A} \cdot \mathbf{B}}{||\mathbf{A}|| \ ||\mathbf{B}||}\]</span></p>
 <p>where <span class="math inline">\(||\mathbf{A}||\)</span> and <span class="math inline">\(||\mathbf{B}||\)</span> are the <span class="math inline">\(L_2\)</span> norms of <span class="math inline">\(\mathbf{A}\)</span> and <span class="math inline">\(\mathbf{B}\)</span>, respectively. The cosine distance metric has a number of favorable properties for comparing mutation spectra. Since cosine distance does not take the magnitude of vectors into account, it can be used to compare two spectra with unequal total mutation counts. Additionally, by calculating the cosine distance between mutation <em>spectra</em>, we avoid the need to perform separate comparisons of mutation counts at each individual <span class="math inline">\(k\)</span>-mer mutation type.</p>
 <p>We use permutation tests to establish genome-wide cosine distance thresholds. In each of <span class="math inline">\(N\)</span> permutation trials, we randomly shuffle the per-haplotype mutation data such that haplotype labels no longer correspond to the correct mutation counts. Using the shuffled mutation data, we perform a genome-wide distance scan as described above, and record the maximum distance observed at any locus. After <span class="math inline">\(N\)</span> permutations (usually 10,000), we compute the <span class="math inline">\(1 - p\)</span> percentile of the maximum distance distribution, and use that percentile value as a genome-wide significance threshold (for example, at <span class="math inline">\(p = 0.05\)</span>).</p>
-<p>The inter-haplotype distance method was implemented in Python, and relies heavily on the following Python libraries:</p>
-<ul>
-<li><code>numpy</code> <span class="citation" data-cites="Bp0bGkXP">[<a href="#ref-Bp0bGkXP" role="doc-biblioref">14</a>]</span></li>
-<li><code>pandas</code> <span class="citation" data-cites="8YNFNGgR">[<a href="#ref-8YNFNGgR" role="doc-biblioref">15</a>]</span></li>
-<li><code>matplotlib</code> <span class="citation" data-cites="1026Gxdsi">[<a href="#ref-1026Gxdsi" role="doc-biblioref">16</a>]</span></li>
-<li><code>scikit-learn</code> <span class="citation" data-cites="lF0Fr9LL">[<a href="#ref-lF0Fr9LL" role="doc-biblioref">17</a>]</span></li>
-<li><code>pandera</code> <span class="citation" data-cites="34sZyTFd">[<a href="#ref-34sZyTFd" role="doc-biblioref">18</a>]</span></li>
-<li><code>seaborn</code> <span class="citation" data-cites="fsZYWnTE">[<a href="#ref-fsZYWnTE" role="doc-biblioref">19</a>]</span></li>
-<li><code>numba</code> <span class="citation" data-cites="MBYIZnrX">[<a href="#ref-MBYIZnrX" role="doc-biblioref">20</a>]</span></li>
-</ul>
+<p>The inter-haplotype distance method was implemented in Python, and relies heavily on the following Python libraries: <code>numpy</code>, <code>pandas</code>, <code>matplotlib</code>, <code>scikit-learn</code>, <code>pandera</code>, <code>seaborn</code>, and <code>numba</code> <span class="citation" data-cites="Bp0bGkXP 8YNFNGgR 1026Gxdsi lF0Fr9LL 34sZyTFd fsZYWnTE MBYIZnrX">[<a href="#ref-Bp0bGkXP" role="doc-biblioref">14</a>,<a href="#ref-8YNFNGgR" role="doc-biblioref">15</a>,<a href="#ref-1026Gxdsi" role="doc-biblioref">16</a>,<a href="#ref-lF0Fr9LL" role="doc-biblioref">17</a>,<a href="#ref-34sZyTFd" role="doc-biblioref">18</a>,<a href="#ref-fsZYWnTE" role="doc-biblioref">19</a>,<a href="#ref-MBYIZnrX" role="doc-biblioref">20</a>]</span>.</p>
 <p>Additional documentation is available on GitHub <span class="citation" data-cites="14uVnBReQ">[<a href="#ref-14uVnBReQ" role="doc-biblioref">21</a>]</span>, along with a reproducible Snakemake <span class="citation" data-cites="alBakI22">[<a href="#ref-alBakI22" role="doc-biblioref">22</a>]</span> workflow for running the method on the BXDs or other similar datasets.</p>
 <h3 id="simulations-to-assess-the-power-of-the-inter-haplotype-distance-approach">Simulations to assess the power of the inter-haplotype distance approach</h3>
 <p>We performed a series of simple simulations to estimate our power to detect alleles that affect the germline mutation spectrum in biparental RILs.</p>
@@ -207,7 +198,7 @@ Aaron R. Quinlan &lt;aquinlan@genetics.utah.edu&gt;.</p>
 <p><span class="math display">\[\lambda = \mathbf{P}m\]</span></p>
 <p>and take a Poisson draw from this vector of lambda values.</p>
 <p>To simulate the mutation spectrum on each <em>mutator</em> haplotype, we multiply the mutation probability of a particular mutation type (or multiple mutation types) by the mutator effect size <span class="math inline">\(e\)</span>. When <span class="math inline">\(k = 1\)</span>, we only augment the effect size of one mutation type at a time, but when <span class="math inline">\(k = 3\)</span>, we augment a fraction (25%, 50%, or 100%) of the 3-mer mutation types associated with a single “base” mutation type. Then, we define the vector of lambda values by scaling the mutation probabilities by <span class="math inline">\(m\)</span> and take a Poisson draw from that vector.</p>
-<p>After generating mutator and wild-type haplotypes, we compute the aggregate mutation spectrum in either group and calculate the cosine distance between the two, which we call the “focal” distance <span class="math inline">\(D_f\)</span>. To determine whether <span class="math inline">\(D_f\)</span> is greater than what we’d expect by chance, we concatenate the mutator and wild-type haplotypes, randomly shuffle the haplotypes <span class="math inline">\(N = 10,000\)</span> times, and compute the cosine distance between wild-type and mutator haplotypes each time. If fewer than 5% of the <span class="math inline">\(N\)</span> permutations produces a cosine distance greater than or equal to the <span class="math inline">\(D_f\)</span>, we say that the approach succesfully identified the mutator allele. For every combination of simulation parameters (<span class="math inline">\(h\)</span>, <span class="math inline">\(m\)</span>, <span class="math inline">\(e\)</span>, and so on) we perform 100 trials and record the number of trials in which we successfully identify the mutator allele.</p>
+<p>After generating mutator and wild-type haplotypes, we compute the aggregate mutation spectrum in either group and calculate the cosine distance between the two, which we call the “focal” distance <span class="math inline">\(D_f\)</span>. To determine whether <span class="math inline">\(D_f\)</span> is greater than what we’d expect by chance, we concatenate the mutator and wild-type haplotypes, randomly shuffle the haplotypes <span class="math inline">\(N = 10,000\)</span> times, and compute the cosine distance between wild-type and mutator haplotypes each time. If fewer than 5% of the <span class="math inline">\(N\)</span> permutations produces a cosine distance greater than or equal to <span class="math inline">\(D_f\)</span>, we say that the approach succesfully identified the mutator allele. For every combination of simulation parameters (<span class="math inline">\(h\)</span>, <span class="math inline">\(m\)</span>, <span class="math inline">\(e\)</span>, and so on) we perform 100 trials and record the number of trials in which we successfully identify the mutator allele.</p>
 <h3 id="applying-the-inter-haplotype-distance-method-to-the-bxds">Applying the inter-haplotype distance method to the BXDs</h3>
 <p>We downloaded previously-generated BXD <em>de novo</em> germline mutation data from the GitHub repository associated with the previous manuscript, which was also archived at Zenodo <span class="citation" data-cites="TYYBVYN3 z6H1lPG4 5Vo3ETjb">[<a href="#ref-5Vo3ETjb" role="doc-biblioref">2</a>,<a href="#ref-TYYBVYN3" role="doc-biblioref">23</a>,<a href="#ref-z6H1lPG4" role="doc-biblioref">24</a>]</span>, and downloaded a CSV file of BXD genotypes at each of 7,320 informative markers from GeneNetwork <span class="citation" data-cites="t8fRZlGg t4VhaO1N">[<a href="#ref-t8fRZlGg" role="doc-biblioref">25</a>,<a href="#ref-t4VhaO1N" role="doc-biblioref">26</a>]</span>. We also downloaded relevant metadata about each BXD RIL from the manuscript describing the updated BXD resource <span class="citation" data-cites="VnS3Uzxm">[<a href="#ref-VnS3Uzxm" role="doc-biblioref">3</a>]</span>.</p>
 <p>We used Snakemake <span class="citation" data-cites="1FskMy3ZE">[<a href="#ref-1FskMy3ZE" role="doc-biblioref">27</a>]</span> to write a reproducible workflow for running the inter-haplotype distance method on the BXD dataset, which has been deposited in the GitHub repository associated with this manuscript <span class="citation" data-cites="14uVnBReQ">[<a href="#ref-14uVnBReQ" role="doc-biblioref">21</a>]</span>.</p>
@@ -221,7 +212,7 @@ Aaron R. Quinlan &lt;aquinlan@genetics.utah.edu&gt;.</p>
 <p>We used the online GeneNetwork resource <span class="citation" data-cites="t4VhaO1N">[<a href="#ref-t4VhaO1N" role="doc-biblioref">26</a>]</span>, which contains array- and RNA-seq-derived expression measurements in a wide variety of tissues from numerous datasets, to find <em>cis</em>-eQTLs for the DNA repair genes we implicated under the cosine distance peak on chromosome 6. On the GeneNetwork homepage (genenetwork.org), we selected the “BXD Family” <strong>Group</strong> and used the <strong>Type</strong> dropdown menu to select each of the specific expression datasets described in Table <a href="#tbl:eqtl-results">2</a>. In the <strong>Get Any</strong> text box, we then entered the specified gene name and clicked <strong>Search</strong>. After selecting the appropriate data record on the next page, we used the <strong>Mapping Tools</strong> dropdown to run genome-wide efficient mixed model association (GEMMA) <span class="citation" data-cites="11DuEbBgH">[<a href="#ref-11DuEbBgH" role="doc-biblioref">32</a>]</span> with the WGS-based marker genotypes and the leave-one-chromosome-out (LOCO) method to account for kinship between RILs.</p>
 <h2 id="results">Results</h2>
 <h3 id="benchmarking-the-inter-haplotype-distance-method-using-simulations">Benchmarking the inter-haplotype distance method using simulations</h3>
-<p>We first tested the inter-haplotype cosine distance approach using simulated data (<a href="03.methods.md">Materials and Methods</a>). We find that the method’s power is mostly limited by the initial mutation rate of the <span class="math inline">\(k\)</span>-mer mutation type affected by the mutator allele and the total number of <em>de novo</em> germline mutations in the dataset (that is, the product of the number of haplotypes and the mean number of mutations per haplotype) (Figure <a href="#fig:simulations">2</a>). For example, given 50 haplotypes with an average of 500 <em>de novo</em> germline mutations each, our method has nearly 90% power detect a mutator allele that increases the C&gt;T <em>de novo</em> mutation rate by 10%. However, the method only has about 10% power to detect a mutator of identical effect size that affects the C&gt;G mutation rate, since C&gt;G mutations are expected to make up a much smaller fraction of all <em>de novo</em> germline mutations to begin with. These simulations also demonstrate that our method is well-powered to detect large-effect mutator alleles (e.g., those that increase the mutation rate of a specific <span class="math inline">\(k\)</span>-mer by 50%), even with a relatively small number of mutations per haplotype.</p>
+<p>We first tested the inter-haplotype cosine distance approach using simulated data (Materials and Methods). We find that the method’s power is mostly limited by the initial mutation rate of the <span class="math inline">\(k\)</span>-mer mutation type affected by the mutator allele and the total number of <em>de novo</em> germline mutations in the dataset (that is, the product of the number of haplotypes and the mean number of mutations per haplotype) (Figure <a href="#fig:simulations">2</a>). For example, given 50 haplotypes with an average of 500 <em>de novo</em> germline mutations each, our method has nearly 90% power detect a mutator allele that increases the C&gt;T <em>de novo</em> mutation rate by 10%. However, the method only has about 10% power to detect a mutator of identical effect size that affects the C&gt;G mutation rate, since C&gt;G mutations are expected to make up a much smaller fraction of all <em>de novo</em> germline mutations to begin with. These simulations also demonstrate that our method is well-powered to detect large-effect mutator alleles (e.g., those that increase the mutation rate of a specific <span class="math inline">\(k\)</span>-mer by 50%), even with a relatively small number of mutations per haplotype.</p>
 <div id="fig:simulations" class="fignos">
 <figure>
 <img src="images/sims.png" style="width:7in" alt="Figure 2: Simulations to assess the power of the inter-haplotype distance method. We simulated de novo germline mutations on the specified number of haplotypes, such that 50% of haplotypes were affected by a mutator allele that increased the mutation rate of the specified k-mer by the specified effect size (an effect size of 1.5 indicates a 50% increase in the mutation rate). The colors of the lines indicate the number of simulated mutations on each haplotype (before augmenting the mutation rate with a mutator allele). Given a specific combination of parameters, the y-axis denotes the fraction of 100 simulations in which the simulated mutator allele could be detected at a p-value of 0.05. Shaded areas indicate the standard deviation of that fraction." />

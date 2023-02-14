@@ -17,7 +17,7 @@ Dumont
 duplications
 ef
 Epistasis
-eqtl
+eQTL
 eQTLs
 exision
 GATK
