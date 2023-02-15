@@ -16,14 +16,13 @@ dropdown
 Dumont
 duplications
 ef
-epistasis
+Epistasis
 eqtl
 eQTLs
 exision
 GATK
 GEMMA
-genenetwork
-genomic
+GeneNetwork
 genotype
 genotyped
 genotypes
@@ -48,6 +47,7 @@ methyltransferase
 MGP
 missense
 Mth
+musculus
 mutator
 mutators
 Mutyh
@@ -56,7 +56,7 @@ nonsynonymous
 novo
 NTN
 nucleotides
-OGG
+Ogg
 oxoG
 oxoguanine
 Phe
