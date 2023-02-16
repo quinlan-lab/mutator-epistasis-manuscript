@@ -4,6 +4,7 @@ Benchmarking
 biparental
 BXD
 BXDs
+castaneus
 cerevisiae
 chr
 cis
@@ -16,8 +17,8 @@ dropdown
 Dumont
 duplications
 ef
-Epistasis
-eqtl
+epistasis
+eQTL
 eQTLs
 exision
 GATK
@@ -26,7 +27,7 @@ GeneNetwork
 genotype
 genotyped
 genotypes
-Germline
+germline
 gf
 GRCm
 haplotype
@@ -77,6 +78,7 @@ segmental
 Ser
 Setmar
 Snakemake
+spretus
 succesfully
 TCC
 Thr
