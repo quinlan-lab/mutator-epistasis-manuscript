@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-02-16'
+date-meta: '2023-02-20'
 author-meta:
 - Thomas A. Sasani
 - Aaron R. Quinlan
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="og:title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="twitter:title" content="Discovering epistasis between germline mutator alleles in mice" />
-  <meta name="dc.date" content="2023-02-16" />
-  <meta name="citation_publication_date" content="2023-02-16" />
-  <meta property="article:published_time" content="2023-02-16" />
-  <meta name="dc.modified" content="2023-02-16T15:01:32+00:00" />
-  <meta property="article:modified_time" content="2023-02-16T15:01:32+00:00" />
+  <meta name="dc.date" content="2023-02-20" />
+  <meta name="citation_publication_date" content="2023-02-20" />
+  <meta property="article:published_time" content="2023-02-20" />
+  <meta name="dc.modified" content="2023-02-20T21:04:58+00:00" />
+  <meta property="article:modified_time" content="2023-02-20T21:04:58+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ec14a2ef91cae8303208009d3a56506df94d0d23/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ec14a2ef91cae8303208009d3a56506df94d0d23/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ec14a2ef91cae8303208009d3a56506df94d0d23/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/c9ba2d96eab8fab5b3d210bb0e2c49f7bde55055/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/c9ba2d96eab8fab5b3d210bb0e2c49f7bde55055/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/c9ba2d96eab8fab5b3d210bb0e2c49f7bde55055/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ec14a2ef91cae8303208009d3a56506df94d0d23/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/c9ba2d96eab8fab5b3d210bb0e2c49f7bde55055/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@ec14a2e](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/ec14a2ef91cae8303208009d3a56506df94d0d23)
-on February 16, 2023.
+from [quinlan-lab/mutator-epistasis-manuscript@c9ba2d9](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/c9ba2d96eab8fab5b3d210bb0e2c49f7bde55055)
+on February 20, 2023.
 </em></small>
 
 
@@ -148,17 +148,15 @@ To our knowledge, these new methods for analyzing mutation spectra reveal the fi
 
 ## Introduction
 
-The germline mutation rate is a fundamental parameter in population genetics, and reflects the interplay between complex DNA replication and repair pathways, exogenous sources of DNA damage, and life-history traits. *Mutator alleles* may explain both within- and between-species variation in germline mutation rates [@PMID:32619789], but have proven challenging to identify in mammalian genomes. 
+The germline mutation rate is a fundamental parameter in population genetics, and reflects the complex interplay between DNA replication and repair pathways, exogenous sources of DNA damage, and life-history traits. *Mutator alleles* may explain some of the within- and between-species variation in germline mutation rates [@PMID:32619789], but have proven challenging to identify in mammalian genomes. 
 
 <!--In microorganisms like *Escherichia coli*, mutator alleles have emerged during experimental evolution [@PMID:], and human cancer genomes often harbor deleterious mutator alleles as well [@PMID:27197248].-->
 
-Germline mutator alleles are difficult to detect for a number of reasons, including the fidelity of germline genome replication and the effects of selection on mutators. On average, humans are born with 70 to 100 single-nucleotide *de novo* germline mutations per diploid genome [@PMID:28959963;@PMID:31549960]; in mice, that number is closer to 20 or 30 [@PMID:31492841]. Moreover, in a population of sufficiently large effective size $N_e$, we would also expect many mutator alleles to be efficiently selected against. The selection coefficient on a mutator allele is estimated to be approximately $2s \Delta U$ [@PMID:27739533], where $s$ is the mean selective coefficient on a new deleterious mutation and $\Delta U$ is the excess number of new deleterious mutations caused by the mutator allele; the product of $s$ and $\Delta U$ is multiplied by $2$ to account for the average number of generations for which mutator is linked to the excess mutations it causes. 
+Germline mutator alleles are difficult to detect for a number of reasons, including the fidelity of germline genome replication and the effects of selection on mutators. On average, humans are born with 30 to 50 single-nucleotide *de novo* germline mutations per haploid genome [@PMID:28959963;@PMID:31549960]; in mice, that number is closer to 10 or 15 [@PMID:31492841]. Due to the low baseline germline mutation rate in many mammals, it can be challenging to ascertain high-quality sequencing data from enough haplotypes to reliably detect those with excess *de novo* mutation counts. Moreover, in a population of sufficiently large effective size $N_e$, we would also expect many mutator alleles to be efficiently selected against. The selection coefficient on a mutator allele is estimated to be approximately $2s \Delta U$ [@PMID:27739533], where $s$ is the mean selective coefficient on a new deleterious mutation and $\Delta U$ is the excess number of new deleterious mutations caused by the mutator allele; the product of $s$ and $\Delta U$ is multiplied by $2$ to account for the average number of generations for which mutator is linked to the excess mutations it causes. 
 
-<!--Given the low germline *de novo* mutation rate in mammalian genomes and the potential strength of selection on a mutator, we would likely require a very large number of offspring, as well as an environment that attenuates the effects of selection, in order to detect the effects of a germline mutator allele.-->
+Compared to haplotypes that harbor wild-type alleles at a particular locus, we expect those harboring mutator alleles to carry an excess of total germline mutations. Indeed, candidate germline mutator loci have been discovered in human genomes by identifying haplotypes with excess derived allele counts [@PMID:28095480]. However, protein-coding genes involved in DNA replication and repair often recognize particular sequence motifs or excise lesions at specific nucleotides [@PMID:32619789]. Thus, we might also expect the spectrum of de novo mutations &mdash; that is, the frequency of each individual mutation type (C>T, A>G, etc.) &mdash; to differ between genomes that carry either a mutator or wild-type allele at a given locus.
 
-Compared to haplotypes that harbor wild-type alleles at a particular locus, we expect those harboring mutator alleles to carry an excess of total germline mutations. Indeed, candidate germline mutator loci have been discovered in human genomes by identifying haplotypes with excess derived allele counts [@PMID:28095480]. However, protein-coding genes involved in DNA replication and repair often recognize particular sequence motifs or excise lesions at specific nucleotides [@PMID:32619789]. Thus, we might also expect the spectrum of de novo mutations -- i.e, the frequency of each individual mutation type (C>T, A>G, etc.) -- to differ between genomes that carry either a mutator or wild-type allele at a given locus.
-
-In 2022, we discovered a germline mutator allele in mice by analyzing whole-genome sequencing data from 152 recombinant inbred lines (RILs). Commonly known as the <ins>B</ins>X<ins>D</ins>s [@PMID:33472028], these RILs were derived from either F2 or advanced intercrosses of C57<ins>B</ins>L/6J and <ins>D</ins>BA/2J, two laboratory strains that exhibit significant differences in their germline mutation spectra [@PMID:30753674]. Since the BXD RILs were maintained via brother-sister mating for up to 180 generations and housed in a controlled laboratory environment, they presented an ideal population for mutator allele discovery. Namely, each line accumulated hundreds or thousands of germline mutations on a nearly-homozygous linear mosaic of the parental haplotypes, while the effects of negative selection on new and standing variation were attenuated by strict inbreeding [@doi:10.1146/annurev.ecolsys.39.110707.173437]. We used quantitative trait locus (QTL) mapping to identify a locus on chromosome 4 that was strongly associated with the C>A germline mutation rate in the BXDs [@PMID:35545679]. The QTL overlapped *Mutyh*, which encodes a protein that normally prevents C>A mutations by repairing oxidative DNA damage [@PMID:17581577], and we hypothesized that missense mutations in *Mutyh* were responsible for a 50% increase in the C>A mutation rate between BXDs with either parental haplotype at the QTL [@PMID:35545679].
+In 2022, we discovered a germline mutator allele in mice by analyzing whole-genome sequencing data from 152 recombinant inbred lines (RILs). Commonly known as the <ins>B</ins>X<ins>D</ins>s [@PMID:33472028], these RILs were derived from either F2 or advanced intercrosses of C57<ins>B</ins>L/6J and <ins>D</ins>BA/2J, two laboratory strains that exhibit significant differences in their germline mutation spectra [@PMID:30753674]. Since the BXD RILs were maintained via brother-sister mating for up to 180 generations and housed in a controlled laboratory environment, they presented an ideal population for mutator allele discovery. Namely, each line accumulated hundreds or thousands of germline mutations on a nearly-homozygous linear mosaic of parental <ins>B</ins> and <ins>D</ins> haplotypes, while the effects of negative selection on new and standing variation were attenuated by strict inbreeding [@doi:10.1146/annurev.ecolsys.39.110707.173437]. We used quantitative trait locus (QTL) mapping to identify a locus on chromosome 4 that was strongly associated with the C>A germline mutation rate in the BXDs [@PMID:35545679]. The QTL overlapped *Mutyh*, which encodes a protein that normally prevents C>A mutations by repairing oxidative DNA damage [@PMID:17581577], and we hypothesized that missense mutations in *Mutyh* were responsible for a 50% increase in the C>A mutation rate between BXDs with either parental haplotype at the QTL [@PMID:35545679].
 
 In this study, we developed a new method to detect alleles that affect the mutation spectrum in biparental RILs, and applied it to *de novo* germline mutation data from the BXDs. We assessed its power to detect candidate mutator alleles, re-identified the mutator near *Mutyh*, and discovered compelling evidence of epistasis between two germline mutator alleles that augment the C>A germline mutation rate.
 

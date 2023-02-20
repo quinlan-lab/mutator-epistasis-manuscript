@@ -57,7 +57,7 @@ nonsynonymous
 novo
 NTN
 nucleotides
-Ogg
+OGG
 oxoG
 oxoguanine
 Phe

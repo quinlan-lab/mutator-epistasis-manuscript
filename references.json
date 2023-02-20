@@ -242,7 +242,7 @@
         [
           "2023",
           2,
-          16
+          20
         ]
       ]
     },
@@ -293,7 +293,7 @@
         [
           "2023",
           2,
-          16
+          20
         ]
       ]
     },
@@ -345,7 +345,7 @@
         [
           "2023",
           2,
-          16
+          20
         ]
       ]
     },
@@ -395,7 +395,7 @@
         [
           "2023",
           2,
-          16
+          20
         ]
       ]
     },
@@ -488,7 +488,7 @@
         [
           "2023",
           2,
-          16
+          20
         ]
       ]
     },
@@ -529,7 +529,7 @@
         [
           "2023",
           2,
-          16
+          20
         ]
       ]
     },
@@ -547,7 +547,7 @@
   {
     "id": "8YNFNGgR",
     "type": "software",
-    "abstract": "This is a patch release in the 1.5.x series and includes some regression and bug fixes. We recommend that all users upgrade to this version. See the full whatsnew for a list of all the changes. The release will be available on the defaults and conda-forge channels: conda install pandas Or via PyPI: python3 -m pip install --upgrade pandas Please report any issues with the release on the pandas issue tracker. Thanks to all the contributors who made this release possible.",
+    "abstract": "We are pleased to announce a release candidate for pandas 2.0.0. If all goes well, we'll release pandas 2.0.0 in about two weeks. See the whatsnew for a list of all the changes. The release will be available on conda-forge and PyPI. The release can be installed from PyPI python -m pip install --upgrade --pre pandas==2.0.0rc0 Or from conda-forge conda install -c conda-forge/label/pandas_rc pandas==2.0.0rc0 Please report any issues with the release candidate on the pandas issue tracker.",
     "publisher": "Zenodo",
     "source": "Zenodo",
     "title": "pandas-dev/pandas: Pandas",
@@ -565,7 +565,7 @@
         [
           "2023",
           2,
-          16
+          20
         ]
       ]
     },
@@ -573,8 +573,8 @@
       "date-parts": [
         [
           "2023",
-          1,
-          19
+          2,
+          20
         ]
       ]
     },
@@ -3041,7 +3041,7 @@
         [
           "2023",
           2,
-          16
+          20
         ]
       ]
     },
@@ -3073,7 +3073,7 @@
         [
           "2023",
           2,
-          16
+          20
         ]
       ]
     },
@@ -3171,7 +3171,7 @@
         [
           "2023",
           2,
-          16
+          20
         ]
       ]
     },
@@ -3196,7 +3196,7 @@
         [
           "2023",
           2,
-          16
+          20
         ]
       ]
     },
@@ -3213,7 +3213,7 @@
         [
           "2023",
           2,
-          16
+          20
         ]
       ]
     },
