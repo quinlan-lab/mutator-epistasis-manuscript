@@ -17,7 +17,7 @@ domesticus
 dropdown
 Dumont
 duplications
-Epistasis
+epistasis
 eqtl
 eQTLs
 exision
@@ -54,7 +54,7 @@ Mmd
 Mmm
 Mth
 musculus
-Mutator
+mutator
 mutators
 Mutyh
 neuroblastoma

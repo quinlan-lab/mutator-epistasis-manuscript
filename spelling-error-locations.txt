@@ -179,12 +179,14 @@ content/03.methods.md:53:mer
 content/03.methods.md:53:mer
 content/03.methods.md:53:mer
 content/03.methods.md:55:haplotypes
+content/03.methods.md:55:mer
 content/03.methods.md:59:haplotype
 content/03.methods.md:59:haplotype
 content/03.methods.md:63:haplotypes
 content/03.methods.md:63:mutator
 content/03.methods.md:63:mutator
 content/03.methods.md:67:mer
+content/03.methods.md:69:haplotype
 content/03.methods.md:69:haplotypes
 content/03.methods.md:69:mutator
 content/03.methods.md:69:mutator
