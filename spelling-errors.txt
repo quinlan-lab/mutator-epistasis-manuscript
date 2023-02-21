@@ -56,7 +56,7 @@ Mutyh
 nonsynonymous
 novo
 nucleotides
-Ogg
+OGG
 outgroup
 oxoG
 oxoguanine

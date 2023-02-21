@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-02-20'
+date-meta: '2023-02-21'
 author-meta:
 - Thomas A. Sasani
 - Aaron R. Quinlan
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="og:title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="twitter:title" content="Discovering epistasis between germline mutator alleles in mice" />
-  <meta name="dc.date" content="2023-02-20" />
-  <meta name="citation_publication_date" content="2023-02-20" />
-  <meta property="article:published_time" content="2023-02-20" />
-  <meta name="dc.modified" content="2023-02-20T23:49:36+00:00" />
-  <meta property="article:modified_time" content="2023-02-20T23:49:36+00:00" />
+  <meta name="dc.date" content="2023-02-21" />
+  <meta name="citation_publication_date" content="2023-02-21" />
+  <meta property="article:published_time" content="2023-02-21" />
+  <meta name="dc.modified" content="2023-02-21T00:56:04+00:00" />
+  <meta property="article:modified_time" content="2023-02-21T00:56:04+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/e03948dceb87788796189608a12df55f82673ce7/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/e03948dceb87788796189608a12df55f82673ce7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/e03948dceb87788796189608a12df55f82673ce7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a71a62532aeb2625caa29fe092248242473461f5/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a71a62532aeb2625caa29fe092248242473461f5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a71a62532aeb2625caa29fe092248242473461f5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/e03948dceb87788796189608a12df55f82673ce7/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a71a62532aeb2625caa29fe092248242473461f5/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@e03948d](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/e03948dceb87788796189608a12df55f82673ce7)
-on February 20, 2023.
+from [quinlan-lab/mutator-epistasis-manuscript@a71a625](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/a71a62532aeb2625caa29fe092248242473461f5)
+on February 21, 2023.
 </em></small>
 
 
@@ -317,7 +317,7 @@ To explore the effects of the two mutator loci in other inbred laboratory mice, 
 
 To determine whether the candidate mutator alleles on chromosome 6 were segregating in natural populations of mice, we queried previously published sequencing data generated from 67 wild-derived mice [@PMID:27622383]. These data include three subspecies of *Mus musculus*, as well as the outgroup *Mus spretus*. We found that every *D* allele in *Setmar* or *Ogg1* was segregating in at least one population of *Mus* (Figure {@fig:wild-afs}). Notably the nonsynonymous p.Ala95Thr mutation was present at approximately 25% allele frequency in *Mus musculus domesticus*, and fixed in all other subspecies.
 
-![**Frequency of candidate mutator alleles in wild mice.** We queried a VCF file containing variant calls from 67 wild-derived *Mus* samples for each of the three fixed nonsynonymous differences between C57BL/6J and DBA/2J that were observed in DNA repair genes near the mutator locus on chromosome 6. The species abbreviations are: Ms: *Mus spretus*; Mmd: *Mus musculus domesticus*; Mmc: *Mus musculus castaneus*; Mmm: *Mus musculus musculus*](){#fig:wild-afs width=7in} 
+![**Frequency of candidate mutator alleles in wild mice.** We queried a VCF file containing variant calls from 67 wild-derived *Mus* samples for each of the three fixed nonsynonymous differences between C57BL/6J and DBA/2J that were observed in DNA repair genes near the mutator locus on chromosome 6. The species abbreviations are: Ms: *Mus spretus*; Mmd: *Mus musculus domesticus*; Mmc: *Mus musculus castaneus*; Mmm: *Mus musculus musculus*](images/Figure%203.png){#fig:wild-afs width=7in} 
 
 
 ## Discussion
