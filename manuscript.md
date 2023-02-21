@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-02-21" />
   <meta name="citation_publication_date" content="2023-02-21" />
   <meta property="article:published_time" content="2023-02-21" />
-  <meta name="dc.modified" content="2023-02-21T14:48:48+00:00" />
-  <meta property="article:modified_time" content="2023-02-21T14:48:48+00:00" />
+  <meta name="dc.modified" content="2023-02-21T17:26:11+00:00" />
+  <meta property="article:modified_time" content="2023-02-21T17:26:11+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/50479c75908bdc1f24ab50db513c1323a9ed3235/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/50479c75908bdc1f24ab50db513c1323a9ed3235/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/50479c75908bdc1f24ab50db513c1323a9ed3235/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/cf0c68171c21f39cf432974354350ec30b1b145f/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/cf0c68171c21f39cf432974354350ec30b1b145f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/cf0c68171c21f39cf432974354350ec30b1b145f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/50479c75908bdc1f24ab50db513c1323a9ed3235/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/cf0c68171c21f39cf432974354350ec30b1b145f/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@50479c7](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/50479c75908bdc1f24ab50db513c1323a9ed3235)
+from [quinlan-lab/mutator-epistasis-manuscript@cf0c681](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/cf0c68171c21f39cf432974354350ec30b1b145f)
 on February 21, 2023.
 </em></small>
 
@@ -205,25 +205,38 @@ Additional documentation is available on GitHub [@url:https://github.com/quinlan
 
 We performed a series of simple simulations to estimate our power to detect alleles that affect the germline mutation spectrum in biparental RILs using the inter-haplotype distance method.
 
-First, we simulate the $k$-mer mutation spectrum in a population of $h$ haplotypes. We assume that 50% of the haplotypes are under the effects of a mutator allele that increases the mutation rate of a particular mutation type(s) by an effect size $e$. We simulate $m$ mutations on each haplotype by taking draws from a Poisson distribution as follows:
+First, we simulate the $k$-mer mutation spectrum in a population of $h$ haplotypes. We assume that exactly $\frac{h}{2}$ of the haplotypes are under the effects of a mutator allele that increases the mutation rate of a particular mutation type(s) by an effect size $e$. We simulate $m$ mutations on each haplotype as follows:
 
-We first define a vector of mutation probabilities:
+We first define a vector of $1$-mer (i.e., $k = 1$) mutation probabilities:
 
 $$\mathbf{P} = \left( 0.4, \ 0.1, \ 0.075, \ 0.075, \ 0.075, \ 0.275 \right)$$
 
 These probabilities sum to 1 and correspond to the expected frequencies of C>T, C>A, C>G, A>T, A>C, and A>G *de novo* germline mutations in mice, respectively [@PMID:31492841].
 
-If we are simulating the 3-mer mutation spectrum, we modify the vector of mutation probabilities $\mathbf{P}$ to be length 96, and assign every 3-mer mutation type a value of $\frac{\mathbf{P}_c}{16}$, where $\mathbf{P}_c$ is the probability of the "central" mutation type associated with the 3-mer mutation type. In other words, each of the 16 possible N<ins>C</ins>N>N<ins>T</ins>N 3-mer mutation types would be assigned a mutation probability of $\frac{\mathbf{P}_c}{16} = \frac{0.4}{16} = 0.025$.
+If we are simulating the $3$-mer (i.e., $k = 3$) mutation spectrum, we modify the vector of mutation probabilities $\mathbf{P}$ to be length 96, and assign every 3-mer mutation type a value of $\frac{\mathbf{P}_C}{16}$, where $\mathbf{P}_C$ is the probability of the "central" mutation type associated with the 3-mer mutation type. In other words, each of the 16 possible N<ins>C</ins>N>N<ins>T</ins>N 3-mer mutation types would be assigned a mutation probability of $\frac{\mathbf{P}_C}{16} = \frac{0.4}{16} = 0.025$.
 
-To simulate the mutation spectrum on each *wild-type* haplotype, we define a vector of lambda values by scaling the mutation probabilities by the number of mutations we wish to simulate: 
+To simulate the mutation spectrum on the $h^{WT}$ *wild-type* haplotypes, we define a matrix $\mathbf{C^{WT}}$ of size $($h^{WT}, M)$, where $M = 6 \times 4^{k - 1}$. First, we generate a vector of lambda values by scaling the mutation probabilities ($\mathbf{P}$) by the number of mutations ($m$) we wish to simulate:
 
 $$\lambda = \mathbf{P}m$$
 
-and take a Poisson draw from this vector of lambda values. 
+Then, we populate the matrix $\mathbf{C^{WT}}$ by taking a single Poisson draw from the vector of $\lambda$ values for each mutation type on each haplotype. Thus, for every row in the matrix (i.e., for every haplotype):
 
-To simulate the mutation spectrum on each *mutator* haplotype, we define the vector of lambda values as defined above, but then multiply the lambda value of a particular mutation type (or multiple mutation types) by the mutator effect size $e$. When $k = 1$, we only augment the effect size of one mutation type at a time, but when $k = 3$, we augment a fraction (25%, 50%, or 100%) of the 3-mer mutation types associated with a single “base” mutation type. Then, we take a Poisson draw from $\lambda$.
+$$\mathbf{C^{WT}}_{*, j} = \Poisson (\mathbf{P}_{j}m)$$
 
-After generating mutator and wild-type haplotypes, we compute the aggregate mutation spectrum in either group and calculate the cosine distance between the two, which we call the "focal" distance $D_f$. To determine whether $D_f$ is greater than what we'd expect by chance, we concatenate the mutator and wild-type haplotypes, randomly shuffle the haplotypes $N = 10,000$ times, and compute the cosine distance between permuted wild-type and mutator haplotypes each time. If fewer than 5% of the $N$ permutations produces a cosine distance greater than or equal to $D_f$, we say that the approach succesfully identified the mutator allele. For every combination of simulation parameters ($h$, $m$, $e$, and so on) we perform 100 trials and record the number of trials in which we successfully identify the mutator allele. 
+To simulate the mutation spectrum on the $h^{MUT}$ *mutator* haplotypes, we define a matrix $\mathbf{C^{MUT}}$ of size $(h^{MUT}, M)$ as defined above. We then multiply the lambda value of a particular mutation type (or multiple mutation types) by the mutator effect size $e$. In other words, for every row in the matrix:
+
+$$\mathbf{C^{MUT}}_{*, j} = \Poisson \mathbf{P}_{j}me$$
+
+When $k = 1$, we only augment the effect size of one mutation type at a time, but when $k = 3$, we augment a fraction (25%, 50%, or 100%) of the $3$-mer mutation types associated with a single “base” mutation type. 
+
+After generating mutator and wild-type haplotypes, we compute the aggregate mutation spectrum in either group by summing the columns of the $\mathbf{C^{WT}}$ and $\mathbf{C^{MUT}}$ matrices. We then calculate the cosine distance between the two aggregate spectra, which we call the "focal" distance $D_f$. To determine whether $D_f$ is greater than what we'd expect by chance, we first concatenate the mutator and wild-type matrices:
+
+$$\mathbf{C} = \begin{bmatrix}
+\mathbf{C^{WT}} \\
+\mathbf{C^{MUT}}
+\end{bmatrix}$$
+
+Then, we randomly permute the rows of $\mathbf{C}$ $N = 10,000$ times. In every permutation, we consider the row indices from $\mathclose 0, \frac{h}{2} \mathopen$ to correspond to the wild-type haplotypes, and the row indices from $\mathclose \frac{h}{2}, h \mathopen$ to correspond to the mutator haplotypes. We then compute the cosine distance between the aggregate spectra of the wild-type and mutator haplotypes. If fewer than 5% of the $N$ permutations produces a cosine distance greater than or equal to $D_f$, we say that the approach succesfully identified the mutator allele. For every combination of simulation parameters ($h$, $m$, $e$, and so on) we perform 100 trials and record the number of trials in which we successfully identify the mutator allele. 
 
 ### Applying the inter-haplotype distance method to the BXDs
 
@@ -291,7 +304,7 @@ Using only the BXDs with *B* genotypes at the *Mutyh* mutator locus, we did not 
 
 Table: Summary of nonsynonymous differences between C57BL/6J and DBA/2J haplotypes in DNA repair genes near the mutator locus on chromosome 6. {#tbl:missense-diffs}
 
-We also considered the possibility that expression quantitative trait loci (eQTLs), rather than nonsynonymous mutations, were responsible for the C>A mutator phenotype linked to the locus on chromosome 6. Using GeneNetwork [@PMID:27933521], we mapped eQTLs for *Ogg1* in a number of tissues, including hematopoetic stem cells, kidney, and spleen. BXD genotypes at the cosine distance peak on chromosome 6 were significantly associated with *Ogg1* expression in many tissues, and *D* genotypes were nearly always associated with decreased gene expression (Table @tbl:eqtl-results). Although we did not have access to expression data from germline tissues such as testis or ovary, these results suggest that the expression of DNA repair genes may contribute to the observed C>A mutator phenotype on chromosome 6, as well.
+We also considered the possibility that expression quantitative trait loci (eQTLs), rather than nonsynonymous mutations, were responsible for the C>A mutator phenotype linked to the locus on chromosome 6. Using GeneNetwork [@PMID:27933521], we mapped eQTLs for *Ogg1* in a number of tissues, including hematopoetic stem cells, kidney, and spleen. BXD genotypes at the cosine distance peak on chromosome 6 were significantly associated with *Ogg1* expression in many tissues, and *D* genotypes were nearly always associated with decreased gene expression (Table @tbl:eqtl-results).
 
 | Tissue name | Expression data provenance | # BXDs with expression data | cis-eQTL near peak? | -log10(p) of top marker | Additive effect of D allele on expression |
 | - | - | - | - | - | - |
@@ -315,7 +328,7 @@ To explore the effects of the two mutator loci in other inbred laboratory mice, 
 
 ### The candidate mutator alleles are present in wild mice 
 
-To determine whether the candidate mutator alleles on chromosome 6 were segregating in natural populations of mice, we queried previously published sequencing data generated from 67 wild-derived mice [@PMID:27622383]. These data include three subspecies of *Mus musculus*, as well as the outgroup *Mus spretus*. We found that every *D* allele in *Setmar* or *Ogg1* was segregating in at least one population of *Mus* (Figure {@fig:wild-afs}). Notably the nonsynonymous p.Ala95Thr mutation was present at approximately 25% allele frequency in *Mus musculus domesticus*, and fixed in all other subspecies.
+To determine whether the candidate mutator alleles on chromosome 6 were segregating in natural populations of mice, we queried previously published sequencing data generated from 67 wild-derived mice [@PMID:27622383]. These data include three subspecies of *Mus musculus*, as well as the outgroup *Mus spretus*. We found that every *D* allele in *Setmar* or *Ogg1* was segregating in at least one population of *Mus* (Figure {@fig:wild-afs}). Notably, the nonsynonymous p.Ala95Thr mutation was present at approximately 25% allele frequency in *Mus musculus domesticus*, and fixed in all other subspecies.
 
 ![**Frequency of candidate mutator alleles in wild mice.** We queried a VCF file containing variant calls from 67 wild-derived *Mus* samples for each of the three fixed nonsynonymous differences between C57BL/6J and DBA/2J that were observed in DNA repair genes near the mutator locus on chromosome 6. The species abbreviations are: Ms: *Mus spretus*; Mmd: *Mus musculus domesticus*; Mmc: *Mus musculus castaneus*; Mmm: *Mus musculus musculus*](images/Figure%203.png){#fig:wild-afs width=7in} 
 

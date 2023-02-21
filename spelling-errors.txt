@@ -61,7 +61,7 @@ neuroblastoma
 nonsynonymous
 novo
 nucleotides
-Ogg
+OGG
 outgroup
 oxoG
 oxoguanine
