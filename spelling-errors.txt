@@ -22,11 +22,11 @@ eqtl
 eQTLs
 exision
 GEMMA
-GeneNetwork
+genenetwork
 genotype
 genotyped
 genotypes
-Germline
+germline
 GRCm
 haplotype
 haplotype’s
@@ -54,7 +54,7 @@ Mmd
 Mmm
 Mth
 musculus
-mutator
+Mutator
 mutators
 Mutyh
 neuroblastoma
