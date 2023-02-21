@@ -22,7 +22,7 @@ eqtl
 eQTLs
 exision
 GEMMA
-genenetwork
+GeneNetwork
 genotype
 genotyped
 genotypes
@@ -54,7 +54,7 @@ Mmd
 Mmm
 Mth
 musculus
-mutator
+Mutator
 mutators
 Mutyh
 neuroblastoma
