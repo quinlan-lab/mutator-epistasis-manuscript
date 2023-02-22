@@ -1,5 +1,4 @@
 aaronquinlan
-afs
 Benchmarking
 biparental
 BXD
@@ -15,15 +14,15 @@ domesticus
 dropdown
 Dumont
 duplications
-Epistasis
+epistasis
 eqtl
 eQTLs
 exision
-genenetwork
+GeneNetwork
 genotype
 genotyped
 genotypes
-germline
+Germline
 GRCm
 haplotype
 haplotype’s
@@ -47,9 +46,6 @@ mer
 mESCs
 MGP
 missense
-Mmc
-Mmd
-Mmm
 Mth
 musculus
 Mutator
@@ -75,7 +71,6 @@ RILs
 Saccharomyces
 Sasani
 segmental
-Setmar
 Snakemake
 spretus
 subsetting
