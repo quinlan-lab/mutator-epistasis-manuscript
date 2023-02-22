@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-02-22" />
   <meta name="citation_publication_date" content="2023-02-22" />
   <meta property="article:published_time" content="2023-02-22" />
-  <meta name="dc.modified" content="2023-02-22T14:04:29+00:00" />
-  <meta property="article:modified_time" content="2023-02-22T14:04:29+00:00" />
+  <meta name="dc.modified" content="2023-02-22T14:14:38+00:00" />
+  <meta property="article:modified_time" content="2023-02-22T14:14:38+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5cad5dde42a06b997a08c23382d002d359e8e5eb/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5cad5dde42a06b997a08c23382d002d359e8e5eb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5cad5dde42a06b997a08c23382d002d359e8e5eb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/217c3be1915bb1e3afbc6285a56762e4a11e4bb9/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/217c3be1915bb1e3afbc6285a56762e4a11e4bb9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/217c3be1915bb1e3afbc6285a56762e4a11e4bb9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5cad5dde42a06b997a08c23382d002d359e8e5eb/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/217c3be1915bb1e3afbc6285a56762e4a11e4bb9/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@5cad5dd](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/5cad5dde42a06b997a08c23382d002d359e8e5eb)
+from [quinlan-lab/mutator-epistasis-manuscript@217c3be](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/217c3be1915bb1e3afbc6285a56762e4a11e4bb9)
 on February 22, 2023.
 </em></small>
 
@@ -340,7 +340,7 @@ Table: Presence of absence of cis-eQTLs for *Ogg1* in various tissues identified
 
 We next compared the mutation spectra of BXDs with either *B* or *D* genotypes at the mutator loci on chromosomes 4 and 6. We observed that C>A germline mutation fractions in BXDs with *D* alleles at both mutator loci were significantly higher than C>A fractions in BXDs with *D* alleles at either locus alone (Figure {@fig:distance-results}C). However, compared to BXDs with *B* alleles at the chromosome 6 mutator locus, those with *D* alleles did not exhibit significantly higher C>A mutation fractions, indicating that the effects of the chromosome 6 mutator locus depend on the presence of a *D* allele at the chromosome 4 locus (Figure {@fig:distance-results}C).
 
-To explore the effects of the two mutator loci in other inbred laboratory mice, we also compared the germline mutation spectra of Sanger Mouse Genomes Project (MGP) strains. Dumont [@PMID:30753674] previously identified private germline mutations in 29 inbred laboratory strains; these private variants likely represent recent *de novo* germline mutations. Compared to MGP strains with *B* alleles at both mutator loci, those with *D* alleles at both mutator loci exhibit significantly higher C>A germline mutation fractions (Figure {@fig:distance-results}D). MGP strains with *D* alleles at both mutator loci appear to exhibit higher C>A mutation fractions than those with *D* alleles at either locus alone (Figure {@fig:distance-results}D), but this difference is not significant ($p = 0.64$). Therefore, given the smaller number of MGP strains with *de novo* germline mutation data, we are unable to confirm the signal of epistasis observed in the BXDs.  
+To explore the effects of the two mutator loci in other inbred laboratory mice, we also compared the germline mutation spectra of Sanger Mouse Genomes Project (MGP) strains. Dumont [@PMID:30753674] previously identified private germline mutations in 29 inbred laboratory strains; these private variants likely represent recent *de novo* germline mutations. Only two of the MGP strains possess *D* genotypes at both the chromosome 4 and chromosome 6 mutator loci: DBA/1J and DBA/2J. Compared to strains with *B* alleles at both mutator loci, those with *D* alleles at both mutator loci exhibit significantly higher C>A germline mutation fractions ($p = 3.5\mathrm{e}{-8}$, Figure {@fig:distance-results}D). MGP strains with *D* alleles at both mutator loci appear to have higher C>A mutation fractions than those with *D* alleles at either locus alone (Figure {@fig:distance-results}D), but this difference is not significant ($p = 0.16$). Therefore, given the smaller number of MGP strains with *de novo* germline mutation data, we are unable to confirm the signal of epistasis observed in the BXDs.  
 
 ### The candidate mutator alleles are present in wild mice 
 

@@ -465,8 +465,11 @@ content/04.results.md:48:mutator
 content/04.results.md:48:mutator
 content/04.results.md:48:mutator
 content/04.results.md:50:BXDs
+content/04.results.md:50:DBA
+content/04.results.md:50:DBA
 content/04.results.md:50:Dumont
 content/04.results.md:50:epistasis
+content/04.results.md:50:genotypes
 content/04.results.md:50:germline
 content/04.results.md:50:germline
 content/04.results.md:50:germline
@@ -476,6 +479,7 @@ content/04.results.md:50:MGP
 content/04.results.md:50:MGP
 content/04.results.md:50:MGP
 content/04.results.md:50:MGP
+content/04.results.md:50:mutator
 content/04.results.md:50:mutator
 content/04.results.md:50:mutator
 content/04.results.md:50:mutator

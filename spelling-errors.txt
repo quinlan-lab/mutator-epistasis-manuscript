@@ -30,7 +30,7 @@ GRCm
 haplotype
 haplotype’s
 haplotypes
-Hematopoetic
+hematopoetic
 heritability
 heterozygosity
 heterozygous
@@ -64,7 +64,7 @@ neuroblastoma
 nonsynonymous
 novo
 nucleotides
-OGG
+Ogg
 Outbred
 outgroup
 oxoG
