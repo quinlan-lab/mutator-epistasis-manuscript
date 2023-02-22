@@ -21,7 +21,6 @@ epistasis
 eqtl
 eQTLs
 exision
-GEMMA
 GeneNetwork
 genotype
 genotyped
@@ -31,7 +30,7 @@ GRCm
 haplotype
 haplotype’s
 haplotypes
-hematopoetic
+Hematopoetic
 heritability
 heterozygosity
 heterozygous
@@ -42,10 +41,14 @@ indels
 intercrosses
 intron
 kbp
+Knott
 Leu
+LOD
+LRS
 Mbp
 MEI
 mer
+mESCs
 methyltransferase
 MGP
 missense
@@ -54,7 +57,7 @@ Mmd
 Mmm
 Mth
 musculus
-Mutator
+mutator
 mutators
 Mutyh
 neuroblastoma
@@ -62,6 +65,7 @@ nonsynonymous
 novo
 nucleotides
 OGG
+Outbred
 outgroup
 oxoG
 oxoguanine

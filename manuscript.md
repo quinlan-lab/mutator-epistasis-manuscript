@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-02-21'
+date-meta: '2023-02-22'
 author-meta:
 - Thomas A. Sasani
 - Aaron R. Quinlan
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="og:title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="twitter:title" content="Discovering epistasis between germline mutator alleles in mice" />
-  <meta name="dc.date" content="2023-02-21" />
-  <meta name="citation_publication_date" content="2023-02-21" />
-  <meta property="article:published_time" content="2023-02-21" />
-  <meta name="dc.modified" content="2023-02-21T18:45:21+00:00" />
-  <meta property="article:modified_time" content="2023-02-21T18:45:21+00:00" />
+  <meta name="dc.date" content="2023-02-22" />
+  <meta name="citation_publication_date" content="2023-02-22" />
+  <meta property="article:published_time" content="2023-02-22" />
+  <meta name="dc.modified" content="2023-02-22T14:04:29+00:00" />
+  <meta property="article:modified_time" content="2023-02-22T14:04:29+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/c99de6aa6a66357d91dbe19db48a4533ebdeb027/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/c99de6aa6a66357d91dbe19db48a4533ebdeb027/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/c99de6aa6a66357d91dbe19db48a4533ebdeb027/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5cad5dde42a06b997a08c23382d002d359e8e5eb/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5cad5dde42a06b997a08c23382d002d359e8e5eb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5cad5dde42a06b997a08c23382d002d359e8e5eb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/c99de6aa6a66357d91dbe19db48a4533ebdeb027/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5cad5dde42a06b997a08c23382d002d359e8e5eb/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@c99de6a](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/c99de6aa6a66357d91dbe19db48a4533ebdeb027)
-on February 21, 2023.
+from [quinlan-lab/mutator-epistasis-manuscript@5cad5dd](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/5cad5dde42a06b997a08c23382d002d359e8e5eb)
+on February 22, 2023.
 </em></small>
 
 
@@ -219,7 +219,7 @@ To simulate the mutation spectrum on the *wild-type* haplotypes, we define a mat
 
 $$\lambda = Pm$$
 
-Then, we populate the matrix $C$ by taking a single Poisson draw from the vector of $\lambda$ values for each mutation type on each haplotype. Thus, for every row in the matrix (i.e., for every haplotype), we perform the following for the $j$th mutation type:
+Then, we populate the matrix $C$ by taking a single Poisson draw from the vector of $\lambda$ values for each mutation type on each haplotype. Thus, for every row in the matrix (i.e., for every haplotype), we perform the following for the $j$'th mutation type:
 
 $$C_{*, j} = \mathrm {Pois}(\lambda_{j})$$
 
@@ -229,7 +229,9 @@ $$C^{\prime}_{*, j} = \mathrm {Pois}(\lambda^{\prime}_{j})$$
 
 When $k = 1$, we only augment the effect size of one mutation type at a time, but when $k = 3$, we augment a fraction (25%, 50%, or 100%) of the $3$-mer mutation types associated with a single “base” mutation type. 
 
-After generating mutator and wild-type haplotypes, we compute the aggregate mutation spectrum in either group by summing the columns of $C$ and $C^{\prime}$. We then calculate the cosine distance between the two aggregate spectra, which we call the "focal" distance $D_f$. To determine whether $D_f$ is greater than what we'd expect by chance, we first concatenate the matrices of wild-type and mutator haplotype spectra:
+After generating mutator and wild-type haplotypes, we compute the aggregate mutation spectrum in either group by summing the columns of $C$ and $C^{\prime}$. We then calculate the cosine distance between the two aggregate spectra, which we call the "focal" distance $D_f$. To determine whether $D_f$ is greater than what we'd expect by chance, we perform a permutation test.
+
+First, we concatenate the matrices of wild-type and mutator haplotype spectra:
 
 $$A = \begin{bmatrix}
 C \\
@@ -262,7 +264,22 @@ We downloaded mutation data from a previously published analysis [@PMID:30753674
 
 ### Querying GeneNetwork for evidence of eQTLs at the mutator locus
 
-We used the online GeneNetwork resource [@PMID:27933521], which contains array- and RNA-seq-derived expression measurements in a wide variety of tissues from numerous datasets, to find *cis*-eQTLs for the DNA repair genes we implicated under the cosine distance peak on chromosome 6. On the GeneNetwork homepage (genenetwork.org), we selected the "BXD Family" **Group** and used the **Type** dropdown menu to select each of the specific expression datasets described in Table @tbl:eqtl-results. In the **Get Any** text box, we then entered the specified gene name and clicked **Search**. After selecting the appropriate data record on the next page, we used the **Mapping Tools** dropdown to run genome-wide efficient mixed model association (GEMMA) [@PMID:2453419] with the WGS-based marker genotypes and the leave-one-chromosome-out (LOCO) method to account for kinship between RILs. 
+We used the online GeneNetwork resource [@PMID:27933521], which contains array- and RNA-seq-derived expression measurements in a wide variety of tissues from numerous datasets, to find *cis*-eQTLs for the DNA repair genes we implicated under the cosine distance peak on chromosome 6. On the GeneNetwork homepage (genenetwork.org), we selected the "BXD Family" **Group** and used the **Type** dropdown menu to select each of the specific expression datasets described in Table @tbl:eqtl-results. In the **Get Any** text box, we then entered the specified gene name and clicked **Search**. After selecting the appropriate data record on the next page, we used the **Mapping Tools** dropdown to run Haley-Knott regression [@PMID:16718932] with the following parameters: WGS-based marker genotypes, 1,000 permutations for LOD threshold calculations, and controlling for BXD genotypes at the `rsm10000007390` marker.
+
+The exact names of the expression datasets we used for each tissue are shown in Table @tbl:eqtl-provenance below:
+
+| Tissue name | Complete name of GeneNetwork expression data | GeneNetwork trait ID |
+| - | - | - | 
+| Kidney | `Mouse kidney M430v2 Sex Balanced (Aug06) RMA` | `1448815_at` |
+| Gastrointestinal | `UTHSC Mouse BXD Gastrointestinal Affy MoGene 1.0 ST Gene Level (Apr14) RMA` | `10540639` |
+| Hematopoetic stem cells | `UMCG Stem Cells ILM6v1.1 (Apr09) transformed` | `ILM1940279` | 
+| Hematopoetic progenitor cells | `UMCG Progenitor Cells ILM6v1.1 (Apr09) transformed` | `ILM1940279` | 
+| Spleen | `UTHSC Affy MoGene 1.0 ST Spleen (Dec10) RMA` | `10540639` | 
+| Liver | `UTHSC BXD Liver RNA-Seq Avg (Oct19) TPM Log2` | `ENSMUST00000032406` | 
+| Heart | `NHLBI BXD All Ages Heart RNA-Seq (Nov20) TMP Log2 **` | `ENSMUSG00000030271` | 
+| Eye | `UTHSC BXD All Ages Eye RNA-Seq (Nov20) TPM Log2 **` | `ENSMUSG00000030271` | 
+
+Table: Names of gene expression datasets used for each tissue type on GeneNetwork {#tbl:eqtl-provenance}
 
 ### Calculating the frequencies of candidate mutator alleles in wild mice 
 
@@ -304,21 +321,20 @@ Using only the BXDs with *B* genotypes at the *Mutyh* mutator locus, we did not 
 
 Table: Summary of nonsynonymous differences between C57BL/6J and DBA/2J haplotypes in DNA repair genes near the mutator locus on chromosome 6. {#tbl:missense-diffs}
 
-We also considered the possibility that expression quantitative trait loci (eQTLs), rather than nonsynonymous mutations, were responsible for the C>A mutator phenotype linked to the locus on chromosome 6. Using GeneNetwork [@PMID:27933521], we mapped eQTLs for *Ogg1* in a number of tissues, including hematopoetic stem cells, kidney, and spleen. BXD genotypes at the cosine distance peak on chromosome 6 were significantly associated with *Ogg1* expression in many tissues, and *D* genotypes were nearly always associated with decreased gene expression (Table @tbl:eqtl-results).
+We also considered the possibility that expression quantitative trait loci (eQTLs), rather than nonsynonymous mutations, were responsible for the C>A mutator phenotype linked to the locus on chromosome 6. Using GeneNetwork [@PMID:27933521], we mapped cis-eQTLs for *Ogg1* in a number of tissues, including hematopoetic stem cells, kidney, and spleen. BXD genotypes at the cosine distance peak on chromosome 6 were significantly associated with *Ogg1* expression in many tissues, and *D* genotypes were nearly always associated with decreased gene expression (Table @tbl:eqtl-results). We also queried a previously published collection of eQTLs derived from Diversity Outbred (DO) mouse embryonic stem cell (mESCs) expression data [@PMID:32795400], but did not find any significant eQTLs for *Ogg1*. 
 
-| Tissue name | Expression data provenance | # BXDs with expression data | cis-eQTL near peak? | -log10(p) of top marker | Additive effect of D allele on expression |
+| Tissue name | # BXDs with expression data |  Top significant marker | LRS at top significant marker | Significant LRS threshold | Additive effect of D allele on expression |
 | - | - | - | - | - | - |
-| Kidney | `Mouse kidney M430v2 Sex Balanced (Aug06) RMA` | 53 | Yes | 12.89 | -0.18 |
-| Gastrointestinal | `UTHSC Mouse BXD Gastrointestinal Affy MoGene 1.0 ST Gene Level (Apr14) RMA` | 46 | Yes | 5.15 | -0.076 |
-| Stem cells | `UMCG Stem Cells ILM6v1.1 (Apr09) transformed` | 22 | No | - | - | 
-| Stem cells | `UMCG Progenitor Cells ILM6v1.1 (Apr09) transformed` | 23 | No | - | - | 
-| Spleen | `UTHSC Affy MoGene 1.0 ST Spleen (Dec10) RMA` | 79 | Yes | 4.73 | -0.056 | 
-| Liver | `UTHSC BXD Liver RNA-Seq Avg (Oct19) TPM Log2` | 50 | Yes | 13.57 | -0.155 | 
-| Heart | `NHLBI BXD All Ages Heart RNA-Seq (Nov20) TMP Log2 **` | 73 | No | - | - |
-| Eye | `UTHSC BXD All Ages Eye RNA-Seq (Nov20) TPM Log2 **` | 87 | Yes | 5.58 | 0.085 
-| Lung | `HZI Lung M430v2 (Apr08) RMA` | 47 | Yes | 14.52 | -0.335 | 
+| Kidney | 53 | `rsm10000004188` | **56.41** | 17.80 | -0.18 |
+| Gastrointestinal | 46 | `rsm10000003441` | **30.10** | 16.21 | -0.081 |
+| Hematopoetic stem cells | 22 | - | - | 16.43 | - | 
+| Hematopoetic progenitor cells | 23 | - | - | 18.27 | - | 
+| Spleen | 79 | `rsm10000003418` | **17.72** | 17.49 | -0.056 | 
+| Liver | 50 | `rsm10000004188` | **52.27** | 18.81 | -0.155 | 
+| Heart | 73 | - | - | 16.12 | - |
+| Eye | 87 | `rsm10000004194` | **22.66** | 17.20 | 0.087 |  
 
-Table: Presence of absence of eQTLs for *Ogg1* in various tissues identified using GeneNetwork. {#tbl:eqtl-results}
+Table: Presence of absence of cis-eQTLs for *Ogg1* in various tissues identified using GeneNetwork. {#tbl:eqtl-results}
 
 ### Evidence of epistasis between germline mutator alleles
 
