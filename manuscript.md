@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-02-22" />
   <meta name="citation_publication_date" content="2023-02-22" />
   <meta property="article:published_time" content="2023-02-22" />
-  <meta name="dc.modified" content="2023-02-22T14:14:38+00:00" />
-  <meta property="article:modified_time" content="2023-02-22T14:14:38+00:00" />
+  <meta name="dc.modified" content="2023-02-22T14:32:33+00:00" />
+  <meta property="article:modified_time" content="2023-02-22T14:32:33+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/217c3be1915bb1e3afbc6285a56762e4a11e4bb9/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/217c3be1915bb1e3afbc6285a56762e4a11e4bb9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/217c3be1915bb1e3afbc6285a56762e4a11e4bb9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7261c41a9500345a3100ac6e1e449e5d1aca192c/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7261c41a9500345a3100ac6e1e449e5d1aca192c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7261c41a9500345a3100ac6e1e449e5d1aca192c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/217c3be1915bb1e3afbc6285a56762e4a11e4bb9/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7261c41a9500345a3100ac6e1e449e5d1aca192c/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@217c3be](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/217c3be1915bb1e3afbc6285a56762e4a11e4bb9)
+from [quinlan-lab/mutator-epistasis-manuscript@7261c41](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/7261c41a9500345a3100ac6e1e449e5d1aca192c)
 on February 22, 2023.
 </em></small>
 
@@ -219,13 +219,13 @@ To simulate the mutation spectrum on the *wild-type* haplotypes, we define a mat
 
 $$\lambda = Pm$$
 
-Then, we populate the matrix $C$ by taking a single Poisson draw from the vector of $\lambda$ values for each mutation type on each haplotype. Thus, for every row in the matrix (i.e., for every haplotype), we perform the following for the $j$'th mutation type:
+Then, we populate the matrix $C$ by taking a single Poisson draw from the vector of $\lambda$ values for each mutation type on each haplotype. Thus, for every row $i$ in the matrix (i.e., for every haplotype), we perform the following for the mutation type $j$:
 
-$$C_{*, j} = \mathrm {Pois}(\lambda_{j})$$
+$$C_{i, j} = \mathrm {Pois}(\lambda_{j})$$
 
-To simulate the mutation spectrum on the $\frac{h}{2}$ *mutator* haplotypes, we define a new matrix $C^{\prime}$ of size $(\frac{h}{2}, n)$ as defined above. We then multiply the lambda value of a particular mutation type (or multiple mutation types) by the mutator effect size $e$ to obtain $\lambda^{\prime}$. Then, for every row in the matrix:
+To simulate the mutation spectrum on the $\frac{h}{2}$ *mutator* haplotypes, we define a new matrix $C^{\prime}$ of size $(\frac{h}{2}, n)$ as defined above. We then multiply the lambda value of a particular mutation type (or multiple mutation types) by the mutator effect size $e$ to obtain $\lambda^{\prime}$. Then, for every row $i$ in the matrix:
 
-$$C^{\prime}_{*, j} = \mathrm {Pois}(\lambda^{\prime}_{j})$$
+$$C^{\prime}_{i, j} = \mathrm {Pois}(\lambda^{\prime}_{j})$$
 
 When $k = 1$, we only augment the effect size of one mutation type at a time, but when $k = 3$, we augment a fraction (25%, 50%, or 100%) of the $3$-mer mutation types associated with a single “base” mutation type. 
 
