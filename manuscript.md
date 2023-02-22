@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-02-22" />
   <meta name="citation_publication_date" content="2023-02-22" />
   <meta property="article:published_time" content="2023-02-22" />
-  <meta name="dc.modified" content="2023-02-22T14:32:33+00:00" />
-  <meta property="article:modified_time" content="2023-02-22T14:32:33+00:00" />
+  <meta name="dc.modified" content="2023-02-22T16:08:39+00:00" />
+  <meta property="article:modified_time" content="2023-02-22T16:08:39+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7261c41a9500345a3100ac6e1e449e5d1aca192c/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7261c41a9500345a3100ac6e1e449e5d1aca192c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7261c41a9500345a3100ac6e1e449e5d1aca192c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/fe46940d2ea0165d61a1aea0bd11a70e6903af08/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/fe46940d2ea0165d61a1aea0bd11a70e6903af08/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/fe46940d2ea0165d61a1aea0bd11a70e6903af08/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7261c41a9500345a3100ac6e1e449e5d1aca192c/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/fe46940d2ea0165d61a1aea0bd11a70e6903af08/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@7261c41](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/7261c41a9500345a3100ac6e1e449e5d1aca192c)
+from [quinlan-lab/mutator-epistasis-manuscript@fe46940](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/fe46940d2ea0165d61a1aea0bd11a70e6903af08)
 on February 22, 2023.
 </em></small>
 
@@ -197,9 +197,9 @@ where $||\mathbf{A}||$ and $||\mathbf{B}||$ are the $L^2$ (or Euclidean) norms o
 
 Similar to existing methods for quantitative trait locus mapping [@PMID:30591514], we use permutation tests to establish genome-wide cosine distance thresholds. In each of $N$ permutation trials, we randomly shuffle the per-haplotype mutation data such that haplotype labels no longer correspond to the correct mutation counts. Using the shuffled mutation data, we perform a genome-wide distance scan as described above, and record the maximum distance observed at any locus. After $N$ permutations (usually 10,000), we compute the $1 - p$ percentile of the maximum distance distribution, and use that percentile value as a genome-wide significance threshold (for example, at $p = 0.05$).
 
-The inter-haplotype distance method was implemented in Python, and relies heavily on the following Python libraries: `numpy`, `pandas`, `matplotlib`, `scikit-learn`, `pandera`, `seaborn`, and `numba` [@doi:https://doi.org/10.1038/s41586-020-2649-2;@doi:https://doi.org/10.5281/zenodo.3509134;@doi:10.1109/MCSE.2007.55;@url:https://jmlr.csail.mit.edu/papers/v12/pedregosa11a.html;@doi:10.25080/Majora-342d178e-010;@doi:https://doi.org/10.21105/joss.03021;@doi:https://doi.org/10.1145/2833157.2833162].
+The inter-haplotype distance method was implemented in Python, and relies heavily on the following Python libraries: `numpy`, `pandas`, `matplotlib`, `scikit-learn`, `pandera`, `seaborn`, and `numba` [@doi:10.1038/s41586-020-2649-2;@doi:10.5281/zenodo.3509134;@doi:10.1109/MCSE.2007.55;@url:https://jmlr.csail.mit.edu/papers/v12/pedregosa11a.html;@doi:10.25080/Majora-342d178e-010;@doi:10.21105/joss.03021;@doi:10.1145/2833157.2833162].
 
-Additional documentation is available on GitHub [@url:https://github.com/quinlan-lab/proj-mutator-mapping], along with a reproducible Snakemake [@doi:https://doi.org/10.12688/f1000research.29032.1] workflow for running the method from start to finish using the BXDs (including downloading the mutation data, downloading genotypes, and running a genome-wide distance scan).
+Additional documentation is available on GitHub [@url:https://github.com/quinlan-lab/proj-mutator-mapping], along with a reproducible Snakemake [@doi:10.12688/f1000research.29032.1] workflow for running the method from start to finish using the BXDs (including downloading the mutation data, downloading genotypes, and running a genome-wide distance scan).
 
 ### Simulations to assess the power of the inter-haplotype distance approach
 
@@ -219,7 +219,7 @@ To simulate the mutation spectrum on the *wild-type* haplotypes, we define a mat
 
 $$\lambda = Pm$$
 
-Then, we populate the matrix $C$ by taking a single Poisson draw from the vector of $\lambda$ values for each mutation type on each haplotype. Thus, for every row $i$ in the matrix (i.e., for every haplotype), we perform the following for the mutation type $j$:
+Then, we populate the matrix $C$ by taking a single Poisson draw from the vector of $\lambda$ values for each mutation type on each haplotype. Thus, for every row $i$ in the matrix (i.e., for every haplotype), we perform the following for mutation type $j$:
 
 $$C_{i, j} = \mathrm {Pois}(\lambda_{j})$$
 
@@ -301,27 +301,19 @@ We first tested the inter-haplotype cosine distance approach using simulated dat
 
 ### Re-identifying the mutator allele on chromosome 4 in the BXDs
 
-We applied our inter-haplotype distance method to 94 BXD RILs (Materials and Methods) with a total of 63,914 *de novo* germline mutations [@PMID:35545679]. Reassuringly, we observed a large peak in cosine distance at a locus on chromosome 4 (Figure {@fig:distance-results}A; maximum distance of X at marker ID rsYYYYY; position 116.8 Mbp in mm10 coordinates). 
+We applied our inter-haplotype distance method to 93 BXD RILs (Materials and Methods) with a total of 62,993 *de novo* germline mutations [@PMID:35545679]. Reassuringly, we observed a large peak in cosine distance at a locus on chromosome 4 (Figure {@fig:distance-results}A; maximum distance of $9.2\mathrm{e}{-3}$ at marker ID `rs52263933`; position 116.75 Mbp in GRCm38/mm10 coordinates). 
 
-![**Results of inter-haplotype distance scans in the BXD RILs.** **a)** Cosine distances between aggregate *de novo* mutation spectra on BXD haplotypes (n = 94)with either *D* or *B* alleles at approximately 7,500 informative markers. Distance threshold at $p = 0.05$ was calculated by performing 10,000 permutations of the BXD haplotype mutation data, and is shown as a dotted grey line. One outlier RIL with an extremely high C>A mutation rate (BXD68) was removed prior to running the distance scan. **b)** Cosine distances between aggregate *de novo* mutation spectra on BXD haplotypes with either *D* or *B* alleles at approximately 7,500 informative markers. Only BXDs with *D* haplotypes at marker rsYYYY on chromosome 4 were included in the scan. Distance threshold at $p = 0.05$ was calculated by performing 10,000 permutations of the BXD haplotype mutation data, and is shown as a dotted grey line. **c)** Fractions of *de novo* germline mutations in BXDs with either *D* or *B* haplotypes at markers rsXXXX and rsYYYY. Total counts of each mutation type were aggregated in groups of BXDs with either of the four possible haplotype combinations, and fractions of each mutation type were calculated in each group separately. Chi-square tests of independence were used to compare counts of individual mutation types between the D-D and D-B groups of BXDs, as well as between the B-D and B-B groups. **d)** Fractions of *de novo* germline mutations in Sanger Mouse Genome Project (MGP) strains with either *D* or *B* haplotypes at markers rsXXXX and rsYYYY. Total counts of each mutation type were aggregated in groups of MGP strains with either of the four possible haplotype combinations, and fractions of each mutation type were calculated in each group separately. Chi-square tests of independence were used to compare counts of individual mutation types between the D-D and D-B groups of BXDs, as well as between the B-D and B-B groups.](images/Figure%202.png){#fig:distance-results width=7in} 
+![**Results of inter-haplotype distance scans in the BXD RILs.** **a)** Cosine distances between aggregate *de novo* mutation spectra on BXD haplotypes (n = 93 haplotypes; 62,993 total mutations) with either *D* or *B* alleles at 7,320 informative markers. Distance threshold at $p = 0.05$ was calculated by performing 10,000 permutations of the BXD haplotype mutation data, and is shown as a dotted grey line. One outlier RIL with an extremely high C>A mutation rate (BXD68) was removed prior to running the distance scan. **b)** Cosine distances between aggregate *de novo* mutation spectra on BXD haplotypes with *D* alleles at `rs52263933` (n = 55 haplotypes; 40,913 total mutations), the marker with the highest cosine distance in a) and either *D* or *B* alleles at 7,320 informative markers. Distance threshold at $p = 0.05$ was calculated by performing 10,000 permutations of the BXD haplotype mutation data, and is shown as a dotted grey line. **c)** Fractions of *de novo* germline mutations in BXDs with either *D* or *B* haplotypes at markers `rs52263933` and `rs31001331`. Total counts of each mutation type were aggregated in groups of BXDs with either of the four possible haplotype combinations, and fractions of each mutation type were calculated in each group separately. Chi-square tests of independence were used to compare counts of individual mutation types between the D-D and D-B groups of BXDs, as well as between the B-D and B-B groups. **d)** Fractions of *de novo* germline mutations in Sanger Mouse Genome Project (MGP) strains with either *D* or *B* haplotypes at markers `rs52263933` and `rs31001331`. Total counts of each mutation type were aggregated in groups of MGP strains with either of the four possible haplotype combinations, and fractions of each mutation type were calculated in each group separately. Chi-square tests of independence were used to compare counts of individual mutation types between the D-D and D-B groups of BXDs, as well as between the B-D and B-B groups.](images/Figure%202.png){#fig:distance-results width=7in} 
 
-In a previous analysis, we used quantitative trait locus (QTL) mapping to identify a nearly identical locus on chromosome 4 that was significantly associated with the C>A germline mutation rate in the BXDs [@PMID:35545679]. This locus overlaps 21 protein-coding genes that are annotated by the Gene Ontology as being involved in "DNA repair," but only one of these genes contains non-synonymous differences between the two parental strains: *Mutyh*. *Mutyh* encodes a protein involved in the base-excision repair of 8-oxoguanine (8-oxoG), a DNA lesion caused by oxidative damage, and prevents the accumulation of C>A mutations [@PMID:28551381;@PMID:28127763;@PMID:17581577]. C>A germline mutation rates are nearly 50% higher in BXDs that inherited *D* haplotypes at marker ID rsYYYY than in those that inherited *B* haplotypes [@PMID:35545679].
+In a previous analysis, we used quantitative trait locus (QTL) mapping to identify a nearly identical locus on chromosome 4 that was significantly associated with the C>A germline mutation rate in the BXDs [@PMID:35545679]. This locus overlaps 21 protein-coding genes that are annotated by the Gene Ontology as being involved in "DNA repair," but only one of these genes contains non-synonymous differences between the two parental strains: *Mutyh*. *Mutyh* encodes a protein involved in the base-excision repair of 8-oxoguanine (8-oxoG), a DNA lesion caused by oxidative damage, and prevents the accumulation of C>A mutations [@PMID:28551381;@PMID:28127763;@PMID:17581577]. C>A germline mutation rates are nearly 50% higher in BXDs that inherited *D* haplotypes at marker ID `rs52263933` than in those that inherited *B* haplotypes [@PMID:35545679].
 
 ### An additional germline mutator allele on chromosome 6
 
-After confirming that the inter-haplotype distance method could recover the mutator locus overlapping *Mutyh*, we asked if our approach could identify additional mutator loci in the BXD. To account for the effects of the large-effect C>A germline mutator locus near *Mutyh*, we divided the BXD RILs into those with either *D* (n = X) or *B* (n = Y) genotypes at rsYYYYY (the marker at which we observed the highest inter-haplotype cosine distance on chromosome 4), and ran a genome-wide distance scan using each group separately (Figure {@fig:distance-results}B.
+After confirming that the inter-haplotype distance method could recover the mutator locus overlapping *Mutyh*, we asked if our approach could identify additional mutator loci in the BXD. To account for the effects of the large-effect C>A germline mutator locus near *Mutyh*, we divided the BXD RILs into those with either *D* (n = 55) or *B* (n = 38) genotypes at `rs52263933` (the marker at which we observed the highest inter-haplotype cosine distance on chromosome 4), and ran a genome-wide distance scan using each group separately (Figure {@fig:distance-results}B.
 
-Using only the BXDs with *B* genotypes at the *Mutyh* mutator locus, we did not observe any genome-wide significant peaks. But using the BXDs with *D* genotypes at the same locus, we identified a cosine distance peak on chromosome 6 (Figure {@fig:distance-results}B; maximum distance of X at marker rsYYYYY; position 133.2 Mbp in mm10 coordinates). We queried the region underneath this peak and discovered two genes annotated with the Gene Ontology term "DNA repair": *Setmar*, a protein with histone methyltransferase and transposase activity, and remarkably, *Ogg1*. The latter encodes a key member of the base-exision repair response to oxidative DNA damage, a pathway that also includes *Mutyh* and a related gene, *Mth1*. Both *Setmar* and *Ogg1* harbor fixed nonsynonymous differences between the C57BL/6J and DBA/2J parental strains (Table {@tbl:missense-diffs}). 
+Using only the BXDs with *B* genotypes at the *Mutyh* mutator locus, we did not observe any genome-wide significant peaks. But using the BXDs with *D* genotypes at the same locus, we identified a cosine distance peak on chromosome 6 (Figure {@fig:distance-results}B; maximum distance of $3.0\mathrm{e}{-3}$ at marker `rs31001331`; position 114.05 Mbp in mm10 coordinates). We queried the region underneath this peak (+/- 5 Mbp) and discovered 87 protein-coding genes. Remarkably, only one was annotated with the Gene Ontology term "DNA repair" and contained nonsynonymous differences between C57BL/6J and DBA/2J: *Ogg1*. *Ogg1* encodes a key member of the base-exision repair response to oxidative DNA damage, a pathway that also includes *Mutyh* and a related gene, *Mth1*. *Ogg1* harbors a single fixed nonsynonymous differences between the C57BL/6J and DBA/2J parental strains: p.Ala95Thr, at position 113,328,510 on chromosome 6 in GRCm38/mm10 coordinates. 
 
-| Gene name | Amino acid change | Position in GRCm38/mm10 coordinates |
-|----------|----------|----------|
-| *Ogg1* | p.Ala95Thr | chr6: |
-| *Setmar* | p.Leu103Phe | chr6: |
-| *Setmar* | p.Ser273Arg | chr6: |
-
-Table: Summary of nonsynonymous differences between C57BL/6J and DBA/2J haplotypes in DNA repair genes near the mutator locus on chromosome 6. {#tbl:missense-diffs}
-
-We also considered the possibility that expression quantitative trait loci (eQTLs), rather than nonsynonymous mutations, were responsible for the C>A mutator phenotype linked to the locus on chromosome 6. Using GeneNetwork [@PMID:27933521], we mapped cis-eQTLs for *Ogg1* in a number of tissues, including hematopoetic stem cells, kidney, and spleen. BXD genotypes at the cosine distance peak on chromosome 6 were significantly associated with *Ogg1* expression in many tissues, and *D* genotypes were nearly always associated with decreased gene expression (Table @tbl:eqtl-results). We also queried a previously published collection of eQTLs derived from Diversity Outbred (DO) mouse embryonic stem cell (mESCs) expression data [@PMID:32795400], but did not find any significant eQTLs for *Ogg1*. 
+We also considered the possibility that expression quantitative trait loci (eQTLs), rather than nonsynonymous mutations, could contribute to the C>A mutator phenotype linked to the locus on chromosome 6. Using GeneNetwork [@PMID:27933521], we mapped cis-eQTLs for *Ogg1* in a number of tissues, including hematopoetic stem cells, kidney, and spleen. BXD genotypes near the cosine distance peak on chromosome 6 were significantly associated with *Ogg1* expression in many tissues, and *D* genotypes were nearly always associated with decreased gene expression (Table @tbl:eqtl-results). We also queried a previously published collection of eQTLs derived from Diversity Outbred (DO) mouse embryonic stem cell (mESCs) expression data [@PMID:32795400], but did not find any significant eQTLs for *Ogg1*. 
 
 | Tissue name | # BXDs with expression data |  Top significant marker | LRS at top significant marker | Significant LRS threshold | Additive effect of D allele on expression |
 | - | - | - | - | - | - |
