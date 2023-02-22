@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-02-22" />
   <meta name="citation_publication_date" content="2023-02-22" />
   <meta property="article:published_time" content="2023-02-22" />
-  <meta name="dc.modified" content="2023-02-22T19:50:40+00:00" />
-  <meta property="article:modified_time" content="2023-02-22T19:50:40+00:00" />
+  <meta name="dc.modified" content="2023-02-22T22:00:29+00:00" />
+  <meta property="article:modified_time" content="2023-02-22T22:00:29+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/077e8f23a4f4da32c0dfe0d486a3a5b177ac3a91/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/077e8f23a4f4da32c0dfe0d486a3a5b177ac3a91/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/077e8f23a4f4da32c0dfe0d486a3a5b177ac3a91/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ffa2be979c84ee990d646cb8aef279fa2ee389b3/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ffa2be979c84ee990d646cb8aef279fa2ee389b3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ffa2be979c84ee990d646cb8aef279fa2ee389b3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/077e8f23a4f4da32c0dfe0d486a3a5b177ac3a91/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ffa2be979c84ee990d646cb8aef279fa2ee389b3/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@077e8f2](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/077e8f23a4f4da32c0dfe0d486a3a5b177ac3a91)
+from [quinlan-lab/mutator-epistasis-manuscript@ffa2be9](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/ffa2be979c84ee990d646cb8aef279fa2ee389b3)
 on February 22, 2023.
 </em></small>
 
@@ -227,7 +227,7 @@ To simulate the mutation spectrum on the $\frac{h}{2}$ *mutator* haplotypes, we 
 
 $$C^{\prime}_{i, j} = \mathrm {Pois}(\lambda^{\prime}_{j})$$
 
-When $k = 1$, we only augment the effect size of one mutation type at a time, but when $k = 3$, we augment a fraction (25%, 50%, or 100%) of the $3$-mer mutation types associated with a single “base” mutation type. 
+When $k = 1$, we only augment the effect size of one mutation type at a time, but when $k = 3$, we augment a fraction (25%, 50%, or 100%) of the $3$-mer mutation types associated with a single "central" mutation type. 
 
 After generating mutator and wild-type haplotypes, we compute the aggregate mutation spectrum in either group by summing the columns of $C$ and $C^{\prime}$. We then calculate the cosine distance between the two aggregate spectra, which we call the "focal" distance $D_f$. To determine whether $D_f$ is greater than what we'd expect by chance, we perform a permutation test.
 
@@ -264,7 +264,7 @@ We downloaded mutation data from a previously published analysis [@PMID:30753674
 
 ### Querying GeneNetwork for evidence of eQTLs at the mutator locus
 
-We used the online GeneNetwork resource [@PMID:27933521], which contains array- and RNA-seq-derived expression measurements in a wide variety of tissues from numerous datasets, to find *cis*-eQTLs for the DNA repair genes we implicated under the cosine distance peak on chromosome 6. On the GeneNetwork homepage (genenetwork.org), we selected the "BXD Family" **Group** and used the **Type** dropdown menu to select each of the specific expression datasets described in Table @tbl:eqtl-results. In the **Get Any** text box, we then entered the specified gene name and clicked **Search**. After selecting the appropriate data record on the next page, we used the **Mapping Tools** dropdown to run Haley-Knott regression [@PMID:16718932] with the following parameters: WGS-based marker genotypes, 1,000 permutations for LOD threshold calculations, and controlling for BXD genotypes at the `rsm10000007390` marker.
+We used the online GeneNetwork resource [@PMID:27933521], which contains array- and RNA-seq-derived expression measurements in a wide variety of tissues from numerous datasets, to find *cis*-eQTLs for the DNA repair genes we implicated under the cosine distance peak on chromosome 6. On the GeneNetwork homepage (genenetwork.org), we selected the "BXD Family" **Group** and used the **Type** dropdown menu to select each of the specific expression datasets described in Table @tbl:eqtl-provenance. In the **Get Any** text box, we then entered the gene name (*Ogg1*) and clicked **Search**. After selecting the appropriate trait ID on the next page, we used the **Mapping Tools** dropdown to run Haley-Knott regression [@PMID:16718932] with the following parameters: WGS-based marker genotypes, 1,000 permutations for LOD threshold calculations, and controlling for BXD genotypes at the `rsm10000007390` marker.
 
 The exact names of the expression datasets we used for each tissue are shown in Table @tbl:eqtl-provenance below:
 
@@ -283,7 +283,7 @@ Table: Names of gene expression datasets used for each tissue type on GeneNetwor
 
 ### Calculating the frequencies of candidate mutator alleles in wild mice 
 
-For each of the three candidate nonsynonymous mutations we identified under the cosine distance peak on chromosome 6 (Table {@tbl:missense-diffs}), we queried a VCF file containing genome-wide variation in 67 wild-derived mice from four species of *Mus* [@PMID:27622383]. We calculated the allele frequency of each nonsynonymous mutation in each of the four species or subspecies (*Mus musculus domesticus*, *Mus musculus musculus*, *Mus musculus castaneus*, and *Mus spretus*), including genotypes that met the following criteria:
+To determine the frequency of the *Ogg1* p.Thr95Ala mutation in other populations of mice, we queried a VCF file containing genome-wide variation in 67 wild-derived mice from four species of *Mus* [@PMID:27622383]. We calculated the allele frequency of each nonsynonymous mutation in each of the four species or subspecies (*Mus musculus domesticus*, *Mus musculus musculus*, *Mus musculus castaneus*, and *Mus spretus*), including genotypes that met the following criteria:
 
 * supported by at least 10 sequencing reads 
 
@@ -311,9 +311,9 @@ In a previous analysis, we used quantitative trait locus (QTL) mapping to identi
 
 After confirming that the inter-haplotype distance method could recover the mutator locus overlapping *Mutyh*, we asked if our approach could identify additional mutator loci in the BXD. To account for the effects of the large-effect C>A germline mutator locus near *Mutyh*, we divided the BXD RILs into those with either *D* (n = 55) or *B* (n = 38) genotypes at `rs52263933` (the marker at which we observed the highest inter-haplotype cosine distance on chromosome 4), and ran a genome-wide distance scan using each group separately (Figure {@fig:distance-results}B.
 
-Using only the BXDs with *B* genotypes at the *Mutyh* mutator locus, we did not observe any genome-wide significant peaks. But using the BXDs with *D* genotypes at the same locus, we identified a cosine distance peak on chromosome 6 (Figure {@fig:distance-results}B; maximum distance of 3.03e-3 at marker `rs31001331`; position 114.05 Mbp in mm10 coordinates). We queried the region underneath this peak (+/- 5 Mbp) and discovered 87 protein-coding genes. Remarkably, only one was annotated with the Gene Ontology term "DNA repair" and contained nonsynonymous differences between C57BL/6J and DBA/2J: *Ogg1*. *Ogg1* encodes a key member of the base-excision repair response to oxidative DNA damage, a pathway that also includes *Mutyh* and a related gene, *Mth1*. *Ogg1* harbors a single fixed nonsynonymous differences between the C57BL/6J and DBA/2J parental strains: p.Thr95Ala, at position 113,328,510 on chromosome 6 in GRCm38/mm10 coordinates. 
+Using only the BXDs with *B* genotypes at the *Mutyh* mutator locus, we did not observe any genome-wide significant peaks. But using the BXDs with *D* genotypes at the same locus, we identified a cosine distance peak on chromosome 6 (Figure {@fig:distance-results}B; maximum distance of 3.03e-3 at marker `rs31001331`; position 114.05 Mbp in GRCm38/mm10 coordinates). We queried the region underneath this peak (+/- 5 Mbp) and discovered 87 protein-coding genes. Remarkably, only one was annotated with the Gene Ontology term "DNA repair" and contained nonsynonymous differences between C57BL/6J and DBA/2J: *Ogg1*. *Ogg1* encodes a key member of the base-excision repair response to oxidative DNA damage, a pathway that also includes *Mutyh* and a related gene, *Mth1*. *Ogg1* harbors a single fixed nonsynonymous differences between the C57BL/6J and DBA/2J parental strains: p.Thr95Ala, at position 113,328,510 on chromosome 6 in GRCm38/mm10 coordinates. 
 
-We also considered the possibility that expression quantitative trait loci (eQTLs), rather than nonsynonymous mutations, could contribute to the C>A mutator phenotype linked to the locus on chromosome 6. Using GeneNetwork [@PMID:27933521], we mapped cis-eQTLs for *Ogg1* in a number of tissues, including hematopoetic stem cells, kidney, and spleen. BXD genotypes near the cosine distance peak on chromosome 6 were significantly associated with *Ogg1* expression in many tissues, and *D* genotypes were nearly always associated with decreased gene expression (Table @tbl:eqtl-results). We also queried a previously published collection of eQTLs derived from Diversity Outbred (DO) mouse embryonic stem cell (mESCs) expression data [@PMID:32795400], but did not find any significant eQTLs for *Ogg1*. 
+We also considered the possibility that expression quantitative trait loci (eQTLs), rather than nonsynonymous mutations, could contribute to the C>A mutator phenotype linked to the locus on chromosome 6. Using GeneNetwork [@PMID:27933521], we mapped cis-eQTLs for *Ogg1* in a number of tissues, including hematopoetic stem cells, kidney, and spleen. BXD genotypes near the cosine distance peak on chromosome 6 were significantly associated with *Ogg1* expression in some (but not all) tissues, and *D* genotypes were nearly always associated with decreased gene expression (Table @tbl:eqtl-results). We also queried a previously published collection of eQTLs derived from Diversity Outbred (DO) mouse embryonic stem cell (mESC) expression data [@PMID:32795400], but did not find any significant eQTLs for *Ogg1*. 
 
 | Tissue name | # BXDs with expression data |  Top significant marker | LRS at top significant marker | Significant LRS threshold | Additive effect of D allele on expression |
 | - | - | - | - | - | - |
@@ -330,7 +330,7 @@ Table: Presence or absence of cis-eQTLs for *Ogg1* in various tissues identified
 
 ### Evidence of epistasis between germline mutator alleles
 
-We next compared the mutation spectra of BXDs with either *B* or *D* genotypes at the mutator loci on chromosomes 4 and 6. We observed that C>A germline mutation fractions in BXDs with *D* alleles at both mutator loci were significantly higher than C>A fractions in BXDs with *D* alleles at either locus alone (Figure {@fig:distance-results}C). However, compared to BXDs with *B* alleles at the chromosome 6 mutator locus, those with *D* alleles did not exhibit significantly higher C>A mutation fractions, indicating that the effects of the chromosome 6 mutator locus depend on the presence of a *D* allele at the chromosome 4 locus (Figure {@fig:distance-results}C).
+Next, we more precisely characterized the effects of the *Mutyh* and *Ogg1* mutator alleles on mutation spectra in the BXDs. We observed that C>A germline mutation fractions in BXDs with *D* alleles at both mutator loci were significantly higher than C>A fractions in BXDs with *D* alleles at either locus alone (Figure {@fig:distance-results}C). However, compared to BXDs with *B* alleles at the chromosome 6 mutator locus, those with *D* alleles did not exhibit significantly higher C>A mutation fractions, indicating that the effects of the chromosome 6 mutator locus depend on the presence of a *D* allele at the chromosome 4 locus (Figure {@fig:distance-results}C).
 
 To explore the effects of the two mutator loci in other inbred laboratory mice, we also compared the germline mutation spectra of Sanger Mouse Genomes Project (MGP) strains. Dumont [@PMID:30753674] previously identified private germline mutations in 29 inbred laboratory strains; these private variants likely represent recent *de novo* germline mutations. Only two of the MGP strains possess *D* genotypes at both the chromosome 4 and chromosome 6 mutator loci: DBA/1J and DBA/2J. Compared to strains with *B* alleles at both mutator loci, those with *D* alleles at both mutator loci exhibit significantly higher C>A germline mutation fractions ($p = 3.5\mathrm{e}{-8}$, Figure {@fig:distance-results}D). MGP strains with *D* alleles at both mutator loci appear to have higher C>A mutation fractions than those with *D* alleles at either locus alone (Figure {@fig:distance-results}D), but this difference is not significant ($p = 0.16$). Therefore, given the smaller number of MGP strains with *de novo* germline mutation data, we are unable to confirm the signal of epistasis observed in the BXDs.  
 
