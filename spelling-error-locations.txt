@@ -1,5 +1,1 @@
 content/03.methods.md:23:haplotype's
-content/03.methods.md:78:succesfully
-content/04.results.md:3:Benchmarking
-content/04.results.md:21:exision
-content/05.discussion.md:15:Howver

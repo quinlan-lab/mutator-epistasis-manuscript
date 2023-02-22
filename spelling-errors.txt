@@ -1,6 +1,2 @@
-Benchmarking
-exision
 GRCm
 haplotype’s
-Howver
-succesfully

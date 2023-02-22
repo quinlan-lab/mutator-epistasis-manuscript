@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-02-22" />
   <meta name="citation_publication_date" content="2023-02-22" />
   <meta property="article:published_time" content="2023-02-22" />
-  <meta name="dc.modified" content="2023-02-22T18:21:07+00:00" />
-  <meta property="article:modified_time" content="2023-02-22T18:21:07+00:00" />
+  <meta name="dc.modified" content="2023-02-22T19:50:40+00:00" />
+  <meta property="article:modified_time" content="2023-02-22T19:50:40+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7040bb5f5e74db5e589edd23fe1d900dfe4c1436/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7040bb5f5e74db5e589edd23fe1d900dfe4c1436/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7040bb5f5e74db5e589edd23fe1d900dfe4c1436/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/077e8f23a4f4da32c0dfe0d486a3a5b177ac3a91/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/077e8f23a4f4da32c0dfe0d486a3a5b177ac3a91/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/077e8f23a4f4da32c0dfe0d486a3a5b177ac3a91/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7040bb5f5e74db5e589edd23fe1d900dfe4c1436/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/077e8f23a4f4da32c0dfe0d486a3a5b177ac3a91/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@7040bb5](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/7040bb5f5e74db5e589edd23fe1d900dfe4c1436)
+from [quinlan-lab/mutator-epistasis-manuscript@077e8f2](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/077e8f23a4f4da32c0dfe0d486a3a5b177ac3a91)
 on February 22, 2023.
 </em></small>
 
@@ -238,7 +238,7 @@ C \\
 C^{\prime}
 \end{bmatrix}$$
 
-Then, in each of $N = 1,000$ trials, we randomly permute the rows of $A$. In every permutation, we consider the row indices from $\left[0, \frac{h}{2} \right)$ to correspond to the wild-type haplotypes, and the row indices from $\left[ \frac{h}{2}, h \right)$ to correspond to the mutator haplotypes. We then compute the cosine distance between the aggregate spectra of the wild-type and mutator haplotypes. If fewer than 5% of the $N$ permutations produces a cosine distance greater than or equal to $D_f$, we say that the approach succesfully identified the mutator allele. For every combination of simulation parameters ($h$, $m$, $e$, and so on) we perform 100 trials and record the number of trials in which we successfully identify the mutator allele. 
+Then, in each of $N = 1,000$ trials, we randomly permute the rows of $A$. In every permutation, we consider the row indices from $\left[0, \frac{h}{2} \right)$ to correspond to the wild-type haplotypes, and the row indices from $\left[ \frac{h}{2}, h \right)$ to correspond to the mutator haplotypes. We then compute the cosine distance between the aggregate spectra of the wild-type and mutator haplotypes. If fewer than 5% of the $N$ permutations produces a cosine distance greater than or equal to $D_f$, we say that the approach successfully identified the mutator allele. For every combination of simulation parameters ($h$, $m$, $e$, and so on) we perform 100 trials and record the number of trials in which we successfully identify the mutator allele. 
 
 ### Applying the inter-haplotype distance method to the BXDs
 
@@ -311,7 +311,7 @@ In a previous analysis, we used quantitative trait locus (QTL) mapping to identi
 
 After confirming that the inter-haplotype distance method could recover the mutator locus overlapping *Mutyh*, we asked if our approach could identify additional mutator loci in the BXD. To account for the effects of the large-effect C>A germline mutator locus near *Mutyh*, we divided the BXD RILs into those with either *D* (n = 55) or *B* (n = 38) genotypes at `rs52263933` (the marker at which we observed the highest inter-haplotype cosine distance on chromosome 4), and ran a genome-wide distance scan using each group separately (Figure {@fig:distance-results}B.
 
-Using only the BXDs with *B* genotypes at the *Mutyh* mutator locus, we did not observe any genome-wide significant peaks. But using the BXDs with *D* genotypes at the same locus, we identified a cosine distance peak on chromosome 6 (Figure {@fig:distance-results}B; maximum distance of 3.03e-3 at marker `rs31001331`; position 114.05 Mbp in mm10 coordinates). We queried the region underneath this peak (+/- 5 Mbp) and discovered 87 protein-coding genes. Remarkably, only one was annotated with the Gene Ontology term "DNA repair" and contained nonsynonymous differences between C57BL/6J and DBA/2J: *Ogg1*. *Ogg1* encodes a key member of the base-exision repair response to oxidative DNA damage, a pathway that also includes *Mutyh* and a related gene, *Mth1*. *Ogg1* harbors a single fixed nonsynonymous differences between the C57BL/6J and DBA/2J parental strains: p.Thr95Ala, at position 113,328,510 on chromosome 6 in GRCm38/mm10 coordinates. 
+Using only the BXDs with *B* genotypes at the *Mutyh* mutator locus, we did not observe any genome-wide significant peaks. But using the BXDs with *D* genotypes at the same locus, we identified a cosine distance peak on chromosome 6 (Figure {@fig:distance-results}B; maximum distance of 3.03e-3 at marker `rs31001331`; position 114.05 Mbp in mm10 coordinates). We queried the region underneath this peak (+/- 5 Mbp) and discovered 87 protein-coding genes. Remarkably, only one was annotated with the Gene Ontology term "DNA repair" and contained nonsynonymous differences between C57BL/6J and DBA/2J: *Ogg1*. *Ogg1* encodes a key member of the base-excision repair response to oxidative DNA damage, a pathway that also includes *Mutyh* and a related gene, *Mth1*. *Ogg1* harbors a single fixed nonsynonymous differences between the C57BL/6J and DBA/2J parental strains: p.Thr95Ala, at position 113,328,510 on chromosome 6 in GRCm38/mm10 coordinates. 
 
 We also considered the possibility that expression quantitative trait loci (eQTLs), rather than nonsynonymous mutations, could contribute to the C>A mutator phenotype linked to the locus on chromosome 6. Using GeneNetwork [@PMID:27933521], we mapped cis-eQTLs for *Ogg1* in a number of tissues, including hematopoetic stem cells, kidney, and spleen. BXD genotypes near the cosine distance peak on chromosome 6 were significantly associated with *Ogg1* expression in many tissues, and *D* genotypes were nearly always associated with decreased gene expression (Table @tbl:eqtl-results). We also queried a previously published collection of eQTLs derived from Diversity Outbred (DO) mouse embryonic stem cell (mESCs) expression data [@PMID:32795400], but did not find any significant eQTLs for *Ogg1*. 
 
@@ -354,7 +354,7 @@ Although a germline mutator allele should increase the absolute count of mutatio
 
 Our results also reveal evidence of epistasis between mammalian germline mutator alleles for the first time. BXDs with *D* alleles at the mutator locus on chromosome 6 only exhibit elevated C>A mutation rates if they also carry *D* alleles at the previously-identified [@PMID:35545679] mutator locus on chromosome 4. And BXDs with *D* alleles at both loci have significantly higher C>A germline mutation rates than lines with *D* alleles at only one mutator locus alone (Figure {@fig:distance-results}C). This raises the exciting possibility that epistasis between mutator alleles has contributed to the evolution of germline mutation rates and spectra in mammalian genomes.
 
-Importantly, we note that we observed epistasis between germline mutator alleles in an unnatural population; the BXDs were inbred by brother-sister mating in a highly controlled laboratory environment that attenuated the effects of natural selection on all but the most deleterious alleles [@doi:10.1146/annurev.ecolsys.39.110707.173437]. Howver, we found the *D* allele in *Ogg1* to be at nearly 25% frequency in *Mus musculus domesticus*, the strain from which C57BL/6J and DBA/2J derive most of their genomes [@PMID:17660819]. Since the *D* mutator haplotype on chromosome 6 does not appear to increase the C>A germline mutation rate on its own (even in a homozygous state), we hypothesize that similar alleles may be at intermediate or high frequency in other natural populations. 
+Importantly, we note that we observed epistasis between germline mutator alleles in an unnatural population; the BXDs were inbred by brother-sister mating in a highly controlled laboratory environment that attenuated the effects of natural selection on all but the most deleterious alleles [@doi:10.1146/annurev.ecolsys.39.110707.173437]. However, we found the *D* allele in *Ogg1* to be at nearly 25% frequency in *Mus musculus domesticus*, the strain from which C57BL/6J and DBA/2J derive most of their genomes [@PMID:17660819]. Since the *D* mutator haplotype on chromosome 6 does not appear to increase the C>A germline mutation rate on its own (even in a homozygous state), we hypothesize that similar alleles may be at intermediate or high frequency in other natural populations. 
 
 ### Causal variants underlying the mutator allele
 
