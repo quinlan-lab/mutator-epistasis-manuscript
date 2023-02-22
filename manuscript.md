@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-02-22" />
   <meta name="citation_publication_date" content="2023-02-22" />
   <meta property="article:published_time" content="2023-02-22" />
-  <meta name="dc.modified" content="2023-02-22T16:38:59+00:00" />
-  <meta property="article:modified_time" content="2023-02-22T16:38:59+00:00" />
+  <meta name="dc.modified" content="2023-02-22T18:21:07+00:00" />
+  <meta property="article:modified_time" content="2023-02-22T18:21:07+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/267f8aadd75cbdee59bd1e7f0a26f12a5116cfaa/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/267f8aadd75cbdee59bd1e7f0a26f12a5116cfaa/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/267f8aadd75cbdee59bd1e7f0a26f12a5116cfaa/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7040bb5f5e74db5e589edd23fe1d900dfe4c1436/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7040bb5f5e74db5e589edd23fe1d900dfe4c1436/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7040bb5f5e74db5e589edd23fe1d900dfe4c1436/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/267f8aadd75cbdee59bd1e7f0a26f12a5116cfaa/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7040bb5f5e74db5e589edd23fe1d900dfe4c1436/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@267f8aa](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/267f8aadd75cbdee59bd1e7f0a26f12a5116cfaa)
+from [quinlan-lab/mutator-epistasis-manuscript@7040bb5](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/7040bb5f5e74db5e589edd23fe1d900dfe4c1436)
 on February 22, 2023.
 </em></small>
 
@@ -317,16 +317,16 @@ We also considered the possibility that expression quantitative trait loci (eQTL
 
 | Tissue name | # BXDs with expression data |  Top significant marker | LRS at top significant marker | Significant LRS threshold | Additive effect of D allele on expression |
 | - | - | - | - | - | - |
-| Kidney | 53 | `rsm10000004188` | **56.41** | 17.80 | -0.18 |
-| Gastrointestinal | 46 | `rsm10000003441` | **30.10** | 16.21 | -0.081 |
+| Kidney | 53 | `rsm10000004188` | 56.41 | 17.80 | -0.18 |
+| Gastrointestinal | 46 | `rsm10000003441` | 30.10 | 16.21 | -0.081 |
 | Hematopoetic stem cells | 22 | - | - | 16.43 | - | 
 | Hematopoetic progenitor cells | 23 | - | - | 18.27 | - | 
-| Spleen | 79 | `rsm10000003418` | **17.72** | 17.49 | -0.056 | 
-| Liver | 50 | `rsm10000004188` | **52.27** | 18.81 | -0.155 | 
+| Spleen | 79 | `rsm10000003418` | 17.72 | 17.49 | -0.056 | 
+| Liver | 50 | `rsm10000004188` | 52.27 | 18.81 | -0.155 | 
 | Heart | 73 | - | - | 16.12 | - |
-| Eye | 87 | `rsm10000004194` | **22.66** | 17.20 | 0.087 |  
+| Eye | 87 | `rsm10000004194` | 22.66 | 17.20 | 0.087 |  
 
-Table: Presence of absence of cis-eQTLs for *Ogg1* in various tissues identified using GeneNetwork. {#tbl:eqtl-results}
+Table: Presence or absence of cis-eQTLs for *Ogg1* in various tissues identified using GeneNetwork. {#tbl:eqtl-results}
 
 ### Evidence of epistasis between germline mutator alleles
 
@@ -358,7 +358,7 @@ Importantly, we note that we observed epistasis between germline mutator alleles
 
 ### Causal variants underlying the mutator allele
 
-Only one DNA repair gene overlapping the C>A mutator locus on chromosome 6 also contained nonsynonymous fixed differences in DNA repair genes: *Ogg1*, a protein-coding gene that participates in the base-excision repair of the oxidative DNA lesion 8-oxoguanine (8-oxoG) [@PMID:17581577]. Both missense mutations and loss-of-heterozygosity in *Ogg1* have been associated with initiation and progression of various types of human cancer [@PMID:22829015;@PMID:10987279;@PMID:9662341]. Unrepaired 8-oxoG lesions can also lead to C>A mutations, and copy-number losses of either *Ogg1* or *Mutyh* are linked to elevated rates of spontaneous C>A mutation in human neuroblastoma [@doi:10.1073/pnas.2007898118]. Given these various lines of evidence, we believe that *Ogg1* is the most likely candidate gene to explain the additional C>A mutator phenotype in the BXDs, but it remains unclear whether the p.Thr95Ala missense mutation is the causal allele. We hypothesized that missense mutations in *Mutyh* were responsible for the large-effect C>A mutator phenotype we previously observed in the BXDs [@PMID:35545679]. However, using high-quality long-read assemblies of inbred laboratory strains, another group recently identified a ~5 kbp mobile element insertion (MEI) within the first intron of *Mutyh* [@doi:10.1101/2022.09.26.509577] that is present on *D* haplotypes and absent from *B* haplotypes. The MEI is associated with significantly reduced expression of *Mutyh* in embryonic stem cells from laboratory strains, and may underlie the previous C>A germline mutator phenotype in the BXDs. In light of this new evidence, we cannot discount the possibility that eQTLs associated with decreased expression of *Ogg1* (Table @tbl:eqtl-results) are responsible for the C>A mutator phenotype we observed in this study.
+Only one DNA repair gene overlapping the C>A mutator locus on chromosome 6 also contained nonsynonymous fixed differences between the C57BL/6J and DBA/2J founder strains: *Ogg1*, a protein-coding gene that participates in base-excision repair of the oxidative DNA lesion 8-oxoguanine (8-oxoG) [@PMID:17581577]. Both missense mutations and loss-of-heterozygosity in *Ogg1* have been associated with initiation and progression of various types of human cancer [@PMID:22829015;@PMID:10987279;@PMID:9662341]. Unrepaired 8-oxoG lesions can also lead to C>A mutations, and copy-number losses of either *Ogg1* or *Mutyh* are linked to elevated rates of spontaneous C>A mutation in human neuroblastoma [@doi:10.1073/pnas.2007898118]. Given these various lines of evidence, we believe that *Ogg1* is the most likely candidate gene to explain the additional C>A mutator phenotype in the BXDs, but it remains unclear whether the p.Thr95Ala missense mutation is the causal allele. We hypothesized that *Mutyh* missense mutations on *D* haplotypes were responsible for the large-effect C>A mutator phenotype we previously observed in the BXDs [@PMID:35545679]. However, using high-quality long-read assemblies of inbred laboratory strains, another group recently identified a ~5 kbp mobile element insertion (MEI) within the first intron of *Mutyh* [@doi:10.1101/2022.09.26.509577] that is present on *D* haplotypes and absent from *B* haplotypes. The MEI is associated with significantly reduced expression of *Mutyh* in embryonic stem cells from laboratory strains, and may therefore underlie the previous C>A germline mutator phenotype in the BXDs. In light of this new evidence, we cannot discount the possibility that eQTLs associated with decreased expression of *Ogg1* (Table @tbl:eqtl-results) are responsible for the C>A mutator phenotype we observed in this study.
 
 ### Discovering mutator alleles in other systems
 
