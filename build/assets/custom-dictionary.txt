@@ -45,7 +45,6 @@ genotyped
 genotypes
 Germline
 haplotype
-haplotype’s
 haplotypes
 Hematopoetic
 heritability
