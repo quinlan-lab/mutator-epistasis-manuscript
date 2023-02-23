@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/gh-pages) branch hosts the contents of this directory at <https://quinlan-lab.github.io/mutator-epistasis-manuscript/>.
-The permalink for this webpage version is <https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ffa2be979c84ee990d646cb8aef279fa2ee389b3/>.
+The permalink for this webpage version is <https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/b54cc624e3fe2b929b3bc4764303f30ac403c19d/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`ffa2be979c84ee990d646cb8aef279fa2ee389b3`](https://github.com/quinlan-lab/mutator-epistasis-manuscript/commit/ffa2be979c84ee990d646cb8aef279fa2ee389b3).
+[`b54cc624e3fe2b929b3bc4764303f30ac403c19d`](https://github.com/quinlan-lab/mutator-epistasis-manuscript/commit/b54cc624e3fe2b929b3bc4764303f30ac403c19d).
