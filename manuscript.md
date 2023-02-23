@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-02-22'
+date-meta: '2023-02-23'
 author-meta:
 - Thomas A. Sasani
 - Aaron R. Quinlan
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="og:title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="twitter:title" content="Discovering epistasis between germline mutator alleles in mice" />
-  <meta name="dc.date" content="2023-02-22" />
-  <meta name="citation_publication_date" content="2023-02-22" />
-  <meta property="article:published_time" content="2023-02-22" />
-  <meta name="dc.modified" content="2023-02-22T22:00:29+00:00" />
-  <meta property="article:modified_time" content="2023-02-22T22:00:29+00:00" />
+  <meta name="dc.date" content="2023-02-23" />
+  <meta name="citation_publication_date" content="2023-02-23" />
+  <meta property="article:published_time" content="2023-02-23" />
+  <meta name="dc.modified" content="2023-02-23T20:46:56+00:00" />
+  <meta property="article:modified_time" content="2023-02-23T20:46:56+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ffa2be979c84ee990d646cb8aef279fa2ee389b3/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ffa2be979c84ee990d646cb8aef279fa2ee389b3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ffa2be979c84ee990d646cb8aef279fa2ee389b3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/b54cc624e3fe2b929b3bc4764303f30ac403c19d/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/b54cc624e3fe2b929b3bc4764303f30ac403c19d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/b54cc624e3fe2b929b3bc4764303f30ac403c19d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ffa2be979c84ee990d646cb8aef279fa2ee389b3/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/b54cc624e3fe2b929b3bc4764303f30ac403c19d/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@ffa2be9](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/ffa2be979c84ee990d646cb8aef279fa2ee389b3)
-on February 22, 2023.
+from [quinlan-lab/mutator-epistasis-manuscript@b54cc62](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/b54cc624e3fe2b929b3bc4764303f30ac403c19d)
+on February 23, 2023.
 </em></small>
 
 
@@ -303,7 +303,7 @@ We first tested the inter-haplotype cosine distance approach using simulated dat
 
 We applied our inter-haplotype distance method to 93 BXD RILs (Materials and Methods) with a total of 62,993 *de novo* germline mutations [@PMID:35545679]. Reassuringly, we observed a large peak in cosine distance at a locus on chromosome 4 (Figure {@fig:distance-results}A; maximum distance of 9.20e-3 at marker ID `rs52263933`; position 116.75 Mbp in GRCm38/mm10 coordinates). 
 
-![**Results of inter-haplotype distance scans in the BXD RILs.** **a)** Cosine distances between aggregate *de novo* mutation spectra on BXD haplotypes (n = 93 haplotypes; 62,993 total mutations) with either *D* or *B* alleles at 7,320 informative markers. Distance threshold at $p = 0.05$ was calculated by performing 10,000 permutations of the BXD haplotype mutation data, and is shown as a dotted grey line. One outlier RIL with an extremely high C>A mutation rate (BXD68) was removed prior to running the distance scan. **b)** Cosine distances between aggregate *de novo* mutation spectra on BXD haplotypes with *D* alleles at `rs52263933` (n = 55 haplotypes; 40,913 total mutations), the marker with the highest cosine distance in a) and either *D* or *B* alleles at 7,320 informative markers. Distance threshold at $p = 0.05$ was calculated by performing 10,000 permutations of the BXD haplotype mutation data, and is shown as a dotted grey line. **c)** Fractions of *de novo* germline mutations in BXDs with either *D* or *B* haplotypes at markers `rs52263933` and `rs31001331`. Total counts of each mutation type were aggregated in groups of BXDs with either of the four possible haplotype combinations, and fractions of each mutation type were calculated in each group separately. Chi-square tests of independence were used to compare counts of individual mutation types between the D-D and D-B groups of BXDs, as well as between the B-D and B-B groups. **d)** Fractions of *de novo* germline mutations in Sanger Mouse Genome Project (MGP) strains with either *D* or *B* haplotypes at markers `rs52263933` and `rs31001331`. Total counts of each mutation type were aggregated in groups of MGP strains with either of the four possible haplotype combinations, and fractions of each mutation type were calculated in each group separately. Chi-square tests of independence were used to compare counts of individual mutation types between the D-D and D-B groups of BXDs, as well as between the B-D and B-B groups.](images/Figure%202.png){#fig:distance-results width=7in} 
+![**Results of inter-haplotype distance scans in the BXD RILs.** **a)** Cosine distances between aggregate *de novo* mutation spectra on BXD haplotypes (n = 93 haplotypes; 62,993 total mutations) with either *D* or *B* alleles at 7,320 informative markers. Distance threshold at $p = 0.05$ was calculated by performing 10,000 permutations of the BXD haplotype mutation data, and is shown as a dotted grey line. One outlier RIL with an extremely high C>A mutation rate (BXD68) was removed prior to running the distance scan. **b)** Cosine distances between aggregate *de novo* mutation spectra on BXD haplotypes with *D* alleles at `rs52263933` (n = 55 haplotypes; 40,913 total mutations), the marker with the highest cosine distance in a) and either *D* or *B* alleles at 7,320 informative markers. Distance threshold at $p = 0.05$ was calculated by performing 10,000 permutations of the BXD haplotype mutation data, and is shown as a dotted grey line. **c)** Fractions of *de novo* germline mutations in BXDs with either *D* or *B* haplotypes at markers `rs52263933` and `rs31001331`, stratified by mutation type. **d)** Fractions of *de novo* germline mutations in Sanger Mouse Genome Project (MGP) strains with either *D* or *B* haplotypes at markers `rs52263933` and `rs31001331`, stratified by mutation type.](images/Figure%202.png){#fig:distance-results width=7in} 
 
 In a previous analysis, we used quantitative trait locus (QTL) mapping to identify a nearly identical locus on chromosome 4 that was significantly associated with the C>A germline mutation rate in the BXDs [@PMID:35545679]. This locus overlaps 21 protein-coding genes that are annotated by the Gene Ontology as being involved in "DNA repair," but only one of these genes contains non-synonymous differences between the two parental strains: *Mutyh*. *Mutyh* encodes a protein involved in the base-excision repair of 8-oxoguanine (8-oxoG), a DNA lesion caused by oxidative damage, and prevents the accumulation of C>A mutations [@PMID:28551381;@PMID:28127763;@PMID:17581577]. C>A germline mutation rates are nearly 50% higher in BXDs that inherited *D* haplotypes at marker ID `rs52263933` than in those that inherited *B* haplotypes [@PMID:35545679].
 
