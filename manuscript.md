@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-02-24" />
   <meta name="citation_publication_date" content="2023-02-24" />
   <meta property="article:published_time" content="2023-02-24" />
-  <meta name="dc.modified" content="2023-02-24T17:35:33+00:00" />
-  <meta property="article:modified_time" content="2023-02-24T17:35:33+00:00" />
+  <meta name="dc.modified" content="2023-02-24T19:56:26+00:00" />
+  <meta property="article:modified_time" content="2023-02-24T19:56:26+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a73cdb380d8caac019e0da028fb8ba0b895ae107/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a73cdb380d8caac019e0da028fb8ba0b895ae107/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a73cdb380d8caac019e0da028fb8ba0b895ae107/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/518fe62582a27c2055bf784cc0bfe7f36a43ac5c/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/518fe62582a27c2055bf784cc0bfe7f36a43ac5c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/518fe62582a27c2055bf784cc0bfe7f36a43ac5c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a73cdb380d8caac019e0da028fb8ba0b895ae107/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/518fe62582a27c2055bf784cc0bfe7f36a43ac5c/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@a73cdb3](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/a73cdb380d8caac019e0da028fb8ba0b895ae107)
+from [quinlan-lab/mutator-epistasis-manuscript@518fe62](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/518fe62582a27c2055bf784cc0bfe7f36a43ac5c)
 on February 24, 2023.
 </em></small>
 
@@ -289,15 +289,18 @@ To determine the frequency of the *Ogg1* p.Thr95Ala mutation in other population
 
 * Phred-scaled genotype quality of at least 20
 
-### Testing for epistasis between the two mutator loci 
+### Testing for epistasis between the two mutator loci
 
 To more formally test for the presence of epistasis between mutator alleles at the loci near *Mutyh* and *Ogg1*, we fit a linear model as follows:
 
 $$\mu_{C \rightarrow A} \sim \beta_0 + \beta_{1}g_1 + \beta_{2}g_2 + \beta_{3}g_{1}g_{2} + \beta_{4}E + \epsilon$$
 
-where $\mu_{C \rightarrow A}$ is the C>A mutation rate in a RIL. We calculated $\mu_{C \rightarrow A}$ by dividing the count of C>A mutations by the number "callable" cytosine nucleotides in the RIL (i.e., the total number of cytosine nucleotides covered by at least 10 sequencing reads in the RIL) and the number of generations for which the RIL was inbred. $E$ is the breeding epoch from which the RIL was derived, and $g_i$ is the genotype of the RIL at marker $i$ (`rs52263933` for the locus near *Mutyh*, and `rs31001331` for the locus near *Ogg1*). The $\beta_{1}$ and $\beta_{2}$ terms capture the additive effects of $g_1$ and $g_2$ on C>A mutation rates and the $\beta_{3}$ term captures interaction effects between $g_1$ and $g_2$. Since each RIL is completely inbred, we considered genotypes at either locus to be binary ("B" or "D"). We fit the model in R using the `lm` function. Using analysis of variance (ANOVA), we then compared the model incorporating an interaction effect to a model including only additive effects:
+where $\mu_{C \rightarrow A}$ is the C>A mutation rate (expressed per base pair, per generation). We calculated $\mu_{C \rightarrow A}$ by dividing the count of C>A mutations by the number "callable" cytosine nucleotides in each RIL (i.e., the total number of cytosine nucleotides covered by at least 10 sequencing reads in the RIL) and the number of generations for which the RIL was inbred. $E$ is the breeding epoch from which the RIL was derived, and $g_i$ is the genotype of the RIL at marker $i$ (`rs52263933` for the locus near *Mutyh*, and `rs31001331` for the locus near *Ogg1*). The $\beta_{1}$ and $\beta_{2}$ terms capture the additive effects of $g_1$ and $g_2$ on C>A mutation rates and the $\beta_{3}$ term captures interaction effects between $g_1$ and $g_2$. Since each RIL is completely inbred, we considered genotypes at either locus to be binary ("B" or "D"). We fit the model in R using the `lm` function. Using analysis of variance (ANOVA), we then compared the model incorporating an interaction effect to a model including only additive effects:
 
 $$\mu_{C \rightarrow A} \sim \beta_0 + \beta_{1}g_1 + \beta_{2}g_2 + \beta_{3}E + \epsilon$$
+
+We tested for epistasis in the Sanger Mouse Genomes Project (MGP) strains using a nearly-identical approach. In this analysis, we used previously published C>A mutation rates (expressed per base pair) [@PMID:30753674], but otherwise fit and compared linear models as described above.
+
 
 
 
@@ -343,7 +346,7 @@ Table: Presence or absence of cis-eQTLs for *Ogg1* in various tissues identified
 
 Next, we more precisely characterized the effects of the *Mutyh* and *Ogg1* mutator alleles on mutation spectra in the BXDs. We observed that C>A germline mutation fractions in BXDs with *D* alleles at both mutator loci were significantly higher than C>A fractions in BXDs with *D* alleles at either locus alone (Figure {@fig:distance-results}C). However, compared to BXDs with *B* alleles at the chromosome 6 mutator locus, those with *D* alleles did not exhibit significantly higher C>A mutation fractions, indicating that the effects of the chromosome 6 mutator locus depend on the presence of a *D* allele at the chromosome 4 locus (Figure {@fig:distance-results}C). To more formally test for epistasis, we fit a linear model predicting C>A mutation rates as a function of genotypes at `rs52263933` and `rs31001331` (the peak markers at the chr4 and chr6 mutator loci, respectively) (Materials and Methods). A model that included an interaction term between genotypes at the two markers fit the data significantly better (p = 0.0048) than a model including only additive effects of the two markers.
 
-To explore the effects of the two mutator loci in other inbred laboratory mice, we also compared the germline mutation spectra of Sanger Mouse Genomes Project (MGP) strains. Dumont [@PMID:30753674] previously identified private germline mutations in 29 inbred laboratory strains; these private variants likely represent recent *de novo* germline mutations. Only two of the MGP strains possess *D* genotypes at both the chromosome 4 and chromosome 6 mutator loci: DBA/1J and DBA/2J. Compared to strains with *B* alleles at both mutator loci, those with *D* alleles at both mutator loci exhibit significantly higher C>A germline mutation fractions ($p = 3.5\mathrm{e}{-8}$, Figure {@fig:distance-results}D). MGP strains with *D* alleles at both mutator loci appear to have higher C>A mutation fractions than those with *D* alleles at either locus alone (Figure {@fig:distance-results}D), but this difference is not significant ($p = 0.16$). Therefore, given the smaller number of MGP strains with *de novo* germline mutation data, we are unable to confirm the signal of epistasis observed in the BXDs.  
+To explore the effects of the two mutator loci in other inbred laboratory mice, we also compared the germline mutation spectra of Sanger Mouse Genomes Project (MGP) strains. Dumont [@PMID:30753674] previously identified private germline mutations in 29 inbred laboratory strains; these private variants likely represent recent *de novo* germline mutations (Figure {@fig:distance-results}D). Only two of the MGP strains possess *D* genotypes at both the chromosome 4 and chromosome 6 mutator loci: DBA/1J and DBA/2J. As before, we tested for epistasis in the MGP strains by fitting two linear models predicting C>A mutation rates as a function of genotypes at `rs52263933` and `rs31001331`. A model incorporating an interaction term between genotypes at these loci did not fit the data significantly better than a model with additive effects alone (p = 0.474). Thus, potentially due to the smaller number of MGP strains with *de novo* germline mutation data, we are unable to confirm the signal of epistasis observed in the BXDs.  
 
 ### The candidate *Ogg1* mutator allele is present in wild mice 
 
@@ -379,7 +382,7 @@ Given the distinct roles of *Mutyh* and *Ogg1* in the BER pathway, it seems plau
 
 ### Discovering mutator alleles in other systems
 
-Numerous lines of evidence suggest that mutator alleles contribute to variation in mutation rates and spectra across the tree of life. In two natural isolates of *Saccharomyces cerevisiae*, nonsynonymous variation in *OGG1* causes a substantial increase in the C>A *de novo* mutation rate [@PMID:34523420]. A recent analysis suggested that mutator alleles and/or environmental mutagens have shaped mutation rate evolution in human genomes [@doi:https://doi.org/10.1101/2022.06.17.496622], and more generally, the mutation spectrum has evolved rapidly during great ape evolution, potentially due to the effects of *trans*-acting mutation rate modifiers [@PMID:33983415]. The heritability of paternal *de novo* mutation counts in the human germline has also been estimated to be between 10 and 20%, demonstrating a contribution of genetic factors to germline mutation rates [@doi:https://doi.org/10.1101/2022.12.17.520885]). However, mutator discovery remains challenging in mammalian genomes.
+Numerous lines of evidence suggest that mutator alleles contribute to variation in mutation rates and spectra across the tree of life. In two natural isolates of *Saccharomyces cerevisiae*, nonsynonymous variation in *OGG1* causes a substantial increase in the C>A *de novo* mutation rate [@PMID:34523420]. Recent analyses have suggested that mutator alleles and/or environmental mutagens have shaped mutation rate evolution both in human genomes [@doi:https://doi.org/10.1101/2022.06.17.496622] and more broadly during great ape evolution [@PMID:33983415]. The heritability of paternal *de novo* mutation counts in the human germline has also been estimated to be between 10 and 20%, demonstrating a contribution of genetic factors to germline mutation rates [@doi:https://doi.org/10.1101/2022.12.17.520885]). However, mutator discovery remains challenging in mammalian genomes.
 
 What conditions must be met in order to detect a germline mutator allele? Presumably, one must have access to many haplotypes, each with a reasonably large number of *de novo* germline mutations that remain linked to the mutator allele(s) that caused them. Recently, thousands of human pedigrees have been sequenced in an effort to precisely estimate the rate of human *de novo* germline mutation [@PMID:31549960;@PMID:28959963]. Selection on germline mutator alleles will likely prevent large-effect mutators from reaching high allele frequencies; however, if multiple mutators are active in a particular population, it becomes much more likely that a subset will be detectable by sequencing human trios [@PMID:35666194]. Current estimates of power to detect germline mutators in human pedigrees generally assume that mutators affect all mutation types equally, and that methods for mutator discovery will rely on identifying haplotypes with excess total mutation counts [@PMID:35666194]. However, our results in the BXD suggest that germline mutators often exert their effects on a small number of $k$-mer mutation types, and may be far more amenable to detection by analyzing mutation spectra instead.
 
