@@ -1,4 +1,5 @@
 content/03.methods.md:23:haplotype's
+content/03.methods.md:135:ANOVA
 content/04.results.md:23:mESC
 content/05.discussion.md:23:adenines
 content/05.discussion.md:23:BER
