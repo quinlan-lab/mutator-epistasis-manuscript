@@ -1,2 +1,15 @@
 content/03.methods.md:23:haplotype's
 content/04.results.md:23:mESC
+content/05.discussion.md:23:adenines
+content/05.discussion.md:23:BER
+content/05.discussion.md:23:BER
+content/05.discussion.md:23:BER
+content/05.discussion.md:23:BER
+content/05.discussion.md:23:deoxyguanine
+content/05.discussion.md:23:dihydro
+content/05.discussion.md:23:Hoogsteen
+content/05.discussion.md:23:misincorporate
+content/05.discussion.md:23:mispaired
+content/05.discussion.md:23:polymerases
+content/05.discussion.md:25:BER
+content/05.discussion.md:25:underpowered
