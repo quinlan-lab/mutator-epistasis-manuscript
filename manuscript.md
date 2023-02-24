@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-02-24" />
   <meta name="citation_publication_date" content="2023-02-24" />
   <meta property="article:published_time" content="2023-02-24" />
-  <meta name="dc.modified" content="2023-02-24T16:42:33+00:00" />
-  <meta property="article:modified_time" content="2023-02-24T16:42:33+00:00" />
+  <meta name="dc.modified" content="2023-02-24T16:52:53+00:00" />
+  <meta property="article:modified_time" content="2023-02-24T16:52:53+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/c50f35a7da51fbc026b5cfbbb48741509ac85687/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/c50f35a7da51fbc026b5cfbbb48741509ac85687/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/c50f35a7da51fbc026b5cfbbb48741509ac85687/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/168a4a581bdff7b468a6accba507ccc734b7a1df/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/168a4a581bdff7b468a6accba507ccc734b7a1df/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/168a4a581bdff7b468a6accba507ccc734b7a1df/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/c50f35a7da51fbc026b5cfbbb48741509ac85687/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/168a4a581bdff7b468a6accba507ccc734b7a1df/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@c50f35a](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/c50f35a7da51fbc026b5cfbbb48741509ac85687)
+from [quinlan-lab/mutator-epistasis-manuscript@168a4a5](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/168a4a581bdff7b468a6accba507ccc734b7a1df)
 on February 24, 2023.
 </em></small>
 
@@ -293,9 +293,9 @@ To determine the frequency of the *Ogg1* p.Thr95Ala mutation in other population
 
 To more formally test for the presence of epistasis between mutator alleles at the loci near *Mutyh* and *Ogg1*, we fit a generalized linear model as follows:
 
-$$\C_{C\rightarrowA} ~ \beta_0 + \beta_{1}g_1 + \beta_{2}g_2 + \beta_{3}g_{1}g_{2} + \beta_{4}A + \beta{5}E + \epsilon$$
+$$M_{C \rightarrow A} \sim \beta_0 + \beta_{1}g_1 + \beta_{2}g_2 + \beta_{3}g_{1}g_{2} + \beta_{4}A + \beta_{5}E + \epsilon$$
 
-where $\C_{C\rightarrowA}$ is the count of C>A mutations in the RIL, $A$ is the product of the number of generations of inbreeding and the number of callable "C" base pairs in the RIL, $E$ is the breeding epoch from which the RIL was derived, and $g_i$ is the genotype of the RIL at marker $i$ (`rs52263933` for the locus near *Mutyh*, and `rs31001331` for the locus near *Ogg1*). The $\beta_{1}$ and $\beta_{2}$ terms capture the additive effects of $g_1$ and $g_2$ on C>A mutation counts and the $\beta_{3}$ term captures interaction effects between $g_1$ and $g_2$. Since each RIL is completely inbred, we considered genotypes at either locus to be binary ("B" or "D"). We fit the model in R using the `glm` function, with `family = poisson()`.
+where $M_{C \rightarrow A}$ is the count of C>A mutations in a RIL, $A$ is the product of the number of generations of inbreeding and the number of callable "C" base pairs in the RIL, $E$ is the breeding epoch from which the RIL was derived, and $g_i$ is the genotype of the RIL at marker $i$ (`rs52263933` for the locus near *Mutyh*, and `rs31001331` for the locus near *Ogg1*). The $\beta_{1}$ and $\beta_{2}$ terms capture the additive effects of $g_1$ and $g_2$ on C>A mutation counts and the $\beta_{3}$ term captures interaction effects between $g_1$ and $g_2$. Since each RIL is completely inbred, we considered genotypes at either locus to be binary ("B" or "D"). We fit the model in R using the `glm` function, with `family = poisson()`.
 
 
 
@@ -338,7 +338,7 @@ Table: Presence or absence of cis-eQTLs for *Ogg1* in various tissues identified
 
 ### Evidence of epistasis between germline mutator alleles
 
-Next, we more precisely characterized the effects of the *Mutyh* and *Ogg1* mutator alleles on mutation spectra in the BXDs. We observed that C>A germline mutation fractions in BXDs with *D* alleles at both mutator loci were significantly higher than C>A fractions in BXDs with *D* alleles at either locus alone (Figure {@fig:distance-results}C). However, compared to BXDs with *B* alleles at the chromosome 6 mutator locus, those with *D* alleles did not exhibit significantly higher C>A mutation fractions, indicating that the effects of the chromosome 6 mutator locus depend on the presence of a *D* allele at the chromosome 4 locus (Figure {@fig:distance-results}C). To more formally test for epistasis, we fit a linear model predicting C>A mutation counts as a function of genotypes at `rs52263933` and `rs31001331` (the peak markers at the chr4 and chr6 mutator loci, respectively). A model that included an interaction term between genotypes at the two markers fit the data significantly better (p = 0.023) than a model including only additive effects of the two markers.
+Next, we more precisely characterized the effects of the *Mutyh* and *Ogg1* mutator alleles on mutation spectra in the BXDs. We observed that C>A germline mutation fractions in BXDs with *D* alleles at both mutator loci were significantly higher than C>A fractions in BXDs with *D* alleles at either locus alone (Figure {@fig:distance-results}C). However, compared to BXDs with *B* alleles at the chromosome 6 mutator locus, those with *D* alleles did not exhibit significantly higher C>A mutation fractions, indicating that the effects of the chromosome 6 mutator locus depend on the presence of a *D* allele at the chromosome 4 locus (Figure {@fig:distance-results}C). To more formally test for epistasis, we fit a linear model predicting C>A mutation counts as a function of genotypes at `rs52263933` and `rs31001331` (the peak markers at the chr4 and chr6 mutator loci, respectively). A model that included an interaction term between genotypes at the two markers fit the data significantly better (p = 0.0083) than a model including only additive effects of the two markers.
 
 To explore the effects of the two mutator loci in other inbred laboratory mice, we also compared the germline mutation spectra of Sanger Mouse Genomes Project (MGP) strains. Dumont [@PMID:30753674] previously identified private germline mutations in 29 inbred laboratory strains; these private variants likely represent recent *de novo* germline mutations. Only two of the MGP strains possess *D* genotypes at both the chromosome 4 and chromosome 6 mutator loci: DBA/1J and DBA/2J. Compared to strains with *B* alleles at both mutator loci, those with *D* alleles at both mutator loci exhibit significantly higher C>A germline mutation fractions ($p = 3.5\mathrm{e}{-8}$, Figure {@fig:distance-results}D). MGP strains with *D* alleles at both mutator loci appear to have higher C>A mutation fractions than those with *D* alleles at either locus alone (Figure {@fig:distance-results}D), but this difference is not significant ($p = 0.16$). Therefore, given the smaller number of MGP strains with *de novo* germline mutation data, we are unable to confirm the signal of epistasis observed in the BXDs.  
 
