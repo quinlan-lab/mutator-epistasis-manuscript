@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-02-27'
+date-meta: '2023-02-28'
 author-meta:
 - Thomas A. Sasani
 - Aaron R. Quinlan
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="og:title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="twitter:title" content="Discovering epistasis between germline mutator alleles in mice" />
-  <meta name="dc.date" content="2023-02-27" />
-  <meta name="citation_publication_date" content="2023-02-27" />
-  <meta property="article:published_time" content="2023-02-27" />
-  <meta name="dc.modified" content="2023-02-27T22:09:08+00:00" />
-  <meta property="article:modified_time" content="2023-02-27T22:09:08+00:00" />
+  <meta name="dc.date" content="2023-02-28" />
+  <meta name="citation_publication_date" content="2023-02-28" />
+  <meta property="article:published_time" content="2023-02-28" />
+  <meta name="dc.modified" content="2023-02-28T15:31:13+00:00" />
+  <meta property="article:modified_time" content="2023-02-28T15:31:13+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5777cf67c848be10dac80042dc10cbdff2bfdaa7/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5777cf67c848be10dac80042dc10cbdff2bfdaa7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5777cf67c848be10dac80042dc10cbdff2bfdaa7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ad966546843865300bf3900d67bff81e05ba4911/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ad966546843865300bf3900d67bff81e05ba4911/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ad966546843865300bf3900d67bff81e05ba4911/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5777cf67c848be10dac80042dc10cbdff2bfdaa7/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ad966546843865300bf3900d67bff81e05ba4911/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@5777cf6](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/5777cf67c848be10dac80042dc10cbdff2bfdaa7)
-on February 27, 2023.
+from [quinlan-lab/mutator-epistasis-manuscript@ad96654](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/ad966546843865300bf3900d67bff81e05ba4911)
+on February 28, 2023.
 </em></small>
 
 
@@ -291,13 +291,13 @@ To determine the frequency of the *Ogg1* p.Thr95Ala mutation in other population
 
 ### Testing for epistasis between the two mutator loci
 
-To more formally test for the presence of epistasis between mutator alleles at the loci near *Mutyh* and *Ogg1*, we fit a linear model in the R statistical language as follows:
+To test for the presence of epistasis between the mutator loci near *Mutyh* and *Ogg1*, we modeled C>A mutation rates in the BXDs as a function of genotypes at either locus. Specifically, we tested for statistical interaction between *Mutyh* and *Ogg1* genotypes by fitting a generalized linear model in the R statistical language as follows:
 
 ```R
-m1 <- glm(Count ~ offset(log(ADJ_AGE)) + Haplotype_A * Haplotype_B, data = data, family=poisson())
+m1 <- glm(Count ~ offset(log(ADJ_AGE)) + Genotype_A * Genotype_B, data = data, family=poisson())
 ```
 
-where `Count` is the count of C>A *de novo* mutations observed in each BXD RIL. `ADJ_AGE` is the product of the number of "callable" cytosine nucleotides in each RIL (i.e., the total number of cytosines covered by at least 10 sequencing reads in the RIL) and the number of generations for which the RIL was inbred. We included the logarithm of `ADJ_AGE` as an "offset" in the regression model in order to treat the response variable as a rate rather than an absolute count. The BXDs differ in both their durations of inbreeding and the proportions of their genomes that were sequenced to sufficient depth, which will influence the number of mutations we observe in each RIL. The `Haplotype_A` and `Haplotype_B` terms represent the genotypes of BXDs at markers `rs52263933` and `rs31001331` (the markers with peak cosine distance near *Mutyh* and *Ogg1* in the two inter-haplotype distance scans). Since each RIL is completely inbred, we considered genotypes at either locus to be binary ("B" or "D"). Using analysis of variance (ANOVA), we then compared the model incorporating an interaction effect to a model including only additive effects:
+In this model, `Count` is the count of C>A *de novo* mutations observed in each BXD RIL. `ADJ_AGE` is the product of the number of "callable" cytosine nucleotides in each RIL (i.e., the total number of cytosines covered by at least 10 sequencing reads in the RIL) and the number of generations for which the RIL was inbred. We included the logarithm of `ADJ_AGE` as an "offset" in order to model the response variable as a rate rather than an absolute count; the BXDs differ in both their durations of inbreeding and the proportions of their genomes that were sequenced to sufficient depth, which influences the number of mutations we observe in each RIL. The `Genotype_A` and `Genotype_B` terms represent the genotypes of BXDs at markers `rs52263933` and `rs31001331` (the markers with peak cosine distance near *Mutyh* and *Ogg1* in the two inter-haplotype distance scans). Since each BXD is inbred for at least 20 generations, we considered genotypes at either locus to be binary ("B" or "D"). Using analysis of variance (ANOVA), we then compared the model including an interaction effect to a model including only additive effects:
 
 ```R
 m2 <- glm(Count ~ offset(log(ADJ_AGE)) + Haplotype_A + Haplotype_B, data = data, family=poisson())
@@ -310,12 +310,41 @@ anova(m1, m2, test="Chisq")
 We tested for epistasis in the Sanger Mouse Genomes Project (MGP) strains using a nearly-identical approach. In this analysis, we fit two models as follows:
 
 ```R
-m1 <- glm(Count ~ offset(log(CALLABLE)) + Haplotype_A * Haplotype_B, data = data, family=poisson())
+m1 <- glm(Count ~ offset(log(CALLABLE_C)) + Genotype_A * Genotype_B, data = data, family=poisson())
 
-m2 <- glm(Count ~ offset(log(CALLABLE)) + Haplotype_A + Haplotype_B, data = data, family=poisson())
+m2 <- glm(Count ~ offset(log(CALLABLE_C)) + Genotype_A + Genotype_B, data = data, family=poisson())
 ```
 
-where `Count` is the count of strain-private C>A mutations observed in each MGP strain [@PMID:30753674]. The `CALLABLE` term represents the total number of cytosine and guanine nucleotides that were accessible for mutation calling in each strain, and the `Haplotype_A` and `Haplotype_B` terms represent MGP genotypes at `rs52263933` and `rs31001331`. We compared the two models using ANOVA as described above.
+where `Count` is the count of strain-private C>A mutations observed in each MGP strain [@PMID:30753674]. The `CALLABLE_C` term represents the total number of cytosine and guanine nucleotides that were accessible for mutation calling in each strain, and the `Genotype_A` and `Genotype_B` terms represent MGP genotypes at `rs52263933` and `rs31001331`. We compared the two models using ANOVA as described above.
+
+Since each BXD derives approximately 50% of its genome from C57BL/6J and 50% from DBA/2J, we performed an additional test for epistasis that accounted for kinship between the BXD RILs. Using the `lmekin` method from the `coxme` package [@url:https://cran.r-project.org/web/packages/coxme/index.html] in the R statistical language, we fit a mixed effects model predicting C>A mutation fractions as a function of genotypes at both `rs52263933` and `rs31001331`, and included a pairwise kinship matrix as a random effect.
+
+```R
+m = lmekin(Fraction ~ Genotype_A * Genotype_B + (1|sample), data = data, varlist = kinship_matrix)
+```
+
+The rows and columns of the kinship matrix were labeled with the `sample` name of each BXD, such that the `(1|sample)` term in the model captured the random effect of kinship. We calculated the `kinship_matrix` using the `calc_kinship` method from `R/qtl2` [@PMID:30591514] as follows:
+
+```R
+# read in the JSON-formatted file that directs R/qtl2 to sample 
+# genotypes, phenotypes, and covariates if applicable
+bxd <- read_cross2("path/to/bxd.json")
+
+# subset cross2 object to BXDs with C>A fractions in `data`
+bxd <- bxd[data$sample, ]
+
+# insert pseudomarkers into the genotype map
+gmap <- insert_pseudomarkers(bxd$gmap, step = 0.2, stepwidth = "max")
+
+# calculate QTL genotype probabilities
+pr <- calc_genoprob(bxd, gmap, error_prob = 0.002, map_function = "c-f")
+
+# calculate kinship between strains using all chromosomes
+k <- calc_kinship(pr, "overall")
+
+kinship_matrix = as.matrix(k)
+```
+
 
 
 
@@ -333,7 +362,7 @@ We first tested the inter-haplotype cosine distance approach using simulated dat
 
 We applied our inter-haplotype distance method to 93 BXD RILs (Materials and Methods) with a total of 62,993 *de novo* germline mutations [@PMID:35545679]. Reassuringly, we observed a large peak in cosine distance at a locus on chromosome 4 (Figure {@fig:distance-results}A; maximum distance of 9.20e-3 at marker ID `rs52263933`; position 116.75 Mbp in GRCm38/mm10 coordinates). 
 
-![**Results of inter-haplotype distance scans in the BXD RILs.** **a)** Cosine distances between aggregate *de novo* mutation spectra on BXD haplotypes (n = 93 haplotypes; 62,993 total mutations) with either *D* or *B* alleles at 7,320 informative markers. Distance threshold at $p = 0.05$ was calculated by performing 10,000 permutations of the BXD haplotype mutation data, and is shown as a dotted grey line. One outlier RIL with an extremely high C>A mutation rate (BXD68) was removed prior to running the distance scan. **b)** Cosine distances between aggregate *de novo* mutation spectra on BXD haplotypes with *D* alleles at `rs52263933` (n = 55 haplotypes; 40,913 total mutations) and either *D* or *B* alleles at 7,320 informative markers. Distance threshold at $p = 0.05$ was calculated by performing 10,000 permutations of the BXD haplotype mutation data, and is shown as a dotted grey line. **c)** Fractions of *de novo* germline mutations in BXDs with either *D* or *B* haplotypes at markers `rs52263933` and `rs31001331`, stratified by mutation type. **d)** Fractions of *de novo* germline mutations in Sanger Mouse Genome Project (MGP) strains with either *D* or *B* haplotypes at markers `rs52263933` and `rs31001331`, stratified by mutation type.](images/Figure%202.png){#fig:distance-results width=7in} 
+![**Results of inter-haplotype distance scans in the BXD RILs.** **a)** Cosine distances between aggregate *de novo* mutation spectra on BXD haplotypes (n = 93 haplotypes; 62,993 total mutations) with either *D* or *B* alleles at 7,320 informative markers. Distance threshold at $p = 0.05$ was calculated by performing 10,000 permutations of the BXD haplotype mutation data, and is shown as a dotted grey line. **b)** Cosine distances between aggregate *de novo* mutation spectra on BXD haplotypes with *D* alleles at `rs52263933` (n = 55 haplotypes; 40,913 total mutations) and either *D* or *B* alleles at 7,320 informative markers. Distance threshold at $p = 0.05$ was calculated by performing 10,000 permutations of the BXD haplotype mutation data, and is shown as a dotted grey line. **c)** Fractions of *de novo* germline mutations in BXDs with either *D* or *B* haplotypes at markers `rs52263933` and `rs31001331`, stratified by mutation type. **d)** Fractions of *de novo* germline mutations in Sanger Mouse Genome Project (MGP) strains with either *D* or *B* haplotypes at markers `rs52263933` and `rs31001331`, stratified by mutation type.](images/Figure%202.png){#fig:distance-results width=7in} 
 
 In a previous analysis, we used quantitative trait locus (QTL) mapping to identify a nearly identical locus on chromosome 4 that was significantly associated with the C>A germline mutation rate in the BXDs [@PMID:35545679]. This locus overlaps 21 protein-coding genes that are annotated by the Gene Ontology as being involved in "DNA repair," but only one of these genes contains non-synonymous differences between the two parental strains: *Mutyh*. *Mutyh* encodes a protein involved in the base-excision repair of 8-oxoguanine (8-oxoG), a DNA lesion caused by oxidative damage, and prevents the accumulation of C>A mutations [@PMID:28551381;@PMID:28127763;@PMID:17581577]. C>A germline mutation rates are nearly 50% higher in BXDs that inherited *D* haplotypes at marker ID `rs52263933` than in those that inherited *B* haplotypes [@PMID:35545679].
 
@@ -347,14 +376,14 @@ We also considered the possibility that expression quantitative trait loci (eQTL
 
 | Tissue name | # BXDs with expression data |  Top significant marker | LRS at top significant marker | Significant LRS threshold | Additive effect of D allele on expression |
 | - | - | - | - | - | - |
-| Kidney | 53 | `rsm10000004188` | 52.25 | 17.80 | -0.19 |
-| Gastrointestinal | 46 | `rsm10000003441` | 23.39 | 16.21 | -0.081 |
-| Hematopoetic stem cells | 22 | - | - | 16.43 | - | 
-| Hematopoetic progenitor cells | 23 | - | - | 18.27 | - | 
-| Spleen | 79 | `rsm10000003418` | 17.72 | 17.49 | -0.056 | 
-| Liver | 50 | `rsm10000004188` | 52.27 | 18.81 | -0.155 | 
-| Heart | 73 | - | - | 16.12 | - |
-| Eye | 87 | `rsm10000004194` | 22.66 | 17.20 | 0.087 |  
+| Kidney | 53 | `rsm10000004188` | 52.25 | 17.82 | -0.186 |
+| Gastrointestinal | 46 | `rsm10000003441` | 23.39 | 16.09 | -0.074 |
+| Hematopoetic stem cells | 22 | - | - | 16.45 | - | 
+| Hematopoetic progenitor cells | 23 | - | - | 18.52 | - | 
+| Spleen | 79 | `rsm10000003418` | - | 17.51 | - | 
+| Liver | 50 | `rsm10000004188` | 53.54 | 18.77 | -0.156 | 
+| Heart | 73 | - | - | 16.22 | - |
+| Eye | 87 | `rsm10000004194` | 23.05 | 16.96 | 0.088 |  
 
 Table: Presence or absence of cis-eQTLs for *Ogg1* in various tissues identified using GeneNetwork. {#tbl:eqtl-results}
 
