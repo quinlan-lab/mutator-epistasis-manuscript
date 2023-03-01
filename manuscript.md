@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-02-28'
+date-meta: '2023-03-01'
 author-meta:
 - Thomas A. Sasani
 - Aaron R. Quinlan
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="og:title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="twitter:title" content="Discovering epistasis between germline mutator alleles in mice" />
-  <meta name="dc.date" content="2023-02-28" />
-  <meta name="citation_publication_date" content="2023-02-28" />
-  <meta property="article:published_time" content="2023-02-28" />
-  <meta name="dc.modified" content="2023-02-28T15:31:13+00:00" />
-  <meta property="article:modified_time" content="2023-02-28T15:31:13+00:00" />
+  <meta name="dc.date" content="2023-03-01" />
+  <meta name="citation_publication_date" content="2023-03-01" />
+  <meta property="article:published_time" content="2023-03-01" />
+  <meta name="dc.modified" content="2023-03-01T17:47:27+00:00" />
+  <meta property="article:modified_time" content="2023-03-01T17:47:27+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ad966546843865300bf3900d67bff81e05ba4911/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ad966546843865300bf3900d67bff81e05ba4911/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ad966546843865300bf3900d67bff81e05ba4911/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/eb19a43fb7df7714ecb2df7f8e43a3cc5ff06c63/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/eb19a43fb7df7714ecb2df7f8e43a3cc5ff06c63/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/eb19a43fb7df7714ecb2df7f8e43a3cc5ff06c63/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ad966546843865300bf3900d67bff81e05ba4911/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/eb19a43fb7df7714ecb2df7f8e43a3cc5ff06c63/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@ad96654](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/ad966546843865300bf3900d67bff81e05ba4911)
-on February 28, 2023.
+from [quinlan-lab/mutator-epistasis-manuscript@eb19a43](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/eb19a43fb7df7714ecb2df7f8e43a3cc5ff06c63)
+on March 1, 2023.
 </em></small>
 
 
@@ -181,6 +181,8 @@ Briefly, we identified private single-nucleotide mutations in each BXD that were
 
 ### A new approach to discover germline mutator alleles
 
+#### Calculating inter-haplotype distance
+
 Using the existing catalog of *de novo* germline mutations in the BXDs, we developed a new approach to discover loci that affect the germline *de novo* mutation spectrum in biparental RILs (Figure @fig:toy-diagram).
 
 ![**Overview of inter-haplotype distance method for discovering mutator alleles.** **a)** A population of four haplotypes has been genotyped at three informative markers; each haplotype also harbors private *de novo* germline mutations. At each informative marker, we compute an aggregate *de novo* germline mutation spectrum in the haplotypes that carry either parental allele, and calculate the cosine distance between the two aggregate spectra. **b)** We repeat the process outlined in a) for every informative marker along the genome. **c)** To assess the significance of any cosine distance peaks in b), we perform a permutation test by shuffling the labels associated with each haplotype's mutation data and running a genome-wide distance scan. In each of $N$ permutations, we record the maximum distance encountered at any locus in the distance scan. Finally, we calculate the $1 - p$ percentile of that maximum distance distribution to obtain a genome-wide cosine distance threshold at the specified value of $p$.](images/Figure%201.png){#fig:toy-diagram width=7in} 
@@ -196,6 +198,16 @@ $$D_C = 1 - \frac{\mathbf{A} \cdot \mathbf{B}}{||\mathbf{A}|| \ ||\mathbf{B}||}$
 where $||\mathbf{A}||$ and $||\mathbf{B}||$ are the $L^2$ (or Euclidean) norms of $\mathbf{A}$ and $\mathbf{B}$, respectively. The cosine distance metric has a number of favorable properties for comparing mutation spectra. Since cosine distance does not take the magnitude of vectors into account, it can be used to compare two spectra with unequal total mutation counts (even if those total counts are relatively small). Additionally, by calculating the cosine distance between mutation *spectra*, we avoid the need to perform separate comparisons of mutation counts at each individual $k$-mer mutation type. 
 
 Inspired by methods from QTL mapping [@PMID:7851788], we use permutation tests to establish genome-wide cosine distance thresholds. In each of $N$ permutation trials, we randomly shuffle the per-haplotype mutation data such that haplotype labels no longer correspond to the correct mutation counts. Using the shuffled mutation data, we perform a genome-wide distance scan as described above, and record the maximum distance observed at any locus. After $N$ permutations (usually 10,000), we compute the $1 - p$ percentile of the maximum distance distribution, and use that percentile value as a genome-wide significance threshold (for example, at $p = 0.05$).
+
+#### Accounting for relatedness between strains 
+
+We expect each BXD RIL to derive approximately 50% of its genome from C57BL/6J and 50% from DBA/2J. As a result, every pair of RILs will likely be identical-by-descent (IBD) at a fraction of genotyped markers. Pairs of more genetically similar BXDs may also have more similar mutation spectra, potentially due to shared polygenic effects on the mutation process. Therefore, at a given marker, if the BXD RILs that inherited *D* haplotypes are genetically dissimilar from the RILs that inherited *B* haplotypes (considering all loci throughout the genome), we might expect the aggregate mutation spectra in the two groups to also be dissimilar. 
+
+We therefore implemented a simple approach to account for these potential issues of relatedness. At each marker $i$, we divide BXD haplotypes into two groups based on the parental allele they inherited. As before, we first compute the aggregate mutation spectrum in each group of haplotypes and calculate the cosine distance between the two aggregate spectra ($D^{C}_{i}$). Then, within each group of haplotypes, we calculate the allele frequency of the *D* allele at every marker along the genome to obtain a vector of length $n$, where $n$ is the number of genotyped markers. To quantify the genetic similarity between the two groups of haplotypes, we calculate the Pearson correlation coefficient $r_i$ between the two vectors of marker-wide *D* allele frequencies. 
+
+Thus, at every marker $i$ along the genome, we divide BXD haplotypes into two groups and compute two metrics: $D^{C}_{i}$ (the cosine distance between the aggregate spectra of each group) and $r_i$ (the correlation between genome-wide *D* allele frequencies in each group). To control for the potential effects of genetic similarity on cosine distances, we regress $\left(D^{C}_{1}, D^{C}_{2}, \ldots D^{C}_{n} \right)$ against $\left( r_1, r_2, \ldots r_n \right)$ for all $n$ markers and fit an ordinary least-squares regression model. We then use the residuals from the fitted model as the "adjusted" cosine distance values for each marker. If genome-wide genetic similarity between haplotypes perfectly predicts cosine distances at each marker, these residuals will all be 0 (or very close to 0). If genome-wide genetic similarity has no predictive power, the residuals will simply represent the difference between an observed cosine distance and the marker-wide mean of cosine distances.
+
+#### Implementation and source code
 
 The inter-haplotype distance method was implemented in Python, and relies heavily on the following Python libraries: `numpy`, `pandas`, `matplotlib`, `scikit-learn`, `pandera`, `seaborn`, and `numba` [@doi:10.1038/s41586-020-2649-2;@doi:10.5281/zenodo.3509134;@doi:10.1109/MCSE.2007.55;@url:https://jmlr.csail.mit.edu/papers/v12/pedregosa11a.html;@doi:10.25080/Majora-342d178e-010;@doi:10.21105/joss.03021;@doi:10.1145/2833157.2833162].
 

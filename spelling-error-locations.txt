@@ -1,9 +1,11 @@
-content/03.methods.md:23:haplotype's
-content/03.methods.md:137:ANOVA
-content/03.methods.md:137:cytosines
-content/03.methods.md:137:durations
-content/03.methods.md:144:anova
-content/03.methods.md:155:ANOVA
+content/03.methods.md:25:haplotype's
+content/03.methods.md:41:IBD
+content/03.methods.md:41:polygenic
+content/03.methods.md:149:ANOVA
+content/03.methods.md:149:cytosines
+content/03.methods.md:149:durations
+content/03.methods.md:156:anova
+content/03.methods.md:167:ANOVA
 content/04.results.md:23:mESC
 content/05.discussion.md:15:adenines
 content/05.discussion.md:15:BER
