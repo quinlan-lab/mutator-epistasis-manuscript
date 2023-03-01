@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-03-01" />
   <meta name="citation_publication_date" content="2023-03-01" />
   <meta property="article:published_time" content="2023-03-01" />
-  <meta name="dc.modified" content="2023-03-01T17:47:27+00:00" />
-  <meta property="article:modified_time" content="2023-03-01T17:47:27+00:00" />
+  <meta name="dc.modified" content="2023-03-01T20:43:39+00:00" />
+  <meta property="article:modified_time" content="2023-03-01T20:43:39+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/eb19a43fb7df7714ecb2df7f8e43a3cc5ff06c63/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/eb19a43fb7df7714ecb2df7f8e43a3cc5ff06c63/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/eb19a43fb7df7714ecb2df7f8e43a3cc5ff06c63/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/d2bc0c3ed941f65f85856ed086d21aaadf9ff43c/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/d2bc0c3ed941f65f85856ed086d21aaadf9ff43c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/d2bc0c3ed941f65f85856ed086d21aaadf9ff43c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/eb19a43fb7df7714ecb2df7f8e43a3cc5ff06c63/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/d2bc0c3ed941f65f85856ed086d21aaadf9ff43c/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@eb19a43](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/eb19a43fb7df7714ecb2df7f8e43a3cc5ff06c63)
+from [quinlan-lab/mutator-epistasis-manuscript@d2bc0c3](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/d2bc0c3ed941f65f85856ed086d21aaadf9ff43c)
 on March 1, 2023.
 </em></small>
 
@@ -161,230 +161,29 @@ In 2022, we discovered a germline mutator allele in mice by analyzing whole-geno
 In this study, we developed a new method to detect alleles that affect the mutation spectrum in biparental RILs, and applied it to *de novo* germline mutation data from the BXDs. We assessed its power to detect candidate mutator alleles, re-identified the mutator near *Mutyh*, and discovered compelling evidence of epistasis between two germline mutator alleles that augment the C>A germline mutation rate.
 
 
-## Materials and Methods
-
-### Identifying *de novo* germline mutations in the BXD RILs
-
-The BXD resource currently comprises a total of 152 recombinant inbred lines (RILs). RILs were derived from either F2 or advanced intercrosses, and subsequently inbred by brother-sister mating for up to 180 generations [@PMID:33472028]. BXDs were generated in distinct breeding "epochs," which were each initiated with a distinct cross of C57BL/6J and DBA/2J parents; epochs 1, 2, 4, and 6 were derived from F2 crosses, while epochs 3 and 5 were derived from advanced intercrosses [@PMID:33472028]. Previously, we analyzed whole-genome sequencing data from the BXDs and identified candidate *de novo* germline mutations in each line [@PMID:35545679]. A detailed description of the methods used for DNA extraction, sequencing, alignment, and variant processing, as well as the characteristics of the *de novo* mutations, are available in a previous manuscript [@PMID:35545679].
-
-Briefly, we identified private single-nucleotide mutations in each BXD that were absent from all other RILs, as well as from the C57BL/6J and DBA/2J parents. We required each private variant to be meet the following criteria: 
-
-* genotyped as either homozygous or heterozygous for the alternate allele, with at least 90% of sequencing reads supporting the alternate allele
-
-* supported by at least 10 sequencing reads
-
-* Phred-scaled genotype quality of at least 20 
-
-* must not overlap regions of the genome annotated as segmental duplications or simple repeats in GRCm38/mm10
-
-* must occur on a parental haplotype that was inherited by at least one other BXD at the same locus; these other BXDs must be homozygous for the reference allele at the variant site
-
-### A new approach to discover germline mutator alleles
-
-#### Calculating inter-haplotype distance
-
-Using the existing catalog of *de novo* germline mutations in the BXDs, we developed a new approach to discover loci that affect the germline *de novo* mutation spectrum in biparental RILs (Figure @fig:toy-diagram).
-
-![**Overview of inter-haplotype distance method for discovering mutator alleles.** **a)** A population of four haplotypes has been genotyped at three informative markers; each haplotype also harbors private *de novo* germline mutations. At each informative marker, we compute an aggregate *de novo* germline mutation spectrum in the haplotypes that carry either parental allele, and calculate the cosine distance between the two aggregate spectra. **b)** We repeat the process outlined in a) for every informative marker along the genome. **c)** To assess the significance of any cosine distance peaks in b), we perform a permutation test by shuffling the labels associated with each haplotype's mutation data and running a genome-wide distance scan. In each of $N$ permutations, we record the maximum distance encountered at any locus in the distance scan. Finally, we calculate the $1 - p$ percentile of that maximum distance distribution to obtain a genome-wide cosine distance threshold at the specified value of $p$.](images/Figure%201.png){#fig:toy-diagram width=7in} 
-
-We assume that a collection of haplotypes has been genotyped at informative markers, and that *de novo* germline mutations have been identified on each haplotype.
-
-At each informative marker, we divide haplotypes into two groups based on the parental allele that they inherited. We then compute a $k$-mer mutation spectrum using the aggregate mutation counts in each haplotype group. The $k$-mer mutation spectrum contains the frequency of every possible $k$-mer mutation type in a collection of mutations, and can be represented as a vector of size $6 \times 4^{k - 1}$ after collapsing by strand complement. For example, the $1$-mer mutation spectrum is 6-element vector that contains the frequencies of C>T, C>G, C>A, A>G, A>T, and A>C mutations.
-
-At each marker, we then calculate the cosine distance between the aggregate mutation spectra of haplotypes with either parental allele. The cosine distance between two vectors $\mathbf{A}$ and $\mathbf{B}$ is defined as 
-
-$$D_C = 1 - \frac{\mathbf{A} \cdot \mathbf{B}}{||\mathbf{A}|| \ ||\mathbf{B}||}$$
-
-where $||\mathbf{A}||$ and $||\mathbf{B}||$ are the $L^2$ (or Euclidean) norms of $\mathbf{A}$ and $\mathbf{B}$, respectively. The cosine distance metric has a number of favorable properties for comparing mutation spectra. Since cosine distance does not take the magnitude of vectors into account, it can be used to compare two spectra with unequal total mutation counts (even if those total counts are relatively small). Additionally, by calculating the cosine distance between mutation *spectra*, we avoid the need to perform separate comparisons of mutation counts at each individual $k$-mer mutation type. 
-
-Inspired by methods from QTL mapping [@PMID:7851788], we use permutation tests to establish genome-wide cosine distance thresholds. In each of $N$ permutation trials, we randomly shuffle the per-haplotype mutation data such that haplotype labels no longer correspond to the correct mutation counts. Using the shuffled mutation data, we perform a genome-wide distance scan as described above, and record the maximum distance observed at any locus. After $N$ permutations (usually 10,000), we compute the $1 - p$ percentile of the maximum distance distribution, and use that percentile value as a genome-wide significance threshold (for example, at $p = 0.05$).
-
-#### Accounting for relatedness between strains 
-
-We expect each BXD RIL to derive approximately 50% of its genome from C57BL/6J and 50% from DBA/2J. As a result, every pair of RILs will likely be identical-by-descent (IBD) at a fraction of genotyped markers. Pairs of more genetically similar BXDs may also have more similar mutation spectra, potentially due to shared polygenic effects on the mutation process. Therefore, at a given marker, if the BXD RILs that inherited *D* haplotypes are genetically dissimilar from the RILs that inherited *B* haplotypes (considering all loci throughout the genome), we might expect the aggregate mutation spectra in the two groups to also be dissimilar. 
-
-We therefore implemented a simple approach to account for these potential issues of relatedness. At each marker $i$, we divide BXD haplotypes into two groups based on the parental allele they inherited. As before, we first compute the aggregate mutation spectrum in each group of haplotypes and calculate the cosine distance between the two aggregate spectra ($D^{C}_{i}$). Then, within each group of haplotypes, we calculate the allele frequency of the *D* allele at every marker along the genome to obtain a vector of length $n$, where $n$ is the number of genotyped markers. To quantify the genetic similarity between the two groups of haplotypes, we calculate the Pearson correlation coefficient $r_i$ between the two vectors of marker-wide *D* allele frequencies. 
-
-Thus, at every marker $i$ along the genome, we divide BXD haplotypes into two groups and compute two metrics: $D^{C}_{i}$ (the cosine distance between the aggregate spectra of each group) and $r_i$ (the correlation between genome-wide *D* allele frequencies in each group). To control for the potential effects of genetic similarity on cosine distances, we regress $\left(D^{C}_{1}, D^{C}_{2}, \ldots D^{C}_{n} \right)$ against $\left( r_1, r_2, \ldots r_n \right)$ for all $n$ markers and fit an ordinary least-squares regression model. We then use the residuals from the fitted model as the "adjusted" cosine distance values for each marker. If genome-wide genetic similarity between haplotypes perfectly predicts cosine distances at each marker, these residuals will all be 0 (or very close to 0). If genome-wide genetic similarity has no predictive power, the residuals will simply represent the difference between an observed cosine distance and the marker-wide mean of cosine distances.
-
-#### Implementation and source code
-
-The inter-haplotype distance method was implemented in Python, and relies heavily on the following Python libraries: `numpy`, `pandas`, `matplotlib`, `scikit-learn`, `pandera`, `seaborn`, and `numba` [@doi:10.1038/s41586-020-2649-2;@doi:10.5281/zenodo.3509134;@doi:10.1109/MCSE.2007.55;@url:https://jmlr.csail.mit.edu/papers/v12/pedregosa11a.html;@doi:10.25080/Majora-342d178e-010;@doi:10.21105/joss.03021;@doi:10.1145/2833157.2833162].
-
-Additional documentation is available on GitHub [@url:https://github.com/quinlan-lab/proj-mutator-mapping], along with a reproducible Snakemake [@doi:10.12688/f1000research.29032.1] workflow for running the method from start to finish using the BXDs (including downloading the mutation data, downloading genotypes, and running a genome-wide distance scan).
-
-### Simulations to assess the power of the inter-haplotype distance approach
-
-We performed a series of simple simulations to estimate our power to detect alleles that affect the germline mutation spectrum in biparental RILs using the inter-haplotype distance method.
-
-First, we simulate the $k$-mer mutation spectrum in a population of $h$ haplotypes. We assume that exactly $\frac{h}{2}$ of the haplotypes are under the effects of a mutator allele that increases the mutation rate of a particular mutation type(s) by an effect size $e$. We simulate $m$ mutations on each haplotype as follows:
-
-We first define a vector of $1$-mer mutation probabilities:
-
-$$P = \left( 0.4, \ 0.1, \ 0.075, \ 0.075, \ 0.075, \ 0.275 \right)$$
-
-These probabilities sum to 1 and correspond to the expected frequencies of C>T, C>A, C>G, A>T, A>C, and A>G *de novo* germline mutations in mice, respectively [@PMID:31492841].
-
-If we are simulating the $3$-mer mutation spectrum, we modify the vector of mutation probabilities $P$ to be length 96, and assign every 3-mer mutation type a value of $\frac{P_c}{16}$, where $P_c$ is the probability of the "central" mutation type associated with the 3-mer mutation type. In other words, each of the 16 possible N<ins>C</ins>N>N<ins>T</ins>N 3-mer mutation types would be assigned a mutation probability of $\frac{P_c}{16} = \frac{0.4}{16} = 0.025$.
-
-To simulate the mutation spectrum on the *wild-type* haplotypes, we define a matrix $C$ of size $(\frac{h}{2}, n)$, where $n = 6 \times 4^{k - 1}$ (i.e., the number of $k$-mer mutation types being simulated). First, we generate a vector of lambda values by scaling the mutation probabilities by the number of mutations we wish to simulate:
-
-$$\lambda = Pm$$
-
-Then, we populate the matrix $C$ by taking a single Poisson draw from the vector of $\lambda$ values for each mutation type on each haplotype. Thus, for every row $i$ in the matrix (i.e., for every haplotype), we perform the following for mutation type $j$:
-
-$$C_{i, j} = \mathrm {Pois}(\lambda_{j})$$
-
-To simulate the mutation spectrum on the $\frac{h}{2}$ *mutator* haplotypes, we define a new matrix $C^{\prime}$ of size $(\frac{h}{2}, n)$ as defined above. We then multiply the lambda value of a particular mutation type (or multiple mutation types) by the mutator effect size $e$ to obtain $\lambda^{\prime}$. Then, for every row $i$ in the matrix:
-
-$$C^{\prime}_{i, j} = \mathrm {Pois}(\lambda^{\prime}_{j})$$
-
-When $k = 1$, we only augment the effect size of one mutation type at a time, but when $k = 3$, we augment a fraction (25%, 50%, or 100%) of the $3$-mer mutation types associated with a single "central" mutation type. 
-
-After generating mutator and wild-type haplotypes, we compute the aggregate mutation spectrum in either group by summing the columns of $C$ and $C^{\prime}$. We then calculate the cosine distance between the two aggregate spectra, which we call the "focal" distance $D_f$. To determine whether $D_f$ is greater than what we'd expect by chance, we perform a permutation test.
-
-First, we concatenate the matrices of wild-type and mutator haplotype spectra:
-
-$$A = \begin{bmatrix}
-C \\
-C^{\prime}
-\end{bmatrix}$$
-
-Then, in each of $N = 1,000$ trials, we randomly permute the rows of $A$. In every permutation, we consider the row indices from $\left[0, \frac{h}{2} \right)$ to correspond to the wild-type haplotypes, and the row indices from $\left[ \frac{h}{2}, h \right)$ to correspond to the mutator haplotypes. We then compute the cosine distance between the aggregate spectra of the wild-type and mutator haplotypes. If fewer than 5% of the $N$ permutations produces a cosine distance greater than or equal to $D_f$, we say that the approach successfully identified the mutator allele. For every combination of simulation parameters ($h$, $m$, $e$, and so on) we perform 100 trials and record the number of trials in which we successfully identify the mutator allele. 
-
-### Applying the inter-haplotype distance method to the BXDs
-
-We downloaded previously-generated BXD *de novo* germline mutation data from the GitHub repository associated with our previous manuscript, which was also archived at Zenodo [@url:https://github.com/tomsasani/bxd_mutator_manuscript;@doi:10.5281/zenodo.5941048;@PMID:35545679], and downloaded a CSV file of BXD genotypes at 7,320 informative markers from GeneNetwork [@url:http://gn1.genenetwork.org/dbdoc/BXDGeno.html;@PMID:27933521]. We also downloaded relevant metadata about each BXD RIL from the manuscript describing the updated BXD resource [@PMID:33472028]. 
-
-As in our previous manuscript [@PMID:35545679], we included mutation data from a subset of the 152 BXDs in our inter-haplotype distance scans. We removed any BXDs that had been inbred for fewer than 20 generations, as it takes approximately 20 generations of strict brother-sister mating for an RIL genome to become >98% homozygous [@url:https://link.springer.com/book/10.1007/978-1-349-04904-2]. As a result, any potential mutator allele would almost certainly be either fixed or lost after 20 generations. If fixed, the allele would remain linked to any excess mutations it causes for the duration of subsequent inbreeding, and its effects would be detectable using our methods. Additionally, a strain only meets the canonical definition of "inbred" if it has been subject to brother-sister mating for at least 20 generations [@url:www.informatics.jax.org/mgihome/nomen/strains.shtml]. is one We also removed the BXD68 RIL from our genome-wide scans, since we previously discovered a hyper-mutator phenotype in that strain; the C>A germline mutation rate in BXD68 is over 5 times the population mean, likely due to a private deleterious nonsynonymous mutation in *Mutyh* [@PMID:35545679]. In total, we included 94 BXD RILs in our genome-wide scans.
-
-We used Snakemake [@PMID:34035898] to write a reproducible workflow for running the inter-haplotype distance method on the BXD dataset, which has been deposited in the GitHub repository associated with this manuscript [@url:https://github.com/quinlan-lab/proj-mutator-mapping].
-
-### Identifying candidate mutator alleles overlapping the chromosome 6 peak
-
-We investigated the region implicated by our inter-haplotype distance approach on chromosome 6 by subsetting the joint-genotyped BXD VCF file (European Nucleotide Archive accession **PRJEB45429** [@url:https://www.ebi.ac.uk/ena/browser/view/PRJEB45429]) using `bcftools` [@PMID:33590861]. We defined the candidate interval surrounding the cosine distance peak on chromosome 6 as +/- 5 Mbp from the genotype marker with the largest cosine distance value (`rs31001331`). To predict the functional impacts of both single-nucleotide variants and indels on splicing, protein structure, etc., we annotated variants in the BXD VCF using the following `snpEff` [@PMID:22728672] command: 
-
-```
- java -Xmx16g -jar /path/to/snpeff/jarfile GRCm38.75 /path/to/bxd/vcf > /path/to/uncompressed/output/vcf
-```
-
-and used `cyvcf2` [@PMID:28165109] to iterate over the annotated VCF file in order to identify nonsynonymous fixed differences between the parental C57BL/6J and DBA/2J strains.
-
-### Comparing mutation spectra between Mouse Genomes Project strains
-
-We downloaded mutation data from a previously published analysis [@PMID:30753674] (Supplementary File 1, Excel Table S3) that identified strain-private mutations in 29 strains that were originally whole-genome sequenced as part of the Sanger Mouse Genomes (MGP) project [@PMID:21921910]. When comparing counts of each mutation type between MGP strains that harbored either *D* or *B* alleles at the chromosome 4 or chromosome 6 mutator loci, we adjusted mutation counts by the number of callable A, T, C, or G nucleotides in each strain as described previously [@PMID:35545679].
-
-### Querying GeneNetwork for evidence of eQTLs at the mutator locus
-
-We used the online GeneNetwork resource [@PMID:27933521], which contains array- and RNA-seq-derived expression measurements in a wide variety of tissues from numerous datasets, to find *cis*-eQTLs for the DNA repair genes we implicated under the cosine distance peak on chromosome 6. On the GeneNetwork homepage (genenetwork.org), we selected the "BXD Family" **Group** and used the **Type** dropdown menu to select each of the specific expression datasets described in Table @tbl:eqtl-provenance. In the **Get Any** text box, we then entered the gene name (*Ogg1*) and clicked **Search**. After selecting the appropriate trait ID on the next page, we used the **Mapping Tools** dropdown to run Haley-Knott regression [@PMID:16718932] with the following parameters: WGS-based marker genotypes, 1,000 permutations for LOD threshold calculations, and controlling for BXD genotypes at the `rs32497085` marker.
-
-The exact names of the expression datasets we used for each tissue are shown in Table @tbl:eqtl-provenance below:
-
-| Tissue name | Complete name of GeneNetwork expression data | GeneNetwork trait ID |
-| - | - | - | 
-| Kidney | `Mouse kidney M430v2 Sex Balanced (Aug06) RMA` | `1448815_at` |
-| Gastrointestinal | `UTHSC Mouse BXD Gastrointestinal Affy MoGene 1.0 ST Gene Level (Apr14) RMA` | `10540639` |
-| Hematopoetic stem cells | `UMCG Stem Cells ILM6v1.1 (Apr09) transformed` | `ILM1940279` | 
-| Hematopoetic progenitor cells | `UMCG Progenitor Cells ILM6v1.1 (Apr09) transformed` | `ILM1940279` | 
-| Spleen | `UTHSC Affy MoGene 1.0 ST Spleen (Dec10) RMA` | `10540639` | 
-| Liver | `UTHSC BXD Liver RNA-Seq Avg (Oct19) TPM Log2` | `ENSMUST00000032406` | 
-| Heart | `NHLBI BXD All Ages Heart RNA-Seq (Nov20) TMP Log2 **` | `ENSMUSG00000030271` | 
-| Eye | `UTHSC BXD All Ages Eye RNA-Seq (Nov20) TPM Log2 **` | `ENSMUSG00000030271` | 
-
-Table: Names of gene expression datasets used for each tissue type on GeneNetwork {#tbl:eqtl-provenance}
-
-### Calculating the frequencies of candidate mutator alleles in wild mice 
-
-To determine the frequency of the *Ogg1* p.Thr95Ala mutation in other populations of mice, we queried a VCF file containing genome-wide variation in 67 wild-derived mice from four species of *Mus* [@PMID:27622383]. We calculated the allele frequency of each nonsynonymous mutation in each of the four species or subspecies (*Mus musculus domesticus*, *Mus musculus musculus*, *Mus musculus castaneus*, and *Mus spretus*), including genotypes that met the following criteria:
-
-* supported by at least 10 sequencing reads 
-
-* Phred-scaled genotype quality of at least 20
-
-### Testing for epistasis between the two mutator loci
-
-To test for the presence of epistasis between the mutator loci near *Mutyh* and *Ogg1*, we modeled C>A mutation rates in the BXDs as a function of genotypes at either locus. Specifically, we tested for statistical interaction between *Mutyh* and *Ogg1* genotypes by fitting a generalized linear model in the R statistical language as follows:
-
-```R
-m1 <- glm(Count ~ offset(log(ADJ_AGE)) + Genotype_A * Genotype_B, data = data, family=poisson())
-```
-
-In this model, `Count` is the count of C>A *de novo* mutations observed in each BXD RIL. `ADJ_AGE` is the product of the number of "callable" cytosine nucleotides in each RIL (i.e., the total number of cytosines covered by at least 10 sequencing reads in the RIL) and the number of generations for which the RIL was inbred. We included the logarithm of `ADJ_AGE` as an "offset" in order to model the response variable as a rate rather than an absolute count; the BXDs differ in both their durations of inbreeding and the proportions of their genomes that were sequenced to sufficient depth, which influences the number of mutations we observe in each RIL. The `Genotype_A` and `Genotype_B` terms represent the genotypes of BXDs at markers `rs52263933` and `rs31001331` (the markers with peak cosine distance near *Mutyh* and *Ogg1* in the two inter-haplotype distance scans). Since each BXD is inbred for at least 20 generations, we considered genotypes at either locus to be binary ("B" or "D"). Using analysis of variance (ANOVA), we then compared the model including an interaction effect to a model including only additive effects:
-
-```R
-m2 <- glm(Count ~ offset(log(ADJ_AGE)) + Haplotype_A + Haplotype_B, data = data, family=poisson())
-```
-
-```R
-anova(m1, m2, test="Chisq")
-```
-
-We tested for epistasis in the Sanger Mouse Genomes Project (MGP) strains using a nearly-identical approach. In this analysis, we fit two models as follows:
-
-```R
-m1 <- glm(Count ~ offset(log(CALLABLE_C)) + Genotype_A * Genotype_B, data = data, family=poisson())
-
-m2 <- glm(Count ~ offset(log(CALLABLE_C)) + Genotype_A + Genotype_B, data = data, family=poisson())
-```
-
-where `Count` is the count of strain-private C>A mutations observed in each MGP strain [@PMID:30753674]. The `CALLABLE_C` term represents the total number of cytosine and guanine nucleotides that were accessible for mutation calling in each strain, and the `Genotype_A` and `Genotype_B` terms represent MGP genotypes at `rs52263933` and `rs31001331`. We compared the two models using ANOVA as described above.
-
-Since each BXD derives approximately 50% of its genome from C57BL/6J and 50% from DBA/2J, we performed an additional test for epistasis that accounted for kinship between the BXD RILs. Using the `lmekin` method from the `coxme` package [@url:https://cran.r-project.org/web/packages/coxme/index.html] in the R statistical language, we fit a mixed effects model predicting C>A mutation fractions as a function of genotypes at both `rs52263933` and `rs31001331`, and included a pairwise kinship matrix as a random effect.
-
-```R
-m = lmekin(Fraction ~ Genotype_A * Genotype_B + (1|sample), data = data, varlist = kinship_matrix)
-```
-
-The rows and columns of the kinship matrix were labeled with the `sample` name of each BXD, such that the `(1|sample)` term in the model captured the random effect of kinship. We calculated the `kinship_matrix` using the `calc_kinship` method from `R/qtl2` [@PMID:30591514] as follows:
-
-```R
-# read in the JSON-formatted file that directs R/qtl2 to sample 
-# genotypes, phenotypes, and covariates if applicable
-bxd <- read_cross2("path/to/bxd.json")
-
-# subset cross2 object to BXDs with C>A fractions in `data`
-bxd <- bxd[data$sample, ]
-
-# insert pseudomarkers into the genotype map
-gmap <- insert_pseudomarkers(bxd$gmap, step = 0.2, stepwidth = "max")
-
-# calculate QTL genotype probabilities
-pr <- calc_genoprob(bxd, gmap, error_prob = 0.002, map_function = "c-f")
-
-# calculate kinship between strains using all chromosomes
-k <- calc_kinship(pr, "overall")
-
-kinship_matrix = as.matrix(k)
-```
-
-
-
-
-
-
 ## Results
 
 ### Benchmarking the inter-haplotype distance method using simulations
 
-We first tested the inter-haplotype cosine distance approach using simulated data (Materials and Methods). We find that the method's power is mostly limited by the initial mutation rate of the $k$-mer mutation type affected by the mutator allele and the total number of *de novo* germline mutations in the dataset (that is, the product of the number of haplotypes and the mean number of mutations per haplotype) (Figure {@fig:simulations}). For example, given 50 haplotypes with an average of 500 *de novo* germline mutations each, our method has nearly 90% power detect a mutator allele that increases the C>T *de novo* mutation rate by 10%. However, the method only has about 10% power to detect a mutator of identical effect size that affects the C>G mutation rate, since C>G mutations are expected to make up a much smaller fraction of all *de novo* germline mutations to begin with. These simulations also demonstrate that our method is well-powered to detect large-effect mutator alleles (e.g., those that increase the mutation rate of a specific $k$-mer by 50%), even with a relatively small number of mutations per haplotype.
+We first tested the inter-haplotype distance approach using simulated data (Materials and Methods). We find that the method's power is mostly limited by the initial mutation rate of the $k$-mer mutation type affected by the mutator allele and the total number of *de novo* germline mutations in the dataset (that is, the product of the number of haplotypes and the mean number of mutations per haplotype) (Figure {@fig:simulations}). For example, given 50 haplotypes with an average of 500 *de novo* germline mutations each, our method has nearly 90% power detect a mutator allele that increases the C>T *de novo* mutation rate by 10%. However, the method only has about 10% power to detect a mutator of identical effect size that affects the C>G mutation rate, since C>G mutations are expected to make up a much smaller fraction of all *de novo* germline mutations to begin with. These simulations also demonstrate that our method is well-powered to detect large-effect mutator alleles (e.g., those that increase the mutation rate of a specific $k$-mer by 50%), even with a relatively small number of mutations per haplotype.
 
 ![**Simulations to assess the power of the inter-haplotype distance method.** We simulated *de novo* germline mutations on the specified number of haplotypes, such that 50% of haplotypes were affected by a mutator allele that increased the mutation rate of the specified $k$-mer by the specified effect size (an effect size of 1.5 indicates a 50% increase in the mutation rate). The colors of the lines indicate the number of simulated mutations on each haplotype (before augmenting the mutation rate with a mutator allele). Given a specific combination of parameters, the y-axis denotes the fraction of 100 simulations in which the simulated mutator allele could be detected at a p-value of 0.05. Shaded areas indicate the standard deviation of that fraction.](images/sims.png){#fig:simulations width=7in} 
 
 ### Re-identifying the mutator allele on chromosome 4 in the BXDs
 
-We applied our inter-haplotype distance method to 93 BXD RILs (Materials and Methods) with a total of 62,993 *de novo* germline mutations [@PMID:35545679]. Reassuringly, we observed a large peak in cosine distance at a locus on chromosome 4 (Figure {@fig:distance-results}A; maximum distance of 9.20e-3 at marker ID `rs52263933`; position 116.75 Mbp in GRCm38/mm10 coordinates). 
+We applied our inter-haplotype distance method to 93 BXD RILs (Materials and Methods) with a total of 62,993 *de novo* germline mutations [@PMID:35545679]. Reassuringly, using $1$-mer mutation spectra, we observed a large $\chi^{2}$ statistic peak at a locus on chromosome 4 (Figure {@fig:distance-results}A; maximum $\chi^2$ statistic of 352.7 at marker ID `rs52263933`; position 116.75 Mbp in GRCm38/mm10 coordinates). We observed the same peak on chromosome 4 using the $3-mer$ mutation spectrum, as well (Figure @fig:distance-3mer).
 
-![**Results of inter-haplotype distance scans in the BXD RILs.** **a)** Cosine distances between aggregate *de novo* mutation spectra on BXD haplotypes (n = 93 haplotypes; 62,993 total mutations) with either *D* or *B* alleles at 7,320 informative markers. Distance threshold at $p = 0.05$ was calculated by performing 10,000 permutations of the BXD haplotype mutation data, and is shown as a dotted grey line. **b)** Cosine distances between aggregate *de novo* mutation spectra on BXD haplotypes with *D* alleles at `rs52263933` (n = 55 haplotypes; 40,913 total mutations) and either *D* or *B* alleles at 7,320 informative markers. Distance threshold at $p = 0.05$ was calculated by performing 10,000 permutations of the BXD haplotype mutation data, and is shown as a dotted grey line. **c)** Fractions of *de novo* germline mutations in BXDs with either *D* or *B* haplotypes at markers `rs52263933` and `rs31001331`, stratified by mutation type. **d)** Fractions of *de novo* germline mutations in Sanger Mouse Genome Project (MGP) strains with either *D* or *B* haplotypes at markers `rs52263933` and `rs31001331`, stratified by mutation type.](images/Figure%202.png){#fig:distance-results width=7in} 
+![**Results of inter-haplotype distance scans in the BXD RILs.** **a)** $\chi^{2}$ statistics between aggregate $1$-mer *de novo* mutation spectra on BXD haplotypes (n = 93 haplotypes; 62,993 total mutations) with either *D* or *B* alleles at 7,320 informative markers. Distance threshold at $p = 0.05$ was calculated by performing 10,000 permutations of the BXD haplotype mutation data, and is shown as a dotted grey line. **b)** $\chi^{2}$ statistics between aggregate $1-mer$ *de novo* mutation spectra on BXD haplotypes with *D* alleles at `rs52263933` (n = 55 haplotypes; 40,913 total mutations) and either *D* or *B* alleles at 7,320 informative markers. Distance threshold at $p = 0.05$ was calculated by performing 10,000 permutations of the BXD haplotype mutation data, and is shown as a dotted grey line. **c)** Fractions of *de novo* germline mutations in BXDs with either *D* or *B* haplotypes at markers `rs52263933` and `rs31001331`, stratified by mutation type. **d)** Fractions of *de novo* germline mutations in Sanger Mouse Genome Project (MGP) strains with either *D* or *B* haplotypes at markers `rs52263933` and `rs31001331`, stratified by mutation type.](images/Figure%202.png){#fig:distance-results width=7in} 
 
 In a previous analysis, we used quantitative trait locus (QTL) mapping to identify a nearly identical locus on chromosome 4 that was significantly associated with the C>A germline mutation rate in the BXDs [@PMID:35545679]. This locus overlaps 21 protein-coding genes that are annotated by the Gene Ontology as being involved in "DNA repair," but only one of these genes contains non-synonymous differences between the two parental strains: *Mutyh*. *Mutyh* encodes a protein involved in the base-excision repair of 8-oxoguanine (8-oxoG), a DNA lesion caused by oxidative damage, and prevents the accumulation of C>A mutations [@PMID:28551381;@PMID:28127763;@PMID:17581577]. C>A germline mutation rates are nearly 50% higher in BXDs that inherited *D* haplotypes at marker ID `rs52263933` than in those that inherited *B* haplotypes [@PMID:35545679].
 
 ### An additional germline mutator allele on chromosome 6
 
-After confirming that the inter-haplotype distance method could recover the mutator locus overlapping *Mutyh*, we asked if our approach could identify additional mutator loci in the BXD. To account for the effects of the large-effect C>A germline mutator locus near *Mutyh*, we divided the BXD RILs into those with either *D* (n = 55) or *B* (n = 38) genotypes at `rs52263933` (the marker at which we observed the highest inter-haplotype cosine distance on chromosome 4), and ran a genome-wide distance scan using each group separately (Figure {@fig:distance-results}B.
+After confirming that the inter-haplotype distance method could recover the mutator locus overlapping *Mutyh*, we asked if our approach could identify additional mutator loci in the BXD. To account for the effects of the large-effect C>A germline mutator locus near *Mutyh*, we divided the BXD RILs into those with either *D* (n = 55) or *B* (n = 38) genotypes at `rs52263933` (the marker at which we observed the highest inter-haplotype $\chi^{2}$ statistic on chromosome 4), and ran a genome-wide distance scan using each group separately (Figure {@fig:distance-results}B.
 
-Using only the BXDs with *B* genotypes at the *Mutyh* mutator locus, we did not observe any genome-wide significant peaks. But using the BXDs with *D* genotypes at the same locus, we identified a cosine distance peak on chromosome 6 (Figure {@fig:distance-results}B; maximum distance of 3.03e-3 at marker `rs31001331`; position 114.05 Mbp in GRCm38/mm10 coordinates). We queried the region underneath this peak (+/- 5 Mbp) and discovered 87 protein-coding genes. Remarkably, only one was both annotated with the Gene Ontology term "DNA repair" and contained nonsynonymous differences between C57BL/6J and DBA/2J: *Ogg1*. *Ogg1* encodes a key member of the base-excision repair response to oxidative DNA damage, a pathway that also includes *Mutyh*. *Ogg1* harbors a single fixed nonsynonymous differences between the C57BL/6J and DBA/2J parental strains: p.Thr95Ala, at position 113,328,510 on chromosome 6 in GRCm38/mm10 coordinates. 
+Using only the BXDs with *B* genotypes at the *Mutyh* mutator locus, we did not observe any genome-wide significant peaks. But using the BXDs with *D* genotypes at the same locus, we identified a $\chi^{2}$ statistic peak on chromosome 6 (Figure {@fig:distance-results}B; maximum $\chi^2$ statistic of 81.0 at marker `rs31001331`; position 114.05 Mbp in GRCm38/mm10 coordinates). We identified the same peak using the $3-mer$ mutation spectra, as well (Figure @fig:distance-3mer). We queried the region underneath this peak (+/- 5 Mbp) and discovered 87 protein-coding genes. Remarkably, only one was both annotated with the Gene Ontology term "DNA repair" and contained nonsynonymous differences between C57BL/6J and DBA/2J: *Ogg1*. *Ogg1* encodes a key member of the base-excision repair response to oxidative DNA damage, a pathway that also includes *Mutyh*. *Ogg1* harbors a single fixed nonsynonymous differences between the C57BL/6J and DBA/2J parental strains: p.Thr95Ala, at position 113,328,510 on chromosome 6 in GRCm38/mm10 coordinates. 
 
-We also considered the possibility that expression quantitative trait loci (eQTLs), rather than nonsynonymous mutations, could contribute to the C>A mutator phenotype associated to the locus on chromosome 6. Using GeneNetwork [@PMID:27933521], we mapped cis-eQTLs for *Ogg1* in a number of tissues, including hematopoetic stem cells, kidney, and spleen. BXD genotypes near the cosine distance peak on chromosome 6 were significantly associated with *Ogg1* expression in some (but not all) tissues, and *D* genotypes were nearly always associated with decreased gene expression (Table @tbl:eqtl-results). We also queried a previously published collection of eQTLs derived from Diversity Outbred (DO) mouse embryonic stem cell (mESC) expression data [@PMID:32795400], but did not find any significant eQTLs for *Ogg1*. 
+We also considered the possibility that expression quantitative trait loci (eQTLs), rather than nonsynonymous mutations, could contribute to the C>A mutator phenotype associated to the locus on chromosome 6. Using GeneNetwork [@PMID:27933521], we mapped cis-eQTLs for *Ogg1* in a number of tissues, including hematopoetic stem cells, kidney, and spleen. BXD genotypes near the $\chi^{2}$ statistic peak on chromosome 6 were significantly associated with *Ogg1* expression in some (but not all) tissues, and *D* genotypes were nearly always associated with decreased gene expression (Table @tbl:eqtl-results). We also queried a previously published collection of eQTLs derived from Diversity Outbred (DO) mouse embryonic stem cell (mESC) expression data [@PMID:32795400], but did not find any significant eQTLs for *Ogg1*. 
 
 | Tissue name | # BXDs with expression data |  Top significant marker | LRS at top significant marker | Significant LRS threshold | Additive effect of D allele on expression |
 | - | - | - | - | - | - |
@@ -443,6 +242,219 @@ Germline mutation spectra are a rich source of information about the demographic
 Within somatic tissues, mutation spectra can also be used to uncover the mutational processes active in particular populations of cells [@PMID:23945592]. New computational methods have been developed to extract "mutational signatures" from large databases of somatic mutations in cancer [@PMID:36388765]. These signatures, which describe the relative frequency of each $3$-mer mutation type, can often be precisely attributed to chemotherapeutic agents, exposures to environmental mutagens, or loss-of-function mutations in genes encoding DNA repair or replication proteins [@PMID:23945592;@PMID:31740835;@PMID:27811275]. 
 
 Although a germline mutator allele should increase the absolute count of mutations on a linked haplotype, our results demonstrate that its effects can be more easily detectable by examining mutation *spectra* instead. For example, *D* alleles at the mutator locus on chromosome 6 augment the C>A mutation rate by a factor of approximately 1.2 (Figure {@fig:distance-results}). Since C>A mutations comprise approximately 10% of all germline mutations to begin with, *D* alleles only increase the overall germline mutation rate by about 2%. Given the depth of information that can be encoded in the mutation spectrum, we expect that mutation spectra can be further exploited to discover genetic modifiers of the mutation rate in other study systems, as well. 
+
+## Materials and Methods
+
+### Identifying *de novo* germline mutations in the BXD RILs
+
+The BXD resource currently comprises a total of 152 recombinant inbred lines (RILs). RILs were derived from either F2 or advanced intercrosses, and subsequently inbred by brother-sister mating for up to 180 generations [@PMID:33472028]. BXDs were generated in distinct breeding "epochs," which were each initiated with a distinct cross of C57BL/6J and DBA/2J parents; epochs 1, 2, 4, and 6 were derived from F2 crosses, while epochs 3 and 5 were derived from advanced intercrosses [@PMID:33472028]. Previously, we analyzed whole-genome sequencing data from the BXDs and identified candidate *de novo* germline mutations in each line [@PMID:35545679]. A detailed description of the methods used for DNA extraction, sequencing, alignment, and variant processing, as well as the characteristics of the *de novo* mutations, are available in a previous manuscript [@PMID:35545679].
+
+Briefly, we identified private single-nucleotide mutations in each BXD that were absent from all other RILs, as well as from the C57BL/6J and DBA/2J parents. We required each private variant to be meet the following criteria: 
+
+* genotyped as either homozygous or heterozygous for the alternate allele, with at least 90% of sequencing reads supporting the alternate allele
+
+* supported by at least 10 sequencing reads
+
+* Phred-scaled genotype quality of at least 20 
+
+* must not overlap regions of the genome annotated as segmental duplications or simple repeats in GRCm38/mm10
+
+* must occur on a parental haplotype that was inherited by at least one other BXD at the same locus; these other BXDs must be homozygous for the reference allele at the variant site
+
+### A new approach to discover germline mutator alleles
+
+#### Calculating inter-haplotype distance
+
+Using the existing catalog of *de novo* germline mutations in the BXDs, we developed a new approach to discover loci that affect the germline *de novo* mutation spectrum in biparental RILs (Figure @fig:toy-diagram).
+
+![**Overview of inter-haplotype distance method for discovering mutator alleles.** **a)** A population of four haplotypes has been genotyped at three informative markers; each haplotype also harbors private *de novo* germline mutations. At each informative marker, we compute an aggregate *de novo* germline mutation spectrum in the haplotypes that carry either parental allele, and calculate the $\chi^{2}$ statistic between the two aggregate spectra. **b)** We repeat the process outlined in a) for every informative marker along the genome. **c)** To assess the significance of any $\chi^{2}$ statistic peaks in b), we perform a permutation test by shuffling the labels associated with each haplotype's mutation data and running a genome-wide distance scan. In each of $N$ permutations, we record the maximum distance encountered at any locus in the distance scan. Finally, we calculate the $1 - p$ percentile of that maximum distance distribution to obtain a genome-wide $\chi^{2}$ statistic threshold at the specified value of $p$.](images/Figure%201.png){#fig:toy-diagram width=7in} 
+
+We assume that a collection of haplotypes has been genotyped at informative markers, and that *de novo* germline mutations have been identified on each haplotype.
+
+At each informative marker, we divide haplotypes into two groups based on the parental allele that they inherited. We then compute a $k$-mer mutation spectrum using the aggregate mutation counts in each haplotype group. The $k$-mer mutation spectrum contains the frequency of every possible $k$-mer mutation type in a collection of mutations, and can be represented as a vector of size $6 \times 4^{k - 1}$ after collapsing by strand complement. For example, the $1$-mer mutation spectrum is 6-element vector that contains the frequencies of C>T, C>G, C>A, A>G, A>T, and A>C mutations.
+
+At each marker, we then calculate the $\chi^{2}$ statistic between the aggregate mutation spectra of haplotypes with either parental allele. Larger values of the $\chi^{2}$ statistic suggests more dissimilarity between the two aggregate mutation spectra.
+
+Inspired by methods from QTL mapping [@PMID:7851788], we use permutation tests to establish genome-wide $\chi^{2}$ statistic thresholds. In each of $N$ permutation trials, we randomly shuffle the per-haplotype mutation data such that haplotype labels no longer correspond to the correct mutation counts. Using the shuffled mutation data, we perform a genome-wide distance scan as described above, and record the maximum distance observed at any locus. After $N$ permutations (usually 10,000), we compute the $1 - p$ percentile of the maximum distance distribution, and use that percentile value as a genome-wide significance threshold (for example, at $p = 0.05$).
+
+#### Accounting for relatedness between strains 
+
+We expect each BXD RIL to derive approximately 50% of its genome from C57BL/6J and 50% from DBA/2J. As a result, every pair of RILs will likely be identical-by-descent (IBD) at a fraction of genotyped markers. Pairs of more genetically similar BXDs may also have more similar mutation spectra, potentially due to shared polygenic effects on the mutation process. Therefore, at a given marker, if the BXD RILs that inherited *D* haplotypes are genetically dissimilar from the RILs that inherited *B* haplotypes (considering all loci throughout the genome), we might expect the aggregate mutation spectra in the two groups to also be dissimilar. 
+
+We therefore implemented a simple approach to account for these potential issues of relatedness. At each marker $i$, we divide BXD haplotypes into two groups based on the parental allele they inherited. As before, we first compute the aggregate mutation spectrum in each group of haplotypes and calculate the $\chi^{2}$ statistic between the two aggregate spectra ($\chi^{2}_{i}$). Then, within each group of haplotypes, we calculate the allele frequency of the *D* allele at every marker along the genome to obtain a vector of length $n$, where $n$ is the number of genotyped markers. To quantify the genetic similarity between the two groups of haplotypes, we calculate the Pearson correlation coefficient $r_i$ between the two vectors of marker-wide *D* allele frequencies. 
+
+Thus, at every marker $i$ along the genome, we divide BXD haplotypes into two groups and compute two metrics: $\chi^{2}_{i}$ (the $\chi^2$ statistic between the two groups' aggregate spectra) and $r_i$ (the correlation between genome-wide *D* allele frequencies in the two groups). To control for the potential effects of genetic similarity on $\chi^{2}$ statistics, we regress $\left(\chi^2_{1}, \chi^2_{2}, \ldots \chi^2_{n} \right)$ on $\left( r_1, r_2, \ldots r_n \right)$ for all $n$ markers and fit an ordinary least-squares regression model. We then use the residuals from the fitted model as the "adjusted" $\chi^{2}$ statistic values for each marker. If genome-wide genetic similarity between haplotypes perfectly predicts $\chi^{2}$ statistics at each marker, these residuals will all be 0 (or very close to 0). If genome-wide genetic similarity has no predictive power, the residuals will simply represent the difference between an observed $\chi^{2}$ statistic and the marker-wide mean of $\chi^{2}$ statistics.
+
+#### Implementation and source code
+
+The inter-haplotype distance method was implemented in Python, and relies heavily on the following Python libraries: `numpy`, `pandas`, `matplotlib`, `scikit-learn`, `pandera`, `seaborn`, and `numba` [@doi:10.1038/s41586-020-2649-2;@doi:10.5281/zenodo.3509134;@doi:10.1109/MCSE.2007.55;@url:https://jmlr.csail.mit.edu/papers/v12/pedregosa11a.html;@doi:10.25080/Majora-342d178e-010;@doi:10.21105/joss.03021;@doi:10.1145/2833157.2833162].
+
+Additional documentation is available on GitHub [@url:https://github.com/quinlan-lab/proj-mutator-mapping], along with a reproducible Snakemake [@doi:10.12688/f1000research.29032.1] workflow for running the method from start to finish using the BXDs (including downloading the mutation data, downloading genotypes, and running a genome-wide distance scan).
+
+### Simulations to assess the power of the inter-haplotype distance approach
+
+We performed a series of simple simulations to estimate our power to detect alleles that affect the germline mutation spectrum in biparental RILs using the inter-haplotype distance method.
+
+First, we simulate the $k$-mer mutation spectrum in a population of $h$ haplotypes. We assume that exactly $\frac{h}{2}$ of the haplotypes are under the effects of a mutator allele that increases the mutation rate of a particular mutation type(s) by an effect size $e$. We simulate $m$ mutations on each haplotype as follows:
+
+We first define a vector of $1$-mer mutation probabilities:
+
+$$P = \left( 0.4, \ 0.1, \ 0.075, \ 0.075, \ 0.075, \ 0.275 \right)$$
+
+These probabilities sum to 1 and correspond to the expected frequencies of C>T, C>A, C>G, A>T, A>C, and A>G *de novo* germline mutations in mice, respectively [@PMID:31492841].
+
+If we are simulating the $3$-mer mutation spectrum, we modify the vector of mutation probabilities $P$ to be length 96, and assign every 3-mer mutation type a value of $\frac{P_c}{16}$, where $P_c$ is the probability of the "central" mutation type associated with the 3-mer mutation type. In other words, each of the 16 possible N<ins>C</ins>N>N<ins>T</ins>N 3-mer mutation types would be assigned a mutation probability of $\frac{P_c}{16} = \frac{0.4}{16} = 0.025$.
+
+To simulate the mutation spectrum on the *wild-type* haplotypes, we define a matrix $C$ of size $(\frac{h}{2}, n)$, where $n = 6 \times 4^{k - 1}$ (i.e., the number of $k$-mer mutation types being simulated). First, we generate a vector of lambda values by scaling the mutation probabilities by the number of mutations we wish to simulate:
+
+$$\lambda = Pm$$
+
+Then, we populate the matrix $C$ by taking a single Poisson draw from the vector of $\lambda$ values for each mutation type on each haplotype. Thus, for every row $i$ in the matrix (i.e., for every haplotype), we perform the following for mutation type $j$:
+
+$$C_{i, j} = \mathrm {Pois}(\lambda_{j})$$
+
+To simulate the mutation spectrum on the $\frac{h}{2}$ *mutator* haplotypes, we define a new matrix $C^{\prime}$ of size $(\frac{h}{2}, n)$ as defined above. We then multiply the lambda value of a particular mutation type (or multiple mutation types) by the mutator effect size $e$ to obtain $\lambda^{\prime}$. Then, for every row $i$ in the matrix:
+
+$$C^{\prime}_{i, j} = \mathrm {Pois}(\lambda^{\prime}_{j})$$
+
+When $k = 1$, we only augment the effect size of one mutation type at a time, but when $k = 3$, we augment a fraction (25%, 50%, or 100%) of the $3$-mer mutation types associated with a single "central" mutation type. 
+
+After generating mutator and wild-type haplotypes, we compute the aggregate mutation spectrum in either group by summing the columns of $C$ and $C^{\prime}$. We then calculate the $\chi^{2}$ statistic between the two aggregate spectra, which we call the "focal" distance $D_f$. To determine whether $D_f$ is greater than what we'd expect by chance, we perform a permutation test.
+
+First, we concatenate the matrices of wild-type and mutator haplotype spectra:
+
+$$A = \begin{bmatrix}
+C \\
+C^{\prime}
+\end{bmatrix}$$
+
+Then, in each of $N = 1,000$ trials, we randomly permute the rows of $A$. In every permutation, we consider the row indices from $\left[0, \frac{h}{2} \right)$ to correspond to the wild-type haplotypes, and the row indices from $\left[ \frac{h}{2}, h \right)$ to correspond to the mutator haplotypes. We then compute the $\chi^{2}$ statistic between the aggregate spectra of the wild-type and mutator haplotypes. If fewer than 5% of the $N$ permutations produces a $\chi^{2}$ statistic greater than or equal to $D_f$, we say that the approach successfully identified the mutator allele. For every combination of simulation parameters ($h$, $m$, $e$, and so on) we perform 100 trials and record the number of trials in which we successfully identify the mutator allele. 
+
+### Applying the inter-haplotype distance method to the BXDs
+
+We downloaded previously-generated BXD *de novo* germline mutation data from the GitHub repository associated with our previous manuscript, which was also archived at Zenodo [@url:https://github.com/tomsasani/bxd_mutator_manuscript;@doi:10.5281/zenodo.5941048;@PMID:35545679], and downloaded a CSV file of BXD genotypes at 7,320 informative markers from GeneNetwork [@url:http://gn1.genenetwork.org/dbdoc/BXDGeno.html;@PMID:27933521]. We also downloaded relevant metadata about each BXD RIL from the manuscript describing the updated BXD resource [@PMID:33472028]. 
+
+As in our previous manuscript [@PMID:35545679], we included mutation data from a subset of the 152 BXDs in our inter-haplotype distance scans. We removed any BXDs that had been inbred for fewer than 20 generations, as it takes approximately 20 generations of strict brother-sister mating for an RIL genome to become >98% homozygous [@url:https://link.springer.com/book/10.1007/978-1-349-04904-2]. As a result, any potential mutator allele would almost certainly be either fixed or lost after 20 generations. If fixed, the allele would remain linked to any excess mutations it causes for the duration of subsequent inbreeding, and its effects would be detectable using our methods. Additionally, a strain only meets the canonical definition of "inbred" if it has been subject to brother-sister mating for at least 20 generations [@url:www.informatics.jax.org/mgihome/nomen/strains.shtml]. is one We also removed the BXD68 RIL from our genome-wide scans, since we previously discovered a hyper-mutator phenotype in that strain; the C>A germline mutation rate in BXD68 is over 5 times the population mean, likely due to a private deleterious nonsynonymous mutation in *Mutyh* [@PMID:35545679]. In total, we included 94 BXD RILs in our genome-wide scans.
+
+We used Snakemake [@PMID:34035898] to write a reproducible workflow for running the inter-haplotype distance method on the BXD dataset, which has been deposited in the GitHub repository associated with this manuscript [@url:https://github.com/quinlan-lab/proj-mutator-mapping].
+
+### Identifying candidate mutator alleles overlapping the chromosome 6 peak
+
+We investigated the region implicated by our inter-haplotype distance approach on chromosome 6 by subsetting the joint-genotyped BXD VCF file (European Nucleotide Archive accession **PRJEB45429** [@url:https://www.ebi.ac.uk/ena/browser/view/PRJEB45429]) using `bcftools` [@PMID:33590861]. We defined the candidate interval surrounding the $\chi^{2}$ statistic peak on chromosome 6 as +/- 5 Mbp from the genotype marker with the largest $\chi^{2}$ statistic value (`rs31001331`). To predict the functional impacts of both single-nucleotide variants and indels on splicing, protein structure, etc., we annotated variants in the BXD VCF using the following `snpEff` [@PMID:22728672] command: 
+
+```
+ java -Xmx16g -jar /path/to/snpeff/jarfile GRCm38.75 /path/to/bxd/vcf > /path/to/uncompressed/output/vcf
+```
+
+and used `cyvcf2` [@PMID:28165109] to iterate over the annotated VCF file in order to identify nonsynonymous fixed differences between the parental C57BL/6J and DBA/2J strains.
+
+### Comparing mutation spectra between Mouse Genomes Project strains
+
+We downloaded mutation data from a previously published analysis [@PMID:30753674] (Supplementary File 1, Excel Table S3) that identified strain-private mutations in 29 strains that were originally whole-genome sequenced as part of the Sanger Mouse Genomes (MGP) project [@PMID:21921910]. When comparing counts of each mutation type between MGP strains that harbored either *D* or *B* alleles at the chromosome 4 or chromosome 6 mutator loci, we adjusted mutation counts by the number of callable A, T, C, or G nucleotides in each strain as described previously [@PMID:35545679].
+
+### Querying GeneNetwork for evidence of eQTLs at the mutator locus
+
+We used the online GeneNetwork resource [@PMID:27933521], which contains array- and RNA-seq-derived expression measurements in a wide variety of tissues from numerous datasets, to find *cis*-eQTLs for the DNA repair genes we implicated under the $\chi^{2}$ statistic peak on chromosome 6. On the GeneNetwork homepage (genenetwork.org), we selected the "BXD Family" **Group** and used the **Type** dropdown menu to select each of the specific expression datasets described in Table @tbl:eqtl-provenance. In the **Get Any** text box, we then entered the gene name (*Ogg1*) and clicked **Search**. After selecting the appropriate trait ID on the next page, we used the **Mapping Tools** dropdown to run Haley-Knott regression [@PMID:16718932] with the following parameters: WGS-based marker genotypes, 1,000 permutations for LOD threshold calculations, and controlling for BXD genotypes at the `rs32497085` marker.
+
+The exact names of the expression datasets we used for each tissue are shown in Table @tbl:eqtl-provenance below:
+
+| Tissue name | Complete name of GeneNetwork expression data | GeneNetwork trait ID |
+| - | - | - | 
+| Kidney | `Mouse kidney M430v2 Sex Balanced (Aug06) RMA` | `1448815_at` |
+| Gastrointestinal | `UTHSC Mouse BXD Gastrointestinal Affy MoGene 1.0 ST Gene Level (Apr14) RMA` | `10540639` |
+| Hematopoetic stem cells | `UMCG Stem Cells ILM6v1.1 (Apr09) transformed` | `ILM1940279` | 
+| Hematopoetic progenitor cells | `UMCG Progenitor Cells ILM6v1.1 (Apr09) transformed` | `ILM1940279` | 
+| Spleen | `UTHSC Affy MoGene 1.0 ST Spleen (Dec10) RMA` | `10540639` | 
+| Liver | `UTHSC BXD Liver RNA-Seq Avg (Oct19) TPM Log2` | `ENSMUST00000032406` | 
+| Heart | `NHLBI BXD All Ages Heart RNA-Seq (Nov20) TMP Log2 **` | `ENSMUSG00000030271` | 
+| Eye | `UTHSC BXD All Ages Eye RNA-Seq (Nov20) TPM Log2 **` | `ENSMUSG00000030271` | 
+
+Table: Names of gene expression datasets used for each tissue type on GeneNetwork {#tbl:eqtl-provenance}
+
+### Calculating the frequencies of candidate mutator alleles in wild mice 
+
+To determine the frequency of the *Ogg1* p.Thr95Ala mutation in other populations of mice, we queried a VCF file containing genome-wide variation in 67 wild-derived mice from four species of *Mus* [@PMID:27622383]. We calculated the allele frequency of each nonsynonymous mutation in each of the four species or subspecies (*Mus musculus domesticus*, *Mus musculus musculus*, *Mus musculus castaneus*, and *Mus spretus*), including genotypes that met the following criteria:
+
+* supported by at least 10 sequencing reads 
+
+* Phred-scaled genotype quality of at least 20
+
+### Testing for epistasis between the two mutator loci
+
+To test for the presence of epistasis between the mutator loci near *Mutyh* and *Ogg1*, we modeled C>A mutation rates in the BXDs as a function of genotypes at either locus. Specifically, we tested for statistical interaction between *Mutyh* and *Ogg1* genotypes by fitting a generalized linear model in the R statistical language as follows:
+
+```R
+m1 <- glm(Count ~ offset(log(ADJ_AGE)) + Genotype_A * Genotype_B, data = data, family=poisson())
+```
+
+In this model, `Count` is the count of C>A *de novo* mutations observed in each BXD RIL. `ADJ_AGE` is the product of the number of "callable" cytosine nucleotides in each RIL (i.e., the total number of cytosines covered by at least 10 sequencing reads in the RIL) and the number of generations for which the RIL was inbred. We included the logarithm of `ADJ_AGE` as an "offset" in order to model the response variable as a rate rather than an absolute count; the BXDs differ in both their durations of inbreeding and the proportions of their genomes that were sequenced to sufficient depth, which influences the number of mutations we observe in each RIL. The `Genotype_A` and `Genotype_B` terms represent the genotypes of BXDs at markers `rs52263933` and `rs31001331` (the markers with peak $\chi^{2}$ statistic near *Mutyh* and *Ogg1* in the two inter-haplotype distance scans). Since each BXD is inbred for at least 20 generations, we considered genotypes at either locus to be binary ("B" or "D"). Using analysis of variance (ANOVA), we then compared the model including an interaction effect to a model including only additive effects:
+
+```R
+m2 <- glm(Count ~ offset(log(ADJ_AGE)) + Haplotype_A + Haplotype_B, data = data, family=poisson())
+```
+
+```R
+anova(m1, m2, test="Chisq")
+```
+
+We tested for epistasis in the Sanger Mouse Genomes Project (MGP) strains using a nearly-identical approach. In this analysis, we fit two models as follows:
+
+```R
+m1 <- glm(Count ~ offset(log(CALLABLE_C)) + Genotype_A * Genotype_B, data = data, family=poisson())
+
+m2 <- glm(Count ~ offset(log(CALLABLE_C)) + Genotype_A + Genotype_B, data = data, family=poisson())
+```
+
+where `Count` is the count of strain-private C>A mutations observed in each MGP strain [@PMID:30753674]. The `CALLABLE_C` term represents the total number of cytosine and guanine nucleotides that were accessible for mutation calling in each strain, and the `Genotype_A` and `Genotype_B` terms represent MGP genotypes at `rs52263933` and `rs31001331`. We compared the two models using ANOVA as described above.
+
+Since each BXD derives approximately 50% of its genome from C57BL/6J and 50% from DBA/2J, we performed an additional test for epistasis that accounted for kinship between the BXD RILs. Using the `lmekin` method from the `coxme` package [@url:https://cran.r-project.org/web/packages/coxme/index.html] in the R statistical language, we fit a mixed effects model predicting C>A mutation fractions as a function of genotypes at both `rs52263933` and `rs31001331`, and included a pairwise kinship matrix as a random effect.
+
+```R
+m = lmekin(Fraction ~ Genotype_A * Genotype_B + (1|sample), data = data, varlist = kinship_matrix)
+```
+
+The rows and columns of the kinship matrix were labeled with the `sample` name of each BXD, such that the `(1|sample)` term in the model captured the random effect of kinship. We calculated the `kinship_matrix` using the `calc_kinship` method from `R/qtl2` [@PMID:30591514] as follows:
+
+```R
+# read in the JSON-formatted file that directs R/qtl2 to sample 
+# genotypes, phenotypes, and covariates if applicable
+bxd <- read_cross2("path/to/bxd.json")
+
+# subset cross2 object to BXDs with C>A fractions in `data`
+bxd <- bxd[data$sample, ]
+
+# insert pseudomarkers into the genotype map
+gmap <- insert_pseudomarkers(bxd$gmap, step = 0.2, stepwidth = "max")
+
+# calculate QTL genotype probabilities
+pr <- calc_genoprob(bxd, gmap, error_prob = 0.002, map_function = "c-f")
+
+# calculate kinship between strains using all chromosomes
+k <- calc_kinship(pr, "overall")
+
+kinship_matrix = as.matrix(k)
+```
+
+
+
+
+
+
+## Supplementary information
+
+### Using cosine distance instead of $\chi^2$ statistics for comparing mutation spectra
+
+We also explored the use of cosine distance as an alternative to the $\chi^{2}$ statistic for comparing mutation spectra. The cosine distance between two vectors $\mathbf{A}$ and $\mathbf{B}$ is defined as 
+
+$$D_C = 1 - \frac{\mathbf{A} \cdot \mathbf{B}}{||\mathbf{A}|| \ ||\mathbf{B}||}$$
+
+where $||\mathbf{A}||$ and $||\mathbf{B}||$ are the $L^2$ (or Euclidean) norms of $\mathbf{A}$ and $\mathbf{B}$, respectively. The cosine distance metric has a number of favorable properties for comparing mutation spectra. Since cosine distance does not take the magnitude of vectors into account, it can be used to compare two spectra with unequal total mutation counts (even if those total counts are relatively small). Additionally, by calculating the cosine distance between mutation *spectra*, we avoid the need to perform separate comparisons of mutation counts at each individual $k$-mer mutation type. 
+
+In practice, we found that the $\chi^2$ statistic was more sensitive for detecting loci associated with differences in mutation spectra. However, we provide the ability to use cosine distance in our method, as well, since the $\chi^2$ statistic may not behave as expected in certain situations (e.g., if the counts of mutations in each $k$-mer type are small).
+
+### Using $3$-mer mutation spectra to perform the inter-haplotype distance scans
+
+![**Results of inter-haplotype distance scans in the BXD RILs using $3$-mer mutation spectra.** **a)** $\chi^{2}$ statistics between aggregate $3$-mer *de novo* mutation spectra on BXD haplotypes (n = 93 haplotypes; 62,993 total mutations) with either *D* or *B* alleles at 7,320 informative markers. Distance threshold at $p = 0.05$ was calculated by performing 10,000 permutations of the BXD haplotype mutation data, and is shown as a dotted grey line. **b)** $\chi^{2}$ statistics between aggregate $3-mer$ *de novo* mutation spectra on BXD haplotypes with *D* alleles at `rs52263933` (n = 55 haplotypes; 40,913 total mutations) and either *D* or *B* alleles at 7,320 informative markers. Distance threshold at $p = 0.05$ was calculated by performing 10,000 permutations of the BXD haplotype mutation data, and is shown as a dotted grey line.](images/Figure%20S2.png){#fig:distance-3mer width=7in} 
 
 ## References {.page_break_before}
 
