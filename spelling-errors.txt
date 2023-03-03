@@ -22,7 +22,7 @@ GRCm
 haplotype’s
 IBD
 LOF
-Mbd
+MBD
 Mdb
 methylated
 mispaired

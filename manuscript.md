@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-03-03" />
   <meta name="citation_publication_date" content="2023-03-03" />
   <meta property="article:published_time" content="2023-03-03" />
-  <meta name="dc.modified" content="2023-03-03T14:46:43+00:00" />
-  <meta property="article:modified_time" content="2023-03-03T14:46:43+00:00" />
+  <meta name="dc.modified" content="2023-03-03T15:50:52+00:00" />
+  <meta property="article:modified_time" content="2023-03-03T15:50:52+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/cef821ab0aba85b7538c57d8fd72bf92af6d3753/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/cef821ab0aba85b7538c57d8fd72bf92af6d3753/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/cef821ab0aba85b7538c57d8fd72bf92af6d3753/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/dfeda833e1497b73562cfd736cc081f9e26fae28/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/dfeda833e1497b73562cfd736cc081f9e26fae28/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/dfeda833e1497b73562cfd736cc081f9e26fae28/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/cef821ab0aba85b7538c57d8fd72bf92af6d3753/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/dfeda833e1497b73562cfd736cc081f9e26fae28/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@cef821a](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/cef821ab0aba85b7538c57d8fd72bf92af6d3753)
+from [quinlan-lab/mutator-epistasis-manuscript@dfeda83](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/dfeda833e1497b73562cfd736cc081f9e26fae28)
 on March 3, 2023.
 </em></small>
 
@@ -184,7 +184,7 @@ After confirming that the inter-haplotype distance method could recover the muta
 Using only the BXDs with *B* genotypes at the *Mutyh* mutator locus, we did not observe any genome-wide significant peaks. But using the BXDs with *D* genotypes at the same locus, we identified a $\chi^{2}$ statistic peak on chromosome 6 (Figure {@fig:distance-results}B; maximum adjusted $\chi^2$ statistic of 81.0 at marker `rs31001331`; position 114.05 Mbp in GRCm38/mm10 coordinates). We identified the same peak using the 3-mer mutation spectra (Figure @fig:distance-3mer). We queried the region underneath this peak (+/- 5 Mbp) and discovered 16 protein-coding genes that harbored nonsynonymous differences between C57BL/6J and DBA/2J. Two of these genes were also annotated with the Gene Ontology term "DNA repair": *Ogg1* and *Mbd4*. *Ogg1* encodes a key member of the base-excision repair response to oxidative DNA damage (a pathway that also includes *Mutyh*), and *Mbd4* encodes a protein that is involved in the repair of G:T mismatches at methylated CpG sites that have undergone spontaneous deamination. Each of these genes harbors a single fixed nonsynonymous difference between the C57BL/6J and DBA/2J parental strains (Table @tbl:nonsyn-diffs). 
 
 | Gene name | Ensembl transcript name | Amino acid change | Position in GRCm38/mm10 coordinates | SIFT prediction | 
-| - | - | - | - | - | - |
+| - | - | - | - | - |
 | *Ogg1* | `ENSMUST00000032406` | p.Thr95Ala | chr6:113328510 | `0.84` (tolerant/benign) | 
 | *Mbd4* | `ENSMUST00000032469` | p.Asp129Asn | chr6:115849644 | `0.02` (intolerant/deleterious) | 
 
