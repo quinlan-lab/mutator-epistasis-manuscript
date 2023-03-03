@@ -11,8 +11,8 @@ deaminated
 deamination
 durations
 Ensembl
+exonic
 fibroblasts
-GERP
 Gly
 glycosylase
 glycosylases
@@ -24,10 +24,9 @@ IBD
 LOF
 Mbd
 Mdb
-mESC
 methylated
 mispaired
-mispairing
+mispairs
 Mlh
 MMR
 neoplasia
@@ -39,5 +38,7 @@ Polyphen
 silico
 spermatagonial
 thymines
+Tmcc
+Tmem
 TpG
 truncations
