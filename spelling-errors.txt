@@ -2,6 +2,7 @@ adenines
 ANOVA
 Asn
 biallelic
+Bonferonni
 chemotherapeutics
 chr
 CpG
@@ -13,6 +14,10 @@ durations
 Ensembl
 exonic
 fibroblasts
+GAA
+GAT
+GCA
+GCT
 Gly
 glycosylase
 glycosylases
