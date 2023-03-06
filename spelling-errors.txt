@@ -30,6 +30,7 @@ IHD
 LOF
 Mbd
 Mdb
+MEIs
 methylated
 mispaired
 mispairs
@@ -43,6 +44,7 @@ polygenic
 Polyphen
 silico
 spermatagonial
+SVs
 thymines
 Tmcc
 Tmem

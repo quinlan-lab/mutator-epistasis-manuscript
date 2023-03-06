@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-03-06" />
   <meta name="citation_publication_date" content="2023-03-06" />
   <meta property="article:published_time" content="2023-03-06" />
-  <meta name="dc.modified" content="2023-03-06T17:30:28+00:00" />
-  <meta property="article:modified_time" content="2023-03-06T17:30:28+00:00" />
+  <meta name="dc.modified" content="2023-03-06T18:03:13+00:00" />
+  <meta property="article:modified_time" content="2023-03-06T18:03:13+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/0e8d525a2a8998ecee671f6bb5d230c93d0298a3/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/0e8d525a2a8998ecee671f6bb5d230c93d0298a3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/0e8d525a2a8998ecee671f6bb5d230c93d0298a3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ac6dcea19b2cf154964b91d15f68196f52b0d3b5/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ac6dcea19b2cf154964b91d15f68196f52b0d3b5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ac6dcea19b2cf154964b91d15f68196f52b0d3b5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/0e8d525a2a8998ecee671f6bb5d230c93d0298a3/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ac6dcea19b2cf154964b91d15f68196f52b0d3b5/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@0e8d525](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/0e8d525a2a8998ecee671f6bb5d230c93d0298a3)
+from [quinlan-lab/mutator-epistasis-manuscript@ac6dcea](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/ac6dcea19b2cf154964b91d15f68196f52b0d3b5)
 on March 6, 2023.
 </em></small>
 
@@ -226,7 +226,11 @@ Both missense mutations and loss-of-heterozygosity in *Ogg1* have been associate
 
 One of the key roles of *Mbd4* is to excise thymine nucleotides at G:T mispairs, which arise due to the spontaneous deamination of methylated CpGs. As a result, loss-of-function mutations in *Mbd4* often lead to increased rates of CpG>TpG mutation [@PMID:12130785]. Although loss-of-function (LOF) mutations in *Mbd4* are not known to cause C>A mutator phenotypes in mammalian cells, *Mbd4* is involved in numerous cellular processes, some of which are facilitated through its physical interactions with the mismatch repair (MMR) gene *Mlh1* [@PMID:10097147;@PMID:26503472]. Perhaps most intriguingly, LOF mutations in *Mbd4* can exacerbate the effects of exogenous DNA damage agents. Mouse embryonic fibroblasts that harbor homozygous LOF mutations in *Mbd4* fail to undergo apoptosis following treatment with a number of chemotherapeutics and mutagenic compounds [@PMID:14614141]. Most of these exogenous mutagens cause DNA damage that is normally repaired by MMR machinery, but murine intestinal cells with biallelic LOF mutations in *Mbd4* also show a reduced apoptotic response to gamma irradiation, which is repaired independently of *Mlh1* [@PMID:14562041]. Homozygous LOF mutations in *Mbd4* also lead to accelerated intestinal tumor formation in mice that harbor an *Apc* allele that predisposes them to intestinal neoplasia [@PMID:12130785]. Finally, mice with biallelic truncations of the *Mbd4* coding sequence exhibit modestly increased mutation rates in colon cancer cell lines, including increased C>A mutation rates in certain cell types [@PMID:17285135].
 
-Given these various lines of evidence, we believe that *Mbd4* is the most likely candidate gene to explain the additional C>A mutator phenotype in the BXDs, but we are unable to conclusively determine that the p.Asp129Asn missense mutation is the causal allele. We previously hypothesized that *Mutyh* missense mutations on *D* haplotypes were responsible for the large-effect C>A mutator phenotype we observed in the BXDs [@PMID:35545679]. However, using high-quality long-read assemblies of inbred laboratory strains, another group recently identified a ~5 kbp mobile element insertion (MEI) within the first intron of *Mutyh* [@doi:10.1101/2022.09.26.509577] that is present on *D* haplotypes and absent from *B* haplotypes. The MEI is associated with significantly reduced expression of *Mutyh* in embryonic stem cells from laboratory strains, and may therefore underlie the previous C>A germline mutator phenotype in the BXDs. In light of this new evidence, we cannot discount the possibility that large structural variants or eQTLs associated with decreased expression of either *Ogg1* or *Mbd4* (Table @tbl:eqtl-results) are responsible for the C>A mutator phenotype we observed in this study.
+### Potential roles of structural variation and mobile elements as mutator alleles
+
+Given the lines of evidence outlined above, we believe that *Mbd4* is the most likely candidate gene to explain the additional C>A mutator phenotype in the BXDs, but we are unable to conclusively determine that the p.Asp129Asn missense mutation is the causal allele. We previously hypothesized that *Mutyh* missense mutations on *D* haplotypes were responsible for the large-effect C>A mutator phenotype we observed in the BXDs [@PMID:35545679]. However, using high-quality long-read assemblies of inbred laboratory strains, another group recently identified a ~5 kbp mobile element insertion (MEI) within the first intron of *Mutyh* [@doi:10.1101/2022.09.26.509577] that is present on *D* haplotypes and absent from *B* haplotypes. The MEI is associated with significantly reduced expression of *Mutyh* in embryonic stem cells from laboratory strains, and may therefore underlie the previous C>A germline mutator phenotype in the BXDs. Although we did not find compelling evidence that SVs or MEIs underlie the novel C>A mutator phenotype observed in this study, it remains possible that large structural variants or mobile element insertions are responsible for mutator phenotypes and contribute to mutation spectrum evolution in mammalian genomes.
+
+Moreover, we found that *D* alleles at the inter-haplotype distance peak on chromosome 6 were associated with decreased expression of *Ogg1* (Table @tbl:eqtl-results), and we cannot discount the possibility that these eQTLs contribute to the C>A mutator phenotype we observed in this study.
 
 ### Mechanisms of epistasis between mutator alleles
 
@@ -452,7 +456,7 @@ kinship_matrix = as.matrix(k)
 
 ## Supplementary information
 
-### Using cosine distance instead of $\chi^2$ statistics for comparing mutation spectra
+### Using cosine distance instead of chi-square statistics for comparing mutation spectra
 
 We also explored the use of cosine distance as an alternative to the $\chi^{2}$ statistic for comparing mutation spectra in our inter-haplotype distance scans. The cosine distance between two vectors $\mathbf{A}$ and $\mathbf{B}$ is defined as 
 
@@ -462,11 +466,15 @@ where $||\mathbf{A}||$ and $||\mathbf{B}||$ are the $L^2$ (or Euclidean) norms o
 
 In practice, we found that the $\chi^2$ statistic was more sensitive for detecting loci associated with differences in mutation spectra. However, we provide the ability to use cosine distance in our method, as well, since the $\chi^2$ statistic may not behave as expected in certain situations (e.g., if the counts of mutations in each $k$-mer type are small).
 
-### Using 3-mer mutation spectra to perform the inter-haplotype distance scans
+
+### Supplementary Figures
 
 ![**Results of inter-haplotype distance scans in the BXD RILs using 3-mer mutation spectra.** **a)** Adjusted $\chi^{2}$ statistics between aggregate 3-mer *de novo* mutation spectra on BXD haplotypes (n = 93 haplotypes; 62,993 total mutations) with either *D* or *B* alleles at 7,320 informative markers. Distance threshold at $p = 0.05$ was calculated by performing 10,000 permutations of the BXD haplotype mutation data, and is shown as a dotted grey line. **b)** Adjusted $\chi^{2}$ statistics between aggregate 3-mer *de novo* mutation spectra on BXD haplotypes with *D* alleles at `rs52263933` (n = 55 haplotypes; 40,913 total mutations) and either *D* or *B* alleles at 7,320 informative markers. Distance threshold at $p = 0.05$ was calculated by performing 10,000 permutations of the BXD haplotype mutation data, and is shown as a dotted grey line.](images/fig-distance-3mer.png){#fig:distance-3mer tag="2—figure supplement 1" width=7in} 
 
-### Mapping cis-eQTLs for *Ogg1* and *Mbd4* in GeneNetwork
+
+![**Mutation spectra comparison in Sanger Mouse Genomes Project strains.** Fractions of *de novo* germline mutations in Sanger MGP strains with either *D* or *B* genotypes at markers `rs52263933` and `rs31001331`, stratified by mutation type.](images/fig-spectra-comparison-mgp.png){#fig:spectra-comparison-mgp tag="3—figure supplement 1" width=7in} 
+
+### Supplementary Tables
 
 | Gene name | Tissue name | # BXDs with expression data |  Top significant marker | LRS at top significant marker | Significant LRS threshold | Additive effect of D allele on expression |
 | - | - | - | - | - | - |
@@ -488,10 +496,6 @@ In practice, we found that the $\chi^2$ statistic was more sensitive for detecti
 | Mbd4 | Eye | 87 | - | - | 16.63 | - |  
 
 Table: Presence or absence of cis-eQTLs for *Ogg1* and *Mbd4* in various tissues identified using GeneNetwork. {#tbl:eqtl-results tag="supplement 1"}
-
-### Comparing mutation spectra in Mouse Genomes Project (MGP) strains
-
-![**Mutation spectra comparison in Sanger Mouse Genomes Project strains.** Fractions of *de novo* germline mutations in Sanger MGP strains with either *D* or *B* genotypes at markers `rs52263933` and `rs31001331`, stratified by mutation type.](images/fig-spectra-comparison-mgp.png){#fig:spectra-comparison-mgp tag="3—figure supplement 1" width=7in} 
 
 
 
