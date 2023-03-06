@@ -21,8 +21,9 @@ GRCh
 GRCm
 haplotype’s
 IBD
+IHD
 LOF
-MBD
+Mbd
 Mdb
 methylated
 mispaired
