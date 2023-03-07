@@ -1,4 +1,6 @@
 adenines
+adenomatous
+allelic
 ANOVA
 Asn
 biallelic
@@ -28,7 +30,7 @@ haplotype’s
 IBD
 IHD
 LOF
-Mbd
+MBD
 Mdb
 MEIs
 methylated
@@ -42,6 +44,7 @@ outbreeding
 phenotypes
 polygenic
 Polyphen
+polyposis
 silico
 spermatagonial
 SVs

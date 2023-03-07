@@ -25,6 +25,8 @@ content/04.discussion.md:15:gnomAD
 content/04.discussion.md:15:nonsyn
 content/04.discussion.md:15:Polyphen
 content/04.discussion.md:15:silico
+content/04.discussion.md:17:adenomatous
+content/04.discussion.md:17:allelic
 content/04.discussion.md:17:biallelic
 content/04.discussion.md:17:biallelic
 content/04.discussion.md:17:chemotherapeutics
@@ -37,12 +39,14 @@ content/04.discussion.md:17:LOF
 content/04.discussion.md:17:LOF
 content/04.discussion.md:17:LOF
 content/04.discussion.md:17:LOF
+content/04.discussion.md:17:LOF
+content/04.discussion.md:17:LOF
 content/04.discussion.md:17:methylated
 content/04.discussion.md:17:mispairs
 content/04.discussion.md:17:MMR
-content/04.discussion.md:17:MMR
 content/04.discussion.md:17:neoplasia
 content/04.discussion.md:17:phenotypes
+content/04.discussion.md:17:polyposis
 content/04.discussion.md:17:TpG
 content/04.discussion.md:17:truncations
 content/04.discussion.md:21:MEIs

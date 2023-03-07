@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-03-06'
+date-meta: '2023-03-07'
 author-meta:
 - Thomas A. Sasani
 - Aaron R. Quinlan
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="og:title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="twitter:title" content="Discovering epistasis between germline mutator alleles in mice" />
-  <meta name="dc.date" content="2023-03-06" />
-  <meta name="citation_publication_date" content="2023-03-06" />
-  <meta property="article:published_time" content="2023-03-06" />
-  <meta name="dc.modified" content="2023-03-06T21:16:39+00:00" />
-  <meta property="article:modified_time" content="2023-03-06T21:16:39+00:00" />
+  <meta name="dc.date" content="2023-03-07" />
+  <meta name="citation_publication_date" content="2023-03-07" />
+  <meta property="article:published_time" content="2023-03-07" />
+  <meta name="dc.modified" content="2023-03-07T19:28:55+00:00" />
+  <meta property="article:modified_time" content="2023-03-07T19:28:55+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/64115245e210b64e31bccc587cf48b74b626e13e/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/64115245e210b64e31bccc587cf48b74b626e13e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/64115245e210b64e31bccc587cf48b74b626e13e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/548100ae1bee0efe65e86feb07d9be166c891590/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/548100ae1bee0efe65e86feb07d9be166c891590/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/548100ae1bee0efe65e86feb07d9be166c891590/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/64115245e210b64e31bccc587cf48b74b626e13e/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/548100ae1bee0efe65e86feb07d9be166c891590/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@6411524](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/64115245e210b64e31bccc587cf48b74b626e13e)
-on March 6, 2023.
+from [quinlan-lab/mutator-epistasis-manuscript@548100a](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/548100ae1bee0efe65e86feb07d9be166c891590)
+on March 7, 2023.
 </em></small>
 
 
@@ -224,7 +224,7 @@ Two protein-coding DNA repair genes overlap the C>A mutator locus on chromosome 
 
 Both missense mutations and loss-of-heterozygosity in *Ogg1* have been associated with initiation and progression of various types of human cancer [@PMID:22829015;@PMID:9662341]. Unrepaired 8-oxoG lesions can also lead to C>A mutations, and copy-number losses of either *Ogg1* or *Mutyh* are linked to elevated rates of spontaneous C>A mutation in human neuroblastoma [@doi:10.1073/pnas.2007898118]. Although *Ogg1* is a member of the same base-excision repair pathway as *Mutyh* (the protein-coding gene we previously implicated as harboring mutator alleles at the locus on chromosome 4), a number of lines of evidence suggest that the p.Asp129Asn missense mutation in *Mbd4* is the more compelling candidate mutator allele on chromosome 6. Unlike the *Ogg1* p.Thr95Ala mutation, the *Mbd4* p.Asp129Asn mutation, on the other hand, occurs at an amino acid residue that is well-conserved across mammalian species and is predicted to be deleterious by *in silico* tools like SIFT (Table @tbl:nonsyn-diffs). p.Asp129Asn also overlaps the methyl-CpG binding domain of *Mbd4*, and a missense mutation that affects the homologous amino acid in humans (p.Asp142Gly in GRCh38/hg38) is present on a single haplotype in the Genome Aggregation Database (gnomAD) [@PMID:32461654] and is predicted by SIFT and Polyphen [@PMID:20354512] to be "deleterious" and "probably_damaging" in human genomes, respectively. 
 
-One of the key roles of *Mbd4* is to excise thymine nucleotides at G:T mispairs, which arise due to the spontaneous deamination of methylated CpGs. As a result, loss-of-function mutations in *Mbd4* often lead to increased rates of CpG>TpG mutation [@PMID:12130785]. Although loss-of-function (LOF) mutations in *Mbd4* are not known to cause C>A mutator phenotypes in mammalian cells, *Mbd4* is involved in numerous cellular processes, some of which are facilitated through its physical interactions with the mismatch repair (MMR) gene *Mlh1* [@PMID:10097147;@PMID:26503472]. Perhaps most intriguingly, LOF mutations in *Mbd4* can exacerbate the effects of exogenous DNA damage agents. Mouse embryonic fibroblasts that harbor homozygous LOF mutations in *Mbd4* fail to undergo apoptosis following treatment with a number of chemotherapeutics and mutagenic compounds [@PMID:14614141]. Most of these exogenous mutagens cause DNA damage that is normally repaired by MMR machinery, but murine intestinal cells with biallelic LOF mutations in *Mbd4* also show a reduced apoptotic response to gamma irradiation, which is repaired independently of *Mlh1* [@PMID:14562041]. Homozygous LOF mutations in *Mbd4* also lead to accelerated intestinal tumor formation in mice that harbor an *Apc* allele that predisposes them to intestinal neoplasia [@PMID:12130785]. Finally, mice with biallelic truncations of the *Mbd4* coding sequence exhibit modestly increased mutation rates in colon cancer cell lines, including increased C>A mutation rates in certain cell types [@PMID:17285135].
+One of the key roles of *Mbd4* is to excise thymine nucleotides at G:T mispairs, which arise due to the spontaneous deamination of methylated CpGs. As a result, loss-of-function mutations in *Mbd4* often lead to increased rates of CpG>TpG mutation [@PMID:12130785]. Although loss-of-function (LOF) mutations in *Mbd4* are not known to cause C>A mutator phenotypes in mammalian cells, *Mbd4* is involved in a number of DNA repair processes that may contribute to the mutator phenotype we observed in the BXDs. For example, bi-allelic LOF mutations in human *MBD4* appear to underlie a neoplastic syndrome that closely mimics forms of familial adenomatous polyposis caused by LOF mutations in *MUTYH* [@PMID:35460607]. Perhaps most intriguingly, LOF mutations in *Mbd4* can exacerbate the effects of exogenous DNA damage agents. Mouse embryonic fibroblasts that harbor homozygous LOF mutations in *Mbd4* fail to undergo apoptosis following treatment with a number of chemotherapeutics and mutagenic compounds [@PMID:14614141]. Most of these exogenous mutagens cause DNA damage that is normally repaired by MMR machinery, but murine intestinal cells with biallelic LOF mutations in *Mbd4* also show a reduced apoptotic response to gamma irradiation, which is repaired independently of *Mlh1* [@PMID:14562041]. Homozygous LOF mutations in *Mbd4* also lead to accelerated intestinal tumor formation in mice that harbor an *Apc* allele that predisposes them to intestinal neoplasia [@PMID:12130785], and mice with biallelic truncations of the *Mbd4* coding sequence exhibit modestly increased mutation rates in colon cancer cell lines, including increased C>A mutation rates in certain lines [@PMID:17285135].
 
 ### Potential roles of structural variation and mobile elements as mutator alleles
 
@@ -279,7 +279,7 @@ Briefly, we identified private single-nucleotide mutations in each BXD that were
 
 #### Calculating inter-haplotype distance
 
-Using the existing catalog of *de novo* germline mutations in the BXDs, we developed a new approach to discover loci that affect the germline *de novo* mutation spectrum in biparental RILs (Figure @fig:toy-diagram).
+Using the existing catalog of *de novo* germline mutations in the BXDs, we developed a new approach to discover loci that affect the germline *de novo* mutation spectrum in biparental RILs (Figure @fig:distance-method).
 
 ![**Overview of inter-haplotype distance method for discovering mutator alleles.** **a)** A population of four haplotypes has been genotyped at three informative markers; each haplotype also harbors private *de novo* germline mutations. At each informative marker, we compute an aggregate *de novo* germline mutation spectrum in the haplotypes that carry either parental allele, and calculate the $\chi^{2}$ statistic between the two aggregate spectra. **b)** We repeat the process outlined in a) for every informative marker along the genome. **c)** To assess the significance of any $\chi^{2}$ statistic peaks in b), we perform a permutation test by shuffling the labels associated with each haplotype's mutation data and running a genome-wide scan. In each of $N$ permutations, we record the maximum $\chi^2$ statistic encountered at any locus in the distance scan. Finally, we calculate the $1 - p$ percentile of the distribution of those maximum statistics to obtain a genome-wide $\chi^{2}$ statistic threshold at the specified value of $p$.](images/fig-distance-method.png){#fig:distance-method width=7in} 
 
@@ -478,22 +478,22 @@ In practice, we found that the $\chi^2$ statistic was more sensitive for detecti
 
 | Gene name | Tissue name | # BXDs with expression data |  Top significant marker | LRS at top significant marker | Significant LRS threshold | Additive effect of D allele on expression |
 | - | - | - | - | - | - |
-| Ogg1 | Kidney | 53 | `rsm10000004188` | 52.25 | 17.82 | -0.186 |
-| Ogg1 | Gastrointestinal | 46 | `rsm10000003441` | 23.39 | 16.09 | -0.074 |
-| Ogg1 | Hematopoetic stem cells | 22 | - | - | 16.45 | - | 
-| Ogg1 | Hematopoetic progenitor cells | 23 | - | - | 18.52 | - | 
-| Ogg1 | Spleen | 79 | `rsm10000003418` | - | 17.51 | - | 
-| Ogg1 | Liver | 50 | `rsm10000004188` | 53.54 | 18.77 | -0.156 | 
-| Ogg1 | Heart | 73 | - | - | 16.22 | - |
-| Ogg1 | Eye | 87 | `rsm10000004194` | 23.05 | 16.96 | 0.088 |  
-| Mbd4 | Kidney | 53 | - | - | 18.48 | - |
-| Mbd4 | Gastrointestinal | 46 | - | - | 15.97 | - |
-| Mbd4 | Hematopoetic stem cells | 22 | - | - | 18.12 | - | 
-| Mbd4 | Hematopoetic progenitor cells | 23 | - | - | 18.55 | - | 
-| Mbd4 | Spleen | 79 | `rsm10000004199` | 21.42 | 16.99 | 0.069 | 
-| Mbd4 | Liver | 50 | - | - | 16.15 | - | 
-| Mbd4 |Heart | 73 | - | - | 17.17 | - |
-| Mbd4 | Eye | 87 | - | - | 16.63 | - |  
+| *Ogg1* | Kidney | 53 | `rsm10000004188` | 52.25 | 17.82 | -0.186 |
+| *Ogg1* | Gastrointestinal | 46 | `rsm10000003441` | 23.39 | 16.09 | -0.074 |
+| *Ogg1* | Hematopoetic stem cells | 22 | - | - | 16.45 | - | 
+| *Ogg1* | Hematopoetic progenitor cells | 23 | - | - | 18.52 | - | 
+| *Ogg1* | Spleen | 79 | `rsm10000003418` | - | 17.51 | - | 
+| *Ogg1* | Liver | 50 | `rsm10000004188` | 53.54 | 18.77 | -0.156 | 
+| *Ogg1* | Heart | 73 | - | - | 16.22 | - |
+| *Ogg1* | Eye | 87 | `rsm10000004194` | 23.05 | 16.96 | 0.088 |  
+| *Mbd4* | Kidney | 53 | - | - | 18.48 | - |
+| *Mbd4* | Gastrointestinal | 46 | - | - | 15.97 | - |
+| *Mbd4* | Hematopoetic stem cells | 22 | - | - | 18.12 | - | 
+| *Mbd4* | Hematopoetic progenitor cells | 23 | - | - | 18.55 | - | 
+| *Mbd4* | Spleen | 79 | `rsm10000004199` | 21.42 | 16.99 | 0.069 | 
+| *Mbd4* | Liver | 50 | - | - | 16.15 | - | 
+| *Mbd4* |Heart | 73 | - | - | 17.17 | - |
+| *Mbd4* | Eye | 87 | - | - | 16.63 | - |  
 
 Table: Presence or absence of cis-eQTLs for *Ogg1* and *Mbd4* in various tissues identified using GeneNetwork. {#tbl:eqtl-results tag="supplement 1"}
 
