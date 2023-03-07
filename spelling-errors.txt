@@ -26,11 +26,12 @@ glycosylases
 gnomAD
 GRCh
 GRCm
+guanines
 haplotype’s
 IBD
 IHD
 LOF
-MBD
+Mbd
 Mdb
 MEIs
 methylated
