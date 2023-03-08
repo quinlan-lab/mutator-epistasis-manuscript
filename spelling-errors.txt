@@ -31,7 +31,7 @@ haplotype’s
 IBD
 IHD
 LOF
-Mbd
+MBD
 Mdb
 MEIs
 methylated
