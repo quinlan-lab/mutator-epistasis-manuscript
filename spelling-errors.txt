@@ -2,6 +2,7 @@ adenines
 adenomatous
 allelic
 ANOVA
+arbitary
 Asn
 biallelic
 Bonferonni
@@ -28,7 +29,6 @@ gnomAD
 GRCh
 GRCm
 guanines
-haplotype’s
 IBD
 IHD
 LOF
@@ -54,4 +54,5 @@ thymines
 Tmcc
 Tmem
 TpG
+trinucleotide
 truncations

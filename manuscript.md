@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-03-09'
+date-meta: '2023-03-13'
 author-meta:
 - Thomas A. Sasani
 - Aaron R. Quinlan
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="og:title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="twitter:title" content="Discovering epistasis between germline mutator alleles in mice" />
-  <meta name="dc.date" content="2023-03-09" />
-  <meta name="citation_publication_date" content="2023-03-09" />
-  <meta property="article:published_time" content="2023-03-09" />
-  <meta name="dc.modified" content="2023-03-09T15:16:52+00:00" />
-  <meta property="article:modified_time" content="2023-03-09T15:16:52+00:00" />
+  <meta name="dc.date" content="2023-03-13" />
+  <meta name="citation_publication_date" content="2023-03-13" />
+  <meta property="article:published_time" content="2023-03-13" />
+  <meta name="dc.modified" content="2023-03-13T18:22:00+00:00" />
+  <meta property="article:modified_time" content="2023-03-13T18:22:00+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/588453ac156ca236fe98ef7e964c9756423a973c/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/588453ac156ca236fe98ef7e964c9756423a973c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/588453ac156ca236fe98ef7e964c9756423a973c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/9f3f4190a44e2b922e5b38811f63a3af6fe8af6d/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/9f3f4190a44e2b922e5b38811f63a3af6fe8af6d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/9f3f4190a44e2b922e5b38811f63a3af6fe8af6d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/588453ac156ca236fe98ef7e964c9756423a973c/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/9f3f4190a44e2b922e5b38811f63a3af6fe8af6d/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@588453a](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/588453ac156ca236fe98ef7e964c9756423a973c)
-on March 9, 2023.
+from [quinlan-lab/mutator-epistasis-manuscript@9f3f419](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/9f3f4190a44e2b922e5b38811f63a3af6fe8af6d)
+on March 13, 2023.
 </em></small>
 
 
@@ -168,17 +168,23 @@ The estimated selection coefficient on a mutator allele is approximately $2s \De
 Compared to haplotypes that harbor wild-type alleles at a particular locus, those with mutator alleles will likely carry an excess of total germline mutations. 
 Indeed, candidate germline mutator loci have been discovered in human genomes by identifying haplotypes with significantly more derived alleles than the population mean [@PMID:28095480]. 
 However, protein-coding genes involved in DNA replication and repair often recognize particular sequence motifs or excise lesions at specific nucleotides [@PMID:32619789]. 
-Thus, we might also expect the spectrum of de novo mutations &mdash; that is, the frequency of each individual mutation type (C>T, A>G, etc.) &mdash; to differ between genomes that carry either a mutator or wild-type allele at a given locus.
+Thus, we might also expect the spectrum of de novo mutations &mdash; that is, the frequency of each individual mutation type &mdash; to differ between genomes that carry either a mutator or wild-type allele at a given locus.
+Mutation spectra are usually defined in terms of $k$-mer nucleotide context [@PMID:32619789]; the 1-mer mutation spectrum, for example, consists of 6 mutation types after collapsing by strand complement (C>T, C>A, C>G, A>T, A>C, A>G), while the 3-mer mutation spectrum contains 96 (each of the 1-mer mutations partitioned by trinucleotide context).
 
-In 2022, we discovered a germline mutator allele in mice by analyzing whole-genome sequencing data from 152 recombinant inbred lines (RILs). 
-Commonly known as the <ins>B</ins>X<ins>D</ins>s [@PMID:33472028], these RILs were derived from either F2 or advanced intercrosses of C57<ins>B</ins>L/6J and <ins>D</ins>BA/2J, two laboratory strains that exhibit significant differences in their germline mutation spectra [@PMID:30753674]. 
-Since the BXD RILs were maintained via brother-sister mating for up to 180 generations and housed in a controlled laboratory environment, they were an ideal population for mutator allele discovery. 
-Each line accumulated hundreds or thousands of germline mutations on a nearly-homozygous linear mosaic of parental <ins>B</ins> and <ins>D</ins> haplotypes, while the effects of negative selection on new and standing variation were attenuated by strict inbreeding [@doi:10.1146/annurev.ecolsys.39.110707.173437]. 
+To discover alleles that affect elements of the mutation spectrum, a straightforward approach would involve comparing the rates of individual $k$-mer mutation types between groups of haplotypes at a set of candidate loci (e.g., via quantitative trait locus mapping).
+However, this approach can quickly incur a substantial multiple testing burden, and since germline mutation rates are generally quite low, estimates of $k$-mer mutation type frequencies on each haplotype may be noisy and imprecise.
+We were therefore motivated to develop a statistical method that could overcome the sparsity of *de novo* mutation spectra, eliminate the need to test each $k$-mer mutation type separately, and enable sensitive detection of alleles that influence the germline mutation spectrum.
+
+To maximize our power to detect germline mutator alleles, we analyzed whole-genome sequencing data derived from a large collection of recombinant inbred lines (RILs).
+Commonly known as the <u>B</u>X<u>D</u>s [@PMID:33472028], these RILs were derived from either F2 or advanced intercrosses of C57<u>B</u>L/6J and <u>D</u>BA/2J, two laboratory strains that exhibit significant differences in their germline mutation spectra [@PMID:30753674]. 
+Since the BXD RILs were maintained via brother-sister mating for up to 180 generations and housed in a controlled laboratory environment, they represent an ideal population for mutator allele discovery. 
+Each line accumulated hundreds or thousands of germline mutations on a nearly-homozygous linear mosaic of parental <u>B</u> and <u>D</u> haplotypes, while the effects of negative selection on new and standing variation were attenuated by strict inbreeding [@doi:10.1146/annurev.ecolsys.39.110707.173437]. 
+
 In a previous study, we used quantitative trait locus (QTL) mapping to identify a locus on chromosome 4 that was strongly associated with the C>A germline mutation rate in the BXDs [@PMID:35545679]. 
 The QTL overlapped *Mutyh*, which encodes a protein that normally prevents C>A mutations by repairing oxidative DNA damage [@PMID:17581577], and we hypothesized that missense mutations in *Mutyh* were responsible for a 50% increase in the C>A mutation rate between BXDs with either parental haplotype at the QTL [@PMID:35545679].
+Using QTL mapping, however, lacked power to detect more subtle germline mutation rate modifiers in the BXDs.
 
-In this study, we developed a new method to detect alleles that affect the mutation spectrum in biparental RILs and applied it to *de novo* germline mutation data from the BXDs. 
-We assessed its power to detect candidate mutator alleles, re-identified the mutator near *Mutyh*, and discovered compelling evidence of epistasis between two germline mutator alleles that augment the C>A germline mutation rate.
+Here, we demonstrate the power of our new approach to detect candidate mutator alleles, use it to re-identify the mutator near *Mutyh*, and discover compelling evidence of epistasis between two germline mutator alleles that augment the C>A germline mutation rate in the BXD RILs.
 
 
 ## Results
@@ -224,7 +230,7 @@ After confirming that the inter-haplotype distance method could recover the muta
 To account for the effects of the large-effect C>A germline mutator locus near *Mutyh*, we divided the BXD RILs into those with either *D* (n = 55) or *B* (n = 38) genotypes at `rs52263933` (the marker at which we observed the highest adjusted $\chi^{2}$ statistic on chromosome 4), and ran a genome-wide distance scan using each group separately (Figure {@fig:distance-results}B.
 
 Using only the BXDs with *B* genotypes at the *Mutyh* mutator locus, we did not observe any genome-wide significant peaks. 
-But using the BXDs with *D* genotypes at the same locus, we identified a $\chi^{2}$ statistic peak on chromosome 6 (Figure {@fig:distance-results}B and {fig:distance-3mer}; maximum adjusted $\chi^2$ statistic of 81.0 at marker `rs31001331`; position 114.05 Mbp in GRCm38/mm10 coordinates). 
+But using the BXDs with *D* genotypes at the same locus, we identified a $\chi^{2}$ statistic peak on chromosome 6 (Figure {@fig:distance-results}B and {@fig:distance-3mer}; maximum adjusted $\chi^2$ statistic of 81.0 at marker `rs31001331`; position 114.05 Mbp in GRCm38/mm10 coordinates). 
 We queried the region underneath this peak (+/- 5 Mbp) and discovered 16 protein-coding genes that harbored nonsynonymous differences between C57BL/6J and DBA/2J. 
 Two of these genes were also annotated with the Gene Ontology term "DNA repair": *Ogg1* and *Mbd4*. 
 *Ogg1* encodes a key member of the base-excision repair response to oxidative DNA damage (a pathway that also includes *Mutyh*), and *Mbd4* encodes a protein that is involved in the repair of G:T mismatches at methylated CpG sites that have undergone spontaneous deamination. 
@@ -283,8 +289,8 @@ However, the *D* allele of *Mbd4* was not present in any of the wild mice.
 ### Epistasis between germline mutator alleles
 
 To our knowledge, these results reveal evidence of epistasis between mammalian germline mutator alleles for the first time. 
-BXDs with *D* alleles at the mutator locus on chromosome 6 only exhibit elevated C>A mutation rates if they also carry *D* alleles at the previously-identified [@PMID:35545679] mutator locus on chromosome 4. 
-And BXDs with *D* alleles at both loci have significantly higher C>A germline mutation rates than lines with *D* alleles at only one mutator locus alone (Figure {@fig:distance-results}C). 
+BXDs with *D* alleles at both loci have significantly higher C>A germline mutation rates than lines with *D* alleles at only one mutator locus alone (Figure {@fig:distance-results}C).
+However, those with *D* alleles at the mutator locus on chromosome 6 only exhibit elevated C>A mutation rates if they also carry *D* alleles at the previously-identified [@PMID:35545679] mutator locus on chromosome 4. 
 This raises the exciting possibility that epistasis between mutator alleles has contributed to the evolution of germline mutation rates and spectra in mammalian genomes.
 
 Importantly, we note that we observed epistasis between germline mutator alleles in an unnatural population; the BXDs were inbred by brother-sister mating in a highly controlled laboratory environment that attenuated the effects of natural selection on all but the most deleterious alleles [@doi:10.1146/annurev.ecolsys.39.110707.173437]. 
@@ -390,10 +396,11 @@ Using the existing catalog of *de novo* germline mutations in the BXDs, we devel
 
 ![
 **Overview of inter-haplotype distance method for discovering mutator alleles.** 
-**a)** A population of four haplotypes has been genotyped at three informative markers; each haplotype also harbors private *de novo* germline mutations. 
-At each informative marker, we compute an aggregate *de novo* germline mutation spectrum in the haplotypes that carry either parental allele, and calculate the $\chi^{2}$ statistic between the two aggregate spectra. 
-**b)** We repeat the process outlined in a) for every informative marker along the genome. 
-**c)** To assess the significance of any $\chi^{2}$ statistic peaks in b), we perform a permutation test by shuffling the labels associated with each haplotype's mutation data and running a genome-wide scan. 
+**a)** A population of four haplotypes has been genotyped at three informative markers ($g_1$ through $g_3$); each haplotype also harbors private *de novo* germline mutations, which are denoted as triangles.
+*De novo* mutations are further classified into three possible mutation types, indicated by the color of each triangle. 
+At each informative marker $g_n$, we calculate the total number of each mutation type observed on haplotypes that carry either parental allele (i.e., the aggregate mutation spectrum). We then calculate a $\chi^{2}$ statistic between the two aggregate mutation spectra. 
+We repeat this process for every informative marker $g_n$. 
+**b)** To assess the significance of any $\chi^{2}$ statistic peaks in a), we perform a permutation test by shuffling the haplotype labels associated with the *de novo* mutation data. 
 In each of $N$ permutations, we record the maximum $\chi^2$ statistic encountered at any locus in the distance scan. 
 Finally, we calculate the $1 - p$ percentile of the distribution of those maximum statistics to obtain a genome-wide $\chi^{2}$ statistic threshold at the specified value of $p$.
 ](images/fig-distance-method.png){#fig:distance-method width=7in} 
@@ -445,6 +452,7 @@ We performed a series of simple simulations to estimate our power to detect alle
 
 First, we simulate the $k$-mer mutation spectrum in a population of $h$ haplotypes. 
 We assume that exactly $\frac{h}{2}$ of the haplotypes are under the effects of a mutator allele that increases the mutation rate of a particular mutation type(s) by an effect size $e$. 
+We also assume that at any arbitary marker, haplotypes can possess one of two alleles (allele A or allele B), and that exactly half of the genotypes possess genotype A at each marker.
 We simulate $m$ mutations on each haplotype as follows:
 
 We first define a vector of $1$-mer mutation probabilities:
