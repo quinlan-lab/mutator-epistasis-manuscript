@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-03-13'
+date-meta: '2023-03-14'
 author-meta:
 - Thomas A. Sasani
 - Aaron R. Quinlan
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="og:title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="twitter:title" content="Discovering epistasis between germline mutator alleles in mice" />
-  <meta name="dc.date" content="2023-03-13" />
-  <meta name="citation_publication_date" content="2023-03-13" />
-  <meta property="article:published_time" content="2023-03-13" />
-  <meta name="dc.modified" content="2023-03-13T18:22:00+00:00" />
-  <meta property="article:modified_time" content="2023-03-13T18:22:00+00:00" />
+  <meta name="dc.date" content="2023-03-14" />
+  <meta name="citation_publication_date" content="2023-03-14" />
+  <meta property="article:published_time" content="2023-03-14" />
+  <meta name="dc.modified" content="2023-03-14T14:58:30+00:00" />
+  <meta property="article:modified_time" content="2023-03-14T14:58:30+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/9f3f4190a44e2b922e5b38811f63a3af6fe8af6d/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/9f3f4190a44e2b922e5b38811f63a3af6fe8af6d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/9f3f4190a44e2b922e5b38811f63a3af6fe8af6d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/96df04bf4091b19380fe178c59c3cfc5cad0b3e5/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/96df04bf4091b19380fe178c59c3cfc5cad0b3e5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/96df04bf4091b19380fe178c59c3cfc5cad0b3e5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/9f3f4190a44e2b922e5b38811f63a3af6fe8af6d/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/96df04bf4091b19380fe178c59c3cfc5cad0b3e5/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@9f3f419](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/9f3f4190a44e2b922e5b38811f63a3af6fe8af6d)
-on March 13, 2023.
+from [quinlan-lab/mutator-epistasis-manuscript@96df04b](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/96df04bf4091b19380fe178c59c3cfc5cad0b3e5)
+on March 14, 2023.
 </em></small>
 
 
@@ -171,7 +171,7 @@ However, protein-coding genes involved in DNA replication and repair often recog
 Thus, we might also expect the spectrum of de novo mutations &mdash; that is, the frequency of each individual mutation type &mdash; to differ between genomes that carry either a mutator or wild-type allele at a given locus.
 Mutation spectra are usually defined in terms of $k$-mer nucleotide context [@PMID:32619789]; the 1-mer mutation spectrum, for example, consists of 6 mutation types after collapsing by strand complement (C>T, C>A, C>G, A>T, A>C, A>G), while the 3-mer mutation spectrum contains 96 (each of the 1-mer mutations partitioned by trinucleotide context).
 
-To discover alleles that affect elements of the mutation spectrum, a straightforward approach would involve comparing the rates of individual $k$-mer mutation types between groups of haplotypes at a set of candidate loci (e.g., via quantitative trait locus mapping).
+A straightforward approach to discover alleles that affect elements of the mutation spectrum might involve comparing the rates of individual $k$-mer mutation types between groups of haplotypes at a set of candidate loci (e.g., via quantitative trait locus mapping).
 However, this approach can quickly incur a substantial multiple testing burden, and since germline mutation rates are generally quite low, estimates of $k$-mer mutation type frequencies on each haplotype may be noisy and imprecise.
 We were therefore motivated to develop a statistical method that could overcome the sparsity of *de novo* mutation spectra, eliminate the need to test each $k$-mer mutation type separately, and enable sensitive detection of alleles that influence the germline mutation spectrum.
 
@@ -289,13 +289,13 @@ However, the *D* allele of *Mbd4* was not present in any of the wild mice.
 ### Epistasis between germline mutator alleles
 
 To our knowledge, these results reveal evidence of epistasis between mammalian germline mutator alleles for the first time. 
-BXDs with *D* alleles at both loci have significantly higher C>A germline mutation rates than lines with *D* alleles at only one mutator locus alone (Figure {@fig:distance-results}C).
-However, those with *D* alleles at the mutator locus on chromosome 6 only exhibit elevated C>A mutation rates if they also carry *D* alleles at the previously-identified [@PMID:35545679] mutator locus on chromosome 4. 
-This raises the exciting possibility that epistasis between mutator alleles has contributed to the evolution of germline mutation rates and spectra in mammalian genomes.
+BXDs with *D* alleles at both the previously-identified mutator locus on chromosome 4 [@PMID:35545679] and the novel locus on chromosome 6 have significantly higher C>A germline mutation rates than lines with *D* alleles at either locus alone (Figure {@fig:spectra-comparison}).
+Moreover, those with *D* alleles at the chromosome 6 locus don't exhibit elevated C>A mutation rates at all, unless they also carry *D* alleles at the locus on chromosome 4. 
+These observations raise the exciting possibility that epistasis between mutator alleles has contributed to the evolution of germline mutation rates and spectra in mammalian genomes.
 
-Importantly, we note that we observed epistasis between germline mutator alleles in an unnatural population; the BXDs were inbred by brother-sister mating in a highly controlled laboratory environment that attenuated the effects of natural selection on all but the most deleterious alleles [@doi:10.1146/annurev.ecolsys.39.110707.173437]. 
+Importantly, however, we discovered evidence of epistasis between germline mutator alleles in an unnatural population; the BXDs were inbred by brother-sister mating in a highly controlled laboratory environment that attenuated the effects of natural selection on all but the most deleterious alleles [@doi:10.1146/annurev.ecolsys.39.110707.173437]. 
 Large-effect mutator alleles (and epistasis between them) may be much less common in natural, outbreeding mammalian populations. 
-However, our results demonstrate that germline mutation rates in recombinant inbred populations are highly plastic, and that RILs represent a powerful system in which to discover germline mutators.
+Regardless, our results demonstrate that germline mutation rates in recombinant inbred populations are highly plastic, and that RILs represent a powerful system in which to discover germline mutators.
 
 <!-- However, we found the *D* allele in *Ogg1* to be at nearly 25% frequency in *Mus musculus domesticus*, the strain from which C57BL/6J and DBA/2J derive most of their genomes [@PMID:17660819]. Since the *D* mutator haplotype on chromosome 6 does not appear to increase the C>A germline mutation rate on its own (even in a homozygous state), we hypothesize that similar alleles may be at intermediate or high frequency in other natural populations.  -->
 
