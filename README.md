@@ -8,7 +8,7 @@
 
 ## Manuscript description
 
-In this manuscript, we describe evidence of epistasis between two mutator alleles that influence the germline C$\rightarrow$A mutation rate in a collection of recombinant inbred lines (RILs) known as the BXD.
+In this manuscript, we describe evidence of epistasis between two mutator alleles that influence the germline C $\rightarrow$ A mutation rate in a collection of recombinant inbred lines (RILs) known as the BXD.
 
 ## Manubot
 
