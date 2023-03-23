@@ -2,7 +2,6 @@ adenines
 adenomatous
 allelic
 ANOVA
-arbitary
 Asn
 biallelic
 Bonferonni
@@ -22,6 +21,7 @@ GAA
 GAT
 GCA
 GCT
+genotyeps
 Gly
 glycosylase
 glycosylases
@@ -32,7 +32,7 @@ guanines
 IBD
 IHD
 LOF
-Mbd
+MBD
 MEIs
 methylated
 mispaired

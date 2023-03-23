@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-03-20'
+date-meta: '2023-03-23'
 author-meta:
 - Thomas A. Sasani
 - Aaron R. Quinlan
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="og:title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="twitter:title" content="Discovering epistasis between germline mutator alleles in mice" />
-  <meta name="dc.date" content="2023-03-20" />
-  <meta name="citation_publication_date" content="2023-03-20" />
-  <meta property="article:published_time" content="2023-03-20" />
-  <meta name="dc.modified" content="2023-03-20T20:48:52+00:00" />
-  <meta property="article:modified_time" content="2023-03-20T20:48:52+00:00" />
+  <meta name="dc.date" content="2023-03-23" />
+  <meta name="citation_publication_date" content="2023-03-23" />
+  <meta property="article:published_time" content="2023-03-23" />
+  <meta name="dc.modified" content="2023-03-23T14:55:35+00:00" />
+  <meta property="article:modified_time" content="2023-03-23T14:55:35+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/c197753bdfdeadc3b374a2faf3a7ffa519aad6da/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/c197753bdfdeadc3b374a2faf3a7ffa519aad6da/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/c197753bdfdeadc3b374a2faf3a7ffa519aad6da/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/3323e2486a39dccab87a1bddf457a3033455cdb1/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/3323e2486a39dccab87a1bddf457a3033455cdb1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/3323e2486a39dccab87a1bddf457a3033455cdb1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/c197753bdfdeadc3b374a2faf3a7ffa519aad6da/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/3323e2486a39dccab87a1bddf457a3033455cdb1/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@c197753](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/c197753bdfdeadc3b374a2faf3a7ffa519aad6da)
-on March 20, 2023.
+from [quinlan-lab/mutator-epistasis-manuscript@3323e24](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/3323e2486a39dccab87a1bddf457a3033455cdb1)
+on March 23, 2023.
 </em></small>
 
 
@@ -262,7 +262,7 @@ A model that included an interaction term between genotypes at the two markers f
 ![
 **BXD mutation spectra are affected by alleles at both mutator loci.** 
 **a)** Fractions of *de novo* germline mutations in BXDs with either *D* or *B* genotypes at markers `rs52263933` and `rs31001331`, stratified by mutation type. 
-**b)** $\log_2$-transformed ratios of 3-mer mutation fractions in BXDs with *D* genotypes at `rs52263933` and either *D* or *B* haplotypes at `rs31001331`.
+**b)** $\log_2$-transformed ratios of 3-mer mutation fractions in BXDs with *D* genotypes at `rs52263933` and *D* vs. *B* haplotypes at `rs31001331`.
 Comparisons for which a $\chi_2$ test of independence returned p < $\frac{0.05}{96}$ (Bonferonni corrected p < 0.05) are annotated with a white dot.
 ](images/fig-spectra-comparison.png){#fig:spectra-comparison width=7in} 
 
@@ -438,54 +438,50 @@ Additional documentation is available on GitHub (https://github.com/quinlan-lab/
 
 We performed a series of simple simulations to estimate our power to detect alleles that affect the germline mutation spectrum in biparental RILs using the inter-haplotype distance method.
 
-First, we simulate the $k$-mer mutation spectrum in a population of $h$ haplotypes. 
-We assume that exactly $\frac{h}{2}$ of the haplotypes are under the effects of a mutator allele that increases the mutation rate of a particular mutation type(s) by an effect size $e$. 
-We also assume that at any arbitary marker, haplotypes can possess one of two alleles (allele A or allele B), and that exactly half of the genotypes possess genotype A at each marker.
-We simulate $m$ mutations on each haplotype as follows:
+#### Simulating genotypes 
 
-We first define a vector of 1-mer mutation probabilities:
+First, we simulate genotypes on a population of haplotypes at a collection of sites.
+We define a matrix $G$ of size $(s, h)$, where $s$ is the number of sites and $h$ is the number of haplotypes. 
+We assume that every site is biallelic, and that the minor allele frequency at every site is 0.5. 
+For every entry $G_{i,j}$, we take a single draw from a uniform distribution in the interval $[0.0, 1.0)$. 
+If the value of that draw is less than or equal to 0.5, we assign the value of $G_{i,j}$ to be $1$. 
+Otherwise, we assign the value of $G_{i,j}$ to be $0$. 
+
+#### Defining expected mutation type probabilities
+
+Next, we define a vector of 1-mer mutation probabilities:
 
 $$P = \left( 0.29, \ 0.17, \ 0.12, \ 0.075, \ 0.1, \ 0.075, \ 0.17 \right)$$
 
 These probabilities sum to 1 and roughly correspond to the expected frequencies of C>T, CpG>TpG, C>A, C>G, A>T, A>C, and A>G *de novo* germline mutations in mice, respectively [@PMID:31492841].
-
-If we are simulating the 3-mer mutation spectrum, we modify the vector of mutation probabilities $P$ to be length 96, and assign every 3-mer mutation type a value of $\frac{P_c}{16}$, where $P_c$ is the probability of the "central" mutation type associated with the 3-mer mutation type. 
-In other words, each of the 16 possible N<ins>C</ins>N>N<ins>T</ins>N 3-mer mutation types would be assigned a mutation probability of $\frac{P_c}{16} = \frac{0.46}{16} = 0.02875$.
-
-To simulate the mutation spectrum on the *wild-type* haplotypes, we define a matrix $C$ of size $(\frac{h}{2}, n)$, where $n = 6 \times 4^{k - 1}$ (or if $k = 1$ and we include CpG>TpG mutations, $6 \times 4^{k - 1} + 1$). 
-First, we generate a vector of lambda values by scaling the mutation probabilities by the number of mutations we wish to simulate:
+We then generate a vector of lambda values by scaling the mutation probabilities by the number of mutations we wish to simulate ($m$):
 
 $$\lambda = Pm$$
 
-Then, we populate the matrix $C$ by taking a single Poisson draw from the vector of $\lambda$ values for each mutation type on each haplotype. 
-Thus, for every row $i$ in the matrix (i.e., for every haplotype), we perform the following for mutation type $j$:
+We also create a second vector of lambda values ($\lambda^{\prime}$), in which we multiply the $\lambda$ value of a single mutation type by the mutator effect size $e$. 
 
-$$C_{i, j} = \mathrm {Pois}(\lambda_{j})$$
+In our simulations, we assume that genotypes at a single site (the "mutator locus") are associated with variation in the mutation spectrum. 
+That is, at a single site $s_i$, all of the haplotypes with $1$ alleles should have elevated rates of a particular mutation type and draw their mutation counts from $\lambda^{\prime}$, while all of the haplotypes with $0$ alleles should have "wild-type" rates of that mutation type and draw their mutation counts from $\lambda$.
+We therefore pick a random site $s_i$ to be the "mutator locus," and identify the indices of haplotypes in $G$ that were assigned $1$ alleles at $s_i$.
+We call these indices $h_{mut}$.
 
-To simulate the mutation spectrum on the $\frac{h}{2}$ *mutator* haplotypes, we define a new matrix $C^{\prime}$ of size $(\frac{h}{2}, n)$ as defined above. 
-We then multiply the lambda value of a particular mutation type (or multiple mutation types) by the mutator effect size $e$ to obtain $\lambda^{\prime}$. 
-Then, for every row $i$ in the matrix:
 
-$$C^{\prime}_{i, j} = \mathrm {Pois}(\lambda^{\prime}_{j})$$
+#### Simulating mutation spectra
 
-When $k = 1$, we only augment the effect size of one mutation type at a time, but when $k = 3$, we augment a fraction (25%, 50%, or 100%) of the 3-mer mutation types associated with a single "central" mutation type. 
+To simulate the mutation spectrum on our toy population of haplotypes, we define a matrix $C$ of size $(h, n)$, where $n = 6 \times 4^{k - 1}$ (or if $k = 1$ and we include CpG>TpG mutations, $6 \times 4^{k - 1} + 1$).
 
-After generating mutator and wild-type haplotypes, we compute the aggregate mutation spectrum in either group by summing the columns of $C$ and $C^{\prime}$. 
-We then calculate the $\chi^{2}$ statistic between the two aggregate spectra, which we call the "focal" $\chi^2$ statistic $\chi^2_f$. 
-To determine whether $\chi^2_f$ is greater than what we'd expect by chance, we perform a permutation test.
+Then, we populate the matrix $C$ separately for *mutator* and *wild-type* haplotypes.
+For every row $i$ in the matrix (i.e., for every haplotype), we first ask if $i$ is in $h_{mut}$ (that is, if the haplotype at index $i$ was assigned a $1$ allele at the "mutator locus"). 
+If so, we set the values of $C_i$ to be the results of a single Poisson draw from $\lambda^{\prime}$. 
+If row $i$ is not in $h_{mut}$, we set the values of $C_i$ to be the results of a single Poisson draw from $\lambda$.
 
-First, we concatenate the matrices of wild-type and mutator haplotype spectra:
+#### Assessing power to detect a mutator allele
 
-$$A = \begin{bmatrix}
-C \\
-C^{\prime}
-\end{bmatrix}$$
-
-Then, in each of $N = 1,000$ trials, we randomly permute the rows of $A$. 
-In every permutation, we consider the row indices from $\left[0, \frac{h}{2} \right)$ to correspond to the wild-type haplotypes, and the row indices from $\left[ \frac{h}{2}, h \right)$ to correspond to the mutator haplotypes. 
-We then compute the $\chi^{2}$ statistic between the aggregate spectra of the wild-type and mutator haplotypes. 
-If fewer than 5% of the $N$ permutations produces a $\chi^{2}$ statistic greater than or equal to $\chi^2_f$, we say that the approach successfully identified the mutator allele. 
-For every combination of simulation parameters ($h$, $m$, $e$, and so on) we perform 100 trials and record the number of trials in which we successfully identify the mutator allele. 
+For each combination of parameters (number of simulated haplotypes, number of simulated markers, mutator effect size, etc.), we run 100 independent trials.
+In each trial, we simulate the genotype matrix $G$ and the mutation counts $C$.
+We calculate a "focal" $\chi^{2}$ statistic as the $\chi^{2}$ statistic between the aggregate mutation spectra of haplotypes with either genotype at $s_i$ (that is, the site at which we artificially simulated an association between genotyeps and mutation spectrum variation).
+We then perform an inter-haplotype distance scan using $N = 1,000$ permutations.
+If fewer than 5% of the $N$ permutations produced a $\chi^{2}$ statistic greater than or equal to the focal distance, we say that the approach successfully identified the mutator allele in that trial. 
 
 ### Applying the inter-haplotype distance method to the BXDs
 
