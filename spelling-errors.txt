@@ -5,8 +5,10 @@ ANOVA
 Asn
 biallelic
 Bonferonni
+Bonferroni
 chemotherapeutics
 chr
+covariates
 CpG
 CpGs
 cytosines
@@ -29,10 +31,11 @@ gnomAD
 GRCh
 GRCm
 guanines
+haplotype’s
 IBD
 IHD
 LOF
-MBD
+Mbd
 MEIs
 methylated
 mispaired
@@ -46,6 +49,8 @@ phenotypes
 polygenic
 Polyphen
 polyposis
+priori
+Quantative
 silico
 spermatagonial
 SVs
