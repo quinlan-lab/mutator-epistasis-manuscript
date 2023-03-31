@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-03-30'
+date-meta: '2023-03-31'
 author-meta:
 - Thomas A. Sasani
 - Aaron R. Quinlan
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="og:title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="twitter:title" content="Discovering epistasis between germline mutator alleles in mice" />
-  <meta name="dc.date" content="2023-03-30" />
-  <meta name="citation_publication_date" content="2023-03-30" />
-  <meta property="article:published_time" content="2023-03-30" />
-  <meta name="dc.modified" content="2023-03-30T23:17:39+00:00" />
-  <meta property="article:modified_time" content="2023-03-30T23:17:39+00:00" />
+  <meta name="dc.date" content="2023-03-31" />
+  <meta name="citation_publication_date" content="2023-03-31" />
+  <meta property="article:published_time" content="2023-03-31" />
+  <meta name="dc.modified" content="2023-03-31T17:00:39+00:00" />
+  <meta property="article:modified_time" content="2023-03-31T17:00:39+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/9b8bfe9697d827813f198e84686f373943b70043/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/9b8bfe9697d827813f198e84686f373943b70043/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/9b8bfe9697d827813f198e84686f373943b70043/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/556ae994f2b7f42db55f9225c04076abf6083dd8/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/556ae994f2b7f42db55f9225c04076abf6083dd8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/556ae994f2b7f42db55f9225c04076abf6083dd8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/9b8bfe9697d827813f198e84686f373943b70043/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/556ae994f2b7f42db55f9225c04076abf6083dd8/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@9b8bfe9](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/9b8bfe9697d827813f198e84686f373943b70043)
-on March 30, 2023.
+from [quinlan-lab/mutator-epistasis-manuscript@556ae99](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/556ae994f2b7f42db55f9225c04076abf6083dd8)
+on March 31, 2023.
 </em></small>
 
 
@@ -191,13 +191,13 @@ Here, we demonstrate the power of our new approach to detect candidate mutator a
 
 We developed a statistical method, termed "inter-haplotype distance" (IHD), to detect loci that are associated with mutation spectrum variation in biparental RILs (Figure {@fig:distance-method}). 
 Our approach leverages the fact that mutator alleles often leave behind distinct and detectable impressions on the *mutation spectrum*, even if they increase the overall mutation rate by a relatively small amount (Materials and Methods).
-Given a population of haplotypes, we assume that a) each has been genotyped at a collection of biallelic loci and b) each harbors *de novo* mutations that have been partitioned by $k$-mer context (Figure @fig:distance-method).
+Given a population of haplotypes, we assume that a) each has been genotyped at the same collection of biallelic loci and b) each harbors *de novo* mutations that have been partitioned by $k$-mer context (Figure @fig:distance-method).
 At every locus, we calculate a cosine distance between the aggregate mutation spectra of haplotypes that inherited either allele.
 Using permutation tests, we then identify loci at which those distances are larger than what we'd expect by random chance.
 
 We find that the method's power is primarily limited by the initial mutation rate of the $k$-mer mutation type affected by a mutator allele and the total number of *de novo* mutations used to detect it (Figure {@fig:simulations}). 
-For example, given 50 haplotypes with an average of 500 *de novo* germline mutations each, the IHD approach has approximately 60% power to detect a mutator allele that increases the C>T *de novo* mutation rate by as little as 10%. 
-However, the method only has about 30% power to detect a mutator of identical effect size that augments the C>G mutation rate, since C>G mutations are expected to make up a smaller fraction of all *de novo* germline mutations to begin with. 
+For example, given 100 haplotypes with an average of 500 *de novo* germline mutations each, the IHD approach has approximately 80% power to detect a mutator allele that increases the C>T *de novo* mutation rate by as little as 10%. 
+However, the method only has about 10% power to detect a mutator of identical effect size that augments the C>A mutation rate, since C>A mutations are expected to make up a smaller fraction of all *de novo* germline mutations to begin with. 
 These simulations also demonstrate that our approach is well-powered to detect large-effect mutator alleles (e.g., those that increase the mutation rate of a specific $k$-mer by 50%), even with a relatively small number of mutations per haplotype (Figure {@fig:simulations}).
 Overall, we find that both IHD and traditional quantitative trait locus (QTL) mapping have similar power to detect alleles that augment the rates of individual 1-mer mutation types (Figure {@fig:ihd_vs_qtl_power}); for a more detailed discussion of the advantages and disadvantages of either method, see the Supplementary Information.
 
@@ -207,10 +207,10 @@ Overall, we find that both IHD and traditional quantitative trait locus (QTL) ma
 *De novo* mutations are further classified into three possible mutation types, indicated by the color of each triangle. 
 At each informative marker $g_n$, we calculate the total number of each mutation type observed on haplotypes that carry either parental allele (i.e., the aggregate mutation spectrum). We then calculate the cosine distance between the two aggregate mutation spectra. 
 We repeat this process for every informative marker $g_n$. 
-**b)** To assess the significance of any distance peaks in a), we perform a permutation test by shuffling the haplotype labels associated with the *de novo* mutation data. 
-In each of $N$ permutations, we record the maximum cosine distance encountered at any locus in the scan. 
-Finally, we calculate the $1 - p$ percentile of the distribution of those maximum statistics to obtain a genome-wide cosine distance threshold at the specified value of $p$.
-](images/fig-distance-method.png){#fig:distance-method width=7in} 
+**b)** To assess the significance of any distance peaks in a), we perform permutation tests. 
+In each of $N$ permutations, we shuffle the haplotype labels associated with the *de novo* mutation data, run a genome-wide distance scan, and record the maximum cosine distance encountered at any locus in the scan. 
+Finally, we calculate the $1 - p$ percentile of the distribution of those maximum distances to obtain a genome-wide cosine distance threshold at the specified value of $p$.
+](images/fig-distance-method.png){#fig:distance-method width=8.5in} 
 
 ### Re-identifying the mutator allele on chromosome 4 in the BXDs
 
@@ -223,7 +223,7 @@ Using mutation data that were partitioned by 1-mer nucleotide context, we discov
 Cosine distance threshold at p = 0.05 was calculated by performing 10,000 permutations of the BXD haplotype mutation data, and is shown as a dotted grey line. 
 **b)** Adjusted cosine distances between aggregate 1-mer *de novo* mutation spectra on BXD haplotypes with *D* alleles at `rs52263933` (n = 55 haplotypes; 40,913 total mutations) and either *D* or *B* alleles at 7,320 informative markers. 
 Cosine distance threshold at p = 0.05 was calculated by performing 10,000 permutations of the BXD haplotype mutation data, and is shown as a dotted grey line.
-](images/fig-distance-results.png){#fig:distance-results width=7in} 
+](images/fig-distance-results.png){#fig:distance-results width=8.5in} 
 
 In a previous analysis, we used quantitative trait locus (QTL) mapping to identify a nearly identical locus on chromosome 4 that was significantly associated with the C>A germline mutation rate in the BXDs [@PMID:35545679]. 
 This locus overlapped 21 protein-coding genes that are annotated by the Gene Ontology as being involved in "DNA repair," but only one of these genes contained non-synonymous differences between the two parental strains: *Mutyh*. 
@@ -233,17 +233,17 @@ C>A germline mutation rates are nearly 50% higher in BXDs that inherit *D* genot
 ### An additional germline mutator allele on chromosome 6
 
 After confirming that the inter-haplotype distance method could recover the mutator locus overlapping *Mutyh*, we asked if our approach could identify additional mutator loci in the BXD. 
-To account for the effects of the large-effect mutator locus near *Mutyh*, we divided the BXD RILs into those with either *D* (n = 55) or *B* (n = 38) genotypes at `rs52263933`, and ran a genome-wide distance scan using each group separately (Figure {@fig:distance-results}B).
+To account for the effects of the large-effect mutator locus near *Mutyh*, we divided the BXD RILs into those with either *D* (n = 55) or *B* (n = 38) genotypes at `rs52263933` and ran a genome-wide distance scan using each group separately (Figure {@fig:distance-results}B).
 
 Using the BXDs with *D* genotypes at `rs52263933`, we identified a locus on chromosome 6 that was significantly associated with mutation spectrum variation (Figure {@fig:distance-results}B; maximum adjusted cosine distance of 81.0 at marker `rs31001331`; position 114.05 Mbp in GRCm38/mm10 coordinates).
-We performed QTL scans for the fractions of each 1-mer mutation type using these same mutation data, but none of these produced a genome-wide significant log-odds score at any locus (Figure {@fig:qtl-scans}; Materials and Method).
+We performed QTL scans for the fractions of each 1-mer mutation type using these same mutation data, but none produced a genome-wide significant log-odds score at any locus (Figure {@fig:qtl-scans}; Materials and Method).
 We queried the region surrounding the locus on chromosome 6 (+/- 5 Mbp) and discovered 15 protein-coding genes that harbored nonsynonymous differences between the parental C57BL/6J and DBA/2J strains. 
 Two of these genes were also annotated with the Gene Ontology term "DNA repair": *Ogg1* and *Mbd4*).
 *Ogg1* encodes a key member of the base-excision repair response to oxidative DNA damage (a pathway that also includes *Mutyh*), and *Mbd4* encodes a protein that is involved in the repair of G:T mismatches at methylated CpG sites that have undergone spontaneous deamination. 
 Each of these genes harbors a single fixed nonsynonymous difference between the C57BL/6J and DBA/2J parental strains (Table @tbl:nonsyn-diffs). 
 
 | Gene name | Ensembl transcript name | Nucleotide change | Amino acid change | Position in GRCm38/mm10 coordinates | SIFT prediction | 
-| - | - | - | - | - |
+| - | - | - | - | - | - |
 | *Ogg1* | ENSMUST00000032406 | A>G | p.Thr95Ala | chr6:113,328,510 | 0.84 (tolerant/benign) | 
 | *Mbd4* | ENSMUST00000032469 | C>T | p.Asp129Asn | chr6:115,849,644 | 0.02 (intolerant/deleterious) | 
 
@@ -272,12 +272,12 @@ A model that included an interaction term between genotypes at the two markers f
 
 ![
 **BXD mutation spectra are affected by alleles at both mutator loci.** 
-**a)** C>A *de novo* germline mutation fractions in BXDs with either *D* or *B* genotypes at markers `rs52263933` and `rs31001331`. 
-**b)** Counts of C>A *de novo* germline mutation fractions in each BXD strain vs. the number of generations for which it was inbred. 
+**a)** C>A *de novo* germline mutation fractions in BXDs with either *D* or *B* genotypes at markers `rs52263933` (chr4 peak) and `rs31001331` (chr6 peak). 
+**b)** Counts of C>A *de novo* germline mutations in each BXD strain plotted against the number of generations for which it was inbred. 
 Lines represent predicted C>A counts in each haplotype group from a Poisson regression (identity link), and shading around each line represents the 95% confidence interval for the predicted values.
-**c)** $\log_2$-transformed ratios of 3-mer mutation fractions in BXDs with *D* genotypes at `rs52263933` and *D* vs. *B* haplotypes at `rs31001331`.
+**c)** $\log_2$-transformed ratios of 3-mer mutation fractions in BXDs with *D* genotypes at `rs52263933` and *D* vs. *B* genotypes at `rs31001331`.
 Comparisons for which a $\chi_2$ test of independence returned p < $\frac{0.05}{96}$ (Bonferonni corrected p < 0.05) are annotated with a white dot.
-](images/fig-spectra-comparison.png){#fig:spectra-comparison width=7in} 
+](images/fig-spectra-comparison.png){#fig:spectra-comparison width=8.5in} 
 
 To explore the effects of the two mutator loci in other inbred laboratory mice, we also compared the germline mutation spectra of Sanger Mouse Genomes Project (MGP) strains [@PMID:21921910]. 
 Dumont [@PMID:30753674] previously identified germline mutations that were private to each of the 29 MGP strains; these private variants likely represent recent *de novo* germline mutations (Figure {@fig:spectra-comparison-mgp}). 
@@ -300,11 +300,11 @@ However, the *D* allele of *Mbd4* was not present in any of the wild mice.
 ### Epistasis between germline mutator alleles
 
 To our knowledge, these results reveal evidence of epistasis between mammalian germline mutator alleles for the first time. 
-BXDs with *D* alleles at both the previously-identified mutator locus on chromosome 4 [@PMID:35545679] and the novel locus on chromosome 6 have significantly higher C>A germline mutation rates than lines with *D* alleles at either locus alone (Figure {@fig:spectra-comparison}).
+BXDs with *D* alleles at both the previously-identified mutator locus on chromosome 4 [@PMID:35545679] and the novel locus on chromosome 6 have significantly higher C>A germline mutation fractions than lines with *D* alleles at either locus alone (Figure {@fig:spectra-comparison}).
 Moreover, those with *D* alleles at the chromosome 6 locus don't exhibit elevated C>A mutation rates at all. 
 These observations raise the exciting possibility that epistasis between mutator alleles has contributed to the evolution of germline mutation rates and spectra in mammalian genomes.
 
-Importantly, however, we discovered evidence of epistasis between germline mutator alleles in an unnatural population; the BXDs were inbred by brother-sister mating in a highly controlled laboratory environment that attenuated the effects of natural selection on all but the most deleterious alleles [@doi:10.1146/annurev.ecolsys.39.110707.173437]. 
+We discovered evidence of epistasis between germline mutator alleles in an unnatural population; the BXDs were inbred by brother-sister mating in a highly controlled laboratory environment that attenuated the effects of natural selection on all but the most deleterious alleles [@doi:10.1146/annurev.ecolsys.39.110707.173437]. 
 Large-effect mutator alleles (and epistasis between them) may be much less common in natural, outbreeding mammalian populations. 
 Regardless, our results demonstrate that germline mutation rates in recombinant inbred populations are highly plastic, and that RILs represent a powerful system in which to discover germline mutators.
 
@@ -334,8 +334,10 @@ Given *Mbd4*'s role in suppressing DNA damage-induced apoptosis [@PMID:14614141;
 In the absence of other defects in the DNA repair response, *D* alleles at *Mbd4* appear to have little or no detectable effect on *de novo* mutation rates (Figure @fig:spectra-comparison). 
 Since loss-of-function mutations in *Mbd4* often lead to increases CpG>TpG mutation rates [@PMID:12130785], it is possible that the p.Asp129Asn missense mutation is not sufficient to cause such a phenotype in the BXDs. 
 As we demonstrated in this and a previous manuscript, *D* alleles in *Mutyh* alone lead to significantly increased C>A mutation rates (Figure @fig:spectra-comparison) [@PMID:35545679]. 
-We hypothesize that in response to an accumulation of C>A mutations, a fraction of spermatagonial stem cells with *D* alleles at *Mutyh* will undergo apoptosis to prevent further unrepaired DNA damage. 
-However, if those germline cells also harbor *D* alleles at *Mbd4*, they may not be able to arrest the cell cycle and complete apoptosis, allowing the effects of *D* alleles in *Mutyh* to exacerbate C>A mutation rates even further.
+In response to an accumulation of C>A mutations, a fraction of spermatagonial stem cells with *D* alleles at *Mutyh* may undergo apoptosis to prevent further unrepaired DNA damage. 
+If those germline cells also harbor *D* alleles at *Mbd4*, they may not be able to arrest the cell cycle and complete apoptosis, allowing the effects of *D* alleles in *Mutyh* to exacerbate C>A mutation rates even further.
+
+However, further experimental evidence will be required to identify the causal genes and mutations that underlie the observed signal of epistasis between mutator alleles.
 
 ### Potential roles of structural variation and mobile elements as mutator alleles
 
@@ -343,18 +345,19 @@ Given the evidence outlined above, we believe that *Mbd4* is the most likely can
 We previously hypothesized that *Mutyh* missense mutations on *D* haplotypes were responsible for the large-effect C>A mutator phenotype we observed in the BXDs [@PMID:35545679]. 
 Using high-quality long-read assemblies of inbred laboratory strains, another group recently identified a ~5 kbp mobile element insertion (MEI) within the first intron of *Mutyh* [@doi:10.1101/2022.09.26.509577] that is present on *D* haplotypes and absent from *B* haplotypes. 
 This MEI is associated with significantly reduced expression of *Mutyh* in embryonic stem cells from laboratory strains, and may in fact underlie the previous C>A germline mutator phenotype in the BXDs. 
-Although we did not find compelling evidence that structural variants or mobile element insertions were responsible for the novel C>A mutator phenotype observed in this study, it remains plausible that large SVs or MEIs contribute to mutation spectrum evolution in mammalian genomes.
+Although we did not find compelling evidence that structural variants were responsible for the novel C>A mutator phenotype observed in this study, it remains plausible that large SVs or MEIs contribute to mutation spectrum evolution in mammalian genomes.
 
 ### Strengths and limitations of the inter-haplotype distance approach
 
 The inter-haplotype distance (IHD) method has a number of advantages over traditional quantitative trait locus (QTL) mapping for detecting mutator alleles that affect elements of the $k$-mer mutation spectrum.
 Using simulated data, we found that both IHD and QTL mapping had similar power to detect mutators that augment the rates of specific 1-mer and 3-mer mutation types (Figure @fig:ihd_vs_qtl_power).
-However, only IHD was able to discover the mutator locus on chromosome 6 in the BXDs, demonstrating that it outperforms QTL mapping in certain scenarios, and can reveal previously undiscovered signals of mutator alleles.
+Nonetheless, only IHD was able to discover the mutator locus on chromosome 6 in the BXDs, demonstrating that it outperforms QTL mapping in certain experimental systems, and can reveal previously undiscovered signals of mutator alleles.
 One benefit of the IHD approach is that it obviates the need to perform separate association tests for for every possible $k$-mer mutation type.
 Since IHD compares the complete mutation spectrum between haplotypes that carry either allele at a site, it would also be well-powered to detect a mutator allele that exerted a coordinated effect on multiple $k$-mer mutation types (e.g., increased the rates of both C>T and C>A mutations).
+
 However, the IHD method suffers a handful of drawbacks when compared to QTL mapping.
 Namely, popular QTL mapping methods (such as R/qtl2 [@PMID:30591514]) use linear models to discover associations between genotypes and phenotypes, enabling the inclusion of additive and interactive covariates, as well as kinship matrices, in QTL scans.
-Although we have included simple methods to account for inter-sample relatedness in the IHD approach, they do not provide nearly as much control as similar methods in QTL mapping software.
+Although we have included simple methods to account for inter-sample relatedness in the IHD approach, they are not as robust or flexible as similar methods in QTL mapping software.
 Additionally, the IHD method assumes that mutator alleles affect a subset of $k$-mer mutation types, rather than all mutation types equally.
 If a mutator allele increased the rates of all mutation types equally on haplotypes that carried it, IHD would be unable to detect it.
 
@@ -414,19 +417,18 @@ We assume that a collection of haplotypes has been genotyped at informative mark
 At each informative marker, we divide haplotypes into two groups based on the parental allele that they inherited. 
 We then compute a $k$-mer mutation spectrum using the aggregate mutation counts in each haplotype group. 
 The $k$-mer mutation spectrum contains the frequency of every possible $k$-mer mutation type in a collection of mutations, and can be represented as a vector of size $6 \times 4^{k - 1}$ after collapsing by strand complement. 
-For example, the 1-mer mutation spectrum is 6-element vector that contains the frequencies of C>T, C>G, C>A, A>G, A>T, and A>C mutations. 
+For example, the 1-mer mutation spectrum is a 6-element vector that contains the frequencies of C>T, C>G, C>A, A>G, A>T, and A>C mutations. 
 Since C>T transitions at CpG nucleotides are often caused by a distinct mechanism (spontaneous deamination of methylated cytosine), we expand the 1-mer mutation spectrum to include a separate category for CpG>TpG mutations [@PMID:19488047].
 
-At each marker, we then calculate two vectors of size $6 \times 4^{k-1}$ (or $(6 \times 4^{k-1}) + 1$ if $k = 1$ and we include CpG>TpG) that contain the aggregate $k$-mer mutation spectra of haplotypes that inherited either parental allele.
-We then compute the cosine distance between the two aggregate spectra.
+At each marker, we then compute the cosine distance between the two aggregate spectra.
 The cosine distance between two vectors $\mathbf{A}$ and $\mathbf{B}$ is defined as 
 
-$$D_C = 1 - \frac{\mathbf{A} \cdot \mathbf{B}}{||\mathbf{A}|| \ ||\mathbf{B}||}$$
+$$D^C = 1 - \frac{\mathbf{A} \cdot \mathbf{B}}{||\mathbf{A}|| \ ||\mathbf{B}||}$$
 
 where $||\mathbf{A}||$ and $||\mathbf{B}||$ are the $L^2$ (or Euclidean) norms of $\mathbf{A}$ and $\mathbf{B}$, respectively. 
 The cosine distance metric has a number of favorable properties for comparing mutation spectra. 
 Since cosine distance does not take the magnitude of vectors into account, it can be used to compare two spectra with unequal total mutation counts (even if those total counts are relatively small). 
-Additionally, by calculating the cosine distance between mutation *spectra*, we avoid the need to perform separate comparisons of mutation counts at each individual $k$-mer mutation type. 
+Additionally, by calculating the cosine distance between mutation spectra, we avoid the need to perform separate comparisons of mutation counts at each individual $k$-mer mutation type. 
 
 Inspired by methods from QTL mapping [@PMID:7851788;@PMID:30591514], we use permutation tests to establish genome-wide cosine distance thresholds. 
 In each of $N$ permutation trials, we randomly shuffle the per-haplotype mutation data such that haplotype labels no longer correspond to the correct mutation counts. 
@@ -448,9 +450,9 @@ To quantify the genetic similarity between the two groups of haplotypes, we calc
 
 Put another way, at every marker $g_i$ along the genome, we divide BXD haplotypes into two groups and compute two metrics: $D^{C}_{i}$ (the cosine distance between the two groups' aggregate spectra) and $r_i$ (the correlation between genome-wide *D* allele frequencies in the two groups). 
 To control for the potential effects of genetic similarity on cosine distances, we regress $\left(D^C_{1}, D^C_{2}, \ldots D^C_{n} \right)$ on $\left( r_1, r_2, \ldots r_n \right)$ for all $n$ markers using an ordinary least-squares model.
- We then use the residuals from the fitted model as the "adjusted" cosine distance values for each marker. 
- If genome-wide genetic similarity between haplotypes perfectly predicts cosine distances at each marker, these residuals will all be 0 (or very close to 0). 
- If genome-wide genetic similarity has no predictive power, the residuals will simply represent the difference between the observed cosine distance at a single marker and the marker-wide mean of cosine distances.
+We then use the residuals from the fitted model as the "adjusted" cosine distance values for each marker. 
+If genome-wide genetic similarity between haplotypes perfectly predicts cosine distances at each marker, these residuals will all be 0 (or very close to 0). 
+If genome-wide genetic similarity has no predictive power, the residuals will simply represent the difference between the observed cosine distance at a single marker and the marker-wide mean of cosine distances.
 
 #### Implementation and source code
 
@@ -504,7 +506,7 @@ If row $i$ is not in $h_{mut}$, we set the values of $C_i$ to be the results of 
 
 For each combination of parameters (number of simulated haplotypes, number of simulated markers, mutator effect size, etc.), we run 100 independent trials.
 In each trial, we simulate the genotype matrix $G$ and the mutation counts $C$.
-We calculate a "focal" cosine distance as the cosine distance between the aggregate mutation spectra of haplotypes with either genotype at $s_i$ (that is, the site at which we artificially simulated an association between genotyeps and mutation spectrum variation).
+We calculate a "focal" cosine distance as the cosine distance between the aggregate mutation spectra of haplotypes with either genotype at $s_i$ (the site at which we artificially simulated an association between genotyeps and mutation spectrum variation).
 We then perform an inter-haplotype distance scan using $N = 1,000$ permutations.
 If fewer than 5% of the $N$ permutations produced a cosine distance greater than or equal to the focal distance, we say that the approach successfully identified the mutator allele in that trial. 
 
@@ -517,12 +519,12 @@ First, we calculate the fraction of each haplotype's *de novo* mutations that be
 We then convert the simulated genotypes at each marker to genotype probabilities using the `calc_genoprob` function in R/qtl2, with `map_function = "c-f"` and `error_prob = 0`.
 For every $k$-mer mutation type, we use genotype probabilities and per-haplotype mutation fractions to perform a scan for QTL with the `scan1` function; to make the results more comparable to those from the IHD method, we do not include any covariates in these QTL scans.
 We then use the `scan1perm` function to perform 1,000 permutations of the per-haplotype 1-mer mutation fractions and calculate log-odds (LOD) thresholds for significance.
-We consider the QTL scan to be "successful" if it produces a LOD score above the significance threshold (defined using $\alpha = 0.05$) for the marker at which we simulated an association with mutation spectrum variation.
+We consider the QTL scan to be "successful" if it produces a LOD score above the significance threshold (defined using $\alpha = \frac{0.05}{6 \times 4^{k-1}}$) for the marker at which we simulated an association with mutation spectrum variation.
 
 > **Note**: In our simulations, we augment the mutation rate of a single $k$-mer mutation type on haplotypes carrying the simulated mutator allele.
 > However, in an experimental setting, we would not expect to have *a priori* knowledge of the mutation type affected by the mutator.
 > Thus, by using an alpha threshold of 0.05, we would likely over-estimate the power of QTL mapping for detecting the mutator.
-> Since we would likely need to perform 7 separate QTL scans (one for each 1-mer mutation type) in an experimental setting, we calculate QTL LOD thresholds at a Bonferroni-corrected alpha value of $\alpha = \frac{0.05}{6 \times 4^{k-1}}$.
+> Since we would need to perform 7 separate QTL scans (one for each 1-mer mutation type) in an experimental setting, we calculate QTL LOD thresholds at a Bonferroni-corrected alpha value of $\alpha = \frac{0.05}{6 \times 4^{k-1}}$.
 
 
 ### Applying the inter-haplotype distance method to the BXDs
