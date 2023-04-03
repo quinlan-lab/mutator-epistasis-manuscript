@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-03-31'
+date-meta: '2023-04-03'
 author-meta:
 - Thomas A. Sasani
 - Aaron R. Quinlan
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="og:title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="twitter:title" content="Discovering epistasis between germline mutator alleles in mice" />
-  <meta name="dc.date" content="2023-03-31" />
-  <meta name="citation_publication_date" content="2023-03-31" />
-  <meta property="article:published_time" content="2023-03-31" />
-  <meta name="dc.modified" content="2023-03-31T17:00:39+00:00" />
-  <meta property="article:modified_time" content="2023-03-31T17:00:39+00:00" />
+  <meta name="dc.date" content="2023-04-03" />
+  <meta name="citation_publication_date" content="2023-04-03" />
+  <meta property="article:published_time" content="2023-04-03" />
+  <meta name="dc.modified" content="2023-04-03T13:55:16+00:00" />
+  <meta property="article:modified_time" content="2023-04-03T13:55:16+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/556ae994f2b7f42db55f9225c04076abf6083dd8/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/556ae994f2b7f42db55f9225c04076abf6083dd8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/556ae994f2b7f42db55f9225c04076abf6083dd8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/f2f77cdb2c45cb6fe649d25676af9bcd27c591f7/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/f2f77cdb2c45cb6fe649d25676af9bcd27c591f7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/f2f77cdb2c45cb6fe649d25676af9bcd27c591f7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/556ae994f2b7f42db55f9225c04076abf6083dd8/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/f2f77cdb2c45cb6fe649d25676af9bcd27c591f7/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@556ae99](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/556ae994f2b7f42db55f9225c04076abf6083dd8)
-on March 31, 2023.
+from [quinlan-lab/mutator-epistasis-manuscript@f2f77cd](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/f2f77cdb2c45cb6fe649d25676af9bcd27c591f7)
+on April 3, 2023.
 </em></small>
 
 
@@ -265,8 +265,13 @@ None of these genes has a previously annotated role in DNA binding, repair or re
 ### Evidence of epistasis between germline mutator alleles
 
 Next, we more precisely characterized the effects of the chromosome 4 and 6 mutator alleles on mutation spectra in the BXDs. 
-We observed that C>A germline mutation fractions in BXDs with *D* alleles at both mutator loci were higher than in BXDs with *D* alleles at either locus alone; GCT>GAT and GCA>GAA mutations were specifically enriched in the former (Figure {@fig:spectra-comparison} and {@fig:spectra-comparison-all}). 
+We observed that C>A germline mutation fractions in BXDs with *D* alleles at both mutator loci were higher than in BXDs with *D* alleles at either locus alone (Figure {@fig:spectra-comparison} and {@fig:spectra-comparison-all}). 
 Compared to BXDs with *B* alleles at the chromosome 6 mutator locus, those with *D* alleles did not exhibit higher C>A mutation fractions, indicating that the effects of the chromosome 6 mutator locus depend on the presence of a *D* allele at the chromosome 4 locus (Figure {@fig:spectra-comparison}). 
+We also used SigProfilerExtractor [@PMID:36388765] to assign the germline mutations in each BXD to a single-base substitution (SBS) mutation signature from the COSMIC catalog [@PMID:30371878].
+Mutation signatures often reflect specific exogenous or endogenous sources of DNA damage, and the fraction of a given sample's mutations attributable to a particular SBS signature can suggest a genetic or environmental etiology.
+The SBS1, SBS5, and SBS30 mutation signatures were active in all BXDs, regardless of genotypes at the chromosome 4 and 6 mutator loci (Figure @fig:spectra-comparison).
+However, the SBS18 signature, which is dominated by C>A mutations and likely reflects unrepaired DNA damage from reactive oxygen species, was only active in mice with *D* alleles at the chromosome 4 locus; the highest SBS18 activity was observed in mice with *D* alleles at both mutator loci (Figure @fig:spectra-comparison).
+SBS18 activity was absent in mice with *D* alleles at the chromosome 6 mutator locus alone (Figure @fig:spectra-comparison), further demonstrating that *D* alleles at this locus are not sufficient to cause a mutator phenotype.
 To more formally test for epistasis, we fit a linear model predicting counts of C>A mutations in each strain as a function of genotypes at `rs52263933` and `rs31001331` (the peak markers at the two mutator loci) (Materials and Methods). 
 A model that included an interaction term between genotypes at the two markers fit the data significantly better than a model including only additive effects (p = 9.8e-4).
 
@@ -275,8 +280,7 @@ A model that included an interaction term between genotypes at the two markers f
 **a)** C>A *de novo* germline mutation fractions in BXDs with either *D* or *B* genotypes at markers `rs52263933` (chr4 peak) and `rs31001331` (chr6 peak). 
 **b)** Counts of C>A *de novo* germline mutations in each BXD strain plotted against the number of generations for which it was inbred. 
 Lines represent predicted C>A counts in each haplotype group from a Poisson regression (identity link), and shading around each line represents the 95% confidence interval for the predicted values.
-**c)** $\log_2$-transformed ratios of 3-mer mutation fractions in BXDs with *D* genotypes at `rs52263933` and *D* vs. *B* genotypes at `rs31001331`.
-Comparisons for which a $\chi_2$ test of independence returned p < $\frac{0.05}{96}$ (Bonferonni corrected p < 0.05) are annotated with a white dot.
+**c)** Germline mutations in each BXD were assigned to COSMIC SBS mutation signatures using SigProfilerExtractor. After grouping BXDs by their genotypes at `rs52263933` and `rs31001331`, we calculated the fraction of mutations in each group that were assigned to each signature. The proposed etiologies of each mutation signature are: SBS1 (spontaneous deamination of methylated cytosine nucleotides) SBS5 (unknown, clock-like signature), SBS18 (damage by reactive oxygen species, possibly loss-of-function mutations in MUTYH), and SBS30 (defective base-excision repair due to NTHL1 mutations).
 ](images/fig-spectra-comparison.png){#fig:spectra-comparison width=8.5in} 
 
 To explore the effects of the two mutator loci in other inbred laboratory mice, we also compared the germline mutation spectra of Sanger Mouse Genomes Project (MGP) strains [@PMID:21921910]. 
@@ -352,11 +356,11 @@ Although we did not find compelling evidence that structural variants were respo
 The inter-haplotype distance (IHD) method has a number of advantages over traditional quantitative trait locus (QTL) mapping for detecting mutator alleles that affect elements of the $k$-mer mutation spectrum.
 Using simulated data, we found that both IHD and QTL mapping had similar power to detect mutators that augment the rates of specific 1-mer and 3-mer mutation types (Figure @fig:ihd_vs_qtl_power).
 Nonetheless, only IHD was able to discover the mutator locus on chromosome 6 in the BXDs, demonstrating that it outperforms QTL mapping in certain experimental systems, and can reveal previously undiscovered signals of mutator alleles.
-One benefit of the IHD approach is that it obviates the need to perform separate association tests for for every possible $k$-mer mutation type.
+One benefit of the IHD approach is that it obviates the need to perform separate association tests for for every possible $k$-mer mutation type, and therefore the need to adjust for multiple tests.
 Since IHD compares the complete mutation spectrum between haplotypes that carry either allele at a site, it would also be well-powered to detect a mutator allele that exerted a coordinated effect on multiple $k$-mer mutation types (e.g., increased the rates of both C>T and C>A mutations).
 
 However, the IHD method suffers a handful of drawbacks when compared to QTL mapping.
-Namely, popular QTL mapping methods (such as R/qtl2 [@PMID:30591514]) use linear models to discover associations between genotypes and phenotypes, enabling the inclusion of additive and interactive covariates, as well as kinship matrices, in QTL scans.
+Popular QTL mapping methods (such as R/qtl2 [@PMID:30591514]) use linear models to test associations between genotypes and phenotypes, enabling the inclusion of additive and interactive covariates, as well as kinship matrices, in QTL scans.
 Although we have included simple methods to account for inter-sample relatedness in the IHD approach, they are not as robust or flexible as similar methods in QTL mapping software.
 Additionally, the IHD method assumes that mutator alleles affect a subset of $k$-mer mutation types, rather than all mutation types equally.
 If a mutator allele increased the rates of all mutation types equally on haplotypes that carried it, IHD would be unable to detect it.
@@ -554,6 +558,26 @@ To predict the functional impacts of both single-nucleotide variants and indels 
 ```
 
 and used `cyvcf2` [@PMID:28165109] to iterate over the annotated VCF file in order to identify nonsynonymous fixed differences between the parental C57BL/6J and DBA/2J strains.
+
+### Extracting mutation signatures 
+
+We used SigProfilerExtractor (v.1.1.21) to extract mutation signatures from the BXD mutation data. After converting the BXD mutation data to the "matrix" input format expected by SigProfilerExtractor, we ran the `sigProfilerExtractor` method as follows:
+
+```python
+
+# install the mm10 mouse reference data
+genInstall.install('mm10')
+
+# run mutation signature extraction
+sig.sigProfilerExtractor(
+    'matrix',
+    /path/to/output/directory,
+    /path/to/input/mutations,
+    maximum_signatures=5,
+    nmf_replicates=50,
+    opportunity_genome="mm10",
+)
+```
 
 ### Comparing mutation spectra between Mouse Genomes Project strains
 

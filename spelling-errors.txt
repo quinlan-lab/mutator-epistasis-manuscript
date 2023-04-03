@@ -4,7 +4,6 @@ allelic
 ANOVA
 Asn
 biallelic
-Bonferonni
 Bonferroni
 chemotherapeutics
 chr
@@ -19,10 +18,6 @@ Ensembl
 ENSMUST
 exonic
 fibroblasts
-GAA
-GAT
-GCA
-GCT
 genotyeps
 Gly
 glycosylase
@@ -44,6 +39,7 @@ Mlh
 MMR
 neoplasia
 nonsyn
+NTHL
 outbreeding
 phenotypes
 polygenic
@@ -51,6 +47,8 @@ Polyphen
 polyposis
 priori
 Quantative
+SBS
+SigProfilerExtractor
 silico
 spermatagonial
 SVs
