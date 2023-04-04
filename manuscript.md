@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-04-03'
+date-meta: '2023-04-04'
 author-meta:
 - Thomas A. Sasani
 - Aaron R. Quinlan
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="og:title" content="Discovering epistasis between germline mutator alleles in mice" />
   <meta property="twitter:title" content="Discovering epistasis between germline mutator alleles in mice" />
-  <meta name="dc.date" content="2023-04-03" />
-  <meta name="citation_publication_date" content="2023-04-03" />
-  <meta property="article:published_time" content="2023-04-03" />
-  <meta name="dc.modified" content="2023-04-03T13:55:16+00:00" />
-  <meta property="article:modified_time" content="2023-04-03T13:55:16+00:00" />
+  <meta name="dc.date" content="2023-04-04" />
+  <meta name="citation_publication_date" content="2023-04-04" />
+  <meta property="article:published_time" content="2023-04-04" />
+  <meta name="dc.modified" content="2023-04-04T15:16:18+00:00" />
+  <meta property="article:modified_time" content="2023-04-04T15:16:18+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/f2f77cdb2c45cb6fe649d25676af9bcd27c591f7/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/f2f77cdb2c45cb6fe649d25676af9bcd27c591f7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/f2f77cdb2c45cb6fe649d25676af9bcd27c591f7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5d25d31f344d2cd8a8d7d2036d9f9b5e3f4be6af/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5d25d31f344d2cd8a8d7d2036d9f9b5e3f4be6af/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5d25d31f344d2cd8a8d7d2036d9f9b5e3f4be6af/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/f2f77cdb2c45cb6fe649d25676af9bcd27c591f7/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5d25d31f344d2cd8a8d7d2036d9f9b5e3f4be6af/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@f2f77cd](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/f2f77cdb2c45cb6fe649d25676af9bcd27c591f7)
-on April 3, 2023.
+from [quinlan-lab/mutator-epistasis-manuscript@5d25d31](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/5d25d31f344d2cd8a8d7d2036d9f9b5e3f4be6af)
+on April 4, 2023.
 </em></small>
 
 
@@ -199,7 +199,7 @@ We find that the method's power is primarily limited by the initial mutation rat
 For example, given 100 haplotypes with an average of 500 *de novo* germline mutations each, the IHD approach has approximately 80% power to detect a mutator allele that increases the C>T *de novo* mutation rate by as little as 10%. 
 However, the method only has about 10% power to detect a mutator of identical effect size that augments the C>A mutation rate, since C>A mutations are expected to make up a smaller fraction of all *de novo* germline mutations to begin with. 
 These simulations also demonstrate that our approach is well-powered to detect large-effect mutator alleles (e.g., those that increase the mutation rate of a specific $k$-mer by 50%), even with a relatively small number of mutations per haplotype (Figure {@fig:simulations}).
-Overall, we find that both IHD and traditional quantitative trait locus (QTL) mapping have similar power to detect alleles that augment the rates of individual 1-mer mutation types (Figure {@fig:ihd_vs_qtl_power}); for a more detailed discussion of the advantages and disadvantages of either method, see the Supplementary Information.
+Overall, we find that both IHD and traditional quantitative trait locus (QTL) mapping have similar power to detect alleles that augment the rates of individual 1-mer mutation types (Figure {@fig:ihd_vs_qtl_power}); for a more detailed discussion of the advantages and disadvantages of either method, see the *Supplementary Information*.
 
 ![
 **Overview of inter-haplotype distance method for discovering mutator alleles.** 
@@ -267,12 +267,14 @@ None of these genes has a previously annotated role in DNA binding, repair or re
 Next, we more precisely characterized the effects of the chromosome 4 and 6 mutator alleles on mutation spectra in the BXDs. 
 We observed that C>A germline mutation fractions in BXDs with *D* alleles at both mutator loci were higher than in BXDs with *D* alleles at either locus alone (Figure {@fig:spectra-comparison} and {@fig:spectra-comparison-all}). 
 Compared to BXDs with *B* alleles at the chromosome 6 mutator locus, those with *D* alleles did not exhibit higher C>A mutation fractions, indicating that the effects of the chromosome 6 mutator locus depend on the presence of a *D* allele at the chromosome 4 locus (Figure {@fig:spectra-comparison}). 
+
 We also used SigProfilerExtractor [@PMID:36388765] to assign the germline mutations in each BXD to a single-base substitution (SBS) mutation signature from the COSMIC catalog [@PMID:30371878].
 Mutation signatures often reflect specific exogenous or endogenous sources of DNA damage, and the fraction of a given sample's mutations attributable to a particular SBS signature can suggest a genetic or environmental etiology.
 The SBS1, SBS5, and SBS30 mutation signatures were active in all BXDs, regardless of genotypes at the chromosome 4 and 6 mutator loci (Figure @fig:spectra-comparison).
 However, the SBS18 signature, which is dominated by C>A mutations and likely reflects unrepaired DNA damage from reactive oxygen species, was only active in mice with *D* alleles at the chromosome 4 locus; the highest SBS18 activity was observed in mice with *D* alleles at both mutator loci (Figure @fig:spectra-comparison).
 SBS18 activity was absent in mice with *D* alleles at the chromosome 6 mutator locus alone (Figure @fig:spectra-comparison), further demonstrating that *D* alleles at this locus are not sufficient to cause a mutator phenotype.
-To more formally test for epistasis, we fit a linear model predicting counts of C>A mutations in each strain as a function of genotypes at `rs52263933` and `rs31001331` (the peak markers at the two mutator loci) (Materials and Methods). 
+
+To more formally test for epistasis, we fit a linear model predicting counts of C>A mutations in each strain as a function of genotypes at `rs52263933` and `rs31001331` (the peak markers at the two mutator loci) (*Materials and Methods*). 
 A model that included an interaction term between genotypes at the two markers fit the data significantly better than a model including only additive effects (p = 9.8e-4).
 
 ![
@@ -305,47 +307,30 @@ However, the *D* allele of *Mbd4* was not present in any of the wild mice.
 
 To our knowledge, these results reveal evidence of epistasis between mammalian germline mutator alleles for the first time. 
 BXDs with *D* alleles at both the previously-identified mutator locus on chromosome 4 [@PMID:35545679] and the novel locus on chromosome 6 have significantly higher C>A germline mutation fractions than lines with *D* alleles at either locus alone (Figure {@fig:spectra-comparison}).
-Moreover, those with *D* alleles at the chromosome 6 locus don't exhibit elevated C>A mutation rates at all. 
-These observations raise the exciting possibility that epistasis between mutator alleles has contributed to the evolution of germline mutation rates and spectra in mammalian genomes.
+Moreover, those with *D* alleles at the chromosome 6 locus don't exhibit elevated C>A mutation rates, suggesting that those alleles are not sufficient to cause a mutator phenotype. 
+Our observations in the BXDs raise the exciting possibility that epistasis between mutator alleles has contributed to the evolution of germline mutation rates and spectra in mammalian genomes.
 
-We discovered evidence of epistasis between germline mutator alleles in an unnatural population; the BXDs were inbred by brother-sister mating in a highly controlled laboratory environment that attenuated the effects of natural selection on all but the most deleterious alleles [@doi:10.1146/annurev.ecolsys.39.110707.173437]. 
+Importantly, we discovered evidence of epistasis between germline mutator alleles in an unnatural population; the BXDs were inbred by brother-sister mating in a highly controlled laboratory environment that attenuated the effects of natural selection on all but the most deleterious alleles [@doi:10.1146/annurev.ecolsys.39.110707.173437]. 
 Large-effect mutator alleles (and epistasis between them) may be much less common in natural, outbreeding mammalian populations. 
 Regardless, our results demonstrate that germline mutation rates in recombinant inbred populations are highly plastic, and that RILs represent a powerful system in which to discover germline mutators.
 
-### Causal variants underlying the mutator allele
+### Potential causal variants underlying the mutator allele
 
 Two protein-coding DNA repair genes overlap the C>A mutator locus on chromosome 6 and also contain nonsynonymous fixed differences between the C57BL/6J and DBA/2J founder strains: *Ogg1*, a glycosylase that excises the oxidative DNA lesion 8-oxoguanine (8-oxoG) [@PMID:17581577], and *Mbd4*, a glycosylase that can bind to methylated CpG sites and remove mispaired thymine nucleotides opposite spontaneously deaminated CpGs. 
 
 Missense mutations and loss-of-heterozygosity in *Ogg1* have been associated with increased risk of human cancer [@PMID:22829015;@PMID:9662341], and copy-number losses of either *Ogg1* or *Mutyh* are linked to elevated rates of spontaneous C>A mutation in human neuroblastoma [@doi:10.1073/pnas.2007898118]. 
 Although *Ogg1* is a member of the same base-excision repair pathway as *Mutyh* (the protein-coding gene we previously implicated as harboring mutator alleles at the locus on chromosome 4), a number of lines of evidence suggest that the p.Asp129Asn missense mutation in *Mbd4* is the more compelling candidate mutator allele on chromosome 6. 
 Unlike the *Ogg1* p.Thr95Ala mutation, p.Asp129Asn occurs at an amino acid residue within the *Mbd4* methyl-CpG binding domain that is well-conserved across mammalian species and predicted to be deleterious by *in silico* tools like SIFT [@PMID:12824425] (Table @tbl:nonsyn-diffs). 
-Additionally, a missense mutation that affects the homologous amino acid in humans (p.Asp142Gly in GRCh38/hg38) is present on a single haplotype in the Genome Aggregation Database (gnomAD) [@PMID:32461654] and is predicted by SIFT and Polyphen [@PMID:20354512] to be "deleterious" and "probably_damaging" in human genomes, respectively. 
+A missense mutation that affects the homologous amino acid in humans (p.Asp142Gly in GRCh38/hg38) is present on a single haplotype in the Genome Aggregation Database (gnomAD) [@PMID:32461654] and is predicted by SIFT and Polyphen [@PMID:20354512] to be "deleterious" and "probably_damaging" in human genomes, respectively. 
+A recent study also identified a homozygous frameshift mutation in the primate homolog of *MBD4* that causes a hypermutator phenotype in the maternal germline [@doi:10.1101/2023.03.27.534460], though this phenotype primarily comprises C>T mutations at CpG and CpA sites. 
+Perhaps most intriguingly, loss-of-function mutations in *Mbd4* can sensitize cells to further DNA damage and prevent DNA damage-induced apoptosis [@PMID:14614141;@PMID:14562041].
 
-One of the key roles of *Mbd4* is to excise thymine nucleotides at G:T mispairs, which arise due to the spontaneous deamination of methylated CpGs. 
-As a result, loss-of-function (LOF) mutations in *Mbd4* often lead to increased rates of CpG>TpG mutation [@PMID:12130785]. 
-Although LOF mutations in *Mbd4* are not known to cause C>A mutator phenotypes in mammalian cells, *Mbd4* is involved in a number of DNA repair processes that may contribute to the mutator phenotype we observed in the BXDs. 
-For example, bi-allelic LOF mutations in human *MBD4* underlie a neoplastic syndrome that closely mimics forms of familial adenomatous polyposis caused by LOF mutations in *MUTYH* [@PMID:35460607]. 
-Perhaps most intriguingly, LOF mutations in *Mbd4* can exacerbate the effects of exogenous DNA damage agents. 
-Mouse embryonic fibroblasts that harbor homozygous LOF mutations in *Mbd4* fail to undergo apoptosis following treatment with a number of chemotherapeutics and mutagenic compounds [@PMID:14614141]. 
-Most of these exogenous mutagens cause DNA damage that is normally repaired by mismatch repair (MMR) machinery, but murine intestinal cells with biallelic LOF mutations in *Mbd4* also show a reduced apoptotic response to gamma irradiation, which is repaired independently of the MMR gene *Mlh1* [@PMID:14562041]. 
-Homozygous LOF mutations in *Mbd4* lead to accelerated intestinal tumor formation in mice that harbor an *Apc* allele that predisposes them to intestinal neoplasia [@PMID:12130785], and mice with biallelic truncations of the *Mbd4* coding sequence exhibit modestly increased mutation rates in colon cancer cell lines, including increased C>A mutation rates in certain lines [@PMID:17285135].
-
-### Mechanisms of epistasis between mutator alleles
-
-Although both *Mutyh* and *Mbd4* are DNA glycosylases that participate in base-excision repair, they operate on distinct DNA lesions: *Mutyh* excises adenines paired with 8-oxoguanine, while *Mbd4* excises thymines opposite spontaneously deaminated CpGs. 
-Given *Mbd4*'s role in suppressing DNA damage-induced apoptosis [@PMID:14614141;@PMID:14562041], we hypothesize that *D* alleles in *Mutyh* and *Mbd4* exhibit epistasis through the following mechanism in the BXD RILs.
-
-In the absence of other defects in the DNA repair response, *D* alleles at *Mbd4* appear to have little or no detectable effect on *de novo* mutation rates (Figure @fig:spectra-comparison). 
-Since loss-of-function mutations in *Mbd4* often lead to increases CpG>TpG mutation rates [@PMID:12130785], it is possible that the p.Asp129Asn missense mutation is not sufficient to cause such a phenotype in the BXDs. 
-As we demonstrated in this and a previous manuscript, *D* alleles in *Mutyh* alone lead to significantly increased C>A mutation rates (Figure @fig:spectra-comparison) [@PMID:35545679]. 
-In response to an accumulation of C>A mutations, a fraction of spermatagonial stem cells with *D* alleles at *Mutyh* may undergo apoptosis to prevent further unrepaired DNA damage. 
-If those germline cells also harbor *D* alleles at *Mbd4*, they may not be able to arrest the cell cycle and complete apoptosis, allowing the effects of *D* alleles in *Mutyh* to exacerbate C>A mutation rates even further.
-
-However, further experimental evidence will be required to identify the causal genes and mutations that underlie the observed signal of epistasis between mutator alleles.
+We outline a plausible model of epistasis between *Mutyh* and *Mbd4* alleles in the *Supplementary Information*, but are unable to conclusively determine that either *Mbd4* or *Ogg1* harbors the causal variant underlying the observed C>A mutator phenotype. 
+We anticipate that future experimental evidence will help pinpoint a causal allele and provide insight into the mechanism of epistasis between alleles at the loci on chromosome 4 and 6 in the BXDs.
 
 ### Potential roles of structural variation and mobile elements as mutator alleles
 
-Given the evidence outlined above, we believe that *Mbd4* is the most likely candidate gene to explain the additional C>A mutator phenotype in the BXDs, but we are unable to conclusively determine that the p.Asp129Asn missense mutation is the causal allele. 
+Although we believe that *Mbd4* and *Ogg1* are the most likely candidate genes to explain the additional C>A mutator phenotype in the BXDs, we cannot conclusively determine that either the p.Asp129Asn or p.Thr95Ala missense mutation is a causal allele. 
 We previously hypothesized that *Mutyh* missense mutations on *D* haplotypes were responsible for the large-effect C>A mutator phenotype we observed in the BXDs [@PMID:35545679]. 
 Using high-quality long-read assemblies of inbred laboratory strains, another group recently identified a ~5 kbp mobile element insertion (MEI) within the first intron of *Mutyh* [@doi:10.1101/2022.09.26.509577] that is present on *D* haplotypes and absent from *B* haplotypes. 
 This MEI is associated with significantly reduced expression of *Mutyh* in embryonic stem cells from laboratory strains, and may in fact underlie the previous C>A germline mutator phenotype in the BXDs. 
@@ -353,10 +338,10 @@ Although we did not find compelling evidence that structural variants were respo
 
 ### Strengths and limitations of the inter-haplotype distance approach
 
-The inter-haplotype distance (IHD) method has a number of advantages over traditional quantitative trait locus (QTL) mapping for detecting mutator alleles that affect elements of the $k$-mer mutation spectrum.
+The inter-haplotype distance (IHD) method has a number of advantages over traditional quantitative trait locus (QTL) mapping for detecting alleles that affect elements of the $k$-mer mutation spectrum.
 Using simulated data, we found that both IHD and QTL mapping had similar power to detect mutators that augment the rates of specific 1-mer and 3-mer mutation types (Figure @fig:ihd_vs_qtl_power).
 Nonetheless, only IHD was able to discover the mutator locus on chromosome 6 in the BXDs, demonstrating that it outperforms QTL mapping in certain experimental systems, and can reveal previously undiscovered signals of mutator alleles.
-One benefit of the IHD approach is that it obviates the need to perform separate association tests for for every possible $k$-mer mutation type, and therefore the need to adjust for multiple tests.
+One benefit of the IHD approach is that it obviates the need to perform separate association tests for for every possible $k$-mer mutation type, and therefore the need to adjust significance thresholds for multiple tests.
 Since IHD compares the complete mutation spectrum between haplotypes that carry either allele at a site, it would also be well-powered to detect a mutator allele that exerted a coordinated effect on multiple $k$-mer mutation types (e.g., increased the rates of both C>T and C>A mutations).
 
 However, the IHD method suffers a handful of drawbacks when compared to QTL mapping.
@@ -561,10 +546,9 @@ and used `cyvcf2` [@PMID:28165109] to iterate over the annotated VCF file in ord
 
 ### Extracting mutation signatures 
 
-We used SigProfilerExtractor (v.1.1.21) to extract mutation signatures from the BXD mutation data. After converting the BXD mutation data to the "matrix" input format expected by SigProfilerExtractor, we ran the `sigProfilerExtractor` method as follows:
+We used SigProfilerExtractor (v.1.1.21) [@PMID:30371878] to extract mutation signatures from the BXD mutation data. After converting the BXD mutation data to the "matrix" input format expected by SigProfilerExtractor, we ran the `sigProfilerExtractor` method as follows:
 
 ```python
-
 # install the mm10 mouse reference data
 genInstall.install('mm10')
 
@@ -689,12 +673,46 @@ kinship_matrix = as.matrix(k)
 
 ## Supplementary information
 
+### Chi-square statistics as an alternative to cosine distance in the inter-haplotype distance method 
+
+Although the current implementation of inter-haplotype distance (IHD) uses the cosine distance metric to compare aggregate mutation spectra at biallelic markers, we also explored the use of chi-square statistics to compare spectra.
+
+As described in the *Materials and Methods*, we compute aggregate mutation spectra on haplotypes that inherited either parental allele at each biallelic marker.
+Rather than compute the cosine distance between those spectra, we can create a contingency table of size $(2, \ 6 \times 4^{k - 1})$ (or size $(2, \ 6 \times 4^{k - 1} + 1)$ if $k = 1$ and we're including CpG>TpG) that contains the aggregate $k$-mer mutation spectrum on haplotypes that inherited either parental allele. 
+Using the contingency table, we then calculate a $\chi^{2}$ test statistic; larger values of the $\chi^{2}$ statistic suggest more "distance" between the aggregate mutation spectra on the two haplotypes.
+
+We discovered the BXD mutator loci on chromosome 4 and 6 using either cosine distances or chi-square statistics to compare mutation spectra; however, using simulated data we found that the cosine distance metric was more sensitive for mutator allele detection across a broad range of parameter choices (Figure @fig:cosine_vs_chisquare).  
+
+### Evidence for *Mbd4* as the causal gene underlying the chromosome 6 mutator locus
+
+One of the key roles of *Mbd4* is to excise thymine nucleotides at G:T mispairs, which arise due to the spontaneous deamination of methylated CpGs. 
+As a result, loss-of-function (LOF) mutations in *Mbd4* often lead to increased rates of CpG>TpG mutation [@PMID:12130785]. 
+Although LOF mutations in *Mbd4* are not known to cause C>A mutator phenotypes in mammalian cells, *Mbd4* is involved in a number of DNA repair processes that may contribute to the mutator phenotype we observed in the BXDs. 
+For example, bi-allelic LOF mutations in human *MBD4* underlie a neoplastic syndrome that closely mimics forms of familial adenomatous polyposis caused by LOF mutations in *MUTYH* [@PMID:35460607]. 
+Perhaps most intriguingly, LOF mutations in *Mbd4* can exacerbate the effects of exogenous DNA damage agents. 
+Mouse embryonic fibroblasts that harbor homozygous LOF mutations in *Mbd4* fail to undergo apoptosis following treatment with a number of chemotherapeutics and mutagenic compounds [@PMID:14614141]. 
+Most of these exogenous mutagens cause DNA damage that is normally repaired by mismatch repair (MMR) machinery, but murine intestinal cells with biallelic LOF mutations in *Mbd4* also show a reduced apoptotic response to gamma irradiation, which is repaired independently of the MMR gene *Mlh1* [@PMID:14562041]. 
+Homozygous LOF mutations in *Mbd4* lead to accelerated intestinal tumor formation in mice that harbor an *Apc* allele that predisposes them to intestinal neoplasia [@PMID:12130785], and mice with biallelic truncations of the *Mbd4* coding sequence exhibit modestly increased mutation rates in colon cancer cell lines, including increased C>A mutation rates in certain lines [@PMID:17285135].
+
+### Mechanisms of epistasis between mutator alleles
+
+Although both *Mutyh* and *Mbd4* are DNA glycosylases that participate in base-excision repair, they operate on distinct DNA lesions: *Mutyh* excises adenines paired with 8-oxoguanine, while *Mbd4* excises thymines opposite spontaneously deaminated CpGs. 
+Given *Mbd4*'s role in suppressing DNA damage-induced apoptosis [@PMID:14614141;@PMID:14562041], we hypothesize that *D* alleles in *Mutyh* and *Mbd4* exhibit epistasis through the following mechanism in the BXD RILs.
+
+In the absence of other defects in the DNA repair response, *D* alleles at *Mbd4* appear to have little or no detectable effect on *de novo* mutation rates (Figure @fig:spectra-comparison). 
+Since loss-of-function mutations in *Mbd4* often lead to increases CpG>TpG mutation rates [@PMID:12130785], it is possible that the p.Asp129Asn missense mutation is not sufficient to cause such a phenotype in the BXDs. 
+As we demonstrated in this and a previous manuscript, *D* alleles in *Mutyh* alone lead to significantly increased C>A mutation rates (Figure @fig:spectra-comparison) [@PMID:35545679]. 
+In response to an accumulation of C>A mutations, a fraction of spermatagonial stem cells with *D* alleles at *Mutyh* may undergo apoptosis to prevent further unrepaired DNA damage. 
+If those germline cells also harbor *D* alleles at *Mbd4*, they may not be able to arrest the cell cycle and complete apoptosis, allowing the effects of *D* alleles in *Mutyh* to exacerbate C>A mutation rates even further.
+
+However, further experimental evidence will be required to identify the causal genes and mutations that underlie the observed signal of epistasis between mutator alleles.
+
 ### Supplementary Figures
 
 ![
 **Simulations to assess the power of the inter-haplotype distance method.** 
 In each of 100 trials, we simulated genotypes at 1,000 biallelic loci on a toy population of either 50 or 100 haplotypes as follows.
-At every locus on every haplotype, we drew a single floating point value from a uniform distribution ($[0, 1)$).
+At every locus on every haplotype, we drew a single floating point value from a uniform distribution $[0, 1)$.
 If that value was less than or equal to 0.5, we set the allele to be "A"; otherwise, we set the allele to be "B".
 In each trial, we also simulated *de novo* germline mutations on the population of haplotypes, such that at a single locus $g_i$, we augmented the mutation rate of a particular $k$-mer by the specified effect size (an effect size of 1.5 indicates a 50% increase in the mutation rate) on haplotypes carrying "A" alleles.
 We then applied the inter-haplotype distance method to these simulated data and asked if the adjusted cosine distance at locus $g_i$ was greater than expected by chance. 
@@ -705,7 +723,7 @@ Shaded areas indicate the standard deviation of that fraction across 100 simulat
 ![
 **Comparing power between the inter-haplotype distance method and QTL mapping.** 
 In each of 100 trials, we simulated genotypes at 1,000 biallelic loci on a toy population of 100 haplotypes as follows.
-At every locus on every haplotype, we drew a single floating point value from a uniform distribution ($[0, 1)$).
+At every locus on every haplotype, we drew a single floating point value from a uniform distribution $[0, 1)$.
 If that value was less than or equal to 0.5, we set the allele to be "A"; otherwise, we set the allele to be "B".
 In each trial, we also simulated *de novo* germline mutations on the population of haplotypes, such that at a single locus $g_i$, we augmented the rate of the specified mutation type by the specified effect size (an effect size of 1.5 indicates a 50% increase in the mutation rate) on haplotypes carrying "A" alleles.
 We then applied the inter-haplotype distance method to these simulated data and asked if the adjusted cosine distance at locus $g_i$ was greater than expected by chance. 
@@ -713,6 +731,18 @@ Similarly, in each trial, we used R/qtl2 to perform a genome scan for QTL and as
 Given a specific combination of parameters, the y-axis denotes the fraction of 100 trials in which the simulated mutator allele could be detected at a significance threshold of p = 0.05 (for IHD) or at an alpha of $\frac{0.05}{7}$ (for QTL mapping).
 Shaded areas indicate the standard deviation of that fraction across 100 simulations.
 ](images/fig-power-comparison.png){#fig:ihd_vs_qtl_power tag="1-figure supplement 2" width=7in} 
+
+![
+**Comparing the power of cosine distance and chi-square statistics in the inter-haplotype distance method.** 
+In each of 100 trials, we simulated genotypes at 1,000 biallelic loci on a toy population of 100 haplotypes as follows.
+At every locus on every haplotype, we drew a single floating point value from a uniform distribution $[0, 1)$.
+If that value was less than or equal to 0.5, we set the allele to be "A"; otherwise, we set the allele to be "B".
+In each trial, we also simulated *de novo* germline mutations on the population of haplotypes, such that at a single locus $g_i$, we augmented the rate of the specified mutation type by the specified effect size (an effect size of 1.5 indicates a 50% increase in the mutation rate) on haplotypes carrying "A" alleles.
+We then applied the inter-haplotype distance method, using either cosine distance or chi-square statistics to compare aggregate mutation spectra at each marker.
+In each trial, we asked if the adjusted cosine distance or chi-square statistic at locus $g_i$ was greater than expected by chance. 
+Given a specific combination of parameters, the y-axis denotes the fraction of 100 trials in which the simulated mutator allele could be detected at a significance threshold of p = 0.05.
+Shaded areas indicate the standard deviation of that fraction across 100 simulations.
+](images/fig-distance-method-comparison.png){#fig:cosine_vs_chisquare tag="1-figure supplement 3" width=7in} 
 
 
 ![

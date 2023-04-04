@@ -6,6 +6,7 @@ Asn
 biallelic
 Bonferroni
 chemotherapeutics
+chisquare
 chr
 covariates
 CpG
@@ -18,6 +19,7 @@ Ensembl
 ENSMUST
 exonic
 fibroblasts
+frameshift
 genotyeps
 Gly
 glycosylase
@@ -27,6 +29,8 @@ GRCh
 GRCm
 guanines
 haplotype’s
+homolog
+hypermutator
 IBD
 IHD
 LOF
