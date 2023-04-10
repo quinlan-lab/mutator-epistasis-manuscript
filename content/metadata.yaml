@@ -1,5 +1,5 @@
 ---
-title: "Discovering epistasis between germline mutator alleles in mice"
+title: "Epistasis between two mutator alleles contributes to germline mutation rate variability in mice"
 date: null  # Defaults to date generated, but can specify like '2022-10-31'.
 keywords:
   - markdown
@@ -15,8 +15,6 @@ authors:
     email: thomas.a.sasani@gmail.com
     affiliations:
       - Department of Human Genetics, University of Utah
-    funders:
-      - Grant XXXXXXXX
   - name: Aaron R. Quinlan
     initials: ARQ
     orcid: 0000-0003-1756-0859
@@ -25,6 +23,8 @@ authors:
     affiliations:
       - Department of Human Genetics, University of Utah
       - Department of Biomedical Informatics, University of Utah
+    funders:
+      - G
     corresponding: true
   - name: Kelley Harris
     initials: KH
@@ -33,4 +33,11 @@ authors:
     email: harriske@uw.edu
     affiliations:
       - Department of Genome Sciences, University of Washington
+    funders:
+      - NIH/NIGMS R35GM133428
+      - Burroughs Wellcome Career Award at the Scientific Interface
+      - Searle Scholarship
+      - Pew Scholarship
+      - Sloan Fellowship
+      - Allen Discovery Center for Cell Lineage Tracing
     corresponding: true
