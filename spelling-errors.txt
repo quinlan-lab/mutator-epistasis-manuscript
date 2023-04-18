@@ -8,7 +8,6 @@ chemotherapeutics
 chisquare
 chr
 CLR
-compositional
 covariates
 cytosines
 deamination
@@ -16,14 +15,14 @@ dGTP
 durations
 Ensembl
 ENSMUST
-Epistatic
+epistatic
 epistatically
 eukaryotic
+excition
 exonic
 exonucleases
 Ferraj
 fibroblasts
-frameshift
 Gly
 glycosylases
 gnomAD
@@ -31,7 +30,6 @@ GRCh
 GRCm
 guanines
 haplotype’s
-homolog
 hypermutator
 intronic
 Itpr
@@ -61,6 +59,7 @@ polyposis
 priori
 RefSeq
 reponse
+reseach
 ROS
 SBS
 Searle

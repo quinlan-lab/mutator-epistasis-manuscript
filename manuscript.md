@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-04-18" />
   <meta name="citation_publication_date" content="2023-04-18" />
   <meta property="article:published_time" content="2023-04-18" />
-  <meta name="dc.modified" content="2023-04-18T16:32:26+00:00" />
-  <meta property="article:modified_time" content="2023-04-18T16:32:26+00:00" />
+  <meta name="dc.modified" content="2023-04-18T19:47:17+00:00" />
+  <meta property="article:modified_time" content="2023-04-18T19:47:17+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/b67e4d0d053cf3eaf0f8889901da1f22a39dda53/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/b67e4d0d053cf3eaf0f8889901da1f22a39dda53/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/b67e4d0d053cf3eaf0f8889901da1f22a39dda53/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/92c6e6562ff38f37d1b1e402ea72ecd7d07a88ab/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/92c6e6562ff38f37d1b1e402ea72ecd7d07a88ab/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/92c6e6562ff38f37d1b1e402ea72ecd7d07a88ab/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/b67e4d0d053cf3eaf0f8889901da1f22a39dda53/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/92c6e6562ff38f37d1b1e402ea72ecd7d07a88ab/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@b67e4d0](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/b67e4d0d053cf3eaf0f8889901da1f22a39dda53)
+from [quinlan-lab/mutator-epistasis-manuscript@92c6e65](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/92c6e6562ff38f37d1b1e402ea72ecd7d07a88ab)
 on April 18, 2023.
 </em></small>
 
@@ -316,49 +316,49 @@ The *Mbd4* *D* allele was not present in any of the wild mice.
 ### Epistasis between germline mutator alleles
 
 We have identified a locus on chromosome 6 that amplifies a C>A germline mutator phenotype in the BXDs, a population of recombinant inbred lines (RILs) derived from the laboratory mice DBA/2J and C57BL/6J. 
-DBA/2J (*D*) alleles at this locus had no detectable effect on C>A mutation rates in mice that also harbored "wild-type" C57BL/6J (*B*) alleles at a previously discovered mutator locus on chromosome 4 [@PMID:35545679].
-However, mice with *D* alleles at *both* loci had even higher mutation rates that those with *D* alleles at either locus alone (Figure @fig:spectra-comparison). 
+DBA/2J (*D*) alleles at this locus have no detectable effect on C>A mutation rates in mice that also harbor "wild-type" C57BL/6J (*B*) alleles at a previously discovered mutator locus on chromosome 4 [@PMID:35545679].
+However, mice with *D* alleles at *both* loci have even higher mutation rates than those with *D* alleles at the chromosome 4 mutator locus alone (Figure @fig:spectra-comparison). 
 Epistatic interactions between mutator alleles have been previously documented in yeast [@PMID:16492773] and in human cell lines [@PMID:35859169], but never to our knowledge in a whole-animal context. 
 
-Importantly, we discovered epistasis between germline mutator alleles in an unnatural population of model organisms that have been inbred by brother-sister mating in a highly controlled laboratory environment [@PMID:33472028]. 
-This breeding setup likely attenuated the effects of natural selection on all but the most deleterious alleles [@doi:10.1146/annurev.ecolsys.39.110707.173437], and may have facilitated the fixation of large-effect mutator alleles that would be less common in wild, outbreeding populations. 
-We have not conclusively fine-mapped the chromosome 6 mutator locus to a causal variant, but believe that nonsynonymous mutations in the DNA glycosylases *Ogg1* and *Mbd4* are the best candidates. 
-Our results demonstrate that multiple mutator alleles have spontaneously arisen during the evolutionary history of inbred laboratory mice, supporting the hypothesis that purifying selection is required to keep mutation rates low. 
+Importantly, we discovered this germline mutator allele epistasis in an unnatural population of model organisms that have been inbred by brother-sister mating in a highly controlled laboratory environment [@PMID:33472028]. 
+This breeding setup has likely attenuated the effects of natural selection on all but the most deleterious alleles [@doi:10.1146/annurev.ecolsys.39.110707.173437], and may have facilitated the fixation of large-effect mutator alleles that would be less common in wild, outbreeding populations. 
+
+We have not conclusively fine-mapped the chromosome 6 mutator locus to a causal variant, but we argue that nonsynonymous mutations in the DNA glycosylases *Ogg1* and *Mbd4* are the best candidates. 
+Our results demonstrate that multiple mutator alleles have spontaneously arisen during the evolutionary history of inbred laboratory mice, supporting the hypothesis that purifying selection is required to keep mutation rates low. Our finding suggests that mutational pressure can cause mutation rates to rise in just a few generations of relaxed selection in captivity. This is corroborated by the finding of a large-effect mutator allele in a rhesus macaque reseach colony [@doi:10.1101/2023.03.27.534460], as well as the observation that domesticated animals tend to have higher mutation rates than wild animals [@PMID:36859541].
 
 ### Possible causal alleles underlying the chromosome 6 mutator locus
 
 Two DNA repair genes overlap the C>A mutator locus on chromosome 6 and also contain nonsynonymous differences between the C57BL/6J and DBA/2J founder strains: *Ogg1*, a glycosylase that excises the oxidative DNA lesion 8-oxoguanine (8-oxoG) [@PMID:17581577], and *Mbd4*, a glycosylase that removes thymine nucleotides at G:T mispairs following spontaneous deamination of methylated CpGs. 
 Both genes have been previously linked to somatic mutator phenotypes and carcinogenesis.
 Missense mutations and loss-of-heterozygosity in *Ogg1* have been associated with increased risk of human cancer [@PMID:22829015;@PMID:9662341], and copy-number losses of either *Ogg1* or *Mutyh* are linked to elevated rates of spontaneous C>A mutation in human neuroblastoma [@doi:10.1073/pnas.2007898118]. 
-Biallelic loss-of-function (LOF) mutations in human *MBD4* underlie a neoplastic syndrome that mimics forms of familial adenomatous polyposis caused by LOF mutations in *MUTYH* [@PMID:35460607]. 
-A recent study also identified a homozygous frameshift mutation in the primate homolog of *MBD4* that causes a hypermutator phenotype in the maternal germline [@doi:10.1101/2023.03.27.534460].
-This phenotype primarily comprises C>T mutations at CpG and CpA sites, a mutation signature that has previously been associated with LOF mutations in *Mbd4* [@PMID:12130785]. 
+Biallelic loss-of-function (LOF) mutations in human *MBD4* underlie a neoplastic syndrome that mimics forms of familial adenomatous polyposis caused by LOF mutations in *MUTYH* [@PMID:35460607]. Similarly, biallelic loss of *MBD4* function was recently found to  causes a hypermutator phenotype in the maternal germline of rhesus macaques [@doi:10.1101/2023.03.27.534460].
+This macaque germline mutator phenotype primarily comprises C>T mutations at CpG and CpA sites, a mutational signature that has previously been associated with LOF mutations in *Mbd4* [@PMID:12130785]. 
 
 Although we are unable to conclusively determine that either *Mbd4* or *Ogg1* harbors the causal variant underlying the observed C>A mutator phenotype, both genes are plausible candidates. 
 
-#### *Ogg1* might further impair the base-excision repair of 8-oxoguanine lesions
+#### An *Ogg1* mutator allele might impair the excition of 8-oxoguanine lesions
 
 *Ogg1* is a member of the same base-excision repair (BER) pathway as *Mutyh*, the protein-coding gene we previously implicated as harboring mutator alleles at the locus on chromosome 4 [@PMID:17581577].
 Each of these genes has a distinct role in the BER reponse to oxidative DNA damage, and thereby the prevention of C>A mutations [@PMID:28963982;@PMID:24732879].
 Following damage by reactive oxygen species, *Ogg1* is able to recognize and remove 8-oxoguanine lesions that are base-paired with cytosine nucleotides; once 8-oxoG is excised, other members of the BER pathway are mobilized to restore a proper G:C base pair at the site.
 If an 8-oxoG lesion is not removed before the cell enters S-phase, adenine can be mis-incorporated opposite 8-oxoG during DNA replication [@PMID:28963982].
-If this occurs, *Mutyh* can excise the mispaired adenine, leaving a one nucleotide gap that is processed and filled with a cytosine by other BER proteins.
+If this occurs, *Mutyh* can excise the mispaired adenine, leaving a one-nucleotide gap that is processed and filled with a cytosine by other BER proteins.
 The resulting C:8-oxoG base pair can then be "returned" to *Ogg1* for excision and repair.
 Defects in the BER response to oxidative damage lead to significantly elevated rates of C>A mutation.
-For example, mice with triple knockouts (KO) of *Ogg1*, *Mutyh*, and *Mth1* (which encodes an enzyme that prevents 8-oxo-dGTP from being incorporated during DNA synthesis [@PMID:8226881]) accumulate excess 8-oxoG in their gonadal cells [@PMID:24732879].
-Almost 99% of *de novo* germline mutations in the *Ogg1/Mutyh/Mth1* triple KO mice were C>A transversions, demonstrating the clear role of 8-oxoG repair in preventing C>A mutation.
+For example, triple-knockout (KO) mice lacking *Ogg1*, *Mutyh*, and *Mth1* (which encodes an enzyme that prevents 8-oxo-dGTP from being incorporated during DNA synthesis [@PMID:8226881]) accumulate 100-fold excess 8-oxoG in their gonadal cells [@PMID:24732879].
+Almost 99% of *de novo* germline mutations in the *Ogg1/Mutyh/Mth1* triple KO mice are C>A transversions, demonstrating the clear role of 8-oxoG repair in preventing C>A mutation.
 
 The p.Thr95Ala *Ogg1* missense variant is not predicted to be deleterious by *in silico* tools like SIFT [@PMID:12824425], and does not occur at a nucleotide that is well-conserved across mammalian species (Table @tbl:nonsyn-diffs).
-We also observed that the *D* allele at p.Thr95Ala is segregating at an allele frequency of nearly 26% among wild-derived *Mus musculus domesticus* animals, and is fixed in other wild populations of *Mus musculus musculus*, *Mus musculus castaneus*, and *Mus spretus* . 
+We also observe that the *D* allele at p.Thr95Ala is segregating at an allele frequency of nearly 26% among wild-derived *Mus musculus domesticus* animals, and is fixed in other wild populations of *Mus musculus musculus*, *Mus musculus castaneus*, and *Mus spretus* . 
 Although we would expect *a priori* that *Ogg1* deficiency would lead to increased 8-oxoG accumulation and elevated C>A mutation rates, these lines of evidence suggest that p.Thr95Ala is not highly deleterious on its own, and might only exert a detectable effect on the BER pathway when *Mutyh* function is also impaired.
-Overall, it is challenging to predict the functional consequences of the *Ogg1* p.Thr95Ala variant, and as we discuss below, the p.Asp129Asn missense mutation in *Mbd4* is also a compelling candidate mutator allele.
+Overall, it is challenging to predict the functional consequences of the *Ogg1* p.Thr95Ala variant, and as we discuss below, the p.Asp129Asn missense mutation in *Mbd4* appears to be a more compelling candidate mutator allele based on conservation and variant effect prediction.
 
-#### *Mbd4* may influence the effects of *Mutyh* mutator alleles by regulating apoptosis
+#### *Mbd4* may buffer the effects of *Mutyh* mutator alleles by triggering apoptosis
 
 Unlike the *Ogg1* p.Thr95Ala mutation, the p.Asp129Asn variant in *Mbd4* resides within an annotated protein domain (the *Mbd4* methyl-CpG binding domain), occurs at a nucleotide and amino acid residue that are both well-conserved, and is predicted to be deleterious by SIFT [@PMID:12824425] (Table @tbl:nonsyn-diffs). 
 A missense mutation that affects the homologous amino acid in humans (p.Asp142Gly in GRCh38/hg38) is also present on a single haplotype in the Genome Aggregation Database (gnomAD) [@PMID:32461654] and is predicted by SIFT and Polyphen [@PMID:20354512] to be "deleterious" and "probably_damaging" in human genomes, respectively. 
 
-Loss-of-function mutations in *Mbd4* are not typically associated with C>A mutator phenotypes. 
+One puzzle is that loss-of-function mutations in *Mbd4* are not typically associated with C>A mutator phenotypes. 
 Instead, *Mbd4* deficiency is usually implicated in C>T mutagenesis at CpG sites, and we did not detect an excess of C>T mutations in BXDs with *D* alleles at the chromosome 6 mutator locus (Figure @fig:spectra-comparison-all).
 However, loss of function mutations in *Mbd4* are also known to exacerbate the effects of exogenous DNA damage agents.
 For example, mouse embryonic fibroblasts that harbor homozygous *Mbd4* knockouts fail to undergo apoptosis following treatment with a number of chemotherapeutics and mutagenic compounds [@PMID:14614141]. 
@@ -366,17 +366,17 @@ Most of these exogenous mutagens cause DNA damage that is normally repaired by m
 Homozygous loss of *Mbd4* function also leads to accelerated intestinal tumor formation in mice that harbor an *Apc* allele that predisposes them to intestinal neoplasia [@PMID:12130785], and mice with biallelic truncations of the *Mbd4* coding sequence exhibit modestly increased mutation rates in colon cancer cell lines, including increased C>A mutation rates in certain lines [@PMID:17285135].
 
 Together, these lines of evidence suggest that *Mbd4* can modulate sensitivity to many types of exogenous mutagens, potentially through its role in determining whether cells harboring DNA damage should undergo apoptosis [@PMID:14614141;@PMID:14562041]. 
-We speculate that in mice with deficient 8-oxoguanine repair &mdash; caused by a mutator allele in *Mutyh*, for example &mdash; reactive oxygen species (ROS) could lead to accumulated DNA damage in the germline. 
-If those germ cells harbored wild-type copies of *Mbd4*, they might be able to trigger apoptosis and mitigate the effects of a *Mutyh* mutator allele.
-However, mice with loss-of-function mutations in both *Mbd4* and *Mutyh* may have a reduced ability to initiate cell death in response to DNA damage; as a result, their germ cells could accumulate even higher levels of ROS-mediated damage, leading to substantially elevated germline C>A mutation rates. 
+We speculate that in mice with deficient 8-oxoguanine repair &mdash; caused by a mutator allele in *Mutyh*, for example &mdash; reactive oxygen species (ROS) could cause accumulation of DNA damage in the germline. 
+If those germ cells harbor fully functional copies of *Mbd4*, they might be able to trigger apoptosis and mitigate the effects of a *Mutyh* mutator allele.
+However, mice with reduced activity of both *Mbd4* and *Mutyh* may have a reduced ability to initiate cell death in response to DNA damage; as a result, their germ cells may accumulate even higher levels of ROS-mediated damage, leading to substantially elevated germline C>A mutation rates. 
 
-Ultimately, we anticipate that future experimental evidence will help pinpoint a causal allele and provide insight into the mechanism of epistasis between mutator alleles in the BXDs.
+Our model makes the testable prediction that mice with *D* haplotypes at *Mbd4* should have elevated sensitivity to a variety of mutagenic agents. We thus anticipate that future experimental work will be able to more conclusively establish a mechanistic explanation for the epistatic interaction between the mutator loci described in this paper. 
 
-### Potential roles of structural variation and mobile elements as mutator alleles
+### No indication of structural variation or mobile element insertions near the chromosome 6 mutator locus
 
 Although we argue above that *Mbd4* and *Ogg1* are the best candidate genes to explain the augmented C>A mutator phenotype in a subset of BXDs, we cannot conclusively determine that either the p.Asp129Asn or p.Thr95Ala missense mutation is a causal allele. 
 We previously hypothesized that *Mutyh* missense mutations on *D* haplotypes were responsible for the large-effect C>A mutator phenotype we observed in the BXDs [@PMID:35545679]. 
-Using long-read assemblies of several inbred laboratory mouse strains, however, another group revealed that this mutator phenotype could be caused by a ~5 kbp mobile element insertion (MEI) within the first intron of *Mutyh* [@doi:10.1016/j.xgen.2023.100291], which is associated with significantly reduced expression of *Mutyh* in embryonic stem cells.
+However, subsequent long-read assemblies of several inbred laboratory mouse strains revealed that this mutator phenotype might be caused by a ~5 kbp mobile element insertion (MEI) within the first intron of *Mutyh* [@doi:10.1016/j.xgen.2023.100291], which is associated with significantly reduced expression of *Mutyh* in embryonic stem cells.
 We queried the new high-quality assemblies for evidence of mobile elements or other large structural variants (SVs) in the region surrounding the mutator locus on chromosome 6, but found no similarly compelling evidence that either SVs or MEIs might underlie the mutator phenotype described in this study. 
 
 ### Strengths and limitations of the inter-haplotype distance approach
@@ -384,13 +384,12 @@ We queried the new high-quality assemblies for evidence of mobile elements or ot
 Our inter-haplotype distance (IHD) approach was able to identify a mutator allele that escaped notice using quantitative trait locus (QTL) mapping. 
 To more systematically compare the power of IHD and QTL mapping, we performed simulations under a variety of possible parameter regimes. 
 Overall, we found that IHD and QTL mapping have similar power to detect mutator alleles in biallelic recombinant inbred lines (RILs) that each harbor tens or hundreds of *de novo* germline mutations (Figure @fig:ihd_vs_qtl_power).
-Nonetheless, only IHD was able to discover the mutator locus on chromosome 6 in the BXDs, demonstrating that it outperforms QTL mapping in certain experimental systems and can reveal previously undiscovered signals of mutator alleles. 
-Because the BXDs were generated in six breeding epochs over a period of nearly 40 years, the oldest lines have accumulated many more mutations than the younger lines; these younger RILs also have much noisier mutation spectra as a result.
+Nonetheless, only IHD was able to discover the mutator locus on chromosome 6 in the BXDs, demonstrating that it outperforms QTL mapping in certain experimental systems where different strains have been inbred for different lengths of time and harbor very different numbers of mutations that can be leveraged for mutator QTL mapping. 
+Because the BXDs were generated in six breeding epochs over a period of nearly 40 years, the oldest lines have accumulated orders of magnitude more mutations than the youngest lines; these younger RILs also have much noisier mutation spectra as a result.
 While approaches for QTL mapping typically weight the phenotypic measurements of each sample equally, IHD compares the *aggregate* mutation spectra of haplotypes at every locus, a property that likely increased its power to detect mutators in the BXD dataset.
 
 Another benefit of the IHD approach is that it obviates the need to perform separate association tests for every possible $k$-mer mutation type, and therefore the need to adjust significance thresholds for multiple tests.
 Since IHD compares the complete mutation spectrum between haplotypes that carry either allele at a site, it would also be well-powered to detect a mutator allele that exerted a coordinated effect on multiple $k$-mer mutation types (e.g., increased the rates of both C>T and C>A mutations). 
-Finally, by computing the cosine distance between aggregate mutation spectra, IHD does not require mutation counts to be transformed into rates or compositional fractions prior to running a genome-wide scan.
 
 However, the IHD method suffers a handful of drawbacks when compared to QTL mapping.
 Popular QTL mapping methods (such as R/qtl2 [@PMID:30591514]) use linear models to test associations between genotypes and phenotypes, enabling the inclusion of additive and interactive covariates, as well as kinship matrices, in QTL scans.
@@ -411,8 +410,8 @@ Large cohorts of two- or three-generation families are an example of a regime in
 
 Selection on germline mutator alleles will likely prevent large-effect mutators from reaching high allele frequencies; however, a subset may be detectable by sequencing a sufficient number of human trios [@PMID:35666194]. 
 Previous estimates of power to detect germline mutators in human pedigrees have assumed that mutators affect all mutation types equally, and that methods for mutator discovery will rely on identifying haplotypes with excess total mutation counts [@PMID:35666194]. 
-Our results in the BXDs suggest that germline mutators often exert their effects on a small number of mutation types, and may be far more amenable to 
-detection by analyzing mutation spectra instead. 
+Our results in the BXDs suggest that power analysis based on total mutation counts have likely underestimated the power of pedigrees to map mutator alleles--since germline mutators seem to often exert their effects on a small number of mutation types, mutation spectrum analyses may often have the power to detect the genes that underlie heritable variation of the mutation rate, even if each gene only has a modest effect on the overall mutation rate per generation. 
+
 
 ## Materials and Methods
 
