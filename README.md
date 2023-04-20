@@ -1,4 +1,4 @@
-# Discovering epistasis between germline mutator alleles in mice
+# Epistasis between mutator alleles contributes to germline mutation rate variability in laboratory mice
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
@@ -8,7 +8,7 @@
 
 ## Manuscript description
 
-In this manuscript, we describe evidence of epistasis between two mutator alleles that influence the germline C $\rightarrow$ A mutation rate in a collection of recombinant inbred lines (RILs) known as the BXD.
+In this manuscript, we describe evidence of epistasis between two mutator alleles that influence the germline C $\to$ A mutation rate in a family of inbred mice known as the BXD.
 
 ## Manubot
 
