@@ -22,7 +22,10 @@ tbl
 unicode
 wikidata
 aaronquinlan
+anova
+ANOVA
 Benchmarking
+BER
 biallelic
 biparental
 BXD
@@ -49,6 +52,7 @@ genotyped
 genotypes
 Germline
 glycosylase
+glycosylases
 haplotype
 haplotypes
 Hematopoetic
@@ -86,6 +90,8 @@ Outbred
 outgroup
 oxoG
 oxoguanine
+phenotype
+phenotypes
 Phred
 Pritchard
 PRJEB
@@ -101,6 +107,9 @@ SigProfilerExtractor
 Snakemake
 spretus
 subsetting
+SVs
+SV
+sv
 TCC
 Thr
 tomsasani
