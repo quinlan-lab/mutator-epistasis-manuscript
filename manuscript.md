@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-04-20'
+date-meta: '2023-04-21'
 author-meta:
 - Thomas A. Sasani
 - Aaron R. Quinlan
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="Epistasis between mutator alleles contributes to germline mutation rate variability in laboratory mice" />
   <meta property="og:title" content="Epistasis between mutator alleles contributes to germline mutation rate variability in laboratory mice" />
   <meta property="twitter:title" content="Epistasis between mutator alleles contributes to germline mutation rate variability in laboratory mice" />
-  <meta name="dc.date" content="2023-04-20" />
-  <meta name="citation_publication_date" content="2023-04-20" />
-  <meta property="article:published_time" content="2023-04-20" />
-  <meta name="dc.modified" content="2023-04-20T17:35:39+00:00" />
-  <meta property="article:modified_time" content="2023-04-20T17:35:39+00:00" />
+  <meta name="dc.date" content="2023-04-21" />
+  <meta name="citation_publication_date" content="2023-04-21" />
+  <meta property="article:published_time" content="2023-04-21" />
+  <meta name="dc.modified" content="2023-04-21T18:27:01+00:00" />
+  <meta property="article:modified_time" content="2023-04-21T18:27:01+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ed8ffe5c428625dbbe440ccb1f16982fcc014346/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ed8ffe5c428625dbbe440ccb1f16982fcc014346/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ed8ffe5c428625dbbe440ccb1f16982fcc014346/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/852173748fc7b6b6527057c91edde49d061cb256/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/852173748fc7b6b6527057c91edde49d061cb256/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/852173748fc7b6b6527057c91edde49d061cb256/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/ed8ffe5c428625dbbe440ccb1f16982fcc014346/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/852173748fc7b6b6527057c91edde49d061cb256/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@ed8ffe5](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/ed8ffe5c428625dbbe440ccb1f16982fcc014346)
-on April 20, 2023.
+from [quinlan-lab/mutator-epistasis-manuscript@8521737](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/852173748fc7b6b6527057c91edde49d061cb256)
+on April 21, 2023.
 </em></small>
 
 
@@ -145,11 +145,11 @@ DNA replication and repair proteins often recognize particular sequence motifs o
 Thus, we might expect that the spectrum of *de novo* mutations &mdash; that is, the frequency of each individual mutation type (C>T, A>G, etc.) &mdash; will differ between genomes that harbor either a mutator or wild-type allele at a given locus. 
 Previously, we used quantitative trait locus mapping to discover candidate mutator alleles in the DNA repair gene *Mutyh* that increased the C>A germline mutation rate in a family of inbred mice known as the BXDs [@PMID:35545679;@PMID:33472028].
 
-In this study, we developed a new method to detect alleles that affect the mutation spectrum in biparental recombinant inbred lines (RILs). 
+In this study, we developed a new method to detect alleles associated with mutation spectrum variation in biparental recombinant inbred lines (RILs). 
 By applying this approach to mutation data from the BXDs, we confirmed the activity of the germline mutator locus near *Mutyh* and discovered an additional C>A mutator locus on chromosome 6 that overlaps *Ogg1* and *Mbd4*, two DNA glycosylases involved in base-excision repair [@PMID:17581577;@PMID:10097147]. 
-The effect of the chromosome 6 mutator allele depends on the presence of a mutator allele near *Mutyh*, and BXDs with both alleles have even higher C>A mutation rates than those with either one alone. 
+The effect of the chromosome 6 mutator allele depends on the presence of a mutator allele near *Mutyh*, and BXDs with mutator alleles at both loci have even greater numbers of C>A mutations than BXDs with mutator alleles at either locus alone. 
 
-Our new methods for analyzing mutation spectra reveal evidence of epistasis between eukaryotic germline mutator alleles, and may be applicable to mutation data from humans and other model organisms. 
+Our new methods for analyzing mutation spectra reveal evidence of epistasis between germline mutator alleles, and may be applicable to mutation data from humans and other model organisms. 
 
 
 
@@ -157,7 +157,7 @@ Our new methods for analyzing mutation spectra reveal evidence of epistasis betw
 
 Germline mutation rates reflect the complex interplay between DNA proofreading and repair pathways, exogenous sources of DNA damage, and life-history traits. 
 For example, parental age is an important determinant of mutation rate variability; in many mammalian species, the number of germline *de novo* mutations observed in offspring increases as a function of paternal and maternal age [@PMID:28959963;@PMID:31549960;@PMID:35771663;@PMID:32804933;@PMID:31492841].
-Rates of germline mutation accumulation are also variable across human families [@PMID:26656846;@PMID:31549960], due to either genetic variation or differences in environmental exposures.
+Rates of germline mutation accumulation are also variable across human families [@PMID:26656846;@PMID:31549960], likely due to either genetic variation or differences in environmental exposures.
 Although numerous protein-coding genes contribute to the maintenance of genome integrity, genetic variants that increase germline mutation rates, known as *mutator alleles*, have proven difficult to discover in mammals.
 
 The dearth of observed germline mutators in mammalian genomes is not necessarily surprising, since alleles that lead to elevated germline mutation rates would likely have deleterious consequences and be purged by negative selection [@PMID:27739533].
@@ -178,7 +178,7 @@ In this previous study, whole-genome sequencing data from the BXD family were us
 Germline C>A mutation rates were nearly 50% higher in mice with *D* haplotypes at the QTL, likely due to genetic variation in the DNA glycosylase *Mutyh* that reduced the efficacy of oxidative DNA damage repair.
 Importantly, the QTL was undetectable in a genome-wide scan for variation in overall germline mutation rates, which were only modestly higher in BXDs with *D* alleles, demonstrating the utility of mutation spectrum analysis for mutator allele discovery.
 Close examination of the mutation spectrum is likely to be broadly useful for detecting mutator alleles, as genes involved in DNA proofreading and repair often recognize particular sequence motifs or excise specific types of DNA lesions [@PMID:32619789].
-Mutation spectra are usually defined in terms of $k$-mer nucleotide context [@PMID:32619789]; the 1-mer mutation spectrum, for example, consists of 6 mutation types after collapsing by strand complement (C>T, C>A, C>G, A>T, A>C, A>G), while the 3-mer mutation spectrum contains 96 (each of the 1-mer mutations partitioned by trinucleotide context).
+Mutation spectra are usually defined in terms of $k$-mer nucleotide context; the 1-mer mutation spectrum, for example, consists of 6 mutation types after collapsing by strand complement (C>T, C>A, C>G, A>T, A>C, A>G), while the 3-mer mutation spectrum contains 96 (each of the 1-mer mutations partitioned by trinucleotide context).
 
 Although mutation spectrum analysis can enable the discovery of mutator alleles that affect the rates of specific mutation types, early implementations of this strategy have suffered from a few drawbacks. 
 For example, performing association tests on the rates or fractions of every $k$-mer mutation type can quickly incur a substantial multiple testing burden.
@@ -197,11 +197,12 @@ Our observation of epistasis suggests that mild DNA repair deficiencies may comp
 
 We developed a statistical method, termed "inter-haplotype distance" (IHD), to detect loci that are associated with mutation spectrum variation in biparental RILs (Figure {@fig:distance-method}). 
 Our approach leverages the fact that mutator alleles often leave behind distinct and detectable impressions on the *mutation spectrum*, even if they increase the overall mutation rate by a relatively small amount (*Materials and Methods*).
-Given a population of haplotypes, we assume that a) each has been genotyped at the same collection of biallelic loci and b) each harbors *de novo* mutations that have been partitioned by $k$-mer context (Figure @fig:distance-method).
+Given a population of haplotypes, we assume that each has been genotyped at the same collection of biallelic loci and each harbors *de novo* mutations that have been partitioned by $k$-mer context (Figure @fig:distance-method).
 At every locus, we calculate a cosine distance between the aggregate mutation spectra of haplotypes that inherited either parental allele.
 Using permutation tests, we then identify loci at which those distances are larger than what we'd expect by random chance.
+To account for polygenic effects on the mutation process that might be shared between samples, we also regress cosine distances against the genetic similarity between haplotype groups at each marker, and assess significance using the fitted residuals (which we call the "adjusted" cosine distances) (*Materials and Methods*).
 
-The method's power is primarily limited by the initial mutation rate of the $k$-mer mutation type affected by a mutator allele and the total number of *de novo* mutations used to detect it (Figure {@fig:simulations}). 
+Our method's power is primarily limited by the initial mutation rate of the $k$-mer mutation type affected by a mutator allele and the total number of *de novo* mutations used to detect it (Figure {@fig:simulations}). 
 Given 100 haplotypes with an average of 500 *de novo* germline mutations each, IHD has approximately 90% power to detect a mutator allele that increases the C>A *de novo* mutation rate by as little as 20%. 
 However, the approach has less than 20% power to detect a mutator of identical effect size that augments the C>G mutation rate, since C>G mutations are expected to make up a smaller fraction of all *de novo* germline mutations to begin with. 
 Simulations also demonstrate that our approach is well-powered to detect large-effect mutator alleles (e.g., those that increase the mutation rate of a specific $k$-mer by 50%), even with a relatively small number of mutations per haplotype (Figure {@fig:simulations}).
@@ -212,6 +213,7 @@ Both IHD and traditional quantitative trait locus (QTL) mapping have similar pow
 **a)** A population of four haplotypes has been genotyped at three informative markers ($g_1$ through $g_3$); each haplotype also harbors unique *de novo* germline mutations.
 In practice, *de novo* mutations are partitioned by $k$-mer context; for simplicity in this toy example, *de novo* mutations are simply classified into two possible mutation types (grey squares represent C>(A/T/G) mutations, while grey triangles represent A>(C/T/G) mutations).
 **b)** At each informative marker $g_n$, we calculate the total number of each mutation type observed on haplotypes that carry either parental allele (i.e., the aggregate mutation spectrum) using all genome-wide *de novo* mutations. 
+For example, haplotypes with *A* (orange) genotypes at $g_1$ carry a total of three "triangle" mutations and five "square" mutations, and haplotypes with *B* (green) genotypes carry a total of six triangle and two square mutations.
 We then calculate the cosine distance between the two aggregate mutation spectra, which we call the "inter-haplotype distance." 
 Cosine distance can be defined as $1 - \cos(\theta)$, where $\theta$ is the angle between two vectors; in this case, the two vectors are the two aggregate spectra.
 We repeat this process for every informative marker $g_n$. 
@@ -249,33 +251,32 @@ Using the BXDs with *D* genotypes at `rs27509845`, we identified a locus on chro
 This signal was specific to BXDs with *D* genotypes at the `rs27509845` locus, as we did not observe any new mutator loci after performing an IHD scan using BXDs with *B* genotypes at `rs27509845` (Figure @fig:distance-results-conditioned).
 We also performed QTL scans for the fraction of each 1-mer mutation type using the same mutation data, but none produced a genome-wide significant log-odds score at any locus (Figure {@fig:qtl-scans}; *Materials and Methods*).
 
-We queried the region surrounding the locus on chromosome 6 (+/- 5 Mbp) and discovered 16 protein-coding genes that harbored nonsynonymous differences between the parental C57BL/6J and DBA/2J strains. 
-Two of these genes were also annotated with the Gene Ontology term "DNA repair": *Ogg1* and *Mbd4*.
-*Ogg1* encodes a key member of the base-excision repair response to oxidative DNA damage (a pathway that also includes *Mutyh*), and *Mbd4* encodes a protein that is involved in the repair of G:T mismatches caused by spontaneous deamination of methylated CpGs. 
-Each of these genes harbors a single fixed nonsynonymous difference between the C57BL/6J and DBA/2J parental strains (Table @tbl:nonsyn-diffs). 
+We queried the region surrounding the locus on chromosome 6 (+/- 5 Mbp) and discovered 63 protein-coding genes, of which five were annotated with a Gene Ontology [@PMID:10802651;@PMID:33290552] term related to "DNA repair": *Fancd2*, *Mbd4*, *Ogg1*, *Rad18*, and *Setmar*.
+Of these, only three harbored nonsynonymous differences between the parental C57BL/6J and DBA/2J strains (Table @tbl:nonsyn-diffs). 
+*Ogg1* encodes a key member of the base-excision repair response to oxidative DNA damage (a pathway that also includes *Mutyh*), *Mbd4* encodes a protein that is involved in the repair of G:T mismatches caused by spontaneous deamination of methylated CpGs, and in mice *Setmar* encodes a SET domain-containing histone methyltransferase.
 
 | Gene name | Ensembl transcript name | Nucleotide change | Amino acid change | Position in GRCm38/mm10 coordinates | PhyloP conservation score | SIFT prediction | 
 | - | - | - | - | - | - | - | 
+| *Setmar* | ENSMUST00000049246 | C>T | p.Leu103Phe | chr6:108,075,853 | 0.422 | 0.0 (intolerant/deleterious) |
+| *Setmar* | ENSMUST00000049246 | T>G | p.Ser273Arg | chr6:108,076,365 | -0.355 | 0.3 (tolerant/benign) |
 | *Ogg1* | ENSMUST00000032406 | A>G | p.Thr95Ala | chr6:113,328,510 | -0.016 | 0.84 (tolerant/benign) | 
 | *Mbd4* | ENSMUST00000032469 | C>T | p.Asp129Asn | chr6:115,849,644 | 2.28 | 0.02 (intolerant/deleterious) | 
 
 Table: Nonsynonymous mutations in DNA repair genes near the chr6 peak {#tbl:nonsyn-diffs}
 
 We also considered the possibility that expression quantitative trait loci (eQTLs), rather than nonsynonymous mutations, could contribute to the C>A mutator phenotype associated with the locus on chromosome 6. 
-Using GeneNetwork [@PMID:27933521] we mapped cis-eQTLs for *Ogg1* and *Mbd4* in a number of tissues, including hematopoetic stem cells, kidney, and spleen; we did not have access to expression data from germline tissues. 
-BXD genotypes near the cosine distance peak on chromosome 6 were significantly associated with *Ogg1* expression in some (but not all) tissues, and *D* genotypes were nearly always associated with decreased gene expression (Table @tbl:eqtl-results). 
-We discovered one significant cis-eQTL for *Mbd4* in spleen at which *D* alleles were associated with increased expression.
-We also queried a previously published collection of eQTLs derived from Diversity Outbred (DO) mouse embryonic stem cell expression data [@PMID:32795400], but did not find any significant eQTLs for either *Ogg1* or *Mbd4*.
+Using GeneNetwork [@PMID:27933521] we mapped cis-eQTLs for *Setmar*, *Ogg1* and *Mbd4* in a number of tissues, though we did not have access to expression data from germline cells. 
+*D* alleles near the cosine distance peak on chromosome 6 were significantly associated with decreased *Ogg1* expression in kidney, liver, and gastrointestinal tissues; *D* alleles were also associated with lower *Rad18* expression in the retina (Table @tbl:eqtl-results). 
+Although cis-eQTLs that lead to decreased *Ogg1* or *Rad18* expression might underlie the mutator locus on chromosome 6, they are challenging to interpret given their tissue specificity and our lack of access to germline expression data. 
 
 Finally, we queried a dataset of structural variants (SVs) identified via high-quality, long-read assembly of inbred laboratory mouse strains [@doi:10.1016/j.xgen.2023.100291] and found 148 large insertions or deletions within 5 Mbp of the cosine distance peak on chromosome 6. 
 Of these, seven overlapped the exonic sequences of protein-coding genes (Table @tbl:sv-overlap), though none of the genes has a previously annotated role in DNA binding, repair or replication, or in a pathway that would likely affect germline mutation rates.
-Two protein-coding genes that are involved in DNA repair (*Mbd4* and *Rad18*) harbored intronic insertions or deletions (Table @tbl:sv-overlap); however, it is challenging to interpret the functional impact of these SVs without additional experimental evidence. 
+Two protein-coding genes that are involved in DNA repair (*Mbd4* and *Rad18*) harbored intronic insertions or deletions (Table @tbl:sv-overlap); however, additional experimental evidence will be needed to probe the functional impact of these SVs.
 
 ### Evidence of epistasis between germline mutator alleles
 
 Next, we more precisely characterized the effects of the chromosome 4 and 6 mutator alleles on mutation spectra in the BXDs. 
 On average, C>A germline mutation fractions were significantly higher in BXDs with *D* alleles at both mutator loci than in BXDs with *D* alleles at either locus alone (Figure {@fig:spectra-comparison}a and @fig:spectra-comparison-all). 
-The effects of *D* alleles at the chromosome 6 locus also depended on the allele that was inherited at *Mutyh*.
 Among BXDs with *B* genotypes at the locus overlapping *Mutyh*, those with *D* genotypes on chromosome 6 did not exhibit significantly elevated C>A mutation fractions (Figure {@fig:spectra-comparison}a). 
 Regardless of inbreeding duration, C>A *de novo* mutation counts were always highest in BXDs with *D* alleles at both mutator loci (Figure {@fig:spectra-comparison}b).
 After 100 generations of inbreeding, BXDs with *D* alleles at both mutator loci were predicted to have 238.9 C>A mutations (95% CI: 231.4 - 246.4), about 20% more than the 199.0 mutations (95% CI: 193.3 - 204.7) predicted in those with *D* and *B* alleles at the chromosome 4 and chromosome 6 loci, respectively (Figure {@fig:spectra-comparison}b).
@@ -307,8 +308,9 @@ A model incorporating an interaction term did not fit the MGP data significantly
 
 To determine whether the candidate mutator alleles on chromosome 6 were segregating in natural populations, we queried previously published sequencing data generated from 67 wild-derived mice [@PMID:27622383]. 
 These data include three subspecies of *Mus musculus*, as well as the outgroup *Mus spretus*. 
-We found that the *Ogg1* *D* allele was segregating at an allele frequency of 0.259 in *Mus musculus domesticus*, the species from which C57BL/6J and DBA/2J derive the majority of their genomes [@PMID:17660819], and was fixed in *Mus musculus musculus*, *Mus musculus castaneus*, and the outgroup *Mus spretus*. 
-The *Mbd4* *D* allele was not present in any of the wild mice.
+We found that the *Ogg1* *D* allele was segregating at an allele frequency of 0.259 in *Mus musculus domesticus*, the species from which C57BL/6J and DBA/2J derive the majority of their genomes [@PMID:17660819], and was fixed in *Mus musculus musculus*, *Mus musculus castaneus*, and the outgroup *Mus spretus* (Figure @fig:wild-afs).
+The *Setmar* p.Ser273Arg *D* allele was also present at an allele frequency of 0.37 in *Mus musculus domesticus*, while *D* alleles at the *Setmar* p.Leu103Phe variant were not observed in any wild *Mus musculus domesticus* animals.
+Notably, *D* alleles at the *Mbd4* p.Asp129Asn variants were absent from all wild mouse populations (Figure @fig:wild-afs).
 
 
 
@@ -331,18 +333,21 @@ This hypothesis is corroborated by the recent discovery of a large-effect mutato
 
 ### Possible causal alleles underlying the chromosome 6 mutator locus
 
-Two DNA repair genes overlap the C>A mutator locus on chromosome 6 and also contain nonsynonymous differences between the C57BL/6J and DBA/2J founder strains: *Ogg1*, a glycosylase that excises the oxidative DNA lesion 8-oxoguanine (8-oxoG) [@PMID:17581577], and *Mbd4*, a glycosylase that removes thymine nucleotides at G:T mispairs following spontaneous deamination of methylated CpGs. 
-Both genes have been previously linked to somatic mutator phenotypes and carcinogenesis.
+Three protein-coding genes involved in DNA repair overlap the C>A mutator locus on chromosome 6 and also contain nonsynonymous differences between the C57BL/6J and DBA/2J founder strains: *Ogg1*, a glycosylase that excises the oxidative DNA lesion 8-oxoguanine (8-oxoG) [@PMID:17581577], *Mbd4*, a glycosylase that removes thymine nucleotides at G:T mispairs following spontaneous deamination of methylated CpGs, and *Setmar*, a histone methyltransferase that can recruit DNA repair machinery to double-stranded breaks [@PMID:21187428;@PMID:16332963]. 
+
+Both *Ogg1* and *Mbd4* have been previously linked to somatic mutator phenotypes and carcinogenesis.
 Missense mutations and loss-of-heterozygosity in *Ogg1* have been associated with increased risk of human cancer [@PMID:22829015;@PMID:9662341], and copy-number losses of either *Ogg1* or *Mutyh* are linked to elevated rates of spontaneous C>A mutation in human neuroblastoma [@doi:10.1073/pnas.2007898118]. 
 Biallelic loss-of-function (LOF) mutations in human *MBD4* underlie a neoplastic syndrome that mimics forms of familial adenomatous polyposis caused by LOF mutations in *MUTYH* [@PMID:35460607]. 
 Similarly, biallelic loss of *MBD4* function was recently found to cause a hypermutator phenotype in the maternal germline of rhesus macaques [@doi:10.1101/2023.03.27.534460]; the macaque germline mutator phenotype primarily comprises C>T mutations at CpG and CpA sites, a mutational signature that has previously been associated with LOF mutations in *Mbd4* [@PMID:12130785]. 
 
-Although we are unable to conclusively determine that either *Mbd4* or *Ogg1* harbors the causal variant underlying the observed C>A mutator phenotype, both genes are plausible candidates. 
+Although we are unable to conclusively determine that either *Setmar*, *Ogg1*, or *Mbd4* harbors the causal variant underlying the observed C>A mutator phenotype, we believe that *Ogg1* and *Mbd4* are the most plausible candidates.
+The primate *SETMAR* ortholog is involved in non-homologous end joining (NHEJ) of double-stranded breaks, but its role in DNA repair appears to depend on the function of both a SET methyltransferase domain and a *Mariner*-family transposase domain [@PMID:16332963;@PMID:24573677;@PMID:21491884].
+Since the murine *Setmar* ortholog lacks the latter element, we believe it is unlikely to underlie the epistatic interaction between the chromosome 4 and 6 mutator loci in the BXDs (*Supplementary Information*).
 
 #### An *Ogg1* mutator allele might impair the excision of 8-oxoguanine lesions
 
 *Ogg1* is a member of the same base-excision repair (BER) pathway as *Mutyh*, the protein-coding gene we previously implicated as harboring mutator alleles at the locus on chromosome 4 [@PMID:17581577].
-Each of these genes has a distinct role in the BER reponse to oxidative DNA damage, and thereby the prevention of C>A mutations [@PMID:28963982;@PMID:24732879].
+Each of these genes has a distinct role in the BER response to oxidative DNA damage, and thereby the prevention of C>A mutations [@PMID:28963982;@PMID:24732879].
 Following damage by reactive oxygen species, *Ogg1* is able to recognize and remove 8-oxoguanine lesions that are base-paired with cytosine nucleotides; once 8-oxoG is excised, other members of the BER pathway are mobilized to restore a proper G:C base pair at the site.
 If an 8-oxoG lesion is not removed before the cell enters S-phase, adenine can be mis-incorporated opposite 8-oxoG during DNA replication [@PMID:28963982].
 If this occurs, *Mutyh* can excise the mispaired adenine, leaving a one-nucleotide gap that is processed and filled with a cytosine by other BER proteins.
@@ -351,9 +356,10 @@ Defects in the BER response to oxidative damage lead to significantly elevated r
 For example, triple-knockout (KO) mice lacking *Ogg1*, *Mutyh*, and *Mth1* (which encodes an enzyme that prevents 8-oxo-dGTP from being incorporated during DNA synthesis [@PMID:8226881]) accumulate a 100-fold excess of 8-oxoG in their gonadal cells [@PMID:24732879].
 Almost 99% of *de novo* germline mutations in the *Ogg1/Mutyh/Mth1* triple KO mice are C>A transversions, demonstrating the clear role of 8-oxoG repair in preventing C>A mutation.
 
-The p.Thr95Ala *Ogg1* missense variant is not predicted to be deleterious by *in silico* tools like SIFT [@PMID:12824425], and occurs at a nucleotide that is not well-conserved across mammalian species (Table @tbl:nonsyn-diffs).
+The p.Thr95Ala *Ogg1* missense variant is not predicted to be deleterious by the *in silico* tool SIFT [@PMID:12824425], and occurs at a nucleotide that is not well-conserved across mammalian species (Table @tbl:nonsyn-diffs).
 We also observe that the *D* allele at p.Thr95Ala is segregating at an allele frequency of nearly 26% among wild-derived *Mus musculus domesticus* animals, and is fixed in other wild populations of *Mus musculus musculus*, *Mus musculus castaneus*, and *Mus spretus* . 
 Although we would expect *a priori* that *Ogg1* deficiency should lead to increased 8-oxoG accumulation and elevated C>A mutation rates, these lines of evidence suggest that p.Thr95Ala is not highly deleterious on its own, and might only exert a detectable effect on the BER gene network when *Mutyh* function is also impaired.
+It's also possible that *D* alleles at *Ogg1* lead to a very subtle increase in C>A mutation rates, and we are simply underpowered to detect such a small mutation rate difference in the BXDs.
 Overall, it is challenging to predict the functional consequences of the *Ogg1* p.Thr95Ala variant, and as we discuss below, the p.Asp129Asn missense mutation in *Mbd4* may be an even more compelling candidate mutator allele.
 
 #### *Mbd4* may buffer the effects of *Mutyh* mutator alleles by triggering apoptosis
@@ -643,16 +649,16 @@ After selecting the appropriate trait ID on the next page, we used the **Mapping
 
 The exact names of the expression datasets we used for each tissue are shown in Table @tbl:eqtl-provenance below:
 
-| Tissue name | Complete name of GeneNetwork expression data | GeneNetwork trait ID |
-| - | - | - | 
-| Kidney | `Mouse kidney M430v2 Sex Balanced (Aug06) RMA` | `1448815_at` |
-| Gastrointestinal | `UTHSC Mouse BXD Gastrointestinal Affy MoGene 1.0 ST Gene Level (Apr14) RMA` | `10540639` |
-| Hematopoetic stem cells | `UMCG Stem Cells ILM6v1.1 (Apr09) transformed` | `ILM1940279` | 
-| Hematopoetic progenitor cells | `UMCG Progenitor Cells ILM6v1.1 (Apr09) transformed` | `ILM1940279` | 
-| Spleen | `UTHSC Affy MoGene 1.0 ST Spleen (Dec10) RMA` | `10540639` | 
-| Liver | `UTHSC BXD Liver RNA-Seq Avg (Oct19) TPM Log2` | `ENSMUST00000032406` | 
-| Heart | `NHLBI BXD All Ages Heart RNA-Seq (Nov20) TMP Log2 **` | `ENSMUSG00000030271` | 
-| Eye | `UTHSC BXD All Ages Eye RNA-Seq (Nov20) TPM Log2 **` | `ENSMUSG00000030271` | 
+| Tissue name | Complete name of GeneNetwork expression data | 
+| - | - | 
+| Kidney | `Mouse kidney M430v2 Sex Balanced (Aug06) RMA` | 
+| Gastrointestinal | `UTHSC Mouse BXD Gastrointestinal Affy MoGene 1.0 ST Gene Level (Apr14) RMA` |
+| Hematopoetic stem cells | `UMCG Stem Cells ILM6v1.1 (Apr09) transformed` | 
+| Hematopoetic progenitor cells | `UMCG Progenitor Cells ILM6v1.1 (Apr09) transformed` | 
+| Spleen | `UTHSC Affy MoGene 1.0 ST Spleen (Dec10) RMA` |  
+| Liver | `UTHSC BXD Liver RNA-Seq Avg (Oct19) TPM Log2` | 
+| Heart | `NHLBI BXD All Ages Heart RNA-Seq (Nov20) TMP Log2 **` | 
+| Eye | `UTHSC BXD All Ages Eye RNA-Seq (Nov20) TPM Log2 **` | 
 
 Table: Names of gene expression datasets used for each tissue type on GeneNetwork {#tbl:eqtl-provenance}
 
@@ -719,6 +725,20 @@ Using the contingency table, we then calculate a $\chi^{2}$ test statistic; larg
 
 We discovered the BXD mutator loci on chromosome 4 and 6 using either cosine distances or chi-square statistics to compare mutation spectra; however, using simulated data we found that the cosine distance metric was more sensitive for mutator allele detection across a broad range of parameter choices (Figure @fig:cosine_vs_chisquare).  
 
+### Missense mutations in *Setmar* are unlikely to contribute to epistasis in the BXDs
+
+Unlike *Ogg1* and *Mbd4*, *Setmar* does not participate directly in base-excision repair, though its primate ortholog plays an indirect role in the repair of double-stranded DNA breaks via non-homologous end joining (NHEJ). 
+In anthropoid primates, *SETMAR* encodes a fusion of two functional domains: a SET domain-containing histone methyltransferase and a tranposase domain from the *Mariner* family (MAR) [@PMID:16672366]; the mouse ortholog of *Setmar* only encodes the histone methyltransferase domain.
+In human cell lines, *SETMAR* localizes to induced double-strand breaks (DSBs) and dimethylates nearby H3K36, which promotes the recruitment of DNA repair components involved in NHEJ to the DSB [@PMID:21187428].
+There is also evidence that overexpression of *SETMAR* (also known as *Metnase*) improves the efficiency of NHEJ [@PMID:16332963] and leads to increased cell survival following exposure to ionizing radiation [@PMID:16332963].
+Point mutations in either the SET or MAR domains significantly reduced the ability of *SETMAR* to promote non-homologous end joining and DNA repair [@PMID:16332963;@PMID:24573677;@PMID:21491884], suggesting that both domains are required for its role in DNA repair.
+Another study found that overexpression of the isolated SET and MAR domains, but not of wild-type *SETMAR*, had a modest effect on NHEJ repair; overexpression of the SET domain slightly *decreased* NHEJ repair of a linearized plasmid in human cells, while overexpression of the *Mariner*-derived domain increased NHEJ relative to controls [@PMID:31238295].
+
+Taken together, these results suggest that the SET and transposase domains of primate *SETMAR* may have distinct roles in promoting NHEJ, and that both may be required for *SETMAR*-mediated DNA repair. 
+The p.Leu103Phe missense mutation that differentiates C57BL/6J and DBA/2J (Table @tbl:nonsyn-diffs) resides within the *Setmar* pre-SET domain and occurs at amino acid residue that is predicted to be deleterious by SIFT [@PMID:12824425].
+However, since the mouse *Setmar* ortholog lacks the *Mariner*-derived domain, we believe that the the p.Leu103Phe or p.Ser273Arg missense mutations are unlikely to affect C>A mutation rates in the BXDs. 
+Moreoever, we believe that the documented mutator phenotypes associated with both *Ogg1* and *Mbd4*, as well as those genes' known roles in base-excision repair, make them more likely candidates to underlie the epistatic interaction with *Mutyh* we observed in this study.
+
 ### Supplementary Figures
 
 ![
@@ -779,28 +799,55 @@ Fractions of *de novo* germline mutations in BXDs with either *D* or *B* genotyp
 Fractions of *de novo* germline mutations in Sanger MGP strains with either *D* or *B* haplotypes at the chromosome 4 and chromosome 6 mutator loci, stratified by mutation type.
 ](images/fig-spectra-comparison-mgp.png){#fig:spectra-comparison-mgp tag="3—figure supplement 2" width=8.5in} 
 
+![
+**Frequency of nonsynonymous DNA repair mutations in wild mice.** Alternate allele frequencies of each nonsynonymous DNA repair mutation overlapping the chromosome 6 mutator locus were calculated in populations of wild-derived mice from Harr et al. [@PMID:27622383]. Numbers of mice in each subpopulation are shown in parentheses. *Mmc* (*Mus musculus castaneus*), *Mmd* (*Mus musculus domesticus*), *Mmm* (*Mus musculus musculus*), and *Ms* (*Mus spretus*). The *Mbd4* p.Asp129Asn mutation was not observed in any wild populations.
+](images/fig-wild-afs.png){#fig:wild-afs tag="3-figure supplement 3" width=8.5in}
 
 
 ### Supplementary Tables
 
-| Gene name | Tissue name | # BXDs with expression data |  Top significant marker | LRS at top significant marker | Significant LRS threshold | Additive effect of D allele on expression |
+| Gene name | Tissue name | # BXDs with expression data |  Top significant marker | LRS at top significant marker | Additive effect of D allele on expression |
 | - | - | - | - | - | - |
-| *Ogg1* | Kidney | 53 | `rsm10000004188` | 52.25 | 17.82 | -0.186 |
-| *Ogg1* | Gastrointestinal | 46 | `rsm10000003441` | 23.39 | 16.09 | -0.074 |
-| *Ogg1* | Hematopoetic stem cells | 22 | - | - | 16.45 | - | 
-| *Ogg1* | Hematopoetic progenitor cells | 23 | - | - | 18.52 | - | 
-| *Ogg1* | Spleen | 79 | `rsm10000003418` | - | 17.51 | - | 
-| *Ogg1* | Liver | 50 | `rsm10000004188` | 53.54 | 18.77 | -0.156 | 
-| *Ogg1* | Heart | 73 | - | - | 16.22 | - |
-| *Ogg1* | Eye | 87 | `rsm10000004194` | 23.05 | 16.96 | 0.088 |  
-| *Mbd4* | Kidney | 53 | - | - | 18.48 | - |
-| *Mbd4* | Gastrointestinal | 46 | - | - | 15.97 | - |
-| *Mbd4* | Hematopoetic stem cells | 22 | - | - | 18.12 | - | 
-| *Mbd4* | Hematopoetic progenitor cells | 23 | - | - | 18.55 | - | 
-| *Mbd4* | Spleen | 79 | `rsm10000004199` | 21.42 | 16.99 | 0.069 | 
-| *Mbd4* | Liver | 50 | - | - | 16.15 | - | 
-| *Mbd4* |Heart | 73 | - | - | 17.17 | - |
-| *Mbd4* | Eye | 87 | - | - | 16.63 | - |  
+| *Setmar* | Kidney | 53 | - | - | - |
+| *Setmar* | Gastrointestinal | 46 | - | - | - |
+| *Setmar* | Hematopoetic stem cells | 22 | - | - | - | 
+| *Setmar* | Hematopoetic progenitor cells | 23 | - | - | - | 
+| *Setmar* | Spleen | 79 | - | - | - | 
+| *Setmar* | Liver | 50 | - | - | - | 
+| *Setmar* | Heart | 73 | - | - | - |
+| *Setmar* | Eye | 87 | `rsm10000004172` | 56.0 | 0.151 |  
+| *Ogg1* | Kidney | 53 | `rsm10000004188` | 52.25 | -0.186 |
+| *Ogg1* | Gastrointestinal | 46 | `rsm10000003441` | 23.39 |  -0.074 |
+| *Ogg1* | Hematopoetic stem cells | 22 | - | - |  - | 
+| *Ogg1* | Hematopoetic progenitor cells | 23 | - | - |  - | 
+| *Ogg1* | Spleen | 79 | - | - |  - | 
+| *Ogg1* | Liver | 50 | `rsm10000004188` | 53.54 | -0.156 | 
+| *Ogg1* | Heart | 73 | - | - | - |
+| *Ogg1* | Eye | 87 | `rsm10000004194` | 23.05 | 0.088 |  
+| *Mbd4* | Kidney | 53 | - | - |  - |
+| *Mbd4* | Gastrointestinal | 46 | - | - | - |
+| *Mbd4* | Hematopoetic stem cells | 22 | - | - | - | 
+| *Mbd4* | Hematopoetic progenitor cells | 23 | - | - |  - | 
+| *Mbd4* | Spleen | 79 | `rsm10000004199` | 21.42 | 0.069 | 
+| *Mbd4* | Liver | 50 | - | - | - | 
+| *Mbd4* |Heart | 73 | - | - | - |
+| *Mbd4* | Eye | 87 | - | - | - |  
+| *Fancd2* | Kidney | 53 | - | - | - | 
+| *Fancd2* | Gastrointestinal | 46 | `rsm10000004199` | 35.61 | 0.136 | 
+| *Fancd2* | Hematopoetic stem cells | 22 | - | - | - | 
+| *Fancd2* | Hematopoetic progenitor cells | 23 | - | - | - | 
+| *Fancd2* | Spleen | 79 | - | - | - | 
+| *Fancd2* | Liver | 50 | - | - | - | 
+| *Fancd2* | Heart | 73 | - | - | - | 
+| *Fancd2* | Eye | 87 | - | 17.79 | -0.083 |  
+| *Rad18* | Kidney | 53 | - | - | - | 
+| *Rad18* | Gastrointestinal | 46 | - | - | - | 
+| *Rad18* | Hematopoetic stem cells | 22 | - | - | - | 
+| *Rad18* | Hematopoetic progenitor cells | 23 | - | - | - | 
+| *Rad18* | Spleen | 79 | - | - | - | 
+| *Rad18* | Liver | 50 | - | - | - | 
+| *Rad18* | Heart | 73 | - | - | - | 
+| *Rad18* | Eye | 87 | `rs252954368` | 49.41 | -0.131 |  
 
 Table: Presence or absence of cis-eQTLs for *Ogg1* and *Mbd4* in various tissues identified using GeneNetwork. {#tbl:eqtl-results tag="supplement 1"}
 
