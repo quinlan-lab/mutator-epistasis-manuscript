@@ -1,10 +1,8 @@
 adenomatous
 afs
-ANOVA
 Arg
 Asn
 backcrossed
-BER
 Bonferroni
 carcinogenesis
 chemotherapeutics
@@ -21,7 +19,7 @@ DSBs
 durations
 Ensembl
 ENSMUST
-epistatic
+Epistatic
 epistatically
 exonic
 exonucleases
@@ -29,7 +27,6 @@ Fancd
 Ferraj
 fibroblasts
 Gly
-glycosylases
 gnomAD
 GRCh
 GRCm
@@ -45,7 +42,7 @@ Leu
 linearized
 LOC
 Marchf
-MBD
+Mbd
 methylated
 methyltransferase
 Metnase
@@ -57,7 +54,6 @@ Mmc
 Mmd
 Mmm
 MMR
-Moreoever
 mutagenesis
 neoplasia
 NHEJ
@@ -70,7 +66,6 @@ outbreeding
 overexpression
 oxo
 Phe
-phenotypes
 phenotypic
 PhyloP
 plasmid
@@ -89,8 +84,6 @@ Setd
 Setmar
 silico
 subpopulation
-sv
-SVs
 Tmem
 TpG
 tranposase
