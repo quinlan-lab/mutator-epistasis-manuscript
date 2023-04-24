@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-04-24" />
   <meta name="citation_publication_date" content="2023-04-24" />
   <meta property="article:published_time" content="2023-04-24" />
-  <meta name="dc.modified" content="2023-04-24T21:21:30+00:00" />
-  <meta property="article:modified_time" content="2023-04-24T21:21:30+00:00" />
+  <meta name="dc.modified" content="2023-04-24T22:51:21+00:00" />
+  <meta property="article:modified_time" content="2023-04-24T22:51:21+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/9f6a09763c61be6cf57a4b8952d4cca45bc8d6d1/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/9f6a09763c61be6cf57a4b8952d4cca45bc8d6d1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/9f6a09763c61be6cf57a4b8952d4cca45bc8d6d1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5ab58c6d7d61fb97195828646d2aece683f852ce/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5ab58c6d7d61fb97195828646d2aece683f852ce/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5ab58c6d7d61fb97195828646d2aece683f852ce/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/9f6a09763c61be6cf57a4b8952d4cca45bc8d6d1/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5ab58c6d7d61fb97195828646d2aece683f852ce/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@9f6a097](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/9f6a09763c61be6cf57a4b8952d4cca45bc8d6d1)
+from [quinlan-lab/mutator-epistasis-manuscript@5ab58c6](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/5ab58c6d7d61fb97195828646d2aece683f852ce)
 on April 24, 2023.
 </em></small>
 
@@ -220,7 +220,7 @@ We repeat this process for every informative marker $g_n$.
 **c)** To assess the significance of any distance peaks in b), we perform permutation tests. 
 In each of $N$ permutations, we shuffle the haplotype labels associated with the *de novo* mutation data, run a genome-wide distance scan, and record the maximum cosine distance encountered at any locus in the scan. 
 Finally, we calculate the $1 - p$ percentile of the distribution of those maximum distances to obtain a genome-wide cosine distance threshold at the specified value of $p$.
-](images/fig-distance-method.png){#fig:distance-method width=8.5in} 
+](images/fig-distance-method.png){#fig:distance-method width=7.5in} 
 
 ### Re-identifying a mutator allele on chromosome 4 in the BXDs
 
@@ -235,7 +235,7 @@ Cosine distance threshold at p = 0.05 was calculated by performing 10,000 permut
 Cosine distance threshold at p = 0.05 was calculated by performing 10,000 permutations of the BXD mutation data, and is shown as a dotted grey line.
 **c)** Adjusted cosine distances between aggregate 1-mer *de novo* mutation spectra on BXD haplotypes with *B* alleles at `rs27509845` (n = 44 haplotypes; 22,645 total mutations) and either *D* or *B* alleles at 7,273 informative markers. 
 Cosine distance threshold at p = 0.05 was calculated by performing 10,000 permutations of the BXD mutation data, and is shown as a dotted grey line.
-](images/fig-distance-results.png){#fig:distance-results width=8.5in} 
+](images/fig-distance-results.png){#fig:distance-results width=7.5in} 
 
 Using quantitative trait locus (QTL) mapping, we previously identified a nearly-identical locus on chromosome 4 that was significantly associated with the C>A germline mutation rate in the BXDs [@PMID:35545679]. 
 This locus overlapped 21 protein-coding genes that were annotated by the Gene Ontology as being involved in "DNA repair," but only one of those genes contained nonsynonymous differences between the two parental strains: *Mutyh*. 
@@ -298,7 +298,7 @@ A model that included an interaction term between genotypes at the two markers f
 **b)** The count of C>A *de novo* germline mutations in each BXD was plotted against the number of generations for which it was inbred. 
 Lines represent predicted C>A counts in each haplotype group from a generalized linear model (Poisson family, identity link), and shading around each line represents the 95% confidence interval.
 **c)** Germline mutations in each BXD were assigned to COSMIC SBS mutation signatures using SigProfilerExtractor [@PMID:36388765]. After grouping BXDs by their genotypes at `rs27509845` and `rs46276051`, we calculated the fraction of mutations in each group that was attributed to each signature. The proposed etiologies of each mutation signature are: SBS1 (spontaneous deamination of methylated cytosine nucleotides at CpG contexts), SBS5 (unknown, clock-like signature), SBS18 (damage by reactive oxygen species, related to SBS36 and defective base-excision repair due to loss-of-function mutations in MUTYH), and SBS30 (defective base-excision repair due to NTHL1 mutations).
-](images/fig-spectra-comparison.png){#fig:spectra-comparison width=8.5in} 
+](images/fig-spectra-comparison.png){#fig:spectra-comparison width=7.5in} 
 
 To explore the effects of the two mutator loci in other inbred laboratory mice, we also compared the germline mutation spectra of Sanger Mouse Genomes Project (MGP) strains [@PMID:21921910]. 
 Dumont [@PMID:30753674] previously identified germline mutations that were private to each of the 29 MGP strains; these private variants likely represent recent *de novo* mutations (Figure {@fig:spectra-comparison-mgp}). 
@@ -742,7 +742,7 @@ In each trial, we also simulated *de novo* germline mutations on the population 
 We then applied the inter-haplotype distance method to these simulated data and asked if the adjusted cosine distance at locus $g_i$ was greater than expected by chance. 
 Given a specific combination of parameters, the y-axis denotes the fraction of 100 trials in which the simulated mutator allele could be detected at a significance threshold of p = 0.05.
 Shaded areas indicate the standard deviation of that fraction across 100 simulations.
-](images/fig-power-simulations.png){#fig:simulations tag="1-figure supplement 1" width=8.5in} 
+](images/fig-power-simulations.png){#fig:simulations tag="1-figure supplement 1" width=7.5in} 
 
 ![
 **Comparing power between the inter-haplotype distance method and QTL mapping.** 
@@ -754,28 +754,28 @@ We then applied the inter-haplotype distance method to these simulated data and 
 Similarly, in each trial, we used R/qtl2 to perform a genome scan for QTL and asked if the log-odds score at $g_i$ was greater than expected by chance.
 Given a specific combination of parameters, the y-axis denotes the fraction of 100 trials in which the simulated mutator allele could be detected at a significance threshold of p = 0.05 (for IHD) or at an alpha of $\frac{0.05}{7}$ (for QTL mapping).
 Shaded areas indicate the standard deviation of that fraction across 100 simulations.
-](images/fig-power-comparison.png){#fig:ihd_vs_qtl_power tag="1-figure supplement 2" width=8.5in} 
+](images/fig-power-comparison.png){#fig:ihd_vs_qtl_power tag="1-figure supplement 2" width=7.5in} 
 
 ![
 **Quantitative trait locus scans for mutation spectrum phenotypes.**
 Using the BXDs with D genotypes at `rs27509845` (the marker with the highest cosine distance on chromosome 4; n = 66 BXDs, 42,171 total mutations), we used R/qtl2 to perform QTL scans for the fractions of each 1-mer mutation type.
 QTL scans also included a kinship matrix (that contained the pairwise genetic similarity between each pair of BXDs, calculated using the leave-one-chromosome-out method) as a random effect term using the `kinship` keyword argument in the `scan1` function.
 Plots show the log-odds (LOD) score at every genotyped marker in blue; the dotted black line represents the genome-wide LOD significance threshold (established using 1,000 permutations at an alpha of $\frac{0.05}{7}$ to account for the fact that 7 separate association tests were performed.)
-](images/fig-qtl-scans.png){#fig:qtl-scans tag="2-figure supplement 1" width=8.5in} 
+](images/fig-qtl-scans.png){#fig:qtl-scans tag="2-figure supplement 1" width=7.5in} 
 
 ![
 **Mutation spectra comparison in BXD strains.**
 Fractions of *de novo* germline mutations in BXDs with either *D* or *B* genotypes at markers `rs27509845` and `rs46276051`, stratified by mutation type.
-](images/fig-spectra-comparison-bxd-all.png){#fig:spectra-comparison-all tag="3-figure supplement 1" width=8.5in}
+](images/fig-spectra-comparison-bxd-all.png){#fig:spectra-comparison-all tag="3-figure supplement 1" width=7.5in}
 
 ![
 **Mutation spectra comparison in Sanger Mouse Genomes Project strains.**
 Fractions of *de novo* germline mutations in Sanger MGP strains with either *D* or *B* haplotypes at the chromosome 4 and chromosome 6 mutator loci, stratified by mutation type.
-](images/fig-spectra-comparison-mgp.png){#fig:spectra-comparison-mgp tag="3—figure supplement 2" width=8.5in} 
+](images/fig-spectra-comparison-mgp.png){#fig:spectra-comparison-mgp tag="3—figure supplement 2" width=7.5in} 
 
 ![
 **Frequency of nonsynonymous DNA repair mutations in wild mice.** Alternate allele frequencies of each nonsynonymous DNA repair mutation overlapping the chromosome 6 mutator locus were calculated in populations of wild-derived mice from Harr et al. [@PMID:27622383]. Numbers of mice in each subpopulation are shown in parentheses. *Mmc* (*Mus musculus castaneus*), *Mmd* (*Mus musculus domesticus*), *Mmm* (*Mus musculus musculus*), and *Ms* (*Mus spretus*). The *Mbd4* p.Asp129Asn mutation was not observed in any wild populations.
-](images/fig-wild-afs.png){#fig:wild-afs tag="3-figure supplement 3" width=8.5in}
+](images/fig-wild-afs.png){#fig:wild-afs tag="3-figure supplement 3" width=7.5in}
 
 
 ### Supplementary Tables

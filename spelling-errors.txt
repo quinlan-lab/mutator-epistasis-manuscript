@@ -34,7 +34,7 @@ intronic
 Itpr
 Leu
 linearized
-Mbd
+MBD
 Metnase
 mis
 mispaired
