@@ -119,7 +119,7 @@ VCF
 WGS
 XXXXXXXX
 Zenodo
-Setmar 
+Setmar
 SETMAR
 epistatic
 overexpression
