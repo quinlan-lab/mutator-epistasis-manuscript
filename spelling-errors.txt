@@ -17,7 +17,7 @@ DSBs
 durations
 Ensembl
 ENSMUST
-epistatic
+Epistatic
 epistatically
 exonic
 exonucleases
@@ -38,7 +38,7 @@ intronic
 Itpr
 Leu
 linearized
-MBD
+Mbd
 methylated
 methyltransferase
 Metnase
@@ -77,7 +77,7 @@ SBS
 Searle
 Ser
 Setd
-Setmar
+SETMAR
 silico
 subpopulation
 TpG

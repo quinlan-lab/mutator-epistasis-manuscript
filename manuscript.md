@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-04-24" />
   <meta name="citation_publication_date" content="2023-04-24" />
   <meta property="article:published_time" content="2023-04-24" />
-  <meta name="dc.modified" content="2023-04-24T14:02:27+00:00" />
-  <meta property="article:modified_time" content="2023-04-24T14:02:27+00:00" />
+  <meta name="dc.modified" content="2023-04-24T19:35:53+00:00" />
+  <meta property="article:modified_time" content="2023-04-24T19:35:53+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a5a397dbbdc6a4b6bf740183b31018a37d7dc337/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a5a397dbbdc6a4b6bf740183b31018a37d7dc337/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a5a397dbbdc6a4b6bf740183b31018a37d7dc337/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/1e5a0dc5bfb5bc7cda133bc8eb7d7c3e2a32e66c/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/1e5a0dc5bfb5bc7cda133bc8eb7d7c3e2a32e66c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/1e5a0dc5bfb5bc7cda133bc8eb7d7c3e2a32e66c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a5a397dbbdc6a4b6bf740183b31018a37d7dc337/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/1e5a0dc5bfb5bc7cda133bc8eb7d7c3e2a32e66c/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@a5a397d](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/a5a397dbbdc6a4b6bf740183b31018a37d7dc337)
+from [quinlan-lab/mutator-epistasis-manuscript@1e5a0dc](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/1e5a0dc5bfb5bc7cda133bc8eb7d7c3e2a32e66c)
 on April 24, 2023.
 </em></small>
 
@@ -162,9 +162,9 @@ Although numerous protein-coding genes contribute to the maintenance of genome i
 
 The dearth of observed germline mutators in mammalian genomes is not necessarily surprising, since alleles that lead to elevated germline mutation rates would likely have deleterious consequences and be purged by negative selection [@PMID:27739533].
 Moreover, germline mutation rates are relatively low, and direct mutation rate measurements require whole-genome sequencing data from both parents and their offspring.
-As a result, large-scale association studies &mdash; which have been used to map the contributions of common genetic variants to many complex traits &mdash; are not currently well-powered to investigate the polygenic architecture of germline mutation rates.  
+As a result, large-scale association studies &mdash; which have been used to map the contributions of common genetic variants to many complex traits &mdash; are not currently well-powered to investigate the polygenic architecture of germline mutation rates [@PMID:31964835].  
 
-Despite these challenges, less traditional strategies have been used to identify a small number of mutator alleles in both humans and mice. 
+Despite these challenges, less traditional strategies have been used to identify a small number of mutator alleles in humans, macaque, and mice [@doi:10.1101/2023.03.27.534460]. 
 By focusing on families with rare genetic diseases, a recent study discovered two mutator alleles that led to significantly elevated rates of *de novo* germline mutation in human genomes [@PMID:35545669]. 
 Another group observed mutator phenotypes in the sperm and somatic tissues of adults who carry cancer-predisposing inherited mutations in the POLE/POLD1 exonucleases [@PMID:34594041].
 Candidate mutator loci were also identified by identifying human haplotypes with excess counts of derived alleles in the Thousand Genomes Project, though these loci could not be replicated using *de novo* germline mutation data from pedigrees [@PMID:28095480].
@@ -176,7 +176,7 @@ Due to their husbandry in a controlled laboratory setting, the BXDs were largely
 
 In this previous study, whole-genome sequencing data from the BXD family were used to map a quantitative trait locus (QTL) for the C>A mutation rate [@PMID:35545679].
 Germline C>A mutation rates were nearly 50% higher in mice with *D* haplotypes at the QTL, likely due to genetic variation in the DNA glycosylase *Mutyh* that reduced the efficacy of oxidative DNA damage repair.
-Importantly, the QTL was undetectable in a genome-wide scan for variation in overall germline mutation rates, which were only modestly higher in BXDs with *D* alleles, demonstrating the utility of mutation spectrum analysis for mutator allele discovery.
+Importantly, the QTL did not reach genome-wide significance in a genome-wide scan for variation in overall germline mutation rates, which were only modestly higher in BXDs with *D* alleles, demonstrating the utility of mutation spectrum analysis for mutator allele discovery.
 Close examination of the mutation spectrum is likely to be broadly useful for detecting mutator alleles, as genes involved in DNA proofreading and repair often recognize particular sequence motifs or excise specific types of DNA lesions [@PMID:32619789].
 Mutation spectra are usually defined in terms of $k$-mer nucleotide context; the 1-mer mutation spectrum, for example, consists of 6 mutation types after collapsing by strand complement (C>T, C>A, C>G, A>T, A>C, A>G), while the 3-mer mutation spectrum contains 96 (each of the 1-mer mutations partitioned by trinucleotide context).
 
@@ -186,7 +186,7 @@ Since germline mutation rates are generally quite low, estimates of $k$-mer muta
 We were therefore motivated to develop a statistical method that could overcome the sparsity of *de novo* mutation spectra, eliminate the need to test each $k$-mer mutation type separately, and enable sensitive detection of alleles that influence the germline mutation spectrum.
 
 Here, we present a new mutation spectrum association test, called "inter-haplotype distance," that minimizes multiple testing burdens and mitigates the challenges of sparsity in *de novo* mutation datasets. 
-We leverage this method to re-analyze germline mutation data from the BXD family and find compelling evidence for a second mutator allele that was undetectable using previous approaches. 
+We leverage this method to re-analyze germline mutation data from the BXD family and find compelling evidence for a second mutator allele that was not detected using previous approaches. 
 The new allele appears to interact epistatically with the mutator that was previously discovered in the BXDs, further augmenting the C>A germline mutation rate in a subset of inbred mice. 
 Our observation of epistasis suggests that mild DNA repair deficiencies can compound one another, as mutator alleles chip away at the redundant systems that collectively maintain germline integrity. 
 
@@ -278,7 +278,7 @@ Two protein-coding genes that are involved in DNA repair (*Mbd4* and *Rad18*) ha
 Next, we more precisely characterized the effects of the chromosome 4 and 6 mutator alleles on mutation spectra in the BXDs. 
 On average, C>A germline mutation fractions were significantly higher in BXDs with *D* alleles at both mutator loci than in BXDs with *D* alleles at either locus alone (Figure {@fig:spectra-comparison}a and @fig:spectra-comparison-all). 
 Among BXDs with *B* alleles at the locus overlapping *Mutyh*, those with *D* alleles on chromosome 6 did not exhibit significantly elevated C>A mutation fractions (Figure {@fig:spectra-comparison}a). 
-Regardless of inbreeding duration, C>A *de novo* mutation counts were always highest in BXDs with *D* alleles at both mutator loci (Figure {@fig:spectra-comparison}b).
+After controlling for inbreeding duration, we can see that C>A *de novo* mutation counts are always highest in BXDs with *D* alleles at both mutator loci (Figure {@fig:spectra-comparison}b).
 After 100 generations of inbreeding, BXDs with *D* alleles at both mutator loci were predicted to have 238.9 C>A mutations (95% CI: 231.4 - 246.4), about 20% more than the 199.0 mutations (95% CI: 193.3 - 204.7) predicted in those with *D* and *B* alleles at the chromosome 4 and chromosome 6 loci, respectively (Figure {@fig:spectra-comparison}b).
 
 We also used SigProfilerExtractor [@PMID:36388765] to assign the germline mutations in each BXD to single-base substitution (SBS) mutation signatures from the COSMIC catalog [@PMID:30371878].
