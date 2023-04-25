@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-04-25" />
   <meta name="citation_publication_date" content="2023-04-25" />
   <meta property="article:published_time" content="2023-04-25" />
-  <meta name="dc.modified" content="2023-04-25T12:58:50+00:00" />
-  <meta property="article:modified_time" content="2023-04-25T12:58:50+00:00" />
+  <meta name="dc.modified" content="2023-04-25T13:24:58+00:00" />
+  <meta property="article:modified_time" content="2023-04-25T13:24:58+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/280ff1f27b49d4cbdf785ead3c9863e11dfad828/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/280ff1f27b49d4cbdf785ead3c9863e11dfad828/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/280ff1f27b49d4cbdf785ead3c9863e11dfad828/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/26fc71450ab35660c9a6453bd88f16f58ddfa144/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/26fc71450ab35660c9a6453bd88f16f58ddfa144/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/26fc71450ab35660c9a6453bd88f16f58ddfa144/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/280ff1f27b49d4cbdf785ead3c9863e11dfad828/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/26fc71450ab35660c9a6453bd88f16f58ddfa144/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@280ff1f](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/280ff1f27b49d4cbdf785ead3c9863e11dfad828)
+from [quinlan-lab/mutator-epistasis-manuscript@26fc714](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/26fc71450ab35660c9a6453bd88f16f58ddfa144)
 on April 25, 2023.
 </em></small>
 
@@ -715,7 +715,11 @@ We compared the two models using ANOVA as described above.
 
 
 
-## Supplementary information
+## Acknowledgments
+
+We thank Robert W. Williams (University of Tennessee Health Sciences Center) and Don F. Conrad (Oregon Health & Science University) for very helpful comments and feedback on a draft of this manuscript.
+
+## Supplementary information {.page_break_before}
 
 ### Missense mutations in *Setmar* are unlikely to contribute to epistasis in the BXDs
 
@@ -838,10 +842,6 @@ Table: Presence or absence of cis-eQTLs for *Ogg1* and *Mbd4* in various tissues
 Table: Large structural variants overlapping protein-coding genes in the mutator locus on chromosome 6 All coordinates are with respect to GRCm39/mm39. {#tbl:sv-overlap tag="supplement 2"}
 
 
-
-## Acknowledgments
-
-We thank Robert W. Williams (University of Tennessee Health Sciences Center) and Don F. Conrad (Oregon Health & Science University) for very helpful comments and feedback on a draft of this manuscript.
 
 ## References {.page_break_before}
 
