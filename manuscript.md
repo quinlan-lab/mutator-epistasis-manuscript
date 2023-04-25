@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-04-24'
+date-meta: '2023-04-25'
 author-meta:
 - Thomas A. Sasani
 - Aaron R. Quinlan
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="Epistasis between mutator alleles contributes to germline mutation rate variability in laboratory mice" />
   <meta property="og:title" content="Epistasis between mutator alleles contributes to germline mutation rate variability in laboratory mice" />
   <meta property="twitter:title" content="Epistasis between mutator alleles contributes to germline mutation rate variability in laboratory mice" />
-  <meta name="dc.date" content="2023-04-24" />
-  <meta name="citation_publication_date" content="2023-04-24" />
-  <meta property="article:published_time" content="2023-04-24" />
-  <meta name="dc.modified" content="2023-04-24T22:51:21+00:00" />
-  <meta property="article:modified_time" content="2023-04-24T22:51:21+00:00" />
+  <meta name="dc.date" content="2023-04-25" />
+  <meta name="citation_publication_date" content="2023-04-25" />
+  <meta property="article:published_time" content="2023-04-25" />
+  <meta name="dc.modified" content="2023-04-25T12:58:50+00:00" />
+  <meta property="article:modified_time" content="2023-04-25T12:58:50+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5ab58c6d7d61fb97195828646d2aece683f852ce/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5ab58c6d7d61fb97195828646d2aece683f852ce/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5ab58c6d7d61fb97195828646d2aece683f852ce/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/280ff1f27b49d4cbdf785ead3c9863e11dfad828/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/280ff1f27b49d4cbdf785ead3c9863e11dfad828/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/280ff1f27b49d4cbdf785ead3c9863e11dfad828/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/5ab58c6d7d61fb97195828646d2aece683f852ce/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/280ff1f27b49d4cbdf785ead3c9863e11dfad828/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@5ab58c6](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/5ab58c6d7d61fb97195828646d2aece683f852ce)
-on April 24, 2023.
+from [quinlan-lab/mutator-epistasis-manuscript@280ff1f](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/280ff1f27b49d4cbdf785ead3c9863e11dfad828)
+on April 25, 2023.
 </em></small>
 
 
@@ -146,7 +146,7 @@ Thus, we might expect that the spectrum of *de novo* mutations &mdash; that is, 
 Previously, we used quantitative trait locus mapping to discover candidate mutator alleles in the DNA repair gene *Mutyh* that increased the C>A germline mutation rate in a family of inbred mice known as the BXDs [@PMID:35545679;@PMID:33472028].
 
 In this study we developed a new method, called "inter-haplotype distance," to detect alleles associated with mutation spectrum variation. 
-By applying this approach to mutation data from the BXDs, we confirmed the presence of a germline mutator locus near *Mutyh* and discovered an additional C>A mutator locus on chromosome 6 that overlaps *Ogg1* and *Mbd4*, two DNA glycosylases involved in base-excision repair [@PMID:17581577;@PMID:10097147]. 
+By applying this approach to mutation data from the BXDs, we confirmed the presence of the germline mutator locus near *Mutyh* and discovered an additional C>A mutator locus on chromosome 6 that overlaps *Ogg1* and *Mbd4*, two DNA glycosylases involved in base-excision repair [@PMID:17581577;@PMID:10097147]. 
 The effect of a chromosome 6 mutator allele depended on the presence of a mutator allele near *Mutyh*, and BXDs with mutator alleles at both loci had even greater numbers of C>A mutations than those with mutator alleles at either locus alone. 
 
 Our new methods for analyzing mutation spectra reveal evidence of epistasis between germline mutator alleles, and may be applicable to mutation data from humans and other model organisms. 
