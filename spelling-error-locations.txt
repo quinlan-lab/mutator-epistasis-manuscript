@@ -2,7 +2,7 @@ content/02.introduction.md:10:polygenic
 content/02.introduction.md:14:exonucleases
 content/02.introduction.md:15:genomic
 content/02.introduction.md:26:trinucleotide
-content/02.introduction.md:36:epistatically
+content/02.introduction.md:38:epistatically
 content/03.results.md:5:AMSD
 content/03.results.md:11:polygenic
 content/03.results.md:14:AMSD
