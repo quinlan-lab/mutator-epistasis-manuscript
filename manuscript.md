@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-09-07" />
   <meta name="citation_publication_date" content="2023-09-07" />
   <meta property="article:published_time" content="2023-09-07" />
-  <meta name="dc.modified" content="2023-09-07T13:14:51+00:00" />
-  <meta property="article:modified_time" content="2023-09-07T13:14:51+00:00" />
+  <meta name="dc.modified" content="2023-09-07T13:32:17+00:00" />
+  <meta property="article:modified_time" content="2023-09-07T13:32:17+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/d52d895a7bc6425a6caa379b694d6584c02591b6/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/d52d895a7bc6425a6caa379b694d6584c02591b6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/d52d895a7bc6425a6caa379b694d6584c02591b6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/12cc3454b227a75589d70992bab29c0d75adc70d/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/12cc3454b227a75589d70992bab29c0d75adc70d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/12cc3454b227a75589d70992bab29c0d75adc70d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/d52d895a7bc6425a6caa379b694d6584c02591b6/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/12cc3454b227a75589d70992bab29c0d75adc70d/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@d52d895](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/d52d895a7bc6425a6caa379b694d6584c02591b6)
+from [quinlan-lab/mutator-epistasis-manuscript@12cc345](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/12cc3454b227a75589d70992bab29c0d75adc70d)
 on September 7, 2023.
 </em></small>
 
@@ -184,8 +184,10 @@ Mutation spectra are usually defined in terms of $k$-mer nucleotide context; the
 Although mutation spectrum analysis can enable the discovery of mutator alleles that affect the rates of specific mutation types, early implementations of this strategy have suffered from a few drawbacks. 
 For example, performing association tests on the rates or fractions of every $k$-mer mutation type can quickly incur a substantial multiple testing burden.
 Since germline mutation rates are generally quite low, estimates of $k$-mer mutation type frequencies from individual samples can also be noisy and imprecise.
+
 > Moreover, inbreeding duration can vary considerably across samples in populations of RILs; for example, some BXDs were inbred for only 20 generations, while others were inbred for nearly 200.
 > As a result, the variance of individual $k$-mer mutation rate estimates in those populations will be much higher than if all samples were inbred for the same duration.
+
 We were therefore motivated to develop a statistical method that could overcome the sparsity of *de novo* mutation spectra, eliminate the need to test each $k$-mer mutation type separately, and enable sensitive detection of alleles that influence the germline mutation spectrum.
 
 > Here, we present a new mutation spectrum association test, called "aggregate mutation spectrum distance," that minimizes multiple testing burdens and mitigates the challenges of sparsity in *de novo* mutation datasets. 
