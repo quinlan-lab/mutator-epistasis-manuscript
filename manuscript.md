@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-09-07'
+date-meta: '2023-09-25'
 author-meta:
 - Thomas A. Sasani
 - Aaron R. Quinlan
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="Epistasis between mutator alleles contributes to germline mutation rate variability in laboratory mice" />
   <meta property="og:title" content="Epistasis between mutator alleles contributes to germline mutation rate variability in laboratory mice" />
   <meta property="twitter:title" content="Epistasis between mutator alleles contributes to germline mutation rate variability in laboratory mice" />
-  <meta name="dc.date" content="2023-09-07" />
-  <meta name="citation_publication_date" content="2023-09-07" />
-  <meta property="article:published_time" content="2023-09-07" />
-  <meta name="dc.modified" content="2023-09-07T13:32:17+00:00" />
-  <meta property="article:modified_time" content="2023-09-07T13:32:17+00:00" />
+  <meta name="dc.date" content="2023-09-25" />
+  <meta name="citation_publication_date" content="2023-09-25" />
+  <meta property="article:published_time" content="2023-09-25" />
+  <meta name="dc.modified" content="2023-09-25T20:00:15+00:00" />
+  <meta property="article:modified_time" content="2023-09-25T20:00:15+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/12cc3454b227a75589d70992bab29c0d75adc70d/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/12cc3454b227a75589d70992bab29c0d75adc70d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/12cc3454b227a75589d70992bab29c0d75adc70d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a3d3f428cd32407a872e4d6e3c8df8522997ac06/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a3d3f428cd32407a872e4d6e3c8df8522997ac06/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a3d3f428cd32407a872e4d6e3c8df8522997ac06/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/12cc3454b227a75589d70992bab29c0d75adc70d/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a3d3f428cd32407a872e4d6e3c8df8522997ac06/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@12cc345](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/12cc3454b227a75589d70992bab29c0d75adc70d)
-on September 7, 2023.
+from [quinlan-lab/mutator-epistasis-manuscript@a3d3f42](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/a3d3f428cd32407a872e4d6e3c8df8522997ac06)
+on September 25, 2023.
 </em></small>
 
 
@@ -265,28 +265,35 @@ To account for the effects of the large-effect mutator locus near *Mutyh*, we di
 
 We also performed QTL scans for the fractions of each 1-mer mutation type using the same mutation data, but none produced a genome-wide significant log-odds score at any locus (Figure {@fig:qtl-scans}; *Materials and Methods*).
 
-> We queried the region surrounding the top marker on chromosome 6 (+/- the 90% bootstrap confidence interval) and discovered 64 protein-coding genes, of which five were annotated with a Gene Ontology [@PMID:10802651;@PMID:33290552] term related to "DNA repair": *Ddx11*, *Fancd2*, *Ogg1*, *Setmar*, and *Rad18*.
+> We queried the region surrounding the top marker on chromosome 6 (+/- the 90% bootstrap confidence interval) and discovered 64 protein-coding genes, of which four were annotated with a Gene Ontology [@PMID:10802651;@PMID:33290552] term related to "DNA repair": *Fancd2*, *Ogg1*, *Setmar*, and *Rad18*.
 > Of these, two harbored nonsynonymous differences between the parental C57BL/6J and DBA/2J strains (Table @tbl:nonsyn-diffs).
 > *Ogg1* encodes a key member of the base-excision repair response to oxidative DNA damage (a pathway that also includes *Mutyh*), and in mice *Setmar* encodes a SET domain-containing histone methyltransferase; both *Ogg1* and *Setmar* are expressed in mouse gonadal cells.
+
+> In a previous version of this manuscript, we used a strict physical distance cutoff (+/- 5 Mbp from the peak AMSD marker) to nominate 63 candidate genes.
+> After implementing an empirical bootstrap to nominate candidates instead, we found that the 90% confidence interval no longer included a gene that we had previously prioritized: *Mbd4*, a protein-coding gene involved in base excision repair that also harbors a non-synonymous difference between the BXD parental strains (Table @tbl:nonsyn-diffs).
+> Since the bootstrap can exhibit poor coverage in QTL mapping studies [@PMID:16783000], *Mbd4* may still be worth considering as a plausible candidate, and we therefore provide a brief discussion of the evidence supporting *Mbd4* in the **Discussion**.
 
 | Gene name | Ensembl transcript name | Nucleotide change | Amino acid change | Position in GRCm38/mm10 coordinates | PhyloP conservation score | SIFT prediction | 
 | - | - | - | - | - | - | - | 
 | *Setmar* | ENSMUST00000049246 | C>T | p.Leu103Phe | chr6:108,075,853 | 0.422 | 0.0 (intolerant/deleterious) |
 | *Setmar* | ENSMUST00000049246 | T>G | p.Ser273Arg | chr6:108,076,365 | -0.355 | 0.3 (tolerant/benign) |
 | *Ogg1* | ENSMUST00000032406 | A>G | p.Thr95Ala | chr6:113,328,510 | -0.016 | 0.84 (tolerant/benign) | 
+| *Mbd4* | ENSMUST00000032469 | C>T | p.Asp129Asn | chr6:115,849,644 | 2.28 | 0.02 (intolerant/deleterious) |
 
 Table: Nonsynonymous mutations in DNA repair genes near the chr6 peak {#tbl:nonsyn-diffs}
 
 We also considered the possibility that expression quantitative trait loci (eQTLs), rather than nonsynonymous mutations, could contribute to the C>A mutator phenotype associated with the locus on chromosome 6. 
-Using GeneNetwork [@PMID:27933521] we mapped eQTLs for the five aforementioned DNA repair genes in a number of tissues, though we did not have access to expression data from germline cells. 
+
+> Using GeneNetwork [@PMID:27933521] we mapped eQTLs for the five aforementioned DNA repair genes (as well as *Mbd4*) in a number of tissues, though we did not have access to expression data from germline cells. 
 
 > Notably, *D* alleles near the cosine distance peak on chromosome 6 were significantly associated with decreased *Ogg1* expression in kidney, liver, hippocampus, and gastrointestinal tissues (Table @tbl:eqtl-results). 
 > Although these cis-eQTLs are challenging to interpret (given their tissue specificity and our lack of access to germline expression data), the presence of strong-effect cis-eQTLs for *Ogg1* suggests that the C>A mutator phenotype observed in the BXDs may be mediated by regulatory, rather than protein-altering, variants.
 
-> Finally, we queried a dataset of structural variants (SVs) identified via high-quality, long-read assembly of inbred laboratory mouse strains [@doi:10.1016/j.xgen.2023.100291] and found X large insertions or deletions within the 90% bootstrap confidence interval around the cosine distance peak on chromosome 6. 
-> Of these, X overlapped the exonic sequences of protein-coding genes (Table @tbl:sv-overlap), though none of the genes has a previously annotated role in DNA repair or replication, or in a pathway that would likely affect germline mutation rates.
+> Finally, we queried a dataset of structural variants (SVs) identified via high-quality, long-read assembly of inbred laboratory mouse strains [@doi:10.1016/j.xgen.2023.100291] and found 176 large insertions or deletions (>100 bp) within the 90% bootstrap confidence interval around the cosine distance peak on chromosome 6; of these, none overlapped the exonic sequences of protein-coding genes.
 
-One protein-coding gene that is involved in DNA repair (*Rad18*) harbored intronic insertions and deletions (Table @tbl:sv-overlap); however, additional experimental evidence will be needed to probe the functional impact of these SVs.
+<!-- , though none of the genes has a previously annotated role in DNA repair or replication, or in a pathway that would likely affect germline mutation rates. -->
+
+One protein-coding gene involved in DNA repair (*Rad18*) harbored an intronic deletion within the interval on chromosome 6 (chr6:112,629,618-112,636,619); however, additional experimental evidence will be needed to probe the functional impact of this structural variant.
 
 ### Evidence of epistasis between germline mutator alleles
 
@@ -331,6 +338,8 @@ These data include three subspecies of *Mus musculus*, as well as the outgroup *
 We found that the *Ogg1* *D* allele was segregating at an allele frequency of 0.259 in *Mus musculus domesticus*, the species from which C57BL/6J and DBA/2J derive the majority of their genomes [@PMID:17660819], and was fixed in *Mus musculus musculus*, *Mus musculus castaneus*, and the outgroup *Mus spretus* (Figure @fig:wild-afs).
 The *Setmar* p.Ser273Arg *D* allele was also present at an allele frequency of 0.37 in *Mus musculus domesticus*, while *D* alleles at the *Setmar* p.Leu103Phe variant were not observed in any wild *Mus musculus domesticus* animals.
 
+> *D* alleles at the *Mbd4* p.Asp129Asn variant were also absent from all wild mouse populations (Figure @fig:wild-afs).
+
 
 ## Discussion
 
@@ -352,7 +361,8 @@ This hypothesis is corroborated by the recent discovery of a large-effect mutato
 
 ### Protein-coding genes that may underlie the chromosome 6 mutator locus
 
-> Five protein-coding genes involved in DNA repair overlap the C>A mutator locus on chromosome 6: *Ogg1*, a glycosylase that excises the oxidative DNA lesion 8-oxoguanine (8-oxoG) [@PMID:17581577], *Setmar*, a histone methyltransferase involved in non-homologous end joining (NHEJ) of double-stranded breaks (DSBs) [@PMID:21187428;@PMID:16332963], *Fancd2*, *Rad18*, and *Ddx11*.
+> Five protein-coding genes involved in DNA repair overlap the C>A mutator locus on chromosome 6: *Ogg1*, a glycosylase that excises the oxidative DNA lesion 8-oxoguanine (8-oxoG) [@PMID:17581577], *Setmar*, a histone methyltransferase involved in non-homologous end joining (NHEJ) of double-stranded breaks (DSBs) [@PMID:21187428;@PMID:16332963], *Fancd2*, and *Rad18*.
+> *Mbd4*, a protein-coding gene that was implicated as a candidate gene in a previous version of this manuscript, also lies just outside of the 90% bootstrap confidence interval on chromosome 6.
 
 Although we are unable to conclusively determine that one or more of these genes harbors a causal variant underlying the observed C>A mutator phenotype, we believe that *Ogg1* is the most plausible candidate.
 
@@ -365,7 +375,8 @@ The primate *SETMAR* ortholog is involved in NHEJ of double-strand breaks, but i
 
 Moreover, we did not observe any significant cis-eQTLs for *Setmar* across a variety of tissues in the BXD cohort (Table @tbl:eqtl-results).
 
-> None of the remaining DNA repair genes (*Fancd2*, *Ddx11*, or *Rad18*) contains a nonsynonymous fixed difference between the C57BL/6J and DBA/2J parental strains, and none appear to be regulated by cis-eQTLs that would feasibly lead to a germline C>A mutator phenotype (Table @tbl:eqtl-results); the only significant cis-eQTL we observed was for *Fancd2* in gastrointestinal tissue, at which *D* alleles actually led to *increased* expression.
+> None of the remaining DNA repair genes (*Fancd2* or *Rad18*) contains a nonsynonymous fixed difference between the C57BL/6J and DBA/2J parental strains, and none appear to be regulated by cis-eQTLs that would feasibly lead to a germline C>A mutator phenotype (Table @tbl:eqtl-results); the only significant cis-eQTL we observed was for *Fancd2* in gastrointestinal tissue, at which *D* alleles actually led to *increased* expression.
+
 
 <!-- We also note that *FANCD2* deficiency in human cancer can lead to increased rates of *de novo* structural variation [@PMID:36450981]. -->
 
@@ -389,9 +400,29 @@ We also observe that the *D* allele at p.Thr95Ala is segregating at an allele fr
 Although we would expect *a priori* that *Ogg1* deficiency should lead to increased 8-oxoG accumulation and elevated C>A mutation rates, these lines of evidence suggest that p.Thr95Ala is not highly deleterious on its own, and might only exert a detectable effect on the BER gene network when *Mutyh* function is also impaired.
 It is also possible that *D* alleles at *Ogg1* lead to a very subtle increase in C>A mutation rates, and we are simply underpowered to detect such a small mutation rate effect in the BXDs.
 
+#### No indication of causal structural variation or mobile element insertions near the chromosome 6 mutator locus
+
+Although we argue above that *Ogg1* is likely the the best candidate gene to explain the new BXD C>A mutator phenotype, we cannot conclusively determine that the p.Thr95Ala missense mutation is a causal allele. 
+We previously hypothesized that *Mutyh* missense mutations on *D* haplotypes were responsible for the large-effect C>A mutator phenotype we observed in the BXDs [@PMID:35545679]. 
+However, subsequent long-read assemblies of several inbred laboratory mouse strains revealed that this mutator phenotype might be caused by a ~5 kbp mobile element insertion (MEI) within the first intron of *Mutyh* [@doi:10.1016/j.xgen.2023.100291], which is associated with significantly reduced expression of *Mutyh* in embryonic stem cells.
+We queried the new high-quality assemblies for evidence of mobile elements or other large structural variants (SVs) in the region surrounding the mutator locus on chromosome 6, but found no similarly compelling evidence that either SVs or MEIs might underlie the mutator phenotype described in this study. 
+
+#### Expression quantitative trait loci (eQTLs) might mediate germline mutator phenotypes in the BXDs
+
+We observed strong-effect cis-eQTLs for *Ogg1* expression across a number of tissues in the BXDs (Table @tbl:eqtl-results).
+In each of these tissue types, *D* genotypes were associated with decreased expression of *Ogg1*.
+
+> As mentioned above, new evidence from long-read genome assemblies has demonstrated that an intronic mobile element insertion in *Mutyh* may be responsible for decreased *Mutyh* expression, and therefore higher C>A mutation rates, in BXDs with *D* haplotypes at the chromosome 4 mutator locus [@doi:10.1016/j.xgen.2023.100291].
+
+> Taken together, these results raise the exciting possibility that the mutator loci on both chromosome 4 and chromosome 6 lead to increased C>A mutation rates by lowering the expression of DNA repair genes in the same base-excision repair network.
+
+
 <!-- Overall, it is challenging to predict the functional consequences of the *Ogg1* p.Thr95Ala variant, and as we discuss below, the p.Asp129Asn missense mutation in *Mbd4* may be an even more compelling candidate mutator allele. -->
 
-<!-- #### *Mbd4* may buffer the effects of *Mutyh* mutator alleles by triggering apoptosis
+### *Mbd4* may buffer the effects of *Mutyh* mutator alleles by triggering apoptosis
+
+> As mentioned in the **Results**, *Mbd4* lies just outside of the 90% bootstrap confidence interval on chromosome 6 (**Results**), but was nominated as a candidate to explain the C>A mutator phenotype in a previous version of this manuscript.
+> Due to the uncertainties associated with bootstrap confidence intervals in QTL mapping [@PMID:], we have included a discussion of the evidence supporting *Mbd4* as a causal gene below.
 
 Unlike the *Ogg1* p.Thr95Ala mutation, the p.Asp129Asn variant in *Mbd4* resides within an annotated protein domain (the *Mbd4* methyl-CpG binding domain), occurs at a nucleotide and amino acid residue that are both well-conserved, and is predicted to be deleterious by SIFT [@PMID:12824425] (Table @tbl:nonsyn-diffs). 
 A missense mutation that affects the homologous amino acid in humans (p.Asp142Gly in GRCh38/hg38) is also present on a single haplotype in the Genome Aggregation Database (gnomAD) [@PMID:32461654] and is predicted by SIFT and Polyphen [@PMID:20354512] to be "deleterious" and "probably_damaging" in human genomes, respectively. 
@@ -408,24 +439,7 @@ We speculate that in mice with deficient 8-oxoguanine repair &mdash; caused by a
 If those germ cells harbor fully functional copies of *Mbd4*, they might be able to trigger apoptosis and partially mitigate the effects of a *Mutyh* mutator allele.
 However, mice with reduced activity of both *Mbd4* and *Mutyh* may have a reduced ability to initiate cell death in response to DNA damage; as a result, their germ cells may accumulate even higher levels of ROS-mediated damage, leading to substantially elevated germline C>A mutation rates. 
 
-Our model makes the testable prediction that mice with *D* haplotypes at *Mbd4* should have elevated sensitivity to a variety of mutagenic agents. 
-We thus anticipate that future experimental work will be able to more conclusively establish a mechanistic explanation for the epistatic interaction between mutator loci described in this paper.  -->
-
-#### No indication of causal structural variation or mobile element insertions near the chromosome 6 mutator locus
-
-Although we argue above that *Ogg1* is likely the the best candidate gene to explain the new BXD C>A mutator phenotype, we cannot conclusively determine that the p.Thr95Ala missense mutation is a causal allele. 
-We previously hypothesized that *Mutyh* missense mutations on *D* haplotypes were responsible for the large-effect C>A mutator phenotype we observed in the BXDs [@PMID:35545679]. 
-However, subsequent long-read assemblies of several inbred laboratory mouse strains revealed that this mutator phenotype might be caused by a ~5 kbp mobile element insertion (MEI) within the first intron of *Mutyh* [@doi:10.1016/j.xgen.2023.100291], which is associated with significantly reduced expression of *Mutyh* in embryonic stem cells.
-We queried the new high-quality assemblies for evidence of mobile elements or other large structural variants (SVs) in the region surrounding the mutator locus on chromosome 6, but found no similarly compelling evidence that either SVs or MEIs might underlie the mutator phenotype described in this study. 
-
-#### Expression quantitative trait loci (eQTLs) might mediate germline mutator phenotypes in the BXDs
-
-We observed strong-effect cis-eQTLs for *Ogg1* expression across a number of tissues in the BXDs (Table @tbl:eqtl-results).
-In each of these tissue types, *D* genotypes were associated with decreased expression of *Ogg1*.
-
-> As mentioned above, new evidence from long-read genome assemblies has demonstrated that an intronic mobile element insertion in *Mutyh* may be responsible for decreased *Mutyh* expression, and therefore higher C>A mutation rates, in BXDs with *D* haplotypes at the chromosome 4 mutator locus [@doi:10.1016/j.xgen.2023.100291].
-
-> Taken together, these results raise the exciting possibility that the mutator loci on both chromosome 4 and chromosome 6 lead to increased C>A mutation rates by lowering the expression of DNA repair genes in the same base-excision repair network.
+We anticipate that future experimental work will be able to more conclusively establish a mechanistic explanation for the epistatic interaction between mutator loci described in this paper. 
 
 ### Strengths and limitations of the aggregate mutation spectrum distance approach
 
@@ -526,6 +540,7 @@ After $N$ permutations (usually 10,000), we compute the $1 - p$ percentile of th
 > Using those resampled spectra and genotypes, we performed an aggregate mutation spectrum distance scan on the chromosome of interest and recorded the position of the marker with the largest adjusted cosine distance value.
 > We then defined a 90% confidence interval by finding two marker locations between which 90% of all $N$ bootstrap samples produced a peak cosine distance value. 
 > In other words, we estimated the bounds of the 90% confidence interval by finding the markers that defined the 5th and 95th percentiles of the distribution of maximum adjusted cosine distance values across $N$ bootstrap trials.
+> We note, however, that the bootstrap can exhibit poor performance in QTL mapping studies [@PMID:16783000]; namely, bootstrap confidence intervals tend to be larger than those estimated using either a "LOD drop" method or a Bayes credible interval, and can exhibit poorer-than-expected coverage (a measure of whether the confidence interval contains the true QTL location).
 
 #### Accounting for relatedness between strains 
 
@@ -889,20 +904,15 @@ Fractions of *de novo* germline mutations in Sanger MGP strains with either *D* 
 | *Ogg1* | Hippocampus | 67 | `rsm10000004188` | 16.50 | -0.165 |
 | *Rad18* | Hippocampus | 67 | `rsm10000003463` | 6.32 | 0.068 |
 | *Setmar* | Hippocampus | 67 | `rs13478947` | 11.03 | 0.141 |
+| *Mbd4* | Spleen | 79 | `rsm10000004199` | 6.05 | 0.071 | 
 
 Table: Significant cis-eQTLs for DNA repair genes in various tissues identified using GeneNetwork. {#tbl:eqtl-results tag="supplement 1"}
 
-| SV start | SV end |  SV type | Gene name(s) | Overlaps exon? |
+<!-- | SV start | SV end |  SV type | Gene name(s) | Overlaps exon? |
 | - | - | - | - | - |
-| 108,437,600 | 108,437,652 | DEL | *Gm35165*, *Itpr1* | Yes | 
-| 110,617,754 | 110,618,347 | DEL | *Gm20387* | Yes | 
-| 113,110,214 | 113,110,215 | INS | *Setd5* | Yes | 
-| 116,217,366 | 116,217,367 | INS | *Gm52873*, *Washc2* | Yes |
-| 112,605,594 | 112,605,595 | INS | *Rad18* | No | 
 | 112,629,618 | 112,636,619 | DEL | *Rad18* | No | 
-| 115,823,860 | 115,824,076 | DEL | *Mbd4* | No |
 
-Table: Large structural variants overlapping protein-coding genes in the mutator locus on chromosome 6 All coordinates are with respect to GRCm39/mm39. {#tbl:sv-overlap tag="supplement 2"}
+Table: Large structural variants overlapping protein-coding genes in the mutator locus on chromosome 6. All coordinates are with respect to GRCm39/mm39. {#tbl:sv-overlap tag="supplement 2"} -->
 
 
 
