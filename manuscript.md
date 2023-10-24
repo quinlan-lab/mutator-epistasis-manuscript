@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-09-25'
+date-meta: '2023-10-24'
 author-meta:
 - Thomas A. Sasani
 - Aaron R. Quinlan
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="Epistasis between mutator alleles contributes to germline mutation rate variability in laboratory mice" />
   <meta property="og:title" content="Epistasis between mutator alleles contributes to germline mutation rate variability in laboratory mice" />
   <meta property="twitter:title" content="Epistasis between mutator alleles contributes to germline mutation rate variability in laboratory mice" />
-  <meta name="dc.date" content="2023-09-25" />
-  <meta name="citation_publication_date" content="2023-09-25" />
-  <meta property="article:published_time" content="2023-09-25" />
-  <meta name="dc.modified" content="2023-09-25T20:00:15+00:00" />
-  <meta property="article:modified_time" content="2023-09-25T20:00:15+00:00" />
+  <meta name="dc.date" content="2023-10-24" />
+  <meta name="citation_publication_date" content="2023-10-24" />
+  <meta property="article:published_time" content="2023-10-24" />
+  <meta name="dc.modified" content="2023-10-24T20:32:17+00:00" />
+  <meta property="article:modified_time" content="2023-10-24T20:32:17+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a3d3f428cd32407a872e4d6e3c8df8522997ac06/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a3d3f428cd32407a872e4d6e3c8df8522997ac06/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a3d3f428cd32407a872e4d6e3c8df8522997ac06/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7813b8e1863dcba53f287aec142c9f310c19b44f/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7813b8e1863dcba53f287aec142c9f310c19b44f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7813b8e1863dcba53f287aec142c9f310c19b44f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/a3d3f428cd32407a872e4d6e3c8df8522997ac06/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7813b8e1863dcba53f287aec142c9f310c19b44f/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@a3d3f42](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/a3d3f428cd32407a872e4d6e3c8df8522997ac06)
-on September 25, 2023.
+from [quinlan-lab/mutator-epistasis-manuscript@7813b8e](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/7813b8e1863dcba53f287aec142c9f310c19b44f)
+on October 24, 2023.
 </em></small>
 
 
@@ -145,11 +145,9 @@ DNA replication and repair proteins often recognize particular sequence motifs o
 Thus, we might expect that the spectrum of *de novo* mutations &mdash; that is, the frequency of each individual mutation type (C>T, A>G, etc.) &mdash; will differ between genomes that harbor either a mutator or wild-type allele at a given locus. 
 Previously, we used quantitative trait locus mapping to discover candidate mutator alleles in the DNA repair gene *Mutyh* that increased the C>A germline mutation rate in a family of inbred mice known as the BXDs [@PMID:35545679;@PMID:33472028].
 
-> In this study we developed a new method, called "aggregate mutation spectrum distance," to detect alleles associated with mutation spectrum variation. 
-> By applying this approach to mutation data from the BXDs, we confirmed the presence of the germline mutator locus near *Mutyh* and discovered an additional C>A mutator locus on chromosome 6 that overlaps *Ogg1*, a DNA glycosylase involved in the same base-excision repair network as *Mutyh* [@PMID:17581577].
-
+In this study we developed a new method, called "aggregate mutation spectrum distance," to detect alleles associated with mutation spectrum variation. 
+By applying this approach to mutation data from the BXDs, we confirmed the presence of the germline mutator locus near *Mutyh* and discovered an additional C>A mutator locus on chromosome 6 that overlaps *Ogg1*, a DNA glycosylase involved in the same base-excision repair network as *Mutyh* [@PMID:17581577].
 The effect of a chromosome 6 mutator allele depended on the presence of a mutator allele near *Mutyh*, and BXDs with mutator alleles at both loci had even greater numbers of C>A mutations than those with mutator alleles at either locus alone. 
-
 Our new methods for analyzing mutation spectra reveal evidence of epistasis between germline mutator alleles, and may be applicable to mutation data from humans and other model organisms. 
 
 
@@ -161,13 +159,13 @@ For example, parental age is an important determinant of mutation rate variabili
 Rates of germline mutation accumulation are also variable across human families [@PMID:26656846;@PMID:31549960], likely due to either genetic variation or differences in environmental exposures.
 Although numerous protein-coding genes contribute to the maintenance of genome integrity, genetic variants that increase germline mutation rates, known as *mutator alleles*, have proven difficult to discover in mammals.
 
-The dearth of observed germline mutators in mammalian genomes is not necessarily surprising, since alleles that lead to elevated germline mutation rates would likely have deleterious consequences and be purged by negative selection [@PMID:27739533].
+The dearth of observed germline mutators in mammalian genomes is not necessarily surprising, since alleles that lead to elevated germline mutation rates would likely have deleterious consequences and be purged by negative selection if their effect sizes are large [@PMID:27739533].
 Moreover, germline mutation rates are relatively low, and direct mutation rate measurements require whole-genome sequencing data from both parents and their offspring.
 As a result, large-scale association studies &mdash; which have been used to map the contributions of common genetic variants to many complex traits &mdash; are not currently well-powered to investigate the polygenic architecture of germline mutation rates [@PMID:31964835].  
 
 Despite these challenges, less traditional strategies have been used to identify a small number of mutator alleles in humans, macaques [@doi:10.1101/2023.03.27.534460], and mice. 
 By focusing on families with rare genetic diseases, a recent study discovered two mutator alleles that led to significantly elevated rates of *de novo* germline mutation in human genomes [@PMID:35545669]. 
-Another group observed mutator phenotypes in the sperm and somatic tissues of adults who carry cancer-predisposing inherited mutations in the POLE/POLD1 exonucleases [@PMID:34594041].
+Other groups have observed mutator phenotypes in the germlines and somatic tissues of adults who carry cancer-predisposing inherited mutations in the POLE/POLD1 exonucleases [@PMID:34594041;@PMID:37336879].
 Candidate mutator loci were also found by identifying human haplotypes from the Thousand Genomes Project with excess counts of derived alleles in genomic windows [@PMID:28095480].
 
 In mice, a germline mutator allele was recently discovered by sequencing a large family of inbred mice [@PMID:35545679].
@@ -177,6 +175,7 @@ Due to their husbandry in a controlled laboratory setting, the BXDs were largely
 
 In this previous study, whole-genome sequencing data from the BXD family were used to map a quantitative trait locus (QTL) for the C>A mutation rate [@PMID:35545679].
 Germline C>A mutation rates were nearly 50% higher in mice with *D* haplotypes at the QTL, likely due to genetic variation in the DNA glycosylase *Mutyh* that reduced the efficacy of oxidative DNA damage repair.
+Pathogenic variants of *Mutyh* also appear to act as mutators in normal human germline and somatic tissues [@PMID:35803914;@PMID:30753674].
 Importantly, the QTL did not reach genome-wide significance in a scan for variation in overall germline mutation rates, which were only modestly higher in BXDs with *D* alleles, demonstrating the utility of mutation spectrum analysis for mutator allele discovery.
 Close examination of the mutation spectrum is likely to be broadly useful for detecting mutator alleles, as genes involved in DNA proofreading and repair often recognize particular sequence motifs or excise specific types of DNA lesions [@PMID:32619789].
 Mutation spectra are usually defined in terms of $k$-mer nucleotide context; the 1-mer mutation spectrum, for example, consists of 6 mutation types after collapsing by strand complement (C>T, C>A, C>G, A>T, A>C, A>G), while the 3-mer mutation spectrum contains 96 (each of the 1-mer mutations partitioned by trinucleotide context).
@@ -184,14 +183,11 @@ Mutation spectra are usually defined in terms of $k$-mer nucleotide context; the
 Although mutation spectrum analysis can enable the discovery of mutator alleles that affect the rates of specific mutation types, early implementations of this strategy have suffered from a few drawbacks. 
 For example, performing association tests on the rates or fractions of every $k$-mer mutation type can quickly incur a substantial multiple testing burden.
 Since germline mutation rates are generally quite low, estimates of $k$-mer mutation type frequencies from individual samples can also be noisy and imprecise.
-
-> Moreover, inbreeding duration can vary considerably across samples in populations of RILs; for example, some BXDs were inbred for only 20 generations, while others were inbred for nearly 200.
-> As a result, the variance of individual $k$-mer mutation rate estimates in those populations will be much higher than if all samples were inbred for the same duration.
-
+Moreover, inbreeding duration can vary considerably across samples in populations of RILs; for example, some BXDs were inbred for only 20 generations, while others were inbred for nearly 200.
+As a result, the variance of individual $k$-mer mutation rate estimates in those populations will be much higher than if all samples were inbred for the same duration.
 We were therefore motivated to develop a statistical method that could overcome the sparsity of *de novo* mutation spectra, eliminate the need to test each $k$-mer mutation type separately, and enable sensitive detection of alleles that influence the germline mutation spectrum.
 
-> Here, we present a new mutation spectrum association test, called "aggregate mutation spectrum distance," that minimizes multiple testing burdens and mitigates the challenges of sparsity in *de novo* mutation datasets. 
-
+Here, we present a new mutation spectrum association test, called "aggregate mutation spectrum distance," that minimizes multiple testing burdens and mitigates the challenges of sparsity in *de novo* mutation datasets. 
 We leverage this method to re-analyze germline mutation data from the BXD family and find compelling evidence for a second mutator allele that was not detected using previous approaches. 
 The new allele appears to interact epistatically with the mutator that was previously discovered in the BXDs, further augmenting the C>A germline mutation rate in a subset of inbred mice. 
 Our observation of epistasis suggests that mild DNA repair deficiencies can compound one another, as mutator alleles chip away at the redundant systems that collectively maintain germline integrity. 
@@ -201,8 +197,7 @@ Our observation of epistasis suggests that mild DNA repair deficiencies can comp
 
 ### A novel method for detecting mutator alleles
 
-> We developed a statistical method, termed "aggregate mutation spectrum distance" (AMSD), to detect loci that are associated with mutation spectrum variation in recombinant inbred lines (RILs) (Figure {@fig:distance-method}; *Materials and Methods*). 
-
+We developed a statistical method, termed "aggregate mutation spectrum distance" (AMSD), to detect loci that are associated with mutation spectrum variation in recombinant inbred lines (RILs) (Figure {@fig:distance-method}; *Materials and Methods*). 
 Our approach leverages the fact that mutator alleles often leave behind distinct and detectable impressions on the *mutation spectrum*, even if they increase the overall mutation rate by a relatively small amount.
 Given a population of haplotypes, we assume that each has been genotyped at the same collection of biallelic loci and that each harbors *de novo* mutations which have been partitioned by $k$-mer context (Figure @fig:distance-method).
 At every locus, we calculate a cosine distance between the aggregate mutation spectra of haplotypes that inherited either parental allele.
@@ -214,9 +209,8 @@ Given 100 haplotypes with an average of 500 *de novo* germline mutations each, A
 However, the approach has less than 20% power to detect a mutator of identical effect size that augments the C>G mutation rate, since C>G mutations are expected to make up a smaller fraction of all *de novo* germline mutations to begin with. 
 Simulations also demonstrate that our approach is well-powered to detect large-effect mutator alleles (e.g., those that increase the mutation rate of a specific $k$-mer by 50%), even with a relatively small number of mutations per haplotype (Figure {@fig:simulations}).
 Both AMSD and traditional quantitative trait locus (QTL) mapping have similar power to detect alleles that augment the rates of individual 1-mer mutation types (Figure {@fig:ihd_vs_qtl_power}), but AMSD has a number of potential advantages for mutator allele discovery.
-
-> For example, we find that AMSD is better-powered than QTL mapping when the number of simulated *de novo* mutations is allowed to vary (by a factor of 20) across haplotypes (Figure {@fig:ihd_vs_qtl_power_variable_counts}).
-> However, we also caution that many of the parameters used in our simulations are specific to the BXD mice (e.g., numbers of haplotypes, average numbers of mutations, expected allele frequencies at markers), and do not necessarily reflect the power of AMSD on other populations. 
+For example, we find that AMSD is better-powered than QTL mapping when the number of simulated *de novo* mutations is allowed to vary (by a factor of 20) across haplotypes (Figure {@fig:ihd_vs_qtl_power_variable_counts}).
+However, we also caution that many of the parameters used in our simulations are specific to the BXD mice (e.g., numbers of haplotypes, average numbers of mutations, expected allele frequencies at markers), and do not necessarily reflect the power of AMSD on other populations. 
 
 ![
 **Overview of aggregate mutation spectrum distance method for discovering mutator alleles.** 
@@ -235,16 +229,15 @@ Finally, we calculate the $1 - p$ percentile of the distribution of those maximu
 ### Re-identifying a mutator allele on chromosome 4 in the BXDs
 
 We applied our aggregate mutation spectrum distance method to 117 BXDs (*Materials and Methods*) with a total of 65,552 *de novo* germline mutations [@PMID:35545679]. 
-
-> Using mutation data that were partitioned by 1-mer nucleotide context, we discovered a locus on chromosome 4 that was significantly associated with mutation spectrum variation (Figure {@fig:distance-results}a; maximum adjusted cosine distance of 8.57e-3 at marker ID `rs27509845`; position 118.28 Mbp in GRCm38/mm10 coordinates; 90% bootstrap confidence interval from 109.87 - 118.28 Mbp). 
+Using mutation data that were partitioned by 1-mer nucleotide context, we discovered a locus on chromosome 4 that was significantly associated with mutation spectrum variation (Figure {@fig:distance-results}a; maximum adjusted cosine distance of 8.57e-3 at marker ID `rs27509845`; position 118.28 Mbp in GRCm38/mm10 coordinates; 90% bootstrap confidence interval from 114.79 - 118.75 Mbp). 
 
 ![
 **Results of aggregate mutation spectrum distance scans in the BXDs.** 
-**a)** Adjusted cosine distances between aggregate 1-mer *de novo* mutation spectra on BXD haplotypes (n = 117 haplotypes; 65,552 total mutations) with either *D* or *B* alleles at 6,987 informative markers. 
+**a)** Adjusted cosine distances between aggregate 1-mer *de novo* mutation spectra on BXD haplotypes (n = 117 haplotypes; 65,552 total mutations) with either *D* or *B* alleles at 7,128 informative markers. 
 Cosine distance threshold at p = 0.05 was calculated by performing 10,000 permutations of the BXD mutation data, and is shown as a dotted grey line. 
-**b)** Adjusted cosine distances between aggregate 1-mer *de novo* mutation spectra on BXD haplotypes with *D* alleles at `rs27509845` (n = 66 haplotypes; 42,171 total mutations) and either *D* or *B* alleles at 6,847 informative markers. 
+**b)** Adjusted cosine distances between aggregate 1-mer *de novo* mutation spectra on BXD haplotypes with *D* alleles at `rs27509845` (n = 66 haplotypes; 42,171 total mutations) and either *D* or *B* alleles at 7,063 informative markers. 
 Cosine distance threshold at p = 0.05 was calculated by performing 10,000 permutations of the BXD mutation data, and is shown as a dotted grey line.
-**c)** Adjusted cosine distances between aggregate 1-mer *de novo* mutation spectra on BXD haplotypes with *B* alleles at `rs27509845` (n = 44 haplotypes; 22,645 total mutations) and either *D* or *B* alleles at 6,953 informative markers. 
+**c)** Adjusted cosine distances between aggregate 1-mer *de novo* mutation spectra on BXD haplotypes with *B* alleles at `rs27509845` (n = 44 haplotypes; 22,645 total mutations) and either *D* or *B* alleles at 7,063 informative markers. 
 Cosine distance threshold at p = 0.05 was calculated by performing 10,000 permutations of the BXD mutation data, and is shown as a dotted grey line.
 ](images/fig-distance-results.png){#fig:distance-results width=7.5in} 
 
@@ -255,23 +248,25 @@ C>A germline mutation fractions are nearly 50% higher in BXDs that inherit *D* g
 
 ### An additional germline mutator allele on chromosome 6
 
-After confirming that AMSD could recover the mutator locus overlapping *Mutyh*, we asked if our approach could identify additional mutator loci in the BXDs. 
-In particular, we were interested in discovering epistatic interactions between alleles at the chromosome 4 locus and mutator alleles elsewhere in the genome.
-We hypothesized that such interactions could be detectable by first "conditioning" on the presence of *B* or *D* alleles at the mutator locus on chromosome 4, and then running another genome-wide scan for loci associated with mutation spectrum variation.
-To account for the effects of the large-effect mutator locus near *Mutyh*, we divided the BXDs into those with either *D* (n = 66) or *B* (n = 44) genotypes at `rs27509845` (n = 7 BXDs were heterozygous) and ran an aggregate mutation spectrum distance scan using each group separately (Figure {@fig:distance-results}b-c).
+After confirming that AMSD could recover the mutator locus overlapping *Mutyh*, we tested its ability to identify additional mutator loci in the BXDs.
+To eliminate potential confounding of the mutation spectrum landscape by the large-effect mutator locus on chromosome 4, we performed AMSD scans that were conditional on the presence of either *D* or *B* alleles at `rs27509845`. 
+We also hypothesized that such conditioning might reveal epistatic interactions between alleles at the chromosome 4 locus and mutator alleles elsewhere in the genome.
+Specifically, we divided the BXDs into those with either *D* (n = 66) or *B* (n = 44) genotypes at `rs27509845` (n = 7 BXDs were heterozygous) and ran an aggregate mutation spectrum distance scan using each group separately (Figure {@fig:distance-results}b-c). 
+We excluded the BXD68 RIL from these scans, since we previously found that BXD68 harbors a strain-private C>A mutator allele of even larger effect [@PMID:35545679].
 
-> Using the BXDs with *D* genotypes at `rs27509845`, we identified a locus on chromosome 6 that was significantly associated with mutation spectrum variation (Figure {@fig:distance-results}b; maximum adjusted cosine distance of 2.67e-3 at marker `rs46276051`; position 111.27 Mbp in GRCm38/mm10 coordinates; 90% bootstrap confidence interval from 95.01 - 114.02 Mbp).
-> This signal was specific to BXDs with *D* genotypes at the `rs27509845` locus, as we did not observe any new mutator loci after performing an AMSD scan using BXDs with *B* genotypes at `rs27509845` (Figure {@fig:distance-results}c), and the peak markers on chromosome 4 and 6 did not exhibit strong linkage disequilibrium ($R^2$ = 4e-5).
-
+Using the BXDs with *D* genotypes at `rs27509845`, we identified a locus on chromosome 6 that was significantly associated with mutation spectrum variation (Figure {@fig:distance-results}b; maximum adjusted cosine distance of 2.67e-3 at marker `rs46276051`; position 111.27 Mbp in GRCm38/mm10 coordinates; 90% bootstrap confidence interval from 95.01 - 114.02 Mbp).
+This signal was specific to BXDs with *D* genotypes at the `rs27509845` locus, as we did not observe any new mutator loci after performing an AMSD scan using BXDs with *B* genotypes at `rs27509845` (Figure {@fig:distance-results}c).
+The peak markers on chromosome 4 and 6 did not exhibit strong linkage disequilibrium ($R^2$ = 4e-5).
 We also performed QTL scans for the fractions of each 1-mer mutation type using the same mutation data, but none produced a genome-wide significant log-odds score at any locus (Figure {@fig:qtl-scans}; *Materials and Methods*).
 
-> We queried the region surrounding the top marker on chromosome 6 (+/- the 90% bootstrap confidence interval) and discovered 64 protein-coding genes, of which four were annotated with a Gene Ontology [@PMID:10802651;@PMID:33290552] term related to "DNA repair": *Fancd2*, *Ogg1*, *Setmar*, and *Rad18*.
-> Of these, two harbored nonsynonymous differences between the parental C57BL/6J and DBA/2J strains (Table @tbl:nonsyn-diffs).
-> *Ogg1* encodes a key member of the base-excision repair response to oxidative DNA damage (a pathway that also includes *Mutyh*), and in mice *Setmar* encodes a SET domain-containing histone methyltransferase; both *Ogg1* and *Setmar* are expressed in mouse gonadal cells.
+We queried the region surrounding the top marker on chromosome 6 (+/- the 90% bootstrap confidence interval) and discovered 64 protein-coding genes, of which four were annotated with a Gene Ontology (GO) [@PMID:10802651;@PMID:33290552] term related to "DNA repair": *Fancd2*, *Ogg1*, *Setmar*, and *Rad18*.
+None of the remaining genes were annotated with a cellular function that would obviously contribute to a germline mutator phenotype; however, many of these GO annotations are imperfect and/or incomplete. 
+Although we focus our analysis on DNA repair genes, it remains possible that other genes within the confidence interval could underlie the C>A mutator phenotype we identified in the BXDs.
 
-> In a previous version of this manuscript, we used a strict physical distance cutoff (+/- 5 Mbp from the peak AMSD marker) to nominate 63 candidate genes.
-> After implementing an empirical bootstrap to nominate candidates instead, we found that the 90% confidence interval no longer included a gene that we had previously prioritized: *Mbd4*, a protein-coding gene involved in base excision repair that also harbors a non-synonymous difference between the BXD parental strains (Table @tbl:nonsyn-diffs).
-> Since the bootstrap can exhibit poor coverage in QTL mapping studies [@PMID:16783000], *Mbd4* may still be worth considering as a plausible candidate, and we therefore provide a brief discussion of the evidence supporting *Mbd4* in the **Discussion**.
+Of the annotated DNA repair genes within the confidence interval, two harbored nonsynonymous differences between the parental C57BL/6J and DBA/2J strains (Table @tbl:nonsyn-diffs).
+*Ogg1* encodes a key member of the base-excision repair response to oxidative DNA damage (a pathway that also includes *Mutyh*), and in mice *Setmar* encodes a SET domain-containing histone methyltransferase; both *Ogg1* and *Setmar* are expressed in mouse gonadal cells.
+Because the bootstrap can exhibit poor coverage in QTL mapping studies [@PMID:16783000], we also scanned an interval +/- 5 Mbp from the peak AMSD marker on chromosome 6 for additional candidate genes. 
+Although the choice of a 10 Mbp interval is somewhat arbitrary, the interval does contain a plausible candidate: *Mbd4*, a protein-coding gene involved in base excision repair that also harbors a non-synonymous difference between the BXD parental strains (Table @tbl:nonsyn-diffs).
 
 | Gene name | Ensembl transcript name | Nucleotide change | Amino acid change | Position in GRCm38/mm10 coordinates | PhyloP conservation score | SIFT prediction | 
 | - | - | - | - | - | - | - | 
@@ -283,13 +278,11 @@ We also performed QTL scans for the fractions of each 1-mer mutation type using 
 Table: Nonsynonymous mutations in DNA repair genes near the chr6 peak {#tbl:nonsyn-diffs}
 
 We also considered the possibility that expression quantitative trait loci (eQTLs), rather than nonsynonymous mutations, could contribute to the C>A mutator phenotype associated with the locus on chromosome 6. 
+Using GeneNetwork [@PMID:27933521] we mapped eQTLs for the five aforementioned DNA repair genes (as well as *Mbd4*) in a number of tissues, though we did not have access to expression data from germline cells. 
+Notably, *D* alleles near the cosine distance peak on chromosome 6 were significantly associated with decreased *Ogg1* expression in kidney, liver, hippocampus, and gastrointestinal tissues (Table @tbl:eqtl-results). 
+Although these cis-eQTLs are challenging to interpret (given their tissue specificity and our lack of access to germline expression data), the presence of strong-effect cis-eQTLs for *Ogg1* suggests that the C>A mutator phenotype observed in the BXDs may be mediated by regulatory, rather than protein-altering, variants.
 
-> Using GeneNetwork [@PMID:27933521] we mapped eQTLs for the five aforementioned DNA repair genes (as well as *Mbd4*) in a number of tissues, though we did not have access to expression data from germline cells. 
-
-> Notably, *D* alleles near the cosine distance peak on chromosome 6 were significantly associated with decreased *Ogg1* expression in kidney, liver, hippocampus, and gastrointestinal tissues (Table @tbl:eqtl-results). 
-> Although these cis-eQTLs are challenging to interpret (given their tissue specificity and our lack of access to germline expression data), the presence of strong-effect cis-eQTLs for *Ogg1* suggests that the C>A mutator phenotype observed in the BXDs may be mediated by regulatory, rather than protein-altering, variants.
-
-> Finally, we queried a dataset of structural variants (SVs) identified via high-quality, long-read assembly of inbred laboratory mouse strains [@doi:10.1016/j.xgen.2023.100291] and found 176 large insertions or deletions (>100 bp) within the 90% bootstrap confidence interval around the cosine distance peak on chromosome 6; of these, none overlapped the exonic sequences of protein-coding genes.
+Finally, we queried a dataset of structural variants (SVs) identified via high-quality, long-read assembly of inbred laboratory mouse strains [@doi:10.1016/j.xgen.2023.100291] and found 176 large insertions or deletions (>100 bp) within the 90% bootstrap confidence interval around the cosine distance peak on chromosome 6; none overlapped the exonic sequences of protein-coding genes.
 
 <!-- , though none of the genes has a previously annotated role in DNA repair or replication, or in a pathway that would likely affect germline mutation rates. -->
 
@@ -299,9 +292,7 @@ One protein-coding gene involved in DNA repair (*Rad18*) harbored an intronic de
 
 Next, we more precisely characterized the effects of the chromosome 4 and 6 mutator alleles on mutation spectra in the BXDs. 
 To pinpoint the mutation type(s) that underlied the significant cosine distance peak on chromosome 6, we compared the aggregate counts of each 1-mer mutation type (plus CpG>TpG) on BXD haplotypes with *D* genotypes at `rs27509845` and either *D* or *B* genotypes at `rs46276051`.
-
-> We found that C>A mutations were significantly enriched on BXD haplotypes with *D* genotypes at the chromosome 6 mutator locus, relative to those with *B* genotypes ($\chi^2$ statistic = 85.36, p = 2.48e-20).
-
+We found that C>A mutations were significantly enriched on BXD haplotypes with *D* genotypes at the chromosome 6 mutator locus, relative to those with *B* genotypes ($\chi^2$ statistic = 85.36, p = 2.48e-20).
 On average, C>A germline mutation fractions were significantly higher in BXDs with *D* alleles at both mutator loci than in BXDs with *D* alleles at either locus alone (Figure {@fig:spectra-comparison}a and @fig:spectra-comparison-all). 
 Among BXDs with *B* alleles at the locus overlapping *Mutyh*, those with *D* alleles on chromosome 6 did not exhibit significantly elevated C>A mutation fractions (Figure {@fig:spectra-comparison}a). 
 After controlling for inbreeding duration, we observed that C>A *de novo* mutation counts were always highest in BXDs with *D* alleles at both mutator loci (Figure {@fig:spectra-comparison}b).
@@ -314,8 +305,7 @@ However, the SBS18 signature, which is dominated by C>A mutations and likely ref
 SBS18 activity was lowest in mice with *D* alleles at the chromosome 6 mutator locus alone (Figure {@fig:spectra-comparison}c), further demonstrating that *D* alleles at this locus are not sufficient to cause a mutator phenotype.
 
 To more formally test for statistical epistasis, we fit a generalized (Poisson) linear model predicting counts of C>A mutations in each BXD as a function of genotypes at `rs27509845` and `rs46276051` (the markers with the largest adjusted cosine distance at the two mutator loci); the model also accounted for differences in inbreeding duration and sequencing coverage between the BXDs (*Materials and Methods*). 
-
-> A model that included an interaction term between genotypes at the two markers fit the data significantly better than a model including only additive effects (p = 7.92e-7; *Materials and Methods*), indicating that the combined effects of *D* genotypes at both loci exceeded the sum of marginal effects of *D* genotypes at either locus alone.
+A model that included an interaction term between genotypes at the two markers fit the data significantly better than a model including only additive effects (p = 7.92e-7; *Materials and Methods*), indicating that the combined effects of *D* genotypes at both loci exceeded the sum of marginal effects of *D* genotypes at either locus alone.
 
 ![
 **BXD mutation spectra are affected by alleles at both mutator loci.** 
@@ -337,8 +327,7 @@ To determine whether the candidate mutator alleles on chromosome 6 were segregat
 These data include three subspecies of *Mus musculus*, as well as the outgroup *Mus spretus*. 
 We found that the *Ogg1* *D* allele was segregating at an allele frequency of 0.259 in *Mus musculus domesticus*, the species from which C57BL/6J and DBA/2J derive the majority of their genomes [@PMID:17660819], and was fixed in *Mus musculus musculus*, *Mus musculus castaneus*, and the outgroup *Mus spretus* (Figure @fig:wild-afs).
 The *Setmar* p.Ser273Arg *D* allele was also present at an allele frequency of 0.37 in *Mus musculus domesticus*, while *D* alleles at the *Setmar* p.Leu103Phe variant were not observed in any wild *Mus musculus domesticus* animals.
-
-> *D* alleles at the *Mbd4* p.Asp129Asn variant were also absent from all wild mouse populations (Figure @fig:wild-afs).
+*D* alleles at the *Mbd4* p.Asp129Asn variant were also absent from all wild mouse populations (Figure @fig:wild-afs).
 
 
 ## Discussion
@@ -351,31 +340,26 @@ However, mice with *D* alleles at *both* loci have even higher mutation rates th
 Epistatic interactions between mutator alleles have been previously documented in yeast [@PMID:16492773] and in human cell lines [@PMID:35859169], but never to our knowledge in a whole-animal context. 
 
 Importantly, we discovered epistasis between germline mutator alleles in an unnatural population of model organisms that have been inbred by brother-sister mating in a highly controlled laboratory environment [@PMID:33472028]. 
-This breeding setup has likely attenuated the effects of natural selection on all but the most deleterious alleles [@doi:10.1146/annurev.ecolsys.39.110707.173437], and may have facilitated the fixation of large-effect mutator alleles that would be less common in wild, outbreeding populations. 
+This breeding setup has likely attenuated the effects of natural selection on all but the most deleterious alleles [@doi:10.1146/annurev.ecolsys.39.110707.173437], and may have facilitated the fixation of large-effect mutator alleles that would be less common in wild mice. 
+Without fine-mapping the chromosome 6 mutator allele, however, we are unable to trace its origin to either a captive breeding colony of laboratory mice or a wild, outbreeding *Mus musculus* population. 
+If the mutator allele on chromosome 6 has even a weak deleterious fitness, there might be a greater likelihood that it arose in captivity. 
+Indeed, if purifying selection is required to keep mutation rates low, mutational pressure might cause mutation rates to rise in just a few generations of relaxed selection. 
+This dynamic may explain the recent discovery of a large-effect mutator allele in a rhesus macaque research colony [@doi:10.1101/2023.03.27.534460], as well as the observation that domesticated animals tend to have higher mutation rates than those in the wild [@PMID:36859541].
+Ultimately, although we have not conclusively fine-mapped the chromosome 6 mutator locus to a causal variant, we argue that nonsynonymous or regulatory variants in the DNA glycosylase *Ogg1* are the best candidates. 
 
-> We have not conclusively fine-mapped the chromosome 6 mutator locus to a causal variant, but we argue that nonsynonymous or regulatory variants in the DNA glycosylase *Ogg1* are the best candidates. 
-
-<!-- Our results demonstrate that multiple mutator alleles have spontaneously arisen during the evolutionary history of inbred laboratory mice, supporting the hypothesis that purifying selection is required to keep mutation rates low.  -->
-Our finding suggests that mutational pressure can cause mutation rates to rise in just a few generations of relaxed selection in captivity. 
-This hypothesis is corroborated by the recent discovery of a large-effect mutator allele in a rhesus macaque research colony [@doi:10.1101/2023.03.27.534460], as well as the observation that domesticated animals tend to have higher mutation rates than those in the wild [@PMID:36859541].
 
 ### Protein-coding genes that may underlie the chromosome 6 mutator locus
 
-> Five protein-coding genes involved in DNA repair overlap the C>A mutator locus on chromosome 6: *Ogg1*, a glycosylase that excises the oxidative DNA lesion 8-oxoguanine (8-oxoG) [@PMID:17581577], *Setmar*, a histone methyltransferase involved in non-homologous end joining (NHEJ) of double-stranded breaks (DSBs) [@PMID:21187428;@PMID:16332963], *Fancd2*, and *Rad18*.
-> *Mbd4*, a protein-coding gene that was implicated as a candidate gene in a previous version of this manuscript, also lies just outside of the 90% bootstrap confidence interval on chromosome 6.
-
-Although we are unable to conclusively determine that one or more of these genes harbors a causal variant underlying the observed C>A mutator phenotype, we believe that *Ogg1* is the most plausible candidate.
-
-> *Ogg1* is a member of the same base-excision repair pathway as *Mutyh* (the gene that likely underlies the chromosome 4 mutator locus), contains a nonsynonymous fixed difference between the C57BL/6J and DBA/2J parental strains, and appears to be regulated by cis-eQTLs across a number of tissues within the BXD cohort.
+Five protein-coding genes involved in DNA repair overlap the C>A mutator locus on chromosome 6: *Ogg1*, a glycosylase that excises the oxidative DNA lesion 8-oxoguanine (8-oxoG) [@PMID:17581577], *Setmar*, a histone methyltransferase involved in non-homologous end joining (NHEJ) of double-stranded breaks (DSBs) [@PMID:21187428;@PMID:16332963], *Fancd2*, and *Rad18*.
+One other DNA repair gene, *Mbd4*, lies just outside of the 90% bootstrap confidence interval on chromosome 6 (but within a 10 Mbp interval around the peak AMSD marker).
+We are unable to conclusively determine that one or more of these genes harbors a causal variant underlying the observed C>A mutator phenotype, but we believe that *Ogg1* is the most plausible candidate.
+*Ogg1* is a member of the same base-excision repair pathway as *Mutyh* (the gene that likely underlies the chromosome 4 mutator locus), contains a nonsynonymous fixed difference between the C57BL/6J and DBA/2J parental strains, and appears to be regulated by cis-eQTLs across a number of tissues within the BXD cohort.
 
 The C57BL/6J and DBA/2J *Setmar* coding sequences differ by two missense variants (Table @tbl:nonsyn-diffs), one of which is predicted to be deleterious by *in silico* tools.
 The primate *SETMAR* ortholog is involved in NHEJ of double-strand breaks, but its role in DNA repair appears to depend on the function of both a SET methyltransferase domain and a *Mariner*-family transposase domain [@PMID:16332963;@PMID:24573677;@PMID:21491884].
-
-> Since the murine *Setmar* ortholog lacks the latter element, and because primate *SETMAR* is involved in a DNA repair process that is not expected to affect the rate of C>A mutations, we believe it is unlikely to underlie the epistatic interaction between the chromosome 4 and 6 mutator loci in the BXDs (*Supplementary Information*).
-
+Since the murine *Setmar* ortholog lacks the latter element, and because primate *SETMAR* is involved in a DNA repair process that is not expected to affect the rate of C>A mutations, we believe it is unlikely to underlie the epistatic interaction between the chromosome 4 and 6 mutator loci in the BXDs (*Supplementary Information*).
 Moreover, we did not observe any significant cis-eQTLs for *Setmar* across a variety of tissues in the BXD cohort (Table @tbl:eqtl-results).
-
-> None of the remaining DNA repair genes (*Fancd2* or *Rad18*) contains a nonsynonymous fixed difference between the C57BL/6J and DBA/2J parental strains, and none appear to be regulated by cis-eQTLs that would feasibly lead to a germline C>A mutator phenotype (Table @tbl:eqtl-results); the only significant cis-eQTL we observed was for *Fancd2* in gastrointestinal tissue, at which *D* alleles actually led to *increased* expression.
+None of the remaining DNA repair genes (*Fancd2* or *Rad18*) contains a nonsynonymous fixed difference between the C57BL/6J and DBA/2J parental strains, and none appear to be regulated by cis-eQTLs that would feasibly lead to a germline C>A mutator phenotype (Table @tbl:eqtl-results); the only significant cis-eQTL we observed was for *Fancd2* in gastrointestinal tissue, at which *D* alleles actually led to *increased* expression.
 
 
 <!-- We also note that *FANCD2* deficiency in human cancer can lead to increased rates of *de novo* structural variation [@PMID:36450981]. -->
@@ -411,18 +395,16 @@ We queried the new high-quality assemblies for evidence of mobile elements or ot
 
 We observed strong-effect cis-eQTLs for *Ogg1* expression across a number of tissues in the BXDs (Table @tbl:eqtl-results).
 In each of these tissue types, *D* genotypes were associated with decreased expression of *Ogg1*.
-
-> As mentioned above, new evidence from long-read genome assemblies has demonstrated that an intronic mobile element insertion in *Mutyh* may be responsible for decreased *Mutyh* expression, and therefore higher C>A mutation rates, in BXDs with *D* haplotypes at the chromosome 4 mutator locus [@doi:10.1016/j.xgen.2023.100291].
-
-> Taken together, these results raise the exciting possibility that the mutator loci on both chromosome 4 and chromosome 6 lead to increased C>A mutation rates by lowering the expression of DNA repair genes in the same base-excision repair network.
+As mentioned above, new evidence from long-read genome assemblies has demonstrated that an intronic mobile element insertion in *Mutyh* may be responsible for decreased *Mutyh* expression, and therefore higher C>A mutation rates, in BXDs with *D* haplotypes at the chromosome 4 mutator locus [@doi:10.1016/j.xgen.2023.100291].
+Taken together, these results raise the exciting possibility that the mutator loci on both chromosome 4 and chromosome 6 lead to increased C>A mutation rates by lowering the expression of DNA repair genes in the same base-excision repair network.
 
 
 <!-- Overall, it is challenging to predict the functional consequences of the *Ogg1* p.Thr95Ala variant, and as we discuss below, the p.Asp129Asn missense mutation in *Mbd4* may be an even more compelling candidate mutator allele. -->
 
 ### *Mbd4* may buffer the effects of *Mutyh* mutator alleles by triggering apoptosis
 
-> As mentioned in the **Results**, *Mbd4* lies just outside of the 90% bootstrap confidence interval on chromosome 6 (**Results**), but was nominated as a candidate to explain the C>A mutator phenotype in a previous version of this manuscript.
-> Due to the uncertainties associated with bootstrap confidence intervals in QTL mapping [@PMID:], we have included a discussion of the evidence supporting *Mbd4* as a causal gene below.
+As mentioned in the **Results**, *Mbd4* lies just outside of the 90% bootstrap confidence interval on chromosome 6.
+Due to the uncertainties associated with bootstrap confidence intervals in QTL mapping [@PMID:], we have included a discussion of the evidence supporting *Mbd4* as a causal gene below.
 
 Unlike the *Ogg1* p.Thr95Ala mutation, the p.Asp129Asn variant in *Mbd4* resides within an annotated protein domain (the *Mbd4* methyl-CpG binding domain), occurs at a nucleotide and amino acid residue that are both well-conserved, and is predicted to be deleterious by SIFT [@PMID:12824425] (Table @tbl:nonsyn-diffs). 
 A missense mutation that affects the homologous amino acid in humans (p.Asp142Gly in GRCh38/hg38) is also present on a single haplotype in the Genome Aggregation Database (gnomAD) [@PMID:32461654] and is predicted by SIFT and Polyphen [@PMID:20354512] to be "deleterious" and "probably_damaging" in human genomes, respectively. 
@@ -472,11 +454,9 @@ If germline mutator alleles are only detectable in these highly unusual experime
 Fortunately, the approach introduced in this paper is readily adaptable to datasets beyond RILs. 
 Thousands of human pedigrees have been sequenced in an effort to precisely estimate the rate of human *de novo* germline mutation [@PMID:31549960;@PMID:28959963;@PMID:29700473], and as family sequencing has become a more common step in the diagnosis of many congenital disorders, these datasets are growing on a daily basis. 
 Large cohorts of two- or three-generation families are an example of a regime in which AMSD could enjoy high power; by pooling sparse mutation counts across many individuals who share the same candidate mutator allele, even a subtle mutator signal could potentially rise above the noise of *de novo* germline mutation rate estimates.
-
-> We note, however, that the aggregate mutation spectrum distance approach will require modification before it can be successfully applied to cohorts of outbred, sexually-reproducing individuals.
-> AMSD assumes that individuals harbor one of two possible genotypes at each marker, and does not yet account for heterozygous genotypes.
-> As a result, our method is currently applicable only to resources like the BXD RILs, in which individuals have been inbred for sufficiently long that effectively all genotypes are homozgyous.
-
+We note, however, that the aggregate mutation spectrum distance approach will require modification before it can be successfully applied to cohorts of outbred, sexually-reproducing individuals.
+AMSD assumes that individuals harbor one of two possible genotypes at each marker, and does not yet account for heterozygous genotypes.
+As a result, our method is currently applicable only to resources like the BXD RILs, in which individuals have been inbred for sufficiently long that effectively all genotypes are homozygous.
 
 Selection on germline mutator alleles will likely prevent large-effect mutators from reaching high allele frequencies, but a subset may be detectable by sequencing a sufficient number of human trios [@PMID:35666194]. 
 Since germline mutators often seem to exert their effects on a small number of mutation types, mutation spectrum analyses may have greater power to detect the genes that underlie heritable mutation rate variation, even if each gene has only a modest effect on the overall mutation rate per generation. 
@@ -535,12 +515,12 @@ After $N$ permutations (usually 10,000), we compute the $1 - p$ percentile of th
 
 #### Estimating confidence intervals around AMSD peaks
 
-> If we identified an adjusted cosine distance peak on a particular chromosome, we used a bootstrap resampling approach [@PMID:8725246] to estimate confidence intervals.
-> In each of $N = 10,000$ trials, we resampled the mutation spectrum data and corresponding marker genotypes (on the chromosome of interest) with replacement.
-> Using those resampled spectra and genotypes, we performed an aggregate mutation spectrum distance scan on the chromosome of interest and recorded the position of the marker with the largest adjusted cosine distance value.
-> We then defined a 90% confidence interval by finding two marker locations between which 90% of all $N$ bootstrap samples produced a peak cosine distance value. 
-> In other words, we estimated the bounds of the 90% confidence interval by finding the markers that defined the 5th and 95th percentiles of the distribution of maximum adjusted cosine distance values across $N$ bootstrap trials.
-> We note, however, that the bootstrap can exhibit poor performance in QTL mapping studies [@PMID:16783000]; namely, bootstrap confidence intervals tend to be larger than those estimated using either a "LOD drop" method or a Bayes credible interval, and can exhibit poorer-than-expected coverage (a measure of whether the confidence interval contains the true QTL location).
+If we identified an adjusted cosine distance peak on a particular chromosome, we used a bootstrap resampling approach [@PMID:8725246] to estimate confidence intervals.
+In each of $N = 10,000$ trials, we resampled the mutation spectrum data and corresponding marker genotypes (on the chromosome of interest) with replacement.
+Using those resampled spectra and genotypes, we performed an aggregate mutation spectrum distance scan on the chromosome of interest and recorded the position of the marker with the largest adjusted cosine distance value.
+We then defined a 90% confidence interval by finding two marker locations between which 90% of all $N$ bootstrap samples produced a peak cosine distance value. 
+In other words, we estimated the bounds of the 90% confidence interval by finding the markers that defined the 5th and 95th percentiles of the distribution of maximum adjusted cosine distance values across $N$ bootstrap trials.
+We note, however, that the bootstrap can exhibit poor performance in QTL mapping studies [@PMID:16783000]; namely, bootstrap confidence intervals tend to be larger than those estimated using either a "LOD drop" method or a Bayes credible interval, and can exhibit poorer-than-expected coverage (a measure of whether the confidence interval contains the true QTL location).
 
 #### Accounting for relatedness between strains 
 
@@ -611,12 +591,12 @@ $$\lambda = Pm$$
 
 We also create a second vector of lambda values ($\lambda^{\prime}$), in which we multiply the $\lambda$ value of a single mutation type by the mutator effect size $e$. 
 
-> Rather than simulate the same mean number of mutations ($m$) on every haplotype, we also performed a series of simulations in which the mean number of mutations on each haplotype was allowed to vary.
-> The BXD RILs were inbred for variable numbers of generations, and each BXD therefore accumulated a variable number of *de novo* germline mutations [@PMID:35545679].
-> To more closely approximate the BXD haplotypes, we performed simulations in which the number of mutations ($m$) on each haplotype was drawn from a uniform distribution from $m$ to $20m$.
-> In other words, we created a vector of mutation counts $M$ containing $h$ evenly-spaced integers from $m$ to $20m$, where $h$ is the number of simulated haplotypes.
-> Thus, if we simulated between 100 and 2,000 mutations on 50 haplotypes, the $i$th entry of $M$ would be $100 + \frac{(2,000 - 100)}{50}i$.
-> Each haplotype's mean number of mutations was then assigned by looking up the haplotype's index $i$ in $M$.
+Rather than simulate the same mean number of mutations ($m$) on every haplotype, we also performed a series of simulations in which the mean number of mutations on each haplotype was allowed to vary.
+The BXD RILs were inbred for variable numbers of generations, and each BXD therefore accumulated a variable number of *de novo* germline mutations [@PMID:35545679].
+To more closely approximate the BXD haplotypes, we performed simulations in which the number of mutations ($m$) on each haplotype was drawn from a uniform distribution from $m$ to $20m$.
+In other words, we created a vector of mutation counts $M$ containing $h$ evenly-spaced integers from $m$ to $20m$, where $h$ is the number of simulated haplotypes.
+Thus, if we simulated between 100 and 2,000 mutations on 50 haplotypes, the $i$th entry of $M$ would be $100 + \frac{(2,000 - 100)}{50}i$.
+Each haplotype's mean number of mutations was then assigned by looking up the haplotype's index $i$ in $M$.
 
 
 In our simulations, we assume that genotypes at a single site (the "mutator locus") are associated with variation in the mutation spectrum. 
@@ -652,10 +632,10 @@ For every $k$-mer mutation type, we use genotype probabilities and per-haplotype
 We then use the `scan1perm` function to perform 1,000 permutations of the per-haplotype mutation fractions and calculate log-odds (LOD) thresholds for significance.
 We consider the QTL scan to be "successful" if it produces a LOD score above the significance threshold (defined using $\alpha = \frac{0.05}{7}$) for the marker at which we simulated an association with mutation spectrum variation.
 
-> **Note**: In our simulations, we augment the mutation rate of a single $k$-mer mutation type on haplotypes carrying the simulated mutator allele.
-> However, in an experimental setting, we would not expect to have *a priori* knowledge of the mutation type affected by the mutator.
-> Thus, by using an alpha threshold of 0.05 in our simulations, we would likely over-estimate the power of QTL mapping for detecting the mutator.
-> Since we would need to perform 7 separate QTL scans (one for each 1-mer mutation type plus CpG>TpG) in an experimental setting, we calculate QTL LOD thresholds at a Bonferroni-corrected alpha value of $\alpha = \frac{0.05}{7}$.
+**Note**: In our simulations, we augment the mutation rate of a single $k$-mer mutation type on haplotypes carrying the simulated mutator allele.
+However, in an experimental setting, we would not expect to have *a priori* knowledge of the mutation type affected by the mutator.
+Thus, by using an alpha threshold of 0.05 in our simulations, we would likely over-estimate the power of QTL mapping for detecting the mutator.
+Since we would need to perform 7 separate QTL scans (one for each 1-mer mutation type plus CpG>TpG) in an experimental setting, we calculate QTL LOD thresholds at a Bonferroni-corrected alpha value of $\alpha = \frac{0.05}{7}$.
 
 
 ### Applying the aggregate mutation spectrum distance method to the BXDs
@@ -678,9 +658,7 @@ In total, we included 117 BXDs in our genome-wide scans.
 ### Identifying candidate single-nucleotide mutator alleles overlapping the chromosome 6 peak
 
 We investigated the region implicated by our aggregate mutation spectrum distance approach on chromosome 6 by subsetting the joint-genotyped BXD VCF file (European Nucleotide Archive accession PRJEB45429 [@url:https://www.ebi.ac.uk/ena/browser/view/PRJEB45429]) using `bcftools` [@PMID:33590861]. 
-
-> We defined the candidate interval surrounding the cosine distance peak on chromosome 6 as the 90% bootstrap confidence interval (extending from approximately 95 Mbp to 114 Mbp).
-
+We defined the candidate interval surrounding the cosine distance peak on chromosome 6 as the 90% bootstrap confidence interval (extending from approximately 95 Mbp to 114 Mbp).
 To predict the functional impacts of both single-nucleotide variants and indels on splicing, protein structure, etc., we annotated variants in the BXD VCF using the following `snpEff` [@PMID:22728672] command: 
 
 ```
@@ -728,8 +706,8 @@ On the GeneNetwork homepage (genenetwork.org), we selected the "BXD Family" **Gr
 In the **Get Any** text box, we then entered the listed gene name and clicked **Search**. 
 After selecting the appropriate trait ID on the next page, we used the **Mapping Tools** dropdown to run Hayley-Knott regression [@PMID:16718932] with default parameters: 1,000 permutations, interval mapping, no cofactors, and WGS-based genotypes (2022). 
 
-> If we discovered a significant cis-eQTL for the gene of interest (that is, a locus on chromosome 6 with an LRS greater than or equal to the "significant LRS" genome-wide threshold), we then performed a second genome-wide association test for the trait of interest using GEMMA [@PMID:2453419] with the following parameters: WGS-based marker genotypes, a minor allele frequency threshold of 0.05, and leave-one-chromosome-out (LOCO).
-> By using both Haley-Knott regression and GEMMA, we could first discover loci that exceeded a genome-wide LRS threshold, and then more precisely estimate the effect of those loci on gene expression [@doi:10.1101/2020.12.23.424047].
+If we discovered a significant cis-eQTL for the gene of interest (that is, a locus on chromosome 6 with an LRS greater than or equal to the "significant LRS" genome-wide threshold), we then performed a second genome-wide association test for the trait of interest using GEMMA [@PMID:2453419] with the following parameters: WGS-based marker genotypes, a minor allele frequency threshold of 0.05, and leave-one-chromosome-out (LOCO).
+By using both Haley-Knott regression and GEMMA, we could first discover loci that exceeded a genome-wide LRS threshold, and then more precisely estimate the effect of those loci on gene expression [@doi:10.1101/2020.12.23.424047].
 
 The exact names of the expression datasets we used for each tissue are shown in Table @tbl:eqtl-provenance below:
 
@@ -778,8 +756,8 @@ m2 <- glm(Count ~ offset(log(ADJ_AGE)) + Genotype_A + Genotype_B, data = data, f
 anova(m1, m2, test="Chisq")
 ```
 
-> If model `m1` is a significantly better fit to the data than `m2`, we can reject the null hypothesis that the effect of *D* genotypes at both markers is equal to the sum of the marginal effects of *D* genotypes at either `rs27509845` or `rs46276051`.
-> In other words, if `m1` is a better fit than `m2`, then the combined effect of *D* genotypes at both markers is non-additive, and indicative of statistical epistasis.
+If model `m1` is a significantly better fit to the data than `m2`, we can reject the null hypothesis that the effect of *D* genotypes at both markers is equal to the sum of the marginal effects of *D* genotypes at either `rs27509845` or `rs46276051`.
+In other words, if `m1` is a better fit than `m2`, then the combined effect of *D* genotypes at both markers is non-additive, and indicative of statistical epistasis.
 
 We tested for epistasis in the Sanger Mouse Genomes Project (MGP) strains using a nearly-identical approach. 
 In this analysis, we fit two models as follows:

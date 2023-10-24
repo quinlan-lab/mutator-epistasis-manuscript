@@ -23,6 +23,7 @@ Ferraj
 fibroblasts
 GEMMA
 genomic
+germlines
 Gly
 gnomAD
 GRCh
@@ -30,7 +31,6 @@ GRCm
 haplotype’s
 Harr
 Hayley
-homozgyous
 intercross
 intronic
 Leu
