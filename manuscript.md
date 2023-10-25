@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-10-24'
+date-meta: '2023-10-25'
 author-meta:
 - Thomas A. Sasani
 - Aaron R. Quinlan
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="Epistasis between mutator alleles contributes to germline mutation rate variability in laboratory mice" />
   <meta property="og:title" content="Epistasis between mutator alleles contributes to germline mutation rate variability in laboratory mice" />
   <meta property="twitter:title" content="Epistasis between mutator alleles contributes to germline mutation rate variability in laboratory mice" />
-  <meta name="dc.date" content="2023-10-24" />
-  <meta name="citation_publication_date" content="2023-10-24" />
-  <meta property="article:published_time" content="2023-10-24" />
-  <meta name="dc.modified" content="2023-10-24T20:32:17+00:00" />
-  <meta property="article:modified_time" content="2023-10-24T20:32:17+00:00" />
+  <meta name="dc.date" content="2023-10-25" />
+  <meta name="citation_publication_date" content="2023-10-25" />
+  <meta property="article:published_time" content="2023-10-25" />
+  <meta name="dc.modified" content="2023-10-25T18:33:01+00:00" />
+  <meta property="article:modified_time" content="2023-10-25T18:33:01+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/" />
   <meta name="citation_pdf_url" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7813b8e1863dcba53f287aec142c9f310c19b44f/" />
-  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7813b8e1863dcba53f287aec142c9f310c19b44f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7813b8e1863dcba53f287aec142c9f310c19b44f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/bc944e2344c193b9928ba531ff25ee40619d1f2a/" />
+  <meta name="manubot_html_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/bc944e2344c193b9928ba531ff25ee40619d1f2a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/bc944e2344c193b9928ba531ff25ee40619d1f2a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/7813b8e1863dcba53f287aec142c9f310c19b44f/))
+([permalink](https://quinlan-lab.github.io/mutator-epistasis-manuscript/v/bc944e2344c193b9928ba531ff25ee40619d1f2a/))
 was automatically generated
-from [quinlan-lab/mutator-epistasis-manuscript@7813b8e](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/7813b8e1863dcba53f287aec142c9f310c19b44f)
-on October 24, 2023.
+from [quinlan-lab/mutator-epistasis-manuscript@bc944e2](https://github.com/quinlan-lab/mutator-epistasis-manuscript/tree/bc944e2344c193b9928ba531ff25ee40619d1f2a)
+on October 25, 2023.
 </em></small>
 
 
@@ -209,7 +209,7 @@ Given 100 haplotypes with an average of 500 *de novo* germline mutations each, A
 However, the approach has less than 20% power to detect a mutator of identical effect size that augments the C>G mutation rate, since C>G mutations are expected to make up a smaller fraction of all *de novo* germline mutations to begin with. 
 Simulations also demonstrate that our approach is well-powered to detect large-effect mutator alleles (e.g., those that increase the mutation rate of a specific $k$-mer by 50%), even with a relatively small number of mutations per haplotype (Figure {@fig:simulations}).
 Both AMSD and traditional quantitative trait locus (QTL) mapping have similar power to detect alleles that augment the rates of individual 1-mer mutation types (Figure {@fig:ihd_vs_qtl_power}), but AMSD has a number of potential advantages for mutator allele discovery.
-For example, we find that AMSD is better-powered than QTL mapping when the number of simulated *de novo* mutations is allowed to vary (by a factor of 20) across haplotypes (Figure {@fig:ihd_vs_qtl_power_variable_counts}).
+For example, we find that AMSD is better-powered than QTL mapping when the number of simulated *de novo* mutations is allowed to vary (by a factor of 20) across haplotypes (Figure {@fig:ihd_vs_qtl_power_variable_counts}) and when mutator allele frequencies are less than 50% (Figure {@fig:ihd_vs_qtl_power_variable_afs}).
 However, we also caution that many of the parameters used in our simulations are specific to the BXD mice (e.g., numbers of haplotypes, average numbers of mutations, expected allele frequencies at markers), and do not necessarily reflect the power of AMSD on other populations. 
 
 ![
@@ -229,7 +229,7 @@ Finally, we calculate the $1 - p$ percentile of the distribution of those maximu
 ### Re-identifying a mutator allele on chromosome 4 in the BXDs
 
 We applied our aggregate mutation spectrum distance method to 117 BXDs (*Materials and Methods*) with a total of 65,552 *de novo* germline mutations [@PMID:35545679]. 
-Using mutation data that were partitioned by 1-mer nucleotide context, we discovered a locus on chromosome 4 that was significantly associated with mutation spectrum variation (Figure {@fig:distance-results}a; maximum adjusted cosine distance of 8.57e-3 at marker ID `rs27509845`; position 118.28 Mbp in GRCm38/mm10 coordinates; 90% bootstrap confidence interval from 114.79 - 118.75 Mbp). 
+Using mutation data that were partitioned by 1-mer nucleotide context, we discovered a locus on chromosome 4 that was significantly associated with mutation spectrum variation (Figure {@fig:distance-results}a; maximum adjusted cosine distance of 1.20e-2 at marker ID `rs27509845`; position 118.28 Mbp in GRCm38/mm10 coordinates; 90% bootstrap confidence interval from 114.79 - 118.75 Mbp). 
 
 ![
 **Results of aggregate mutation spectrum distance scans in the BXDs.** 
@@ -254,7 +254,7 @@ We also hypothesized that such conditioning might reveal epistatic interactions 
 Specifically, we divided the BXDs into those with either *D* (n = 66) or *B* (n = 44) genotypes at `rs27509845` (n = 7 BXDs were heterozygous) and ran an aggregate mutation spectrum distance scan using each group separately (Figure {@fig:distance-results}b-c). 
 We excluded the BXD68 RIL from these scans, since we previously found that BXD68 harbors a strain-private C>A mutator allele of even larger effect [@PMID:35545679].
 
-Using the BXDs with *D* genotypes at `rs27509845`, we identified a locus on chromosome 6 that was significantly associated with mutation spectrum variation (Figure {@fig:distance-results}b; maximum adjusted cosine distance of 2.67e-3 at marker `rs46276051`; position 111.27 Mbp in GRCm38/mm10 coordinates; 90% bootstrap confidence interval from 95.01 - 114.02 Mbp).
+Using the BXDs with *D* genotypes at `rs27509845`, we identified a locus on chromosome 6 that was significantly associated with mutation spectrum variation (Figure {@fig:distance-results}b; maximum adjusted cosine distance of 3.69e-3 at marker `rs46276051`; position 111.27 Mbp in GRCm38/mm10 coordinates; 90% bootstrap confidence interval from 95.01 - 114.02 Mbp).
 This signal was specific to BXDs with *D* genotypes at the `rs27509845` locus, as we did not observe any new mutator loci after performing an AMSD scan using BXDs with *B* genotypes at `rs27509845` (Figure {@fig:distance-results}c).
 The peak markers on chromosome 4 and 6 did not exhibit strong linkage disequilibrium ($R^2$ = 4e-5).
 We also performed QTL scans for the fractions of each 1-mer mutation type using the same mutation data, but none produced a genome-wide significant log-odds score at any locus (Figure {@fig:qtl-scans}; *Materials and Methods*).
@@ -399,12 +399,10 @@ As mentioned above, new evidence from long-read genome assemblies has demonstrat
 Taken together, these results raise the exciting possibility that the mutator loci on both chromosome 4 and chromosome 6 lead to increased C>A mutation rates by lowering the expression of DNA repair genes in the same base-excision repair network.
 
 
-<!-- Overall, it is challenging to predict the functional consequences of the *Ogg1* p.Thr95Ala variant, and as we discuss below, the p.Asp129Asn missense mutation in *Mbd4* may be an even more compelling candidate mutator allele. -->
-
 ### *Mbd4* may buffer the effects of *Mutyh* mutator alleles by triggering apoptosis
 
 As mentioned in the **Results**, *Mbd4* lies just outside of the 90% bootstrap confidence interval on chromosome 6.
-Due to the uncertainties associated with bootstrap confidence intervals in QTL mapping [@PMID:], we have included a discussion of the evidence supporting *Mbd4* as a causal gene below.
+Due to the uncertainties associated with bootstrap confidence intervals in QTL mapping [@PMID:16783000], we have included a discussion of the evidence supporting *Mbd4* as a causal gene below.
 
 Unlike the *Ogg1* p.Thr95Ala mutation, the p.Asp129Asn variant in *Mbd4* resides within an annotated protein domain (the *Mbd4* methyl-CpG binding domain), occurs at a nucleotide and amino acid residue that are both well-conserved, and is predicted to be deleterious by SIFT [@PMID:12824425] (Table @tbl:nonsyn-diffs). 
 A missense mutation that affects the homologous amino acid in humans (p.Asp142Gly in GRCh38/hg38) is also present on a single haplotype in the Genome Aggregation Database (gnomAD) [@PMID:32461654] and is predicted by SIFT and Polyphen [@PMID:20354512] to be "deleterious" and "probably_damaging" in human genomes, respectively. 
@@ -806,8 +804,8 @@ At every locus on every haplotype, we drew a single floating point value from a 
 If that value was less than or equal to 0.5, we set the allele to be "A"; otherwise, we set the allele to be "B".
 In each trial, we also simulated *de novo* germline mutations on the population of haplotypes, such that at a single locus $g_i$, we augmented the mutation rate of a particular $k$-mer by the specified effect size (an effect size of 1.5 indicates a 50% increase in the mutation rate) on haplotypes carrying "A" alleles.
 We then applied the aggregate mutation spectrum distance method to these simulated data and asked if the adjusted cosine distance at locus $g_i$ was greater than expected by chance. 
-Given a specific combination of parameters, the y-axis denotes the fraction of 100 trials in which the simulated mutator allele could be detected at a significance threshold of p = 0.05.
-Shaded areas indicate the standard deviation of that fraction across 100 simulations.
+Given a specific combination of parameters, the y-axis denotes the fraction of 50 trials in which the simulated mutator allele could be detected at a significance threshold of p = 0.05.
+Shaded areas indicate the 95% bootstrap confidence interval surrounding that estimate.
 ](images/fig-power-simulations.png){#fig:simulations tag="1-figure supplement 1" width=7.5in} 
 
 ![
@@ -818,8 +816,8 @@ If that value was less than or equal to 0.5, we set the allele to be "A"; otherw
 In each trial, we also simulated *de novo* germline mutations on the population of haplotypes, such that at a single locus $g_i$, we augmented the rate of the specified mutation type by the specified effect size (an effect size of 1.5 indicates a 50% increase in the mutation rate) on haplotypes carrying "A" alleles.
 We then applied the aggregate mutation spectrum distance method to these simulated data and asked if the adjusted cosine distance at locus $g_i$ was greater than expected by chance. 
 Similarly, in each trial, we used R/qtl2 to perform a genome scan for QTL and asked if the log-odds score at $g_i$ was greater than expected by chance.
-Given a specific combination of parameters, the y-axis denotes the fraction of 100 trials in which the simulated mutator allele could be detected at a significance threshold of p = 0.05 (for IHD) or at an alpha of $\frac{0.05}{7}$ (for QTL mapping).
-Shaded areas indicate the standard deviation of that fraction across 100 simulations.
+Given a specific combination of parameters, the y-axis denotes the fraction of 50 trials in which the simulated mutator allele could be detected at a significance threshold of p = 0.05 (for AMSD) or at an alpha of $\frac{0.05}{7}$ (for QTL mapping).
+Shaded areas indicate the 95% bootstrap confidence interval surrounding that estimate.
 ](images/fig-power-comparison.png){#fig:ihd_vs_qtl_power tag="1-figure supplement 2" width=7.5in} 
 
 ![
@@ -831,21 +829,21 @@ In each trial, we also simulated *de novo* germline mutations on the population 
 To more closely approximate the BXD RILs, the mean number of simulated mutations on each haplotype was allowed to vary by a factor of 20 (see Materials and Methods for more details).
 We then applied the aggregate mutation spectrum distance method to these simulated data and asked if the adjusted cosine distance at locus $g_i$ was greater than expected by chance. 
 Similarly, in each trial, we used R/qtl2 to perform a genome scan for QTL and asked if the log-odds score at $g_i$ was greater than expected by chance.
-Given a specific combination of parameters, the y-axis denotes the fraction of 100 trials in which the simulated mutator allele could be detected at a significance threshold of p = 0.05 (for IHD) or at an alpha of $\frac{0.05}{7}$ (for QTL mapping).
-Shaded areas indicate the standard deviation of that fraction across 100 simulations.
+Given a specific combination of parameters, the y-axis denotes the fraction of 50 trials in which the simulated mutator allele could be detected at a significance threshold of p = 0.05 (for AMSD) or at an alpha of $\frac{0.05}{7}$ (for QTL mapping).
+Shaded areas indicate the 95% bootstrap confidence interval surrounding that estimate.
 ](images/fig-power-comparison-variable-counts.png){#fig:ihd_vs_qtl_power_variable_counts tag="1-figure supplement 3" width=7.5in} 
 
 ![
-**Comparing power between the aggregate mutation spectrum distance method and QTL mapping with variable marker allele frequencies.** 
+**Comparing power between the aggregate mutation spectrum distance method and QTL mapping with variable mutator allele frequencies.** 
 In each of 50 trials, we simulated genotypes at 1,000 biallelic loci on a toy population of 100 haplotypes as follows.
 At every locus on every haplotype, we drew a single floating point value from a uniform distribution $[0, 1)$.
-If that value was less than or equal to $f$, we set the allele to be "A"; otherwise, we set the allele to be "B".
-We allowed $f$ (the expected frequency of "A" alleles at each marker) to be either 0.1, 0.2, or 0.5 in these simulations; $f$ is denoted as "Allele frequency" in each subplot.
+If that value was less than or equal to 0.5, we set the allele to be "A"; otherwise, we set the allele to be "B".
+To model the effects of mutator allele frequencies on AMSD and QTL power, we allowed the expected frequency of "A" alleles at the mutator allele marker to be either 0.1, 0.25, or 0.5 in these simulations.
 In each trial, we also simulated *de novo* germline mutations on the population of haplotypes, such that at a single locus $g_i$, we augmented the rate of the specified mutation type by the specified effect size (an effect size of 1.5 indicates a 50% increase in the mutation rate) on haplotypes carrying "A" alleles.
 We then applied the aggregate mutation spectrum distance method to these simulated data and asked if the adjusted cosine distance at locus $g_i$ was greater than expected by chance. 
 Similarly, in each trial, we used R/qtl2 to perform a genome scan for QTL and asked if the log-odds score at $g_i$ was greater than expected by chance.
-Given a specific combination of parameters, the y-axis denotes the fraction of 100 trials in which the simulated mutator allele could be detected at a significance threshold of p = 0.05 (for IHD) or at an alpha of $\frac{0.05}{7}$ (for QTL mapping).
-Shaded areas indicate the standard deviation of that fraction across 100 simulations.
+Given a specific combination of parameters, the y-axis denotes the fraction of 50 trials in which the simulated mutator allele could be detected at a significance threshold of p = 0.05 (for AMSD) or at an alpha of $\frac{0.05}{7}$ (for QTL mapping).
+Shaded areas indicate the 95% bootstrap confidence interval surrounding that estimate.
 ](images/fig-power-comparison-variable-afs.png){#fig:ihd_vs_qtl_power_variable_afs tag="1-figure supplement 4" width=7.5in} 
 
 ![
